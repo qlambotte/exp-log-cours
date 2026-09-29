@@ -1,0 +1,42 @@
+# Réglages du site « Exponentielles et logarithmes » (voir ../../../typweb/gabarit/typweb.toml)
+
+[cours]
+titre      = "Exponentielles et logarithmes"
+sous-titre = "Cours & exercices — 6e, 4 périodes (6UAA4)"
+auteur     = "Quentin Lambotte"
+annee      = "6e"
+uaa        = "6UAA4"
+
+[notes]
+dossier    = "../notes"
+principal  = "exp-log.typ"
+objectifs  = "objectifs-exp.typ"
+
+# Exercices supplémentaires : sur le site, dernière section du chapitre 1
+# (numéros S1.1, S1.2… comme sur la fiche imprimée) ; le PDF du cours ne change pas.
+[[notes.complements]]
+fichier  = "fiches/exercices-supp-ch1.typ"
+chapitre = 1
+titre    = "Exercices supplémentaires"
+label    = "sec-exos-suppl-ch1"
+
+[pdf]
+corrige    = true
+polices    = "~/.local/share/fonts"
+
+# La fiche d'exercices supplémentaires, à part dans le menu « Télécharger »
+[[pdf.autres]]
+titre   = "Exercices supplémentaires (ch. 1)"
+detail  = "à compléter"
+source  = "fiches/exercices-supp-ch1.typ"
+fichier = "exercices-supp-ch1.pdf"
+
+[[pdf.autres]]
+titre   = "Exercices supplémentaires (ch. 1) — corrigé"
+detail  = "réponses en bleu"
+source  = "fiches/exercices-supp-ch1.typ"
+corrige = true
+fichier = "exercices-supp-ch1-corrige.pdf"
+
+[modules]
+actifs = ["reperes", "interactif"]

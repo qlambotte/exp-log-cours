@@ -1,0 +1,21 @@
+---
+title: "Exponentielles et logarithmes — cours & exercices"
+---
+
+Ce site accompagne le **cours imprimé** de 6e (UAA 4). On y trouve le même texte, avec les **mêmes numéros** (Activité 1.3, Exercice 2.5…), et en plus :
+
+- pour chaque exercice, des **coups de pouce** à dévoiler un par un : un renvoi à la théorie, une question à te poser, une étape pour démarrer, puis la solution et les pièges ;
+- les **réponses** des activités et des exercices, cachées : un clic les dévoile ;
+- une **bulle** en bas à droite qui indique à quelle page du cours imprimé tu te trouves (un clic ouvre le PDF à cette page) ;
+- un **stylo** (bouton ✎ en bas à gauche) pour annoter les pages : dessiner, surligner, laisser une note. Tes annotations restent dans ton navigateur ; « Exporter » les enregistre dans un fichier.
+
+## Chapitres
+
+- **[Chapitre 1 — Fonctions exponentielles](ch1-fonctions-exponentie/index.qmd)** : croissance exponentielle, définition et propriétés de $a^x$, le nombre $e$, équations exponentielles ; en fin de chapitre, des exercices supplémentaires.
+- **[Chapitre 2 — Fonctions logarithmiques](ch2-fonctions-logarithmi/index.qmd)** : le logarithme comme réciproque, propriétés graphiques et algébriques, équations, modélisation.
+- **[Chapitre 3 — Dérivées et limites](ch3-derivees-et-limites/index.qmd)** : dériver $e^x$, $a^x$ et $\ln x$, limites de base, croissance comparée.
+- **[Chapitre 4 — Échelles logarithmiques](ch4-echelles-logarithmiq/index.qmd)** : échelles et repères semi-log et log-log, lecture de graphiques scientifiques.
+
+::: {.callout-tip title="Comment travailler"}
+Lis le cours, puis passe aux exercices. N'ouvre les *coups de pouce* qu'après avoir cherché : ils sont faits pour te débloquer, pas pour remplacer ta recherche.
+:::
