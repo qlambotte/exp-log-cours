@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Quentin Lambotte">
-<meta name="dcterms.date" content="2026-01-01">
 
-<title>Exponentielles et logarithmes</title>
+<title>L’essentiel – Exponentielles et logarithmes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -37,7 +35,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./objectifs.html" rel="next">
+<link href="./autoeval.html" rel="next">
+<link href="./ch4-echelles-logarithmiq/5-pour-aller-plus-loin-les.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -128,7 +127,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-title">Exponentielles et logarithmes — cours &amp; exercices</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./essentiel.html"><span class="chapter-title">L’essentiel</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Recherche" onclick="window.quartoOpenSearch();">
@@ -155,7 +154,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Exponentielles et logarithmes — cours &amp; exercices</span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exponentielles et logarithmes — cours &amp; exercices</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -339,7 +338,7 @@ window.Quarto = {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./essentiel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">L’essentiel</span></a>
+  <a href="./essentiel.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">L’essentiel</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -362,7 +361,36 @@ window.Quarto = {
     <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-  <li><a href="#chapitres" id="toc-chapitres" class="nav-link active" data-scroll-target="#chapitres">Chapitres</a></li>
+  <li><a href="#chapitre-1-fonctions-exponentielles" id="toc-chapitre-1-fonctions-exponentielles" class="nav-link active" data-scroll-target="#chapitre-1-fonctions-exponentielles">Chapitre 1 — Fonctions exponentielles</a>
+  <ul class="collapse">
+  <li><a href="#croissance-exponentielle" id="toc-croissance-exponentielle" class="nav-link" data-scroll-target="#croissance-exponentielle">Croissance exponentielle</a></li>
+  <li><a href="#construire-une-fonction-exponentielle" id="toc-construire-une-fonction-exponentielle" class="nav-link" data-scroll-target="#construire-une-fonction-exponentielle">Construire une fonction exponentielle</a></li>
+  <li><a href="#définition-de-la-fonction-exponentielle" id="toc-définition-de-la-fonction-exponentielle" class="nav-link" data-scroll-target="#définition-de-la-fonction-exponentielle">Définition de la fonction exponentielle</a></li>
+  <li><a href="#propriétés-et-caractéristiques-graphiques" id="toc-propriétés-et-caractéristiques-graphiques" class="nav-link" data-scroll-target="#propriétés-et-caractéristiques-graphiques">Propriétés et caractéristiques graphiques</a></li>
+  <li><a href="#multiples-dune-fonction-exponentielle" id="toc-multiples-dune-fonction-exponentielle" class="nav-link" data-scroll-target="#multiples-dune-fonction-exponentielle">Multiples d’une fonction exponentielle</a></li>
+  <li><a href="#des-graphes-tous-semblables-vers-un-représentant-privilégié" id="toc-des-graphes-tous-semblables-vers-un-représentant-privilégié" class="nav-link" data-scroll-target="#des-graphes-tous-semblables-vers-un-représentant-privilégié">Des graphes tous semblables : vers un représentant privilégié</a></li>
+  <li><a href="#le-nombre-e-et-lexponentielle-népérienne" id="toc-le-nombre-e-et-lexponentielle-népérienne" class="nav-link" data-scroll-target="#le-nombre-e-et-lexponentielle-népérienne">Le nombre <span class="math inline">\(e\)</span> et l’exponentielle népérienne</a></li>
+  <li><a href="#résoudre-des-équations-exponentielles-simples" id="toc-résoudre-des-équations-exponentielles-simples" class="nav-link" data-scroll-target="#résoudre-des-équations-exponentielles-simples">Résoudre des équations exponentielles simples</a></li>
+  </ul></li>
+  <li><a href="#chapitre-2-fonctions-logarithmiques" id="toc-chapitre-2-fonctions-logarithmiques" class="nav-link" data-scroll-target="#chapitre-2-fonctions-logarithmiques">Chapitre 2 — Fonctions logarithmiques</a>
+  <ul class="collapse">
+  <li><a href="#du-problème-ex-3-au-logarithme" id="toc-du-problème-ex-3-au-logarithme" class="nav-link" data-scroll-target="#du-problème-ex-3-au-logarithme">Du problème <span class="math inline">\(e^{x} = 3\)</span> au logarithme</a></li>
+  <li><a href="#définition-du-logarithme-de-base-a" id="toc-définition-du-logarithme-de-base-a" class="nav-link" data-scroll-target="#définition-du-logarithme-de-base-a">Définition du logarithme de base <span class="math inline">\(a\)</span></a></li>
+  <li><a href="#propriétés-graphiques-par-déduction" id="toc-propriétés-graphiques-par-déduction" class="nav-link" data-scroll-target="#propriétés-graphiques-par-déduction">Propriétés graphiques, par déduction</a></li>
+  <li><a href="#propriétés-algébriques-à-découvrir" id="toc-propriétés-algébriques-à-découvrir" class="nav-link" data-scroll-target="#propriétés-algébriques-à-découvrir">Propriétés algébriques, à découvrir</a></li>
+  </ul></li>
+  <li><a href="#chapitre-3-dérivées-et-limites" id="toc-chapitre-3-dérivées-et-limites" class="nav-link" data-scroll-target="#chapitre-3-dérivées-et-limites">Chapitre 3 — Dérivées et limites</a>
+  <ul class="collapse">
+  <li><a href="#dériver-lexponentielle" id="toc-dériver-lexponentielle" class="nav-link" data-scroll-target="#dériver-lexponentielle">Dériver l’exponentielle</a></li>
+  <li><a href="#dériver-le-logarithme" id="toc-dériver-le-logarithme" class="nav-link" data-scroll-target="#dériver-le-logarithme">Dériver le logarithme</a></li>
+  <li><a href="#limites-de-base" id="toc-limites-de-base" class="nav-link" data-scroll-target="#limites-de-base">Limites de base</a></li>
+  <li><a href="#croissance-comparée-et-théorème-de-lhospital" id="toc-croissance-comparée-et-théorème-de-lhospital" class="nav-link" data-scroll-target="#croissance-comparée-et-théorème-de-lhospital">Croissance comparée et théorème de l’Hospital</a></li>
+  </ul></li>
+  <li><a href="#chapitre-4-échelles-logarithmiques" id="toc-chapitre-4-échelles-logarithmiques" class="nav-link" data-scroll-target="#chapitre-4-échelles-logarithmiques">Chapitre 4 — Échelles logarithmiques</a>
+  <ul class="collapse">
+  <li><a href="#repère-semi-logarithmique-la-signature-de-lexponentielle" id="toc-repère-semi-logarithmique-la-signature-de-lexponentielle" class="nav-link" data-scroll-target="#repère-semi-logarithmique-la-signature-de-lexponentielle">Repère semi-logarithmique : la signature de l’exponentielle</a></li>
+  <li><a href="#repère-log-log-la-signature-dune-puissance" id="toc-repère-log-log-la-signature-dune-puissance" class="nav-link" data-scroll-target="#repère-log-log-la-signature-dune-puissance">Repère log-log : la signature d’une puissance</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -371,27 +399,15 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Exponentielles et logarithmes</h1>
-<p class="subtitle lead">Cours &amp; exercices — 6e, 4 périodes (6UAA4)</p>
+<h1 class="title"><span class="chapter-title">L’essentiel</span></h1>
+<p class="subtitle lead">Définitions et propriétés du cours, pour s’y retrouver</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Auteur·rice</div>
-    <div class="quarto-title-meta-contents">
-             <p>Quentin Lambotte </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Date de publication</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -401,36 +417,623 @@ window.Quarto = {
 </header>
 
 
-<p>Ce site accompagne le <strong>cours imprimé</strong> de 6e (UAA 4). On y trouve le même texte, avec les <strong>mêmes numéros</strong> (Activité 1.3, Exercice 2.5…), et en plus :</p>
-<ul>
-<li>pour chaque exercice, des <strong>coups de pouce</strong> à dévoiler un par un : un renvoi à la théorie, une question à te poser, une étape pour démarrer, puis la solution et les pièges ;</li>
-<li>les <strong>réponses</strong> des activités et des exercices, cachées : un clic les dévoile ;</li>
-<li>une <strong>bulle</strong> en bas à droite qui indique à quelle page du cours imprimé tu te trouves (un clic ouvre le PDF à cette page) ;</li>
-<li>un <strong>stylo</strong> (bouton ✎ en bas à gauche) pour annoter les pages : dessiner, surligner, laisser une note. Tes annotations restent dans ton navigateur ; « Exporter » les enregistre dans un fichier.</li>
-</ul>
-<section id="chapitres" class="level2">
-<h2 class="anchored" data-anchor-id="chapitres">Chapitres</h2>
-<ul>
-<li><strong><a href="./ch1-fonctions-exponentie/index.html">Chapitre 1 — Fonctions exponentielles</a></strong> : croissance exponentielle, définition et propriétés de <span class="math inline">\(a^x\)</span>, le nombre <span class="math inline">\(e\)</span>, équations exponentielles ; en fin de chapitre, des exercices supplémentaires.</li>
-<li><strong><a href="./ch2-fonctions-logarithmi/index.html">Chapitre 2 — Fonctions logarithmiques</a></strong> : le logarithme comme réciproque, propriétés graphiques et algébriques, équations, modélisation.</li>
-<li><strong><a href="./ch3-derivees-et-limites/index.html">Chapitre 3 — Dérivées et limites</a></strong> : dériver <span class="math inline">\(e^x\)</span>, <span class="math inline">\(a^x\)</span> et <span class="math inline">\(\ln x\)</span>, limites de base, croissance comparée.</li>
-<li><strong><a href="./ch4-echelles-logarithmiq/index.html">Chapitre 4 — Échelles logarithmiques</a></strong> : échelles et repères semi-log et log-log, lecture de graphiques scientifiques.</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled" title="Comment travailler">
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+<div class="callout callout-style-default callout-important callout-titled" title="À lire avant d'utiliser cette page">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Astuce</span>Comment travailler
+<span class="screen-reader-only">Important</span>À lire avant d’utiliser cette page
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Lis le cours, puis passe aux exercices. N’ouvre les <em>coups de pouce</em> qu’après avoir cherché : ils sont faits pour te débloquer, pas pour remplacer ta recherche.</p>
+<p>Cette page rassemble les énoncés du cours, <strong>sans</strong> les activités qui leur donnent du sens, sans les justifications, les exemples ni les méthodes vues en classe. Connaître ces énoncés <strong>ne suffit pas</strong> : l’essentiel, c’est de savoir les <strong>utiliser</strong>, et cela s’apprend avec les exemples et les exercices.</p>
+<p>Sers-t’en pour retrouver un énoncé ou vérifier que tu peux le <strong>redire sans regarder</strong>, puis retourne au cours (lien « dans le cours » sous chaque encadré) et aux exercices.</p>
 </div>
+</div>
+<section id="chapitre-1-fonctions-exponentielles" class="level2">
+<h2 class="anchored" data-anchor-id="chapitre-1-fonctions-exponentielles">Chapitre 1 — Fonctions exponentielles</h2>
+<section id="croissance-exponentielle" class="level3">
+<h3 class="anchored" data-anchor-id="croissance-exponentielle">Croissance exponentielle</h3>
+<div id="ess-definition-1-1" class="theo theo-definition" data-sorte="definition" data-num="1.1" data-page="5" data-phys="7">
+<div class="theo-head">
+<p><strong>Définition 1.1</strong> — croissance exponentielle</p>
+</div>
+<div class="theo-body">
+<p>Une fonction <span class="math inline">\(f\)</span> a une <strong>croissance exponentielle</strong> lorsqu’elle vérifie:</p>
+<p><span class="math display">\[
+\forall x,x' \in \mathbb{R}, f(x + x') = f(x) \cdot f(x').
+\]</span></p>
+<p>Autrement dit : elle <strong>transforme une somme en un produit</strong>.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch1-fonctions-exponentie/1-croissance-exponentielle.html#definition-1-1">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="construire-une-fonction-exponentielle" class="level3">
+<h3 class="anchored" data-anchor-id="construire-une-fonction-exponentielle">Construire une fonction exponentielle</h3>
+<div id="ess-definition-1-2" class="theo theo-definition" data-sorte="definition" data-num="1.2" data-page="9" data-phys="11">
+<div class="theo-head">
+<p><strong>Définition 1.2</strong> — fonction strictement monotone</p>
+</div>
+<div class="theo-body">
+<p>Une fonction <span class="math inline">\(f\)</span> est <strong>strictement monotone</strong> sur son domaine si elle est, <em>soit</em> <strong>strictement croissante</strong>, <em>soit</em> <strong>strictement décroissante</strong>.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch1-fonctions-exponentie/2-construire-une-fonction-exponentielle.html#definition-1-2">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="définition-de-la-fonction-exponentielle" class="level3">
+<h3 class="anchored" data-anchor-id="définition-de-la-fonction-exponentielle">Définition de la fonction exponentielle</h3>
+<div id="ess-definition-1-3" class="theo theo-definition" data-sorte="definition" data-num="1.3" data-page="9" data-phys="11">
+<div class="theo-head">
+<p><strong>Définition 1.3</strong> — fonction exponentielle de base <span class="math inline">\(a\)</span></p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>. La <strong>fonction exponentielle de base <span class="math inline">\(a\)</span></strong> est l’unique fonction <span class="math inline">\(f\)</span> qui vérifie les deux conditions suivantes :</p>
+<ul>
+<li><span class="math inline">\(\forall x,x' \in \mathbb{R}, f(x+x')=f(x)f(x')\)</span>. Autrement dit <span class="math inline">\(f\)</span> <strong>prolonge les puissances rationnelles</strong> de base <span class="math inline">\(a\)</span> ;</li>
+<li><span class="math inline">\(f\)</span> est <strong>strictement monotone</strong>.</li>
+</ul>
+<p>Son expression analytique est notée <span class="math inline">\(f(x) = a^{x}\)</span>.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch1-fonctions-exponentie/3-definition-de-la-fonction-exponentielle.html#definition-1-3">↗ dans le cours</a></p>
+</div>
+<div id="ess-propriete-1-1" class="theo theo-propriete" data-sorte="propriete" data-num="1.1" data-page="9" data-phys="11">
+<div class="theo-head">
+<p><strong>Propriété 1.1</strong> — règles de calcul</p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>. Alors, pour tous réels <span class="math inline">\(m, p\)</span> :</p>
+<div class="grille" style="--n:2">
+<div class="cellule">
+<ul>
+<li><p><span class="math inline">\(a^{0} = 1\)</span></p></li>
+<li><p><span class="math inline">\(a^{m + p} = a^{m} \cdot a^{p}\)</span></p></li>
+<li><p><span class="math inline">\(a^{-p} = \frac{1}{a^{p}}\)</span></p></li>
+</ul>
+</div>
+<div class="cellule">
+<ul>
+<li><p><span class="math inline">\((a^{m})^{p} = a^{m p}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{a^{m}}{a^{p}} = a^{m - p}\)</span></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch1-fonctions-exponentie/3-definition-de-la-fonction-exponentielle.html#propriete-1-1">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="propriétés-et-caractéristiques-graphiques" class="level3">
+<h3 class="anchored" data-anchor-id="propriétés-et-caractéristiques-graphiques">Propriétés et caractéristiques graphiques</h3>
+<div id="ess-propriete-1-2" class="theo theo-propriete" data-sorte="propriete" data-num="1.2" data-page="11" data-phys="13">
+<div class="theo-head">
+<p><strong>Propriété 1.2</strong> — caractéristiques de <span class="math inline">\(f(x) = a^{x}\)</span></p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span> et <span class="math inline">\(f(x) = a^{x}\)</span>.</p>
+<div class="grille" style="--n:2">
+<div class="cellule">
+<ul>
+<li><p><span class="math inline">\(\operatorname{dom} f =\)</span> <span class="rep"><span class="math inline">\(\mathbb{R}\)</span></span></p></li>
+<li><p><span class="math inline">\(\operatorname{im} f =\)</span> <span class="rep"><span class="math inline">\(\mathbb{R}^{&gt; 0}\)</span></span></p></li>
+<li><p>racine(s) : <span class="rep">aucune</span></p></li>
+<li><p><span class="math inline">\(G_{f} \cap \text{axe } y\)</span> : <span class="rep"><span class="math inline">\((0, 1)\)</span></span></p></li>
+</ul>
+</div>
+<div class="cellule">
+<ul>
+<li><p><span class="math inline">\(G_{f} \cap \text{axe } x\)</span> : <span class="rep">aucun point</span></p></li>
+<li><p>points sûrs : <span class="rep"><span class="math inline">\((0, 1)\)</span> et <span class="math inline">\((1, a)\)</span></span></p></li>
+<li><p>concavité : <span class="rep">tournée vers le haut</span></p></li>
+<li><p>asymptote : <span class="rep">horizontale <span class="math inline">\(y = 0\)</span></span></p></li>
+</ul>
+</div>
+</div>
+<div class="grille" style="--n:2">
+<div class="cellule">
+<div id="cadre-si-a-1" class="cadre-info">
+<p><strong>si <span class="math inline">\(a &gt; 1\)</span></strong></p>
+<ul>
+<li><span class="math inline">\(f\)</span> est <span class="rep">strictement croissante</span></li>
+<li><span class="math inline">\(\lim\limits_{x \to +\infty} f(x) =\)</span> <span class="rep"><span class="math inline">\(+\infty\)</span></span></li>
+<li><span class="math inline">\(\lim\limits_{x \to -\infty} f(x) =\)</span> <span class="rep"><span class="math inline">\(0\)</span></span></li>
+<li><span class="math inline">\(\text{AH}_{-\infty}\)</span> : <span class="rep"><span class="math inline">\(y = 0\)</span></span></li>
+</ul>
+</div>
+</div>
+<div class="cellule">
+<div id="cadre-si-0-a-1" class="cadre-info">
+<p><strong>si <span class="math inline">\(0 &lt; a &lt; 1\)</span></strong></p>
+<ul>
+<li><span class="math inline">\(f\)</span> est <span class="rep">strictement décroissante</span></li>
+<li><span class="math inline">\(\lim\limits_{x \to +\infty} f(x) =\)</span> <span class="rep"><span class="math inline">\(0\)</span></span></li>
+<li><span class="math inline">\(\lim\limits_{x \to -\infty} f(x) =\)</span> <span class="rep"><span class="math inline">\(+\infty\)</span></span></li>
+<li><span class="math inline">\(\text{AH}_{+\infty} :\)</span> <span class="rep"><span class="math inline">\(y = 0\)</span></span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch1-fonctions-exponentie/4-proprietes-et-caracteristiques-graphique.html#propriete-1-2">↗ dans le cours</a></p>
+</div>
+<div id="ess-propriete-1-3" class="theo theo-propriete" data-sorte="propriete" data-num="1.3" data-page="12" data-phys="14">
+<div class="theo-head">
+<p><strong>Propriété 1.3</strong> — symétrie d’axe <span class="math inline">\(y\)</span></p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>. Comme <span class="math inline">\((\frac{1}{a})^{x} = a^{-x}\)</span>, le graphique de <span class="math inline">\(f(x) = (\frac{1}{a})^{x}\)</span> est le <strong>symétrique</strong> de celui de <span class="math inline">\(g(x) = a^{x}\)</span> par rapport à l’<strong>axe <span class="math inline">\(y\)</span></strong>.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch1-fonctions-exponentie/4-proprietes-et-caracteristiques-graphique.html#propriete-1-3">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="multiples-dune-fonction-exponentielle" class="level3">
+<h3 class="anchored" data-anchor-id="multiples-dune-fonction-exponentielle">Multiples d’une fonction exponentielle</h3>
+<div id="ess-definition-1-4" class="theo theo-definition" data-sorte="definition" data-num="1.4" data-page="12" data-phys="14">
+<div class="theo-head">
+<p><strong>Définition 1.4</strong> — multiple d’une exponentielle</p>
+</div>
+<div class="theo-body">
+<p>Un <strong>multiple d’une fonction exponentielle</strong> est une fonction d’expression</p>
+<p><span class="math display">\[
+f(x) = k \cdot a^{x}, \quad a \in \mathbb{R}^{&gt; 0} \setminus \{1\}, \quad k \in \mathbb{R} \setminus \{0\}.
+\]</span></p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#definition-1-4">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="des-graphes-tous-semblables-vers-un-représentant-privilégié" class="level3">
+<h3 class="anchored" data-anchor-id="des-graphes-tous-semblables-vers-un-représentant-privilégié">Des graphes tous semblables : vers un représentant privilégié</h3>
+<div id="ess-propriete-1-4" class="theo theo-propriete" data-sorte="propriete" data-num="1.4" data-page="20" data-phys="22">
+<div class="theo-head">
+<p><strong>Propriété 1.4</strong> — changement de base</p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>. Il existe un réel <span class="math inline">\(k\)</span> tel que, pour tout réel <span class="math inline">\(x\)</span>,</p>
+<p><span class="math display">\[
+a^{x} = 2^{k x}.
+\]</span></p>
+<p>On peut d’ailleurs remplacer <span class="math inline">\(2\)</span> par n’importe quelle autre base de <span class="math inline">\(\mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch1-fonctions-exponentie/6-des-graphes-tous-semblables-vers.html#propriete-1-4">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="le-nombre-e-et-lexponentielle-népérienne" class="level3">
+<h3 class="anchored" data-anchor-id="le-nombre-e-et-lexponentielle-népérienne">Le nombre <span class="math inline">\(e\)</span> et l’exponentielle népérienne</h3>
+<div id="ess-propriete-1-5" class="theo theo-propriete" data-sorte="propriete" data-num="1.5" data-page="21" data-phys="23">
+<div class="theo-head">
+<p><strong>Propriété 1.5</strong> — dérivée d’une exponentielle</p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>. La fonction <span class="math inline">\(f(x) = a^{x}\)</span> est dérivable sur <span class="math inline">\(\mathbb{R}\)</span> tout entier, et</p>
+<p><span class="math display">\[
+f'(x) = f'(0) \cdot a^{x}.
+\]</span></p>
+<p>Autrement dit, la dérivée d’une exponentielle est un <strong>multiple d’elle-même</strong>.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch1-fonctions-exponentie/7-le-nombre-e-et-lexponentielle.html#propriete-1-5">↗ dans le cours</a></p>
+</div>
+<div id="ess-definition-1-5" class="theo theo-definition" data-sorte="definition" data-num="1.5" data-page="22" data-phys="24">
+<div class="theo-head">
+<p><strong>Définition 1.5</strong> — le nombre <span class="math inline">\(e\)</span></p>
+</div>
+<div class="theo-body">
+<p>Le <strong>nombre d’Euler</strong>, noté <span class="math inline">\(e\)</span>, est défini par</p>
+<p><span class="math display">\[
+e = \lim\limits_{h \to 0} (1 + h)^{1 / h} = 2{,}718 \, 281 \, 828 \ldots
+\]</span></p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch1-fonctions-exponentie/7-le-nombre-e-et-lexponentielle.html#definition-1-5">↗ dans le cours</a></p>
+</div>
+<div id="ess-definition-1-6" class="theo theo-definition" data-sorte="definition" data-num="1.6" data-page="22" data-phys="24">
+<div class="theo-head">
+<p><strong>Définition 1.6</strong> — exponentielle népérienne</p>
+</div>
+<div class="theo-body">
+<p>L’<strong>exponentielle népérienne</strong> est la fonction exponentielle de base <span class="math inline">\(e\)</span> ; on la note <span class="math inline">\(\operatorname{exp}(x) = e^{x}\)</span>.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch1-fonctions-exponentie/7-le-nombre-e-et-lexponentielle.html#definition-1-6">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="résoudre-des-équations-exponentielles-simples" class="level3">
+<h3 class="anchored" data-anchor-id="résoudre-des-équations-exponentielles-simples">Résoudre des équations exponentielles simples</h3>
+<div id="ess-propriete-1-6" class="theo theo-propriete" data-sorte="propriete" data-num="1.6" data-page="23" data-phys="25">
+<div class="theo-head">
+<p><strong>Propriété 1.6</strong> — égaler les exposants</p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>. Alors pour tous réels <span class="math inline">\(u, v\)</span>,</p>
+<p><span class="math display">\[
+a^{u} = a^{v} \quad \Longleftrightarrow \quad u = v.
+\]</span></p>
+<p>En particulier, pour deux fonctions <span class="math inline">\(f\)</span> et <span class="math inline">\(g\)</span>, <span class="math inline">\(a^{f(x)} = a^{g(x)} \Longleftrightarrow f(x) = g(x)\)</span>.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch1-fonctions-exponentie/8-resoudre-des-equations-exponentielles-si.html#propriete-1-6">↗ dans le cours</a></p>
+</div>
+</section>
+</section>
+<section id="chapitre-2-fonctions-logarithmiques" class="level2">
+<h2 class="anchored" data-anchor-id="chapitre-2-fonctions-logarithmiques">Chapitre 2 — Fonctions logarithmiques</h2>
+<section id="du-problème-ex-3-au-logarithme" class="level3">
+<h3 class="anchored" data-anchor-id="du-problème-ex-3-au-logarithme">Du problème <span class="math inline">\(e^{x} = 3\)</span> au logarithme</h3>
+<div id="ess-propriete-2-1" class="theo theo-propriete" data-sorte="propriete" data-num="2.1" data-page="29" data-phys="31">
+<div class="theo-head">
+<p><strong>Propriété 2.1</strong> — les deux compositions et leur domaine</p>
+</div>
+<div class="theo-body">
+<p>Les identités suivantes sont vraies:</p>
+<ul>
+<li><span class="math inline">\(\ln(e^{x}) = x\)</span> pour <strong>tout <span class="math inline">\(x \in \mathbb{R}\)</span></strong>;</li>
+<li><span class="math inline">\(e^{\ln(x)} = x\)</span> pour <strong><span class="math inline">\(x \in \mathbb{R}^{&gt;0}\)</span></strong>.</li>
+</ul>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch2-fonctions-logarithmi/1-du-probleme-e-x-3.html#propriete-2-1">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="définition-du-logarithme-de-base-a" class="level3">
+<h3 class="anchored" data-anchor-id="définition-du-logarithme-de-base-a">Définition du logarithme de base <span class="math inline">\(a\)</span></h3>
+<div id="ess-definition-2-1" class="theo theo-definition" data-sorte="definition" data-num="2.1" data-page="29" data-phys="31">
+<div class="theo-head">
+<p><strong>Définition 2.1</strong> — logarithme de base <span class="math inline">\(a\)</span></p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>. Le <strong>logarithme de base <span class="math inline">\(a\)</span></strong>, noté <span class="math inline">\(\log_{a}\)</span>, est la fonction <strong>réciproque</strong> de l’exponentielle de base <span class="math inline">\(a\)</span> : pour tout <span class="math inline">\(x \in \mathbb{R}^{&gt;0}\)</span> et pour tout <span class="math inline">\(y \in \mathbb{R}\)</span>,</p>
+<p><span class="math display">\[
+\log_{a} (x) = y \quad \Longleftrightarrow \quad a^{y} = x.
+\]</span></p>
+<p>Son domaine est <span class="math inline">\(\mathbb{R}^{&gt; 0}\)</span> : on ne prend le logarithme que d’un nombre strictement positif.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch2-fonctions-logarithmi/2-definition-du-logarithme-de-base.html#definition-2-1">↗ dans le cours</a></p>
+</div>
+<div id="ess-propriete-2-2" class="theo theo-propriete" data-sorte="propriete" data-num="2.2" data-page="30" data-phys="32">
+<div class="theo-head">
+<p><strong>Propriété 2.2</strong> — réciprocité et valeurs remarquables</p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>. Alors :</p>
+<ul>
+<li><span class="math inline">\(\log_{a} (a^{x}) = x\)</span> pour tout <span class="math inline">\(x \in \mathbb{R}\)</span>, et <span class="math inline">\(a^{\log_{a} (x)} = x\)</span> pour tout <span class="math inline">\(x &gt; 0\)</span> ;</li>
+<li><span class="math inline">\(\log_{a} (1) = 0\)</span> (car <span class="math inline">\(a^{0} = 1\)</span>) ; <span class="math inline">\(\log_{a} (a) = 1\)</span> (car <span class="math inline">\(a^{1} = a\)</span>).</li>
+</ul>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch2-fonctions-logarithmi/2-definition-du-logarithme-de-base.html#propriete-2-2">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="propriétés-graphiques-par-déduction" class="level3">
+<h3 class="anchored" data-anchor-id="propriétés-graphiques-par-déduction">Propriétés graphiques, par déduction</h3>
+<div id="ess-propriete-2-3" class="theo theo-propriete" data-sorte="propriete" data-num="2.3" data-page="32" data-phys="34">
+<div class="theo-head">
+<p><strong>Propriété 2.3</strong> — caractéristiques de <span class="math inline">\(f(x) = \log_{a} (x)\)</span></p>
+</div>
+<div class="theo-body">
+<p><em>Déduites</em> ci-dessus, on les rassemble. Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>.</p>
+<div class="grille" style="--n:2">
+<div class="cellule">
+<ul>
+<li><p><span class="math inline">\(\operatorname{dom} f = \mathbb{R}^{&gt; 0}\)</span>, <span class="math inline">\(\operatorname{im} f = \mathbb{R}\)</span></p></li>
+<li><p>racine : <span class="math inline">\(x = 1\)</span> ; <span class="math inline">\(G_{f} \cap \text{axe } x = (1, 0)\)</span></p></li>
+<li><p><span class="math inline">\(G_{f} \cap \text{axe } y = \emptyset\)</span></p></li>
+</ul>
+</div>
+<div class="cellule">
+<ul>
+<li><p>points sûrs : <span class="math inline">\((1, 0)\)</span> et <span class="math inline">\((a, 1)\)</span></p></li>
+<li><p>asymptote <strong>verticale</strong> <span class="math inline">\(x = 0\)</span> ; pas d’asymptote horizontale</p></li>
+<li><p>pas d’ordonnée à l’origine (<span class="math inline">\(0 \notin \operatorname{dom} f\)</span>) ; pas de point d’inflexion</p></li>
+</ul>
+</div>
+</div>
+<div class="grille" style="--n:2">
+<div class="cellule">
+<div id="cadre-si-a-1" class="cadre-info">
+<p><strong>si <span class="math inline">\(a &gt; 1\)</span></strong> : strictement croissante, <strong>concave</strong> ; <span class="math inline">\(\lim\limits_{x \to 0} = -\infty\)</span>, <span class="math inline">\(\lim\limits_{x \to +\infty} = +\infty\)</span>.</p>
+</div>
+</div>
+<div class="cellule">
+<div id="cadre-si-0-a-1" class="cadre-info">
+<p><strong>si <span class="math inline">\(0 &lt; a &lt; 1\)</span></strong> : strictement décroissante, <strong>convexe</strong> ; <span class="math inline">\(\lim\limits_{x \to 0} = +\infty\)</span>, <span class="math inline">\(\lim\limits_{x \to +\infty} = -\infty\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.html#propriete-2-3">↗ dans le cours</a></p>
+</div>
+<div id="ess-propriete-2-4" class="theo theo-propriete" data-sorte="propriete" data-num="2.4" data-page="32" data-phys="34">
+<div class="theo-head">
+<p><strong>Propriété 2.4</strong> — symétrie d’axe <span class="math inline">\(x\)</span></p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>. Comme <span class="math inline">\((\frac{1}{a})^{y} = x \Longleftrightarrow a^{-y} = x\)</span>, on a</p>
+<p><span class="math display">\[
+\log_{1/a} (x) = - \log_{a} (x).
+\]</span></p>
+<p>Le graphique de <span class="math inline">\(\log_{1/a}\)</span> est donc le <strong>symétrique</strong> de celui de <span class="math inline">\(\log_{a}\)</span> par rapport à l’<strong>axe <span class="math inline">\(x\)</span></strong>.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.html#propriete-2-4">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="propriétés-algébriques-à-découvrir" class="level3">
+<h3 class="anchored" data-anchor-id="propriétés-algébriques-à-découvrir">Propriétés algébriques, à découvrir</h3>
+<div id="ess-propriete-2-5" class="theo theo-propriete" data-sorte="propriete" data-num="2.5" data-page="37" data-phys="39">
+<div class="theo-head">
+<p><strong>Propriété 2.5</strong> — logarithme d’un produit</p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span> et <span class="math inline">\(x, y \in \mathbb{R}^{&gt; 0}\)</span>. Alors</p>
+<p><span class="math display">\[
+\log_{a} (x y) = \log_{a} (x) + \log_{a} (y).
+\]</span></p>
+<p><em>(Établie à l’activité ci-dessus.)</em> Le logarithme transforme un <strong>produit en une somme</strong> — exact miroir de l’exponentielle, qui transforme une somme en un produit.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch2-fonctions-logarithmi/4-proprietes-algebriques-a-decouvrir.html#propriete-2-5">↗ dans le cours</a></p>
+</div>
+<div id="ess-propriete-2-6" class="theo theo-propriete" data-sorte="propriete" data-num="2.6" data-page="38" data-phys="40">
+<div class="theo-head">
+<p><strong>Propriété 2.6</strong> — logarithme d’un quotient</p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span> et <span class="math inline">\(x, y \in \mathbb{R}^{&gt; 0}\)</span>. Alors</p>
+<p><span class="math display">\[
+\log_{a} (\frac{x}{y}) = \log_{a} (x) - \log_{a} (y).
+\]</span></p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch2-fonctions-logarithmi/4-proprietes-algebriques-a-decouvrir.html#propriete-2-6">↗ dans le cours</a></p>
+</div>
+<div id="ess-propriete-2-7" class="theo theo-propriete" data-sorte="propriete" data-num="2.7" data-page="38" data-phys="40">
+<div class="theo-head">
+<p><strong>Propriété 2.7</strong> — logarithme d’une puissance</p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>, <span class="math inline">\(x \in \mathbb{R}^{&gt; 0}\)</span> et <span class="math inline">\(p \in \mathbb{R}\)</span>. Alors</p>
+<p><span class="math display">\[
+\log_{a} (x^{p}) = p \cdot \log_{a} (x).
+\]</span></p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch2-fonctions-logarithmi/4-proprietes-algebriques-a-decouvrir.html#propriete-2-7">↗ dans le cours</a></p>
+</div>
+<div id="ess-propriete-2-8" class="theo theo-propriete" data-sorte="propriete" data-num="2.8" data-page="39" data-phys="41">
+<div class="theo-head">
+<p><strong>Propriété 2.8</strong> — changement de base</p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a, b \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span> et <span class="math inline">\(x \in \mathbb{R}^{&gt; 0}\)</span>. Alors</p>
+<p><span class="math display">\[
+\log_{a} (x) = \frac{\log_{b} (x)}{\log_{b} (a)}.
+\]</span></p>
+<p>En particulier, avec la calculatrice : <span class="math inline">\(\log_{a} (x) = \frac{\ln x}{\ln a} = \frac{\log x}{\log a}\)</span>.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch2-fonctions-logarithmi/4-proprietes-algebriques-a-decouvrir.html#propriete-2-8">↗ dans le cours</a></p>
+</div>
+</section>
+</section>
+<section id="chapitre-3-dérivées-et-limites" class="level2">
+<h2 class="anchored" data-anchor-id="chapitre-3-dérivées-et-limites">Chapitre 3 — Dérivées et limites</h2>
+<section id="dériver-lexponentielle" class="level3">
+<h3 class="anchored" data-anchor-id="dériver-lexponentielle">Dériver l’exponentielle</h3>
+<div id="ess-propriete-3-1" class="theo theo-propriete" data-sorte="propriete" data-num="3.1" data-page="46" data-phys="48">
+<div class="theo-head">
+<p><strong>Propriété 3.1</strong> — dérivée de l’exponentielle népérienne</p>
+</div>
+<div class="theo-body">
+<p>La fonction <span class="math inline">\(e^{x}\)</span> est dérivable sur <span class="math inline">\(\mathbb{R}\)</span> et <strong>égale à sa propre dérivée</strong> :</p>
+<p><span class="math display">\[
+(e^{x})' = e^{x}.
+\]</span></p>
+<p>C’est la seule fonction (à un facteur multiplicatif près) qui possède cette propriété.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch3-derivees-et-limites/1-deriver-lexponentielle.html#propriete-3-1">↗ dans le cours</a></p>
+</div>
+<div id="ess-propriete-3-2" class="theo theo-propriete" data-sorte="propriete" data-num="3.2" data-page="46" data-phys="48">
+<div class="theo-head">
+<p><strong>Propriété 3.2</strong> — dérivée d’une exponentielle composée</p>
+</div>
+<div class="theo-body">
+<p>Si <span class="math inline">\(u\)</span> est dérivable, alors</p>
+<p><span class="math display">\[
+(e^{u(x)})' = u'(x) \cdot e^{u(x)}.
+\]</span></p>
+<p>On dérive l’exposant et on recopie l’exponentielle.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch3-derivees-et-limites/1-deriver-lexponentielle.html#propriete-3-2">↗ dans le cours</a></p>
+</div>
+<div id="ess-propriete-3-3" class="theo theo-propriete" data-sorte="propriete" data-num="3.3" data-page="47" data-phys="49">
+<div class="theo-head">
+<p><strong>Propriété 3.3</strong> — dérivée d’une exponentielle de base <span class="math inline">\(a\)</span></p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>. Alors <span class="math inline">\(a^{x}\)</span> est dérivable sur <span class="math inline">\(\mathbb{R}\)</span> et</p>
+<p><span class="math display">\[
+(a^{x})' = a^{x} \cdot \ln a, \quad \text{et plus généralement} \quad (a^{u(x)})' = u'(x) \cdot a^{u(x)} \cdot \ln a.
+\]</span></p>
+<p>La constante <span class="math inline">\(\ln a\)</span> mesure exactement la pente <span class="math inline">\(f'(0)\)</span> laissée en suspens au chapitre 1.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch3-derivees-et-limites/1-deriver-lexponentielle.html#propriete-3-3">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="dériver-le-logarithme" class="level3">
+<h3 class="anchored" data-anchor-id="dériver-le-logarithme">Dériver le logarithme</h3>
+<div id="ess-propriete-3-4" class="theo theo-propriete" data-sorte="propriete" data-num="3.4" data-page="48" data-phys="50">
+<div class="theo-head">
+<p><strong>Propriété 3.4</strong> — dérivée du logarithme népérien</p>
+</div>
+<div class="theo-body">
+<p>La fonction <span class="math inline">\(\ln\)</span> est dérivable sur <span class="math inline">\(\mathbb{R}^{&gt; 0}\)</span> et</p>
+<p><span class="math display">\[
+(\ln x)' = \frac{1}{x}.
+\]</span></p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch3-derivees-et-limites/2-deriver-le-logarithme.html#propriete-3-4">↗ dans le cours</a></p>
+</div>
+<div id="ess-propriete-3-5" class="theo theo-propriete" data-sorte="propriete" data-num="3.5" data-page="48" data-phys="50">
+<div class="theo-head">
+<p><strong>Propriété 3.5</strong> — logarithme composé, et base quelconque</p>
+</div>
+<div class="theo-body">
+<p>Si <span class="math inline">\(u\)</span> est dérivable et strictement positive,</p>
+<p><span class="math display">\[
+(\ln(u(x)))' = \frac{u'(x)}{u(x)}.
+\]</span></p>
+<p>Pour une base <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>, le changement de base <span class="math inline">\(\log_{a} (x) = \frac{\ln x}{\ln a}\)</span> donne aussitôt</p>
+<p><span class="math display">\[
+(\log_{a} (x))' = \frac{1}{x \ln a}.
+\]</span></p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch3-derivees-et-limites/2-deriver-le-logarithme.html#propriete-3-5">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="limites-de-base" class="level3">
+<h3 class="anchored" data-anchor-id="limites-de-base">Limites de base</h3>
+<div id="ess-propriete-3-6" class="theo theo-propriete" data-sorte="propriete" data-num="3.6" data-page="50" data-phys="52">
+<div class="theo-head">
+<p><strong>Propriété 3.6</strong> — limites de référence</p>
+</div>
+<div class="theo-body">
+<div class="grille" style="--n:2">
+<div class="cellule">
+<div id="cadre-exponentielle-a-1" class="cadre-info">
+<p><strong>Exponentielle, <span class="math inline">\(a &gt; 1\)</span></strong> : <span class="math inline">\(\lim\limits_{x \to +\infty} a^{x} = +\infty\)</span>, <span class="math inline">\(\lim\limits_{x \to -\infty} a^{x} = 0\)</span>. <strong>Logarithme, <span class="math inline">\(a &gt; 1\)</span></strong> : <span class="math inline">\(\lim\limits_{x \to 0^{+}} \log_{a} x = -\infty\)</span>, <span class="math inline">\(\lim\limits_{x \to +\infty} \log_{a} x = +\infty\)</span>.</p>
+</div>
+</div>
+<div class="cellule">
+<div id="cadre-exponentielle-0-a-1" class="cadre-info">
+<p><strong>Exponentielle, <span class="math inline">\(0 &lt; a &lt; 1\)</span></strong> : <span class="math inline">\(\lim\limits_{x \to +\infty} a^{x} = 0\)</span>, <span class="math inline">\(\lim\limits_{x \to -\infty} a^{x} = +\infty\)</span>. <strong>Logarithme, <span class="math inline">\(0 &lt; a &lt; 1\)</span></strong> : <span class="math inline">\(\lim\limits_{x \to 0^{+}} \log_{a} x = +\infty\)</span>, <span class="math inline">\(\lim\limits_{x \to +\infty} \log_{a} x = -\infty\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch3-derivees-et-limites/3-limites-de-base.html#propriete-3-6">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="croissance-comparée-et-théorème-de-lhospital" class="level3">
+<h3 class="anchored" data-anchor-id="croissance-comparée-et-théorème-de-lhospital">Croissance comparée et théorème de l’Hospital</h3>
+<div id="ess-propriete-3-7" class="theo theo-propriete" data-sorte="propriete" data-num="3.7" data-page="52" data-phys="54">
+<div class="theo-head">
+<p><strong>Propriété 3.7</strong> — théorème de l’Hospital</p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(f\)</span> et <span class="math inline">\(g\)</span> deux fonctions dérivables et <span class="math inline">\(a \in \mathbb{R} \cup \{+\infty, -\infty\}\)</span>. On suppose que <span class="math inline">\(f / g\)</span> présente en <span class="math inline">\(a\)</span> une forme indéterminée, c’est-à-dire :</p>
+<ul>
+<li>soit <span class="math inline">\(\lim\limits_{x \to a} f(x) = 0\)</span> <strong>et</strong> <span class="math inline">\(\lim\limits_{x \to a} g(x) = 0\)</span> (forme <span class="math inline">\(\frac{0}{0}\)</span>) ;</li>
+<li>soit <span class="math inline">\(\lim\limits_{x \to a} g(x) = \pm \infty\)</span> (forme <span class="math inline">\(\frac{\infty}{\infty}\)</span>).</li>
+</ul>
+<p>On suppose de plus que <span class="math inline">\(g'\)</span> ne s’annule qu’en un nombre <strong>fini</strong> de points au voisinage de <span class="math inline">\(a\)</span> — de sorte que le quotient <span class="math inline">\(f' / g'\)</span> ait bien un sens près de <span class="math inline">\(a\)</span>. Alors, à condition que la limite de droite existe,</p>
+<p><span class="math display">\[
+\lim\limits_{x \to a} \frac{f(x)}{g(x)} = \lim\limits_{x \to a} \frac{f'(x)}{g'(x)}.
+\]</span></p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.html#propriete-3-7">↗ dans le cours</a></p>
+</div>
+</section>
+</section>
+<section id="chapitre-4-échelles-logarithmiques" class="level2">
+<h2 class="anchored" data-anchor-id="chapitre-4-échelles-logarithmiques">Chapitre 4 — Échelles logarithmiques</h2>
+<section id="repère-semi-logarithmique-la-signature-de-lexponentielle" class="level3">
+<h3 class="anchored" data-anchor-id="repère-semi-logarithmique-la-signature-de-lexponentielle">Repère semi-logarithmique : la signature de l’exponentielle</h3>
+<div id="ess-propriete-4-1" class="theo theo-propriete" data-sorte="propriete" data-num="4.1" data-page="57" data-phys="59">
+<div class="theo-head">
+<p><strong>Propriété 4.1</strong> — semi-log : droite <span class="math inline">\(\Longleftrightarrow\)</span> exponentielle</p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(y = C \cdot a^{x}\)</span> avec <span class="math inline">\(C &gt; 0\)</span> et <span class="math inline">\(a &gt; 0\)</span>. En prenant le logarithme décimal des deux membres :</p>
+<p><span class="math display">\[
+\log y = \log(C \cdot a^{x}) = \log C + \log(a^{x}) = \underbrace{(\log a)}_{\text{pente}} \cdot x + \underbrace{(\log C)}_{\text{ord. à l'origine}}.
+\]</span></p>
+<p>La quantité <span class="math inline">\(\log y\)</span> est donc une fonction <strong>affine</strong> de <span class="math inline">\(x\)</span>. Sur un repère semi-logarithmique (où l’axe vertical porte <span class="math inline">\(\log y\)</span>), le graphique de <span class="math inline">\(y = C \cdot a^{x}\)</span> est une <strong>droite</strong> :</p>
+<ul>
+<li>sa <strong>pente</strong> vaut <span class="math inline">\(\log a\)</span> (on en déduit la base <span class="math inline">\(a = 10^{\text{pente}}\)</span>) ;</li>
+<li>son <strong>ordonnée à l’origine</strong> vaut <span class="math inline">\(\log C\)</span> (on en déduit <span class="math inline">\(C = 10^{\text{ord.}}\)</span>).</li>
+</ul>
+<p>Réciproquement, si des données s’alignent sur un repère semi-log, elles suivent un modèle exponentiel.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch4-echelles-logarithmiq/2-repere-semi-logarithmique-la-signature.html#propriete-4-1">↗ dans le cours</a></p>
+</div>
+</section>
+<section id="repère-log-log-la-signature-dune-puissance" class="level3">
+<h3 class="anchored" data-anchor-id="repère-log-log-la-signature-dune-puissance">Repère log-log : la signature d’une puissance</h3>
+<div id="ess-propriete-4-2" class="theo theo-propriete" data-sorte="propriete" data-num="4.2" data-page="58" data-phys="60">
+<div class="theo-head">
+<p><strong>Propriété 4.2</strong> — log-log : droite <span class="math inline">\(\Longleftrightarrow\)</span> puissance</p>
+</div>
+<div class="theo-body">
+<p>Soit <span class="math inline">\(y = C \cdot x^{p}\)</span> avec <span class="math inline">\(C &gt; 0\)</span> et <span class="math inline">\(x &gt; 0\)</span>. En prenant le logarithme décimal des deux membres :</p>
+<p><span class="math display">\[
+\log y = \log(C \cdot x^{p}) = \log C + p \log x.
+\]</span></p>
+<p>En posant <span class="math inline">\(Y = \log y\)</span> et <span class="math inline">\(X = \log x\)</span> (les positions sur les deux axes), on obtient</p>
+<p><span class="math display">\[
+Y = \underbrace{p}_{\text{pente}} \cdot X + \underbrace{(\log C)}_{\text{ord. à l'origine}} :
+\]</span></p>
+<p>une relation <strong>affine</strong> entre <span class="math inline">\(\log x\)</span> et <span class="math inline">\(\log y\)</span>. Sur un repère log-log, le graphique de <span class="math inline">\(y = C \cdot x^{p}\)</span> est donc une <strong>droite</strong> :</p>
+<ul>
+<li>sa <strong>pente</strong> vaut <strong>l’exposant <span class="math inline">\(p\)</span></strong> lui-même ;</li>
+<li>son ordonnée à l’origine (position à <span class="math inline">\(x = 1\)</span>, car <span class="math inline">\(\log 1 = 0\)</span>) vaut <span class="math inline">\(\log C\)</span>.</li>
+</ul>
+<p>Réciproquement, des données alignées sur un repère log-log suivent une loi de puissance.</p>
+</div>
+</div>
+<div class="ess-lien">
+<p><a href="./ch4-echelles-logarithmiq/3-repere-log-log-la-signature.html#propriete-4-2">↗ dans le cours</a></p>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1089,10 +1692,13 @@ window.TYPWEB = {"cle": "exp-log", "pdf": "exp-log.pdf", "depot": "https://https
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./ch4-echelles-logarithmiq/5-pour-aller-plus-loin-les.html" class="pagination-link" aria-label="Pour aller plus loin : les échelles logarithmiques en sciences">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Pour aller plus loin : les échelles logarithmiques en sciences</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./objectifs.html" class="pagination-link" aria-label="Objectifs">
-        <span class="nav-page-text"><span class="chapter-title">Objectifs</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./autoeval.html" class="pagination-link" aria-label="S'autoévaluer">
+        <span class="nav-page-text"><span class="chapter-title">S’autoévaluer</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
