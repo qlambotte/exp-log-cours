@@ -6,6 +6,9 @@ sous-titre = "Cours & exercices — 6e, 4 périodes (6UAA4)"
 auteur     = "Quentin Lambotte"
 annee      = "6e"
 uaa        = "6UAA4"
+depot      = "https://https://github.com/qlambotte/exp-log-cours"                   # ex. "https://https://github.com/qlambotte/stats2v-cours" (bouton GitHub)
+site-url   = "https://qlambotte.github.io/exp-log-cours/"                   # ex. "https://qlambotte.github.io/stats2v-cours/"
+portail    = "https://qlambotte.github.io/6e.html" 
 
 [notes]
 dossier    = "../notes"
