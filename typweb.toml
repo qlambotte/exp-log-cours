@@ -19,6 +19,7 @@ objectifs  = "objectifs-exp.typ"
 # (numéros S1.1, S1.2… comme sur la fiche imprimée) ; le PDF du cours ne change pas.
 [[notes.complements]]
 fichier  = "fiches/exercices-supp-ch1.typ"
+id       = "6UAA4.exercices-supplementaires"
 chapitre = 1
 titre    = "Exercices supplémentaires"
 label    = "sec-exos-suppl-ch1"
