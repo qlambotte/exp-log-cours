@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-73b0ff3878a4e6fc3716dc69a6aaefa3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4f25214d2c0aa817e35f237ded488e3e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-872cc72bb35cecc74d1b4331fc5accee.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -353,6 +353,11 @@ window.Quarto = {
   <a href="../nouveautes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Quoi de neuf ?</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mode-emploi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Mode d’emploi</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -395,7 +400,7 @@ window.Quarto = {
 <section id="la-brique-de-base-ex-ex" class="level2">
 <h2 class="anchored" data-anchor-id="la-brique-de-base-ex-ex">La brique de base : <span class="math inline">\((e^{x})' = e^{x}\)</span></h2>
 <p>Le nombre <span class="math inline">\(e\)</span> a été défini au chapitre 1 comme la base pour laquelle la tangente à la courbe au point <span class="math inline">\((0, 1)\)</span> a pour pente <strong>exactement <span class="math inline">\(1\)</span></strong>. C’est précisément ce qui rend l’exponentielle népérienne si commode à dériver.</p>
-<div id="activite-3-1" class="theo theo-activite" data-sorte="activite" data-num="3.1" data-page="45" data-phys="47">
+<div id="activite-3-1" class="theo theo-activite" data-sorte="activite" data-num="3.1" data-page="50" data-phys="52" data-id="6UAA4.lire-pente" data-type="activite" data-tags="">
 <div class="theo-head">
 <p><strong>Activité 3.1</strong> — lire la pente en <span class="math inline">\((0{,}1)\)</span></p>
 </div>
@@ -404,21 +409,18 @@ window.Quarto = {
 <div class="ia" data-ia="graphe" data-cfg="{&quot;xmin&quot;: -2.5, &quot;xmax&quot;: 2.5, &quot;ymin&quot;: -1.0, &quot;ymax&quot;: 7.0, &quot;w&quot;: 620, &quot;h&quot;: 364, &quot;xpas&quot;: 1.0, &quot;ypas&quot;: 1.0, &quot;xlabel&quot;: &quot;x&quot;, &quot;ylabel&quot;: &quot;y&quot;, &quot;courbes&quot;: [{&quot;couleur&quot;: &quot;#c1002a&quot;, &quot;pointille&quot;: false, &quot;ep&quot;: 1.3, &quot;f&quot;: {&quot;js&quot;: &quot;Math.exp(x)&quot;}}, {&quot;couleur&quot;: &quot;#6d3bbf&quot;, &quot;pointille&quot;: true, &quot;ep&quot;: 1.0, &quot;f&quot;: {&quot;js&quot;: &quot;(1.0 + 1.0 * (x - 0.0))&quot;}}], &quot;points&quot;: [{&quot;x&quot;: 0.0, &quot;y&quot;: 1.0}]}"></div>
 <ol type="a">
 <li><p>Pente lue au point <span class="math inline">\((0, 1)\)</span> : <span class="math inline">\(f'(0) = \class{rep}{1}\)</span>.</p></li>
-<li><p>C’est la définition même de <span class="math inline">\(e\)</span> : la base telle que <span class="math inline">\(f'(0) = 1\)</span>. Pour toute autre base, cette pente vaut autre chose — on le précisera au § suivant.</p></li>
+<li><p>Écris une équation cartésiennte de la tangente: <span class="rep"><span class="math inline">\(y=x+1\)</span></span>.</p></li>
 </ol>
 </div>
 </div>
 <p>Au chapitre 1, on a établi que la dérivée d’une exponentielle est <em>proportionnelle</em> à elle-même : <span class="math inline">\((a^{x})' = f'(0) \cdot a^{x}\)</span>. Pour la base <span class="math inline">\(e\)</span>, comme <span class="math inline">\(f'(0) = 1\)</span>, cette proportion vaut <span class="math inline">\(1\)</span>.</p>
-<div id="propriete-3-1" class="theo theo-propriete" data-sorte="propriete" data-num="3.1" data-page="46" data-phys="48">
+<div id="propriete-3-1" class="theo theo-propriete" data-sorte="propriete" data-num="3.1" data-page="50" data-phys="52" data-id="6UAA4.derivee-exponentielle-neperienne" data-type="propriete" data-tags="">
 <div class="theo-head">
 <p><strong>Propriété 3.1</strong> — dérivée de l’exponentielle népérienne</p>
 </div>
 <div class="theo-body">
-<p>La fonction <span class="math inline">\(e^{x}\)</span> est dérivable sur <span class="math inline">\(\mathbb{R}\)</span> et <strong>égale à sa propre dérivée</strong> :</p>
-<p><span class="math display">\[
-(e^{x})' = e^{x}.
-\]</span></p>
-<p>C’est la seule fonction (à un facteur multiplicatif près) qui possède cette propriété.</p>
+<p>La fonction <span class="math inline">\(e^{x}\)</span> est dérivable sur <span class="math inline">\(\mathbb{R}\)</span> et <strong>égale à sa propre dérivée</strong> : <span class="math inline">\((e^{x})' = e^{x}.\)</span></p>
+<p>C’est la seule fonction exponentielle qui possède cette propriété.</p>
 </div>
 </div>
 <div class="ia" data-ia="tangente" data-cfg="{&quot;f&quot;: {&quot;js&quot;: &quot;Math.exp(x)&quot;}, &quot;xmin&quot;: -2.5, &quot;xmax&quot;: 2.5, &quot;ymin&quot;: -1.0, &quot;ymax&quot;: 7.0, &quot;a&quot;: 0.0, &quot;secante&quot;: false}"></div>
@@ -429,19 +431,15 @@ window.Quarto = {
 <section id="composer-eux" class="level2">
 <h2 class="anchored" data-anchor-id="composer-eux">Composer : <span class="math inline">\((e^{u(x)})'\)</span></h2>
 <p>En pratique, l’exposant est rarement <span class="math inline">\(x\)</span> tout seul : c’est une expression <span class="math inline">\(u(x)\)</span>. La <strong>règle de composition</strong> (dérivée d’une fonction composée, vue en 5<sup>e</sup>) s’applique alors directement, puisque la dérivée « extérieure » de <span class="math inline">\(e^{u}\)</span> est <span class="math inline">\(e^{u}\)</span> elle-même.</p>
-<div id="propriete-3-2" class="theo theo-propriete" data-sorte="propriete" data-num="3.2" data-page="46" data-phys="48">
+<div id="propriete-3-2" class="theo theo-propriete" data-sorte="propriete" data-num="3.2" data-page="50" data-phys="52" data-id="6UAA4.derivee-exponentielle-composee" data-type="propriete" data-tags="">
 <div class="theo-head">
 <p><strong>Propriété 3.2</strong> — dérivée d’une exponentielle composée</p>
 </div>
 <div class="theo-body">
-<p>Si <span class="math inline">\(u\)</span> est dérivable, alors</p>
-<p><span class="math display">\[
-(e^{u(x)})' = u'(x) \cdot e^{u(x)}.
-\]</span></p>
-<p>On dérive l’exposant et on recopie l’exponentielle.</p>
+<p>Si <span class="math inline">\(u\)</span> est dérivable, alors <span class="math inline">\((e^{u(x)})' = u'(x) \cdot e^{u(x)}.\)</span></p>
 </div>
 </div>
-<div id="exemple-3-1" class="theo theo-exemple" data-sorte="exemple" data-num="3.1" data-page="46" data-phys="48">
+<div id="exemple-3-1" class="theo theo-exemple" data-sorte="exemple" data-num="3.1" data-page="50" data-phys="52" data-id="6UAA4.trois-derivees-composees" data-type="exemple" data-tags="">
 <div class="theo-head">
 <p><strong>Exemple 3.1</strong> — trois dérivées composées</p>
 </div>
@@ -449,15 +447,15 @@ window.Quarto = {
 <div class="grille" style="--n:3">
 <div class="cellule">
 <p><span class="math inline">\((e^{3 x})' = 3 e^{3 x}\)</span><br>
-<span style="color:#6a737d">(<span class="math inline">\(u = 3x\)</span>, <span class="math inline">\(u' = 3\)</span>)</span></p>
+<span style="color:#6a737d">(<span class="math inline">\(u(x) = 3x\)</span>, <span class="math inline">\(u'(x) = 3\)</span>)</span></p>
 </div>
 <div class="cellule">
 <p><span class="math inline">\((e^{x^{2}})' = 2 x \cdot e^{x^{2}}\)</span><br>
-<span style="color:#6a737d">(<span class="math inline">\(u = x^{2}\)</span>, <span class="math inline">\(u' = 2x\)</span>)</span></p>
+<span style="color:#6a737d">(<span class="math inline">\(u(x) = x^{2}\)</span>, <span class="math inline">\(u'(x) = 2x\)</span>)</span></p>
 </div>
 <div class="cellule">
 <p><span class="math inline">\((e^{-x})' = - e^{-x}\)</span><br>
-<span style="color:#6a737d">(<span class="math inline">\(u = -x\)</span>, <span class="math inline">\(u' = -1\)</span>)</span></p>
+<span style="color:#6a737d">(<span class="math inline">\(u(x) = -x\)</span>, <span class="math inline">\(u' (x)= -1\)</span>)</span></p>
 </div>
 </div>
 </div>
@@ -466,45 +464,36 @@ window.Quarto = {
 <section id="une-base-quelconque-ax-ax-ln-a" class="level2">
 <h2 class="anchored" data-anchor-id="une-base-quelconque-ax-ax-ln-a">Une base quelconque : <span class="math inline">\((a^{x})' = a^{x} \ln a\)</span></h2>
 <p>Que vaut la fameuse pente <span class="math inline">\(f'(0)\)</span> pour une base <span class="math inline">\(a\)</span> autre que <span class="math inline">\(e\)</span> ? La réponse, promise au chapitre 1, se lit en ramenant <span class="math inline">\(a^{x}\)</span> à l’exponentielle népérienne.</p>
-<div id="activite-3-2" class="theo theo-activite" data-sorte="activite" data-num="3.2" data-page="47" data-phys="49">
+<div id="activite-3-2" class="theo theo-activite" data-sorte="activite" data-num="3.2" data-page="51" data-phys="53" data-id="6UAA4.ramener-base" data-type="activite" data-tags="">
 <div class="theo-head">
 <p><strong>Activité 3.2</strong> — ramener <span class="math inline">\(a^{x}\)</span> à la base <span class="math inline">\(e\)</span></p>
 </div>
 <div class="theo-body">
-<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>.</p>
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>. Posons <span class="math inline">\(f(x)=a^{x}\)</span>.</p>
 <p><strong>(1) Réécrire.</strong> Par réciprocité, <span class="math inline">\(a = e^{\ln a}\)</span>. Donc, avec la propriété de la puissance,</p>
 <p><span class="math display">\[
 a^{x} = (e^{\ln a})^{x} = \class{rep}{e^{x \ln a}}.
 \]</span></p>
-<p><strong>(2) Dériver</strong> cette exponentielle composée (exposant <span class="math inline">\(u = x \ln a\)</span>, où <span class="math inline">\(\ln a\)</span> est une constante, donc <span class="math inline">\(u' = \ln a\)</span>) :</p>
+<p><strong>(2) Dériver</strong> cette exponentielle composée (exposant <span class="math inline">\(u(x) = x \ln a\)</span>, où <span class="math inline">\(\ln a\)</span> est une constante, donc <span class="math inline">\(u'(x) = \ln a\)</span>) :</p>
 <p><span class="math display">\[
-(a^{x})' = (e^{x \ln a})' = \class{rep}{\ln a \cdot e^{x \ln a}} = a^{x} \ln a.
+f'(x)=(a^{x})' = (e^{x \ln a})' = \class{rep}{\ln a \cdot e^{x \ln a}} = a^{x} \ln a.
 \]</span></p>
 <p><strong>(3) Conclure sur la pente.</strong> En <span class="math inline">\(x = 0\)</span> : <span class="math inline">\(f'(0) = a^{0} \ln a = \class{rep}{\ln a}\)</span>. La pente à l’origine d’une exponentielle de base <span class="math inline">\(a\)</span> est donc <span class="math inline">\(\ln a\)</span> — et elle vaut bien <span class="math inline">\(1\)</span> pour <span class="math inline">\(a = e\)</span>, puisque <span class="math inline">\(\ln e = 1\)</span>.</p>
 </div>
 </div>
-<div id="propriete-3-3" class="theo theo-propriete" data-sorte="propriete" data-num="3.3" data-page="47" data-phys="49">
+<div id="propriete-3-3" class="theo theo-propriete" data-sorte="propriete" data-num="3.3" data-page="51" data-phys="53" data-id="6UAA4.derivee-exponentielle-base" data-type="propriete" data-tags="">
 <div class="theo-head">
 <p><strong>Propriété 3.3</strong> — dérivée d’une exponentielle de base <span class="math inline">\(a\)</span></p>
 </div>
 <div class="theo-body">
-<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span>. Alors <span class="math inline">\(a^{x}\)</span> est dérivable sur <span class="math inline">\(\mathbb{R}\)</span> et</p>
+<p>Soit <span class="math inline">\(a \in \mathbb{R}^{&gt; 0} \setminus \{1\}\)</span> et <span class="math inline">\(u\)</span> une fonction dérivable. Alors <span class="math inline">\(a^{x}\)</span> est dérivable sur <span class="math inline">\(\mathbb{R}\)</span> et</p>
 <p><span class="math display">\[
 (a^{x})' = a^{x} \cdot \ln a, \quad \text{et plus généralement} \quad (a^{u(x)})' = u'(x) \cdot a^{u(x)} \cdot \ln a.
 \]</span></p>
 <p>La constante <span class="math inline">\(\ln a\)</span> mesure exactement la pente <span class="math inline">\(f'(0)\)</span> laissée en suspens au chapitre 1.</p>
 </div>
 </div>
-<div id="remarque-3-1" class="theo theo-remarque" data-sorte="remarque" data-num="3.1" data-page="47" data-phys="49">
-<div class="theo-head">
-<p><strong>Remarque 3.1</strong></p>
-</div>
-<div class="theo-body">
-<p>Ceci explique pourquoi <span class="math inline">\(e\)</span> est la base « naturelle » du calcul différentiel : c’est la seule pour laquelle le facteur <span class="math inline">\(\ln a\)</span> disparaît (car <span class="math inline">\(\ln e = 1\)</span>). Travailler avec <span class="math inline">\(e^{x}\)</span> évite de traîner cette constante dans tous les calculs.</p>
-</div>
-</div>
-<p>Avant les séries denses, un exemple qui combine les règles connues (produit, quotient) avec les briques nouvelles.</p>
-<div id="exemple-3-2" class="theo theo-exemple" data-sorte="exemple" data-num="3.2" data-page="47" data-phys="49">
+<div id="exemple-3-2" class="theo theo-exemple" data-sorte="exemple" data-num="3.2" data-page="51" data-phys="53" data-id="6UAA4.combiner-regles" data-type="exemple" data-tags="">
 <div class="theo-head">
 <p><strong>Exemple 3.2</strong> — combiner les règles</p>
 </div>
@@ -524,7 +513,7 @@ a^{x} = (e^{\ln a})^{x} = \class{rep}{e^{x \ln a}}.
 </div>
 </div>
 </div>
-<div id="exercice-3-1" class="exo" data-sorte="exercice" data-num="3.1" data-page="47" data-phys="49">
+<div id="exercice-3-1" class="exo" data-sorte="exercice" data-num="3.1" data-page="51" data-phys="53" data-id="6UAA4.ex.044" data-type="exercice" data-tags="">
 <div class="exo-tete">
 <p><span class="exo-titre">✎ Exercice 3.1</span> <span class="exo-meta"><span class="exo-comp">A7</span> ★☆☆</span></p>
 </div>
@@ -649,13 +638,11 @@ a^{x} = (e^{\ln a})^{x} = \class{rep}{e^{x \ln a}}.
 })();
 </script>
 <script>
-// Trois outils à côté du titre (comme « bookup ») : GitHub · Téléchargement · Thème clair/sombre.
+// Outils à côté du titre : Téléchargement · Thème clair/sombre (plus de lien GitHub : P0, 2026-10).
 (function () {
-  var GITHUB_URL = "https://https://github.com/qlambotte/exp-log-cours";   // [cours] depot de typweb.toml
 
   var SVG = {
     maison: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.2 1 7.1l.9 1.1L3 7.3V14a1 1 0 0 0 1 1h3v-4h2v4h3a1 1 0 0 0 1-1V7.3l1.1.9.9-1.1L8 1.2z"/></svg>',
-    github: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>',
     download: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1a.75.75 0 0 1 .75.75v6.44l1.97-1.97a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 1.06-1.06l1.97 1.97V1.75A.75.75 0 0 1 8 1zM2.75 12a.75.75 0 0 1 .75.75v.75a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-.75a.75.75 0 0 1 1.5 0v.75A2 2 0 0 1 12 15.5H4a2 2 0 0 1-2-2v-.75a.75.75 0 0 1 .75-.75z"/></svg>',
     sun: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 4.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM8 0a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1A.75.75 0 0 1 8 0zm0 13a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1A.75.75 0 0 1 8 13zM16 8a.75.75 0 0 1-.75.75h-1a.75.75 0 0 1 0-1.5h1A.75.75 0 0 1 16 8zM3 8a.75.75 0 0 1-.75.75h-1a.75.75 0 0 1 0-1.5h1A.75.75 0 0 1 3 8zm10.66-5.66a.75.75 0 0 1 0 1.06l-.7.7a.75.75 0 1 1-1.06-1.06l.7-.7a.75.75 0 0 1 1.06 0zM4.1 11.9a.75.75 0 0 1 0 1.06l-.7.7a.75.75 0 0 1-1.06-1.06l.7-.7a.75.75 0 0 1 1.06 0zm9.56 1.76a.75.75 0 0 1-1.06 0l-.7-.7a.75.75 0 1 1 1.06-1.06l.7.7a.75.75 0 0 1 0 1.06zM4.1 4.1a.75.75 0 0 1-1.06 0l-.7-.7a.75.75 0 0 1 1.06-1.06l.7.7a.75.75 0 0 1 0 1.06z"/></svg>',
     moon: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278z"/></svg>'
@@ -681,12 +668,6 @@ a^{x} = (e^{\ln a})^{x} = \class{rep}{e^{x \ln a}}.
     }
     if (host.dataset.imsvTools) return;
     host.dataset.imsvTools = '1';
-
-    // 1) GitHub
-    var gh = makeTool('a', '', SVG.github, 'Code source (GitHub)');
-    gh.setAttribute('href', GITHUB_URL);
-    gh.setAttribute('target', '_blank');
-    gh.setAttribute('rel', 'noopener');
 
     // 2) Téléchargement des PDF du cours : liste fournie par typweb
     //    (window.TYPWEB.pdfs, réglée dans [pdf] de typweb.toml) ; à défaut,
@@ -753,9 +734,14 @@ a^{x} = (e^{\ln a})^{x} = \class{rep}{e^{x \ln a}}.
       home.setAttribute('href', portail);
       host.appendChild(home);
     }
-    if (GITHUB_URL) host.appendChild(gh);
     if (dlWrap) host.appendChild(dlWrap);
     host.appendChild(themeBtn);
+    // 4) Mode d'emploi du site (page générée par typweb)
+    if ((window.TYPWEB || {}).modeEmploi) {
+      var aide = makeTool('a', 'imsv-aide', '<b aria-hidden="true">?</b>', 'Mode d’emploi du site');
+      aide.setAttribute('href', off + 'mode-emploi.html');
+      host.appendChild(aide);
+    }
   }
 
   // « Aa » (styles à l'essai) et crayon d'annotation : sur grand écran, à côté
@@ -799,7 +785,7 @@ a^{x} = (e^{\ln a})^{x} = \class{rep}{e^{x \ln a}}.
 <!-- GÉNÉRÉ par typweb — ne pas éditer -->
 <script>
 /* Réglages du cours (typweb.toml) */
-window.TYPWEB = {"cle": "exp-log", "pdf": "exp-log.pdf", "depot": "https://https://github.com/qlambotte/exp-log-cours", "pdfs": [{"titre": "Cours — version élève", "detail": "réponses à compléter", "fichier": "exp-log.pdf"}, {"titre": "Cours — avec le corrigé", "detail": "réponses en bleu", "fichier": "exp-log-corrige.pdf"}, {"titre": "Exercices supplémentaires (ch. 1)", "detail": "à compléter", "fichier": "exercices-supp-ch1.pdf"}, {"titre": "Exercices supplémentaires (ch. 1) — corrigé", "detail": "réponses en bleu", "fichier": "exercices-supp-ch1-corrige.pdf"}], "portail": "https://qlambotte.github.io/6e.html", "horsLigne": true, "stylesEssai": true, "minuteur": [3, 5, 10, 15, 20]};
+window.TYPWEB = {"cle": "exp-log", "uaa": "6UAA4", "pdf": "exp-log.pdf", "depot": "https://github.com/qlambotte/exp-log-cours", "pdfs": [{"titre": "Cours — version élève", "detail": "réponses à compléter", "fichier": "exp-log.pdf"}, {"titre": "Cours — avec le corrigé", "detail": "réponses en bleu", "fichier": "exp-log-corrige.pdf"}, {"titre": "Exercices supplémentaires (ch. 1)", "detail": "à compléter", "fichier": "exercices-supp-ch1.pdf"}, {"titre": "Exercices supplémentaires (ch. 1) — corrigé", "detail": "réponses en bleu", "fichier": "exercices-supp-ch1-corrige.pdf"}], "portail": "https://qlambotte.github.io/6e.html", "horsLigne": true, "stylesEssai": true, "modeEmploi": true, "minuteur": [3, 5, 10, 15, 20]};
 /* Charge les scripts du site (js/) avec le bon chemin relatif,
    quelle que soit la profondeur de la page. */
 (function () {
@@ -811,6 +797,40 @@ window.TYPWEB = {"cle": "exp-log", "pdf": "exp-log.pdf", "depot": "https://https
     off = u.indexOf("site_libs/") >= 0 ? u.slice(0, u.indexOf("site_libs/")) : "";
   }
   window.SITE_OFFSET = off;
+  window.TYPWEB.index = off + "index.json";
+  /* Couche prof (doc/identifiants.md) : rien pour les élèves. Activée sur cet
+     appareil par #prof dans l'adresse (avec confirmation, mémorisé), désactivée
+     par #prof-off ; le #prof est aussitôt retiré de l'adresse (pas de lien à
+     recopier qui l'activerait chez un élève). Ce drapeau ne donne aucun droit. */
+  function coucheProf() {
+    try {
+      var h = location.hash;
+      if (h === "#prof" || h === "#prof-off") {
+        if (h === "#prof-off") localStorage.removeItem("typweb.prof");
+        else if (window.confirm("Activer la couche prof sur cet appareil ?")) localStorage.setItem("typweb.prof", "1");
+        history.replaceState(null, "", location.pathname + location.search);
+      }
+      if (localStorage.getItem("typweb.prof") === "1" && !window.TYPWEB.profCharge) {
+        window.TYPWEB.profCharge = true;
+        var p = document.createElement("script");
+        p.src = off + "js/prof.js"; p.async = true;
+        document.head.appendChild(p);
+      }
+    } catch (e) {}
+  }
+  coucheProf();
+  window.addEventListener("hashchange", coucheProf);
+  /* Liens profonds page.html#5UAA3.ex.003 : défiler jusqu'à l'élément [data-id]
+     (l'identifiant stable n'est pas un id HTML : rien n'est ajouté à la page). */
+  function versId() {
+    var id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch (e) { return; }
+    if (!id || document.getElementById(id)) return;
+    var e = document.querySelector('[data-id="' + CSS.escape(id) + '"][data-type]');
+    if (e) e.scrollIntoView({ block: "start" });
+  }
+  window.addEventListener("load", versId);
+  window.addEventListener("hashchange", versId);
   /* mode hors-ligne (sw.js) : pas en aperçu local, où il gênerait les mises à jour */
   if ("serviceWorker" in navigator && window.TYPWEB.horsLigne) {
     if (/^(localhost|127\.|\[::1\])/.test(location.hostname) || location.protocol === "file:") {
