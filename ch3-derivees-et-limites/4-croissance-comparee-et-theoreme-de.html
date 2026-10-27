@@ -43,10 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-73b0ff3878a4e6fc3716dc69a6aaefa3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7c587969f93bd86c31ccf3a68e45a0b5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-872cc72bb35cecc74d1b4331fc5accee.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-8836b66d786e6a0ecbacbbcd1d4c6c30.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -589,12 +589,12 @@ window.Quarto = {
 <div class="cellule">
 <ol type="1">
 <li><span class="math inline">\(\lim\limits_{x \to +\infty} \frac{x^{2}}{e^{x}}\)</span></li>
-<li><span class="math inline">\(\lim\limits_{x \to 0^{+}} x \ln x\)</span></li>
+<li><span class="math inline">\(\lim\limits_{x \overset{&gt;}{\to} 0} x \ln x\)</span></li>
 </ol>
 </div>
 </div>
 <div class="rep-bloc">
-<p><strong>(1)</strong> <span class="math inline">\(x^{2}\)</span> et <span class="math inline">\(e^{x}\)</span> tendent vers <span class="math inline">\(+\infty\)</span> : par l’Hospital, <span class="math inline">\(\lim\limits x^{2} / e^{x} = \lim\limits (2 x) / e^{x}\)</span> ; <span class="math inline">\(2 x\)</span> et <span class="math inline">\(e^{x}\)</span> tendent encore vers <span class="math inline">\(+\infty\)</span>, on l’applique une seconde fois : <span class="math inline">\(\lim\limits (2 x) / e^{x} = \lim\limits 2 / e^{x} = 0\)</span>. <strong>(2)</strong> <span class="math inline">\(x \to 0\)</span> et <span class="math inline">\(\ln x \to -\infty\)</span> : on réécrit le produit en quotient, <span class="math inline">\(x \ln x = \frac{\ln x}{1 / x}\)</span>, où <span class="math inline">\(\ln x \to -\infty\)</span> et <span class="math inline">\(1 / x \to +\infty\)</span> ; par l’Hospital, <span class="math inline">\(\lim\limits \frac{1 / x}{-1 / x^{2}} = \lim\limits (- x) = 0\)</span>. Donc <span class="math inline">\(\lim\limits_{x \to 0^{+}} x \ln x = 0\)</span>.</p>
+<p><strong>(1)</strong> <span class="math inline">\(x^{2}\)</span> et <span class="math inline">\(e^{x}\)</span> tendent vers <span class="math inline">\(+\infty\)</span> : par l’Hospital, <span class="math inline">\(\lim\limits x^{2} / e^{x} = \lim\limits (2 x) / e^{x}\)</span> ; <span class="math inline">\(2 x\)</span> et <span class="math inline">\(e^{x}\)</span> tendent encore vers <span class="math inline">\(+\infty\)</span>, on l’applique une seconde fois : <span class="math inline">\(\lim\limits (2 x) / e^{x} = \lim\limits 2 / e^{x} = 0\)</span>. <strong>(2)</strong> <span class="math inline">\(x \to 0\)</span> et <span class="math inline">\(\ln x \to -\infty\)</span> : on réécrit le produit en quotient, <span class="math inline">\(x \ln x = \frac{\ln x}{1 / x}\)</span>, où <span class="math inline">\(\ln x \to -\infty\)</span> et <span class="math inline">\(1 / x \to +\infty\)</span> ; par l’Hospital, <span class="math inline">\(\lim\limits \frac{1 / x}{-1 / x^{2}} = \lim\limits (- x) = 0\)</span>. Donc <span class="math inline">\(\lim\limits_{x \overset{&gt;}{\to} 0} x \ln x = 0\)</span>.</p>
 </div>
 </div>
 </div>
@@ -616,7 +616,7 @@ window.Quarto = {
 <div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
 <ol type="1">
 <li><span class="math inline">\(x^{2} \to +\infty\)</span> et <span class="math inline">\(e^{x} \to +\infty\)</span> : par le théorème, <span class="math inline">\(\lim\limits_{x \to +\infty} \frac{x^{2}}{e^{x}} = \lim\limits_{x \to +\infty} \frac{2 x}{e^{x}}\)</span>. Numérateur et dénominateur deviennent encore aussi grands qu’on veut : on l’applique une seconde fois, <span class="math inline">\(\lim\limits_{x \to +\infty} \frac{2 x}{e^{x}} = \lim\limits_{x \to +\infty} \frac{2}{e^{x}} = 0\)</span>.</li>
-<li>Quand <span class="math inline">\(x \to 0\)</span> avec <span class="math inline">\(x &gt; 0\)</span> : <span class="math inline">\(x \to 0\)</span> et <span class="math inline">\(\ln x \to -\infty\)</span>. On écrit <span class="math inline">\(x \ln x = \frac{\ln x}{1/x}\)</span> ; alors <span class="math inline">\(\ln x \to -\infty\)</span> et <span class="math inline">\(1 / x \to +\infty\)</span>. Par le théorème, <span class="math inline">\(\lim\limits \frac{\ln x}{1/x} = \lim\limits \frac{1/x}{-1/x^{2}} = \lim\limits (-x) = 0\)</span>. Donc <span class="math inline">\(\lim\limits_{x \to 0, x &gt; 0} x \ln x = 0\)</span>.</li>
+<li>Quand <span class="math inline">\(x\)</span> tend vers <span class="math inline">\(0\)</span> par la droite : <span class="math inline">\(x \to 0\)</span> et <span class="math inline">\(\ln x \to -\infty\)</span>. On écrit <span class="math inline">\(x \ln x = \frac{\ln x}{1/x}\)</span> ; alors <span class="math inline">\(\ln x \to -\infty\)</span> et <span class="math inline">\(1 / x \to +\infty\)</span>. Par le théorème, <span class="math inline">\(\lim\limits \frac{\ln x}{1/x} = \lim\limits \frac{1/x}{-1/x^{2}} = \lim\limits (-x) = 0\)</span>. Donc <span class="math inline">\(\lim\limits_{x \overset{&gt;}{\to} 0} x \ln x = 0\)</span>.</li>
 </ol>
 </div>
 <div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">

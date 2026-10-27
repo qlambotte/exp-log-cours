@@ -4,8 +4,8 @@
  "uaa": "6UAA4",
  "annee": "6e",
  "cle": "exp-log",
- "empreinte": "914c51ca02e9",
- "genere": "2026-10-16",
+ "empreinte": "aa10b016a7e6",
+ "genere": "2026-10-27",
  "elements": [
   {
    "id": "6UAA4.fonctions-exponentielles",
@@ -2560,7 +2560,7 @@
   {
    "id": "6UAA4.q.lim-ln-zero",
    "type": "qcm",
-   "titre": "Que vaut limlimits_(x → 0⁺) ln x ?",
+   "titre": "Que vaut limlimits_x overset>→ 0 ln x ?",
    "parent": "6UAA4.limites-base",
    "etiquettes": [],
    "ancre": "autoeval.html",
