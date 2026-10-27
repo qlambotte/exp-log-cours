@@ -1,0 +1,252 @@
+---
+title: "Propriétés algébriques, à découvrir"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+C’est le cœur du chapitre. Toutes les propriétés algébriques du logarithme se **déduisent** de celles de l’exponentielle, par la réciprocité. Plutôt que de les présenter toutes faites, on les **découvre** : traduire, simplifier, conjecturer, vérifier — puis institutionnaliser.
+
+::: {#cadre-la-traduction-entre-log-et .cadre-info}
+**La traduction entre $\log$ et $\exp$.** Pour établir une propriété sur les logarithmes, on revient à une propriété sur les **exponentielles**. On utilisera le fait que $a^{x}$ est **strictement monotone** (chapitre 1), donc **injective** : deux antécédents qui ont la même image sont égaux, $a^{u} = a^{v} \quad \Longleftrightarrow \quad u = v$.
+:::
+
+## Logarithme d’un produit
+
+::: {#activite-2-6 data-sorte="activite" data-num="2.6" data-page="40" data-phys="42" data-id="6UAA4.quoi-est-egal" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 2.6** — à quoi est égal $\log_{a} (x y)$ ?
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$ et $x, y \in \mathbb{R}^{> 0}$.
+
+**(0) Domaine.** Pourquoi faut-il $x > 0$ *et* $y > 0$ pour que $\log_{a} (x y)$, $\log_{a} (x)$ et $\log_{a} (y)$ aient tous un sens ?
+
+::: {.rep-bloc}
+Un logarithme n’existe que pour un argument $> 0$ ; il faut donc $x > 0$, $y > 0$, et alors $x y > 0$ automatiquement.
+:::
+
+**(1) Traduire.** Deux candidats sont en concurrence : $C = \log_{a} (x) + \log_{a} (y)$ et la proposition erronée $D = \log_{a} (x) \cdot \log_{a} (y)$. Calcule et **simplifie** chaque exponentielle.
+
+- $a^{\log_{a} (x y)} = \class{rep}{x y}$ (réciprocité) ;
+- $a^{C} = a^{\log_{a} (x) + \log_{a} (y)} = a^{\log_{a} (x)} \cdot a^{\log_{a} (y)} = \class{rep}{x \cdot y}$ (l’expo transforme une somme en produit) ;
+- $a^{D} = a^{\log_{a} (x) \cdot \log_{a} (y)} = (a^{\log_{a} (x)})^{\log_{a} (y)} = \class{rep}{x^{\log_{a} (y)}}$ — l’expression ne se réduit pas à $x y$.
+
+**(2) Conclure.** On observe $a^{\log_{a} (x y)} = a^{C}$ (les deux valent $x y$). Pourquoi peut-on en déduire $\log_{a} (x y) = C$ ?
+
+::: {.rep-bloc}
+Par l’injectivité de $a^{x}$ : $a^{u} = a^{v} ⟹ u = v$.
+:::
+
+**(3) Écarter la proposition erronée.** $a^{D} = x^{\log_{a} (y)}$, qui ne vaut pas $x y$ en général. Vérifie avec $a = 2$, $x = 4$, $y = 8$ : $D = \log_{2} (4) \cdot \log_{2} (8) = \class{rep}{2 \cdot 3 = 6}$, alors que $\log_{2} (4 \cdot 8) = \log_{2} (32) = \class{rep}{5}$. Donc $D$ est **faux**.
+
+**(4) Vérifier la bonne formule.** $\log_{2} (4 \cdot 8) = \class{rep}{5}$ et $\log_{2} (4) + \log_{2} (8) = \class{rep}{2 + 3 = 5}$. ✓
+:::
+:::
+
+::: {#propriete-2-5 data-sorte="propriete" data-num="2.5" data-page="40" data-phys="42" data-id="6UAA4.logarithme-produit" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.5** — logarithme d’un produit
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$ et $x, y \in \mathbb{R}^{> 0}$. Alors
+
+$$
+\log_{a} (x y) = \log_{a} (x) + \log_{a} (y).
+$$
+
+*(Établie à l’activité ci-dessus.)* Le logarithme transforme un **produit en une somme** — exact miroir de l’exponentielle, qui transforme une somme en un produit.
+:::
+:::
+
+::: {#preuve-2-1 data-sorte="preuve" data-num="2.1" .theo .theo-preuve}
+::: {.theo-head}
+**Démonstration 2.1**
+:::
+
+::: {.theo-body}
+Notons $u = \log_{a} (x y)$ et $v = \log_{a} (x) + \log_{a} (y)$, puis comparons leurs exponentielles de base $a$ :
+
+$$
+a^{u} = a^{\log_{a} (x y)} = x y, \quad a^{v} = a^{\log_{a} (x) + \log_{a} (y)} = a^{\log_{a} (x)} \cdot a^{\log_{a} (y)} = x y.
+$$
+
+Ainsi $a^{u} = a^{v}$ ; par injectivité de $a^{x}$ , $u = v$.
+:::
+:::
+
+## Logarithme d’un quotient
+
+::: {#activite-2-7 data-sorte="activite" data-num="2.7" data-page="41" data-phys="43" data-id="6UAA4.quoi-est-egal-2" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 2.7** — à quoi est égal $\log_{a} (x / y)$ ?
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$ et $x, y \in \mathbb{R}^{> 0}$. Déterminons ce que vaut $\log_{a} (x / y)$.
+
+On a deux candidats : $C = \log_{a} (x) - \log_{a} (y)$ et $D = \log_{a} (x) / \log_{a} (y)$. Traduis et simplifie :
+
+- $a^{\log_{a} (x / y)} = \class{rep}{\frac{x}{y}}$ ;
+- $a^{C} =$[$\frac{x}{y}$]{.rep}
+- $a^{D} =$[$x^{1 / \log_{a} (y)}$]{.rep}
+
+Comme $a^{\log_{a} (x/y)} = a^{C}$, l’injectivité donne $\log_{a} (x/y) = \class{rep}{\log_{a}(x)-\log_{a} (y))}$.
+
+Vérifie que l’autre candidat n’est pas correct.
+:::
+:::
+
+::: {#propriete-2-6 data-sorte="propriete" data-num="2.6" data-page="41" data-phys="43" data-id="6UAA4.logarithme-quotient" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.6** — logarithme d’un quotient
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$ et $x, y \in \mathbb{R}^{> 0}$. Alors
+
+$$
+\log_{a} (\frac{x}{y}) = \log_{a} (x) - \log_{a} (y).
+$$
+:::
+:::
+
+::: {#preuve-2-2 data-sorte="preuve" data-num="2.2" .theo .theo-preuve}
+::: {.theo-head}
+**Démonstration 2.2**
+:::
+
+::: {.theo-body}
+Avec $u = \log_{a} (x/y)$ et $v = \log_{a} (x) - \log_{a} (y)$ :
+
+$$
+a^{u} = a^{\log_{a} (x/y)} = \frac{x}{y}, \quad a^{v} = \frac{a^{\log_{a} (x)}}{a^{\log_{a} (y)}} = \frac{x}{y}.
+$$
+
+Donc $a^{u} = a^{v}$, d’où $u = v$ par injectivité de $a^{x}$.
+:::
+:::
+
+## Logarithme d’une puissance
+
+::: {#activite-2-8 data-sorte="activite" data-num="2.8" data-page="41" data-phys="43" data-id="6UAA4.quoi-est-egal-3" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 2.8** — à quoi est égal $\log_{a} (x^{p})$ ?
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$, et cette fois **précise le domaine** : [$x > 0$ et $p \in \mathbb{R}$ quelconque]{.rep}.
+
+Candidats : $C = p \cdot \log_{a} (x)$ et $D_{1} = \log_{a} (x) + p$, $D_{2} = \log_{a} (x) / p$. Traduis et simplifie :
+
+- $a^{\log_{a} (x^{p})} =$ [$x^{p}$]{.rep} ;
+- $a^{C} =$ [$x^{p}$]{.rep};
+- $a^{D_{1}} =$ [$x \cdot a^{p}$]{.rep} ;
+- $a^{D_{2}} =$ [$x^{1 / p}$]{.rep} .
+
+Donc:[$\log_{a}(x^{p})=p \cdot \log_{a}(x)$]{.rep}.
+:::
+:::
+
+::: {#propriete-2-7 data-sorte="propriete" data-num="2.7" data-page="42" data-phys="44" data-id="6UAA4.logarithme-puissance" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.7** — logarithme d’une puissance
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$, $x \in \mathbb{R}^{> 0}$ et $p \in \mathbb{R}$. Alors
+
+$$
+\log_{a} (x^{p}) = p \cdot \log_{a} (x).
+$$
+:::
+:::
+
+::: {#preuve-2-3 data-sorte="preuve" data-num="2.3" .theo .theo-preuve}
+::: {.theo-head}
+**Démonstration 2.3**
+:::
+
+::: {.theo-body}
+Avec $u = \log_{a} (x^{p})$ et $v = p \cdot \log_{a} (x)$ :
+
+$$
+a^{u} = a^{\log_{a} (x^{p})} = x^{p}, \quad a^{v} = (a^{\log_{a} (x)})^{p} = x^{p}
+$$
+
+(car $(a^{m})^{p} = a^{m p}$). Donc $a^{u} = a^{v}$, d’où $u = v$ par injectivité de $a^{x}$.
+:::
+:::
+
+## Changement de base
+
+Comment calculer $\log_{a} (x)$ à la calculatrice, qui ne connaît que $\ln$ et $\log$ ? On le **traduit** dans une autre base.
+
+::: {#activite-2-9 data-sorte="activite" data-num="2.9" data-page="42" data-phys="44" data-id="6UAA4.exprimer-base" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 2.9** — exprimer $\log_{a} (x)$ dans une base $b$
+:::
+
+::: {.theo-body}
+Soit $a, b \in \mathbb{R}^{> 0} \setminus \{1\}$ et $x \in \mathbb{R}^{> 0}$. Pose $y = \log_{a} (x)$.
+
+1. Traduis en exponentielle de base $a$ : $y = \log_{a} (x)$ signifie [$a^{y} = x$]{.rep}.
+2. Applique $\log_{b}$ aux deux membres : [$\log_{b} (a^{y}) = \log_{b} (x)$]{.rep}
+3. Isole $y$ : $y = \class{rep}{\frac{\log_{b} (x)}{\log_{b} (a)}}$.
+:::
+:::
+
+::: {#propriete-2-8 data-sorte="propriete" data-num="2.8" data-page="42" data-phys="44" data-id="6UAA4.changement-base-2" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.8** — changement de base
+:::
+
+::: {.theo-body}
+Soit $a, b \in \mathbb{R}^{> 0} \setminus \{1\}$ et $x \in \mathbb{R}^{> 0}$. Alors
+
+$$
+\log_{a} (x) = \frac{\log_{b} (x)}{\log_{b} (a)}.
+$$
+
+En particulier, avec la calculatrice : $\log_{a} (x) = \frac{\ln x}{\ln a} = \frac{\log x}{\log a}$.
+:::
+:::
+
+::: {#preuve-2-4 data-sorte="preuve" data-num="2.4" .theo .theo-preuve}
+::: {.theo-head}
+**Démonstration 2.4**
+:::
+
+::: {.theo-body}
+Posons $y = \log_{a} (x)$, c’est-à-dire $a^{y} = x$. Appliquons $\log_{b}$ aux deux membres, puis la propriété de la **puissance** (démontrée ci-dessus) :
+
+$$
+\log_{b} (a^{y}) = \log_{b} (x) \quad \Longrightarrow \quad y \cdot \log_{b} (a) = \log_{b} (x).
+$$
+
+Comme $a \neq 1$, on a $\log_{b} (a) \neq 0$ ; on isole donc
+
+$$
+y = \frac{\log_{b} (x)}{\log_{b} (a)}.
+$$
+:::
+:::
+
+::: {#exemple-2-3 data-sorte="exemple" data-num="2.3" data-page="43" data-phys="45" data-id="6UAA4.calculatrice-n-importe-quelle-base" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 2.3** — à la calculatrice, dans n’importe quelle base
+:::
+
+::: {.theo-body}
+$\log_{3} (2) = \frac{\ln 2}{\ln 3} \approx 0{,}631$. $\log_{2} (125) = \frac{\ln 125}{\ln 2} \approx 6{,}966$.
+:::
+:::
+
+::: {#cadre-a-retenir .cadre-info}
+**À retenir.** $\log_{a} (1) = 0$ ; $\log_{a} (a) = 1$ ; $\log_{a} (a^{x}) = x$ ; $a^{\log_{a} (x)} = x$ ; $\log_{a} (x y) = \log_{a} x + \log_{a} y$ ; $\log_{a} (\frac{x}{y}) = \log_{a} x - \log_{a} y$ ; $\log_{a} (x^{p}) = p \log_{a} x$ ; $\log_{a} (x) = \frac{\log_{b} x}{\log_{b} a}$.
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 3 questions →](../autoeval.qmd#sections=sec-algebre-log)
+:::

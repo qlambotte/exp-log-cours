@@ -1,0 +1,290 @@
+---
+title: "Dériver le logarithme"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Comme pour tout ce qui touche au logarithme, la dérivée se **déduit** de l’exponentielle par la réciprocité, sans nouvelle hypothèse.
+
+## La brique de base : $(\ln x)' = \frac{1}{x}$
+
+::: {#activite-3-3 data-sorte="activite" data-num="3.3" data-page="52" data-phys="54" data-id="6UAA4.deriver-derivant" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 3.3** — dériver $\ln$ en dérivant $e^{\ln x} = x$
+:::
+
+::: {.theo-body}
+On part de l’identité de réciprocité, valable pour $x > 0$ : $e^{\ln x} = x$. Dérive **les deux membres** par rapport à $x$.
+
+**(1) Membre de droite.** $(x)' = \class{rep}{1}$.
+
+**(2) Membre de gauche**, avec la règle de composition (exposant $u(x) = \ln x$) :
+
+$$
+(e^{\ln x})' = \class{rep}{(\ln x)' \cdot e^{\ln x}=(\ln x)' \cdot x}
+$$
+
+(car $e^{\ln x} = \class{rep}{x}$).
+
+**(3) Égaler** les deux dérivées : $(\ln x)' \cdot x = 1$, d’où, pour $x > 0$,
+
+$$
+(\ln x)' = \class{rep}{\frac{1}{x}}.
+$$
+:::
+:::
+
+::: {#propriete-3-4 data-sorte="propriete" data-num="3.4" data-page="52" data-phys="54" data-id="6UAA4.derivee-logarithme-neperien" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 3.4** — dérivée du logarithme népérien
+:::
+
+::: {.theo-body}
+La fonction $\ln$ est dérivable sur $\mathbb{R}^{> 0}$ et
+
+$$
+(\ln x)' = \frac{1}{x}.
+$$
+:::
+:::
+
+```{=html}
+<div class="ia" data-ia="tangente" data-cfg='{"f": {"js": "Math.log(x)"}, "xmin": 0.05, "xmax": 6.0, "ymin": -3.0, "ymax": 3.0, "a": 1.0, "secante": false}'></div>
+```
+
+::: {.ia-legende}
+Fais glisser $a$ : compare la pente de la tangente et $\frac{1}{a}$ ; « graphe de f′ » trace la courbe des pentes.
+:::
+
+::: {#preuve-3-1 data-sorte="preuve" data-num="3.1" .theo .theo-preuve}
+::: {.theo-head}
+**Démonstration 3.1**
+:::
+
+::: {.theo-body}
+Pour $x > 0$, l’identité $e^{\ln x} = x$ donne, en dérivant les deux membres et en utilisant la composition, $(\ln x)' \cdot e^{\ln x} = 1$, soit $(\ln x)' \cdot x = 1$. Comme $x > 0$, on isole $(\ln x)' = 1 / x$.
+:::
+:::
+
+## Composer, et changer de base
+
+::: {#propriete-3-5 data-sorte="propriete" data-num="3.5" data-page="52" data-phys="54" data-id="6UAA4.logarithme-compose-base-quelconque" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 3.5** — logarithme composé, et base quelconque
+:::
+
+::: {.theo-body}
+Si $u$ est dérivable et strictement positive,
+
+$$
+(\ln(u(x)))' = \frac{u'(x)}{u(x)}.
+$$
+
+Pour une base $a \in \mathbb{R}^{> 0} \setminus \{1\}$, le changement de base $\log_{a} (x) = \frac{\ln x}{\ln a}$ donne aussitôt
+
+$$
+(\log_{a} (x))' = \frac{1}{x \ln a}.
+$$
+:::
+:::
+
+::: {#exemple-3-3 data-sorte="exemple" data-num="3.3" data-page="53" data-phys="55" data-id="6UAA4.deriver-logarithme-compose" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 3.3** — dériver un logarithme composé
+:::
+
+::: {.theo-body}
+::: {.grille style="--n:3"}
+::: {.cellule}
+$(\ln(3 x))' = \frac{3}{3 x} = \frac{1}{x}$
+:::
+
+::: {.cellule}
+$(\ln(x^{2} + 1))' = \frac{2 x}{x^{2} + 1}$
+:::
+
+::: {.cellule}
+$(x \ln x)' = \ln x + x \cdot \frac{1}{x} = \ln x + 1$
+:::
+:::
+:::
+:::
+
+Le **domaine** mérite ici une attention particulière : on ne dérive un logarithme que là où son argument est strictement positif.
+
+::: {#exemple-3-4 data-sorte="exemple" data-num="3.4" data-page="53" data-phys="55" data-id="6UAA4.domaine-puis-derivee" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 3.4** — domaine puis dérivée
+:::
+
+::: {.theo-body}
+Soit $g(x) = \ln(x^{2} - 5 x + 6)$. On a $x^{2} - 5x + 6 = (x - 2)(x - 3) > 0$ pour $x < 2$ ou $x > 3$. Donc $\operatorname{dom} g = ] -\infty, 2 [ \cup ] 3, +\infty [$, et sur ce domaine
+
+$$
+g'(x) = \frac{2 x - 5}{x^{2} - 5 x + 6}.
+$$
+:::
+:::
+
+::: {#exercice-3-2 data-sorte="exercice" data-num="3.2" data-page="53" data-phys="55" data-id="6UAA4.ex.045" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 3.2]{.exo-titre} [[A7]{.exo-comp} ★☆☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Dérive les fonctions suivantes.
+
+::: {.grille style="--n:3"}
+::: {.cellule}
+1. $\log_{2} (x)$
+2. $\ln(3 x)$
+3. $\ln(x^{3})$
+4. $\ln(1 / x)$
+:::
+
+::: {.cellule}
+5. $\ln(\sqrt{x})$
+6. $\ln(3 x - 5)$
+7. $\ln(x) - x$
+8. $x^{2} \ln(x)$
+:::
+
+::: {.cellule}
+9. $x \ln(x) - x$
+10. $\frac{\ln x}{x}$
+11. $x^{4} \ln(x^{2} - 1)$
+12. $\frac{x}{\ln(x)}$
+:::
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis les propriétés [3.4](#propriete-3-4) ($(\ln x)' = 1/x$) et [3.5](#propriete-3-5) (logarithme composé, base quelconque), puis l’[exemple 3.3](#exemple-3-3).
+
+## Indice 2 {.unlisted}
+
+Peux-tu simplifier le logarithme avant de dériver ($\ln(x^{3}) = 3 \ln x$, $\ln(1/x) = - \ln x$) ?
+
+## Indice 3 {.unlisted}
+
+$(\ln u(x))' = \frac{u'(x)}{u(x)}$ et $(\log_{a} x)' = \frac{1}{x \ln a}$.
+
+## Solution {.unlisted}
+
+1. $(\log_{2} x)' = \frac{1}{x \ln 2}$.
+2. $\ln(3 x) = \ln 3 + \ln x$, de dérivée $\frac{1}{x}$.
+3. $\ln(x^{3}) = 3 \ln x$, de dérivée $\frac{3}{x}$.
+4. $\ln(1 / x) = - \ln x$, de dérivée $-\frac{1}{x}$.
+5. $\ln \sqrt{x} = \frac{1}{2} \ln x$, de dérivée $\frac{1}{2 x}$.
+6. $(\ln(3 x - 5))' = \frac{3}{3 x - 5}$.
+7. $(\ln x - x)' = \frac{1}{x} - 1$.
+8. $(x^{2} \ln x)' = 2 x \ln x + x^{2} \cdot \frac{1}{x} = 2 x \ln x + x$ (produit).
+9. $(x \ln x - x)' = \ln x + x \cdot \frac{1}{x} - 1 = \ln x$ (produit).
+10. $(\frac{\ln x}{x})' = \frac{\frac{1}{x} \cdot x - \ln x}{x^{2}} = \frac{1 - \ln x}{x^{2}}$ (quotient).
+11. $(x^{4} \ln(x^{2} - 1))' = 4 x^{3} \ln(x^{2} - 1) + x^{4} \cdot \frac{2 x}{x^{2} - 1}$ (produit et logarithme composé).
+12. $(\frac{x}{\ln} x)' = \frac{\ln x - x \cdot \frac{1}{x}}{(\ln x)^{2}} = \frac{\ln x - 1}{(\ln x)^{2}}$ (quotient).
+
+## Pièges {.unlisted}
+
+- Écrire $(\ln(3 x - 5))' = \frac{1}{3 x - 5}$ : il manque la dérivée de $3 x - 5$.
+- Écrire $(\ln(3 x))' = \frac{3}{x}$ ou $\frac{1}{3 x}$ : en simplifiant d’abord, $\ln(3 x) = \ln 3 + \ln x$.
+:::
+:::
+
+::: {#exercice-3-3 data-sorte="exercice" data-num="3.3" data-page="53" data-phys="55" data-id="6UAA4.ex.046" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 3.3]{.exo-titre} [[A7]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Détermine d’abord le **domaine**, puis la **dérivée**.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+1. $f(x) = \frac{x}{\ln(x)}$
+:::
+
+::: {.cellule}
+2. $g(x) = \ln(x^{2} - 5 x + 6)$
+:::
+:::
+
+::: {.rep-bloc}
+**(1)** $\ln x$ exige $x > 0$, et le dénominateur impose $\ln x \neq 0$, soit $x \neq 1$ : $\operatorname{dom} f = ] 0, 1 [ \cup ] 1, +\infty [$. $f'(x) = \frac{\ln x - x \cdot \frac{1}{x}}{(\ln x)^{2}} = \frac{\ln x - 1}{(\ln x)^{2}}$. **(2)** $\operatorname{dom} g = ] -\infty, 2 [ \cup ] 3, +\infty [$ (là où $(x-2)(x-3) > 0$) ; $g'(x) = \frac{2 x - 5}{x^{2} - 5 x + 6}$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « domaine puis dérivée »](#exemple-3-4).
+
+## Indice 2 {.unlisted}
+
+Pour quelles valeurs $\ln$ est-il défini ? Un dénominateur peut-il s’annuler ?
+
+## Indice 3 {.unlisted}
+
+Pour $g$, résous $x^{2} - 5 x + 6 > 0$ : factorise $(x - 2)(x - 3)$ et dresse un tableau de signes.
+
+## Solution {.unlisted}
+
+1. $\ln x$ exige $x > 0$ et le dénominateur impose $\ln x \neq 0$, soit $x \neq 1$. Donc $\operatorname{dom} f = ]0 ; 1[ \cup ]1 ; +\infty[$. Par la règle du quotient : $f'(x) = \frac{1 \cdot \ln x - x \cdot \frac{1}{x}}{(\ln x)^{2}} = \frac{\ln x - 1}{(\ln x)^{2}}$.
+2. $\ln$ exige $x^{2} - 5 x + 6 = (x - 2)(x - 3) > 0$. Le trinôme est positif à l’extérieur de ses racines $2$ et $3$ : $\operatorname{dom} g = ]-\infty ; 2[ \cup ]3 ; +\infty[$. Par la règle du logarithme composé : $g'(x) = \frac{2 x - 5}{x^{2} - 5 x + 6}$.
+
+## Pièges {.unlisted}
+
+- Oublier la valeur $x = 1$, qui annule le dénominateur $\ln x$.
+- Pour $g$, prendre l’intervalle entre les racines : c’est là que le trinôme est négatif.
+:::
+:::
+
+::: {#exercice-3-4 data-sorte="exercice" data-num="3.4" data-page="54" data-phys="56" data-id="6UAA4.ex.047" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 3.4]{.exo-titre} [[A7]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+La courbe de $\ln$ est tracée ci-dessous. La tangente au point $(1, 0)$ y est représentée. a) Calcule $(\ln x)'$ en $x = 1$ : [$\frac{1}{1} = 1$]{.rep}. b) Vérifie que c’est bien la pente de la tangente dessinée.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -1.0, "xmax": 6.0, "ymin": -3.0, "ymax": 3.0, "w": 620, "h": 315, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "Math.log(x)"}, "de": 0.05, "a": 6.0}, {"couleur": "#6d3bbf", "pointille": true, "ep": 1.0, "f": {"js": "(0.0 + 1.0 * (x - 1.0))"}}], "points": [{"x": 1.0, "y": 0.0}]}'></div>
+```
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété 3.4](#propriete-3-4) : $(\ln x)' = \frac{1}{x}$.
+
+## Indice 2 {.unlisted}
+
+Que vaut la dérivée en $x = 1$ ? Que représente-t-elle sur le graphique ?
+
+## Indice 3 {.unlisted}
+
+Sur la tangente dessinée, avance de $1$ vers la droite à partir de $(1, 0)$ : de combien monte-t-elle ?
+
+## Solution {.unlisted}
+
+a) $(\ln x)' = \frac{1}{x}$, donc en $x = 1$ : $(\ln)'(1) = \frac{1}{1} = 1$.
+
+b) La tangente passe par $(1, 0)$ et par $(2, 1)$ : quand $x$ augmente de $1$, $y$ augmente de $1$, sa pente vaut $1$. C’est bien la dérivée en $1$.
+
+## Pièges {.unlisted}
+
+- Confondre la valeur de la fonction ($\ln 1 = 0$) et la pente de la tangente ($1$).
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 5 questions →](../autoeval.qmd#sections=sec-der-log)
+:::

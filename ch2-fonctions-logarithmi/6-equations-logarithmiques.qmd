@@ -1,0 +1,191 @@
+---
+title: "Équations logarithmiques"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Une **équation logarithmique** a son inconnue dans l’argument d’un logarithme.
+
+Ici, un principe commande tout le reste : **une écriture $\log_{a} (\ldots)$ n’a de sens que si son argument est strictement positif**. Avant même de résoudre, il faut donc savoir **sur quel domaine on a le droit de raisonner** — ce sont les **conditions d’existence** (CE).
+
+::: {#exemple-2-6 data-sorte="exemple" data-num="2.6" data-page="45" data-phys="47" data-id="6UAA4.quand-ignorer-domaine-fabrique-fausse" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 2.6** — quand ignorer le domaine fabrique une fausse solution
+:::
+
+::: {.theo-body}
+Résoudre $\log(2) + \log(x) = \log(x - 2)$.
+
+- **Domaine.** Il faut $x > 0$ *et* $x - 2 > 0$, donc $x > 2$.
+- **Résolution.** À gauche, $\log(2) + \log(x) = \log(2 x)$. L’équation devient $\log(2 x) = \log(x - 2)$. **Sur le domaine** (où $2x > 0$ et $x - 2 > 0$), l’égalité de deux logarithmes équivaut à l’égalité de leurs arguments (le $\log$ y est injectif) : $2 x = x - 2$, d’où $x = -2$.
+- **Confrontation.** $-2$ n’appartient pas au domaine $x > 2$ : la valeur est rejetée.
+- **Conclusion.** $S = \emptyset$.
+:::
+:::
+
+::: {#exemple-2-7 data-sorte="exemple" data-num="2.7" data-page="46" data-phys="48" data-id="6UAA4.cas-solution" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 2.7** — un cas avec solution
+:::
+
+::: {.theo-body}
+Résoudre $\log(4 x) = -2$.
+
+**Domaine** : $x > 0$.
+
+On traduit : $4 x = 10^{-2} = 0{,}01$, donc $x = 0{,}0025$ ($> 0$, donc on accepte cette solution).
+
+$S = \{ 0{,}0025 \}$.
+:::
+:::
+
+::: {#exercice-2-15 data-sorte="exercice" data-num="2.15" data-page="46" data-phys="48" data-id="6UAA4.ex.036" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.15]{.exo-titre} [[C7 · A6]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Résous $\log(2 x - 1) = 3$ en **justifiant chaque étape** par la relation de réciprocité. Précise : **(1)** la condition d’existence ; **(2)** le passage à la forme exponentielle ; **(3)** la confrontation à la condition d’existence.
+
+::: {.rep-bloc}
+**(1) CE :** il faut $2 x - 1 > 0$, soit $x > 1/2$ ; le raisonnement n’est licite que là. **(2)** Sur ce domaine, $10^{x}$ et $\log$ sont **réciproques**, donc appliquer $10^{x}$ aux deux membres est une **équivalence** (les deux fonctions se défont l’une l’autre) : $\log(2 x - 1) = 3 \Longleftrightarrow 2 x - 1 = 10^{3}$. D’où $2 x - 1 = 1000$, puis $x = 500{,}5$. **(3)** $500{,}5 > 1/2$ : la valeur respecte la CE. **Conclusion :** $S = \{ 500{,}5 \}$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « fausse solution »](#exemple-2-6) et la [propriété de réciprocité](2-definition-du-logarithme-de-base.qmd#propriete-2-2).
+
+## Indice 2 {.unlisted}
+
+Pour quelles valeurs de $x$ l’expression $\log(2 x - 1)$ existe-t-elle ? Quelle fonction « défait » $\log$ ?
+
+## Indice 3 {.unlisted}
+
+Sur le domaine, $\log(2 x - 1) = 3 \Longleftrightarrow 2 x - 1 = 10^{3}$.
+
+## Solution {.unlisted}
+
+(1) Condition d’existence : $2 x - 1 > 0$, soit $x > \frac{1}{2}$.
+
+(2) Pour $x > \frac{1}{2}$, les fonctions $\log$ et $10^{x}$ sont réciproques, donc $\log(2 x - 1) = 3 \Longleftrightarrow 2 x - 1 = 10^{3} \Longleftrightarrow 2 x = 1001 \Longleftrightarrow x = 500{,}5$.
+
+(3) $500{,}5 > \frac{1}{2}$ : la valeur respecte la condition d’existence.
+
+$S = \{500{,}5\}$.
+
+## Pièges {.unlisted}
+
+- Écrire $2 x - 1 = 3$ : on « enlève » le logarithme en appliquant $10^{x}$, pas en le supprimant.
+- Oublier de vérifier la solution obtenue avec la condition d’existence.
+:::
+:::
+
+::: {#exercice-2-16 data-sorte="exercice" data-num="2.16" data-page="46" data-phys="48" data-id="6UAA4.ex.037" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.16]{.exo-titre} [[A6 · C7]{.exo-comp} ★★★]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Pour rédoudre $2 \log(x) = \log(x + 2)$, on passe par $\log(x^{2}) = \log(x + 2)$, d’où $x^{2} = x + 2$. On obtient alors deux valeurs pour $x$, lesquelles?. **Une seule** respecte les conditions d’existence : laquelle, et pourquoi ?
+
+::: {.rep-bloc}
+$x^{2} = x + 2 ⟹ x = 2$ ou $x = -1$. CE : $x > 0$, donc on garde $x = 2$ et on rejette $x = -1$. Le passage $2 \log(x) = \log(x^{2})$ n’est valable que pour $x > 0$ : $\log(x)$ exige $x > 0$, alors que $\log(x^{2})$ existe pour tout $x \neq 0$ — la réécriture a *élargi* le domaine, ce n’est donc pas une équivalence sur tout $\mathbb{R}$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « quand ignorer le domaine fabrique une fausse solution »](#exemple-2-6).
+
+## Indice 2 {.unlisted}
+
+Pour quelles valeurs de $x$ l’équation de départ a-t-elle un sens ? Et l’équation $\log(x^{2}) = \log(x + 2)$ ?
+
+## Indice 3 {.unlisted}
+
+Résous $x^{2} - x - 2 = 0$, puis confronte les solutions à la condition $x > 0$.
+
+## Solution {.unlisted}
+
+Condition d’existence de l’équation de départ : $x > 0$ (pour $\log x$) et $x + 2 > 0$, donc $x > 0$.
+
+Pour $x > 0$ : $2 \log x = \log(x + 2) \Longleftrightarrow \log(x^{2}) = \log(x + 2) \Longleftrightarrow x^{2} = x + 2 \Longleftrightarrow x^{2} - x - 2 = 0 \Longleftrightarrow (x - 2)(x + 1) = 0$. On obtient $x = 2$ ou $x = -1$.
+
+Seule $x = 2$ respecte la condition $x > 0$ ; $x = -1$ est rejetée, car $\log(-1)$ n’existe pas. En effet, $2 \log x = \log(x^{2})$ n’est vrai que pour $x > 0$ : $\log(x^{2})$ existe pour tout $x \neq 0$, la réécriture a élargi le domaine.
+
+$S = \{2\}$.
+
+## Pièges {.unlisted}
+
+- Garder $x = -1$ parce qu’il vérifie $x^{2} = x + 2$ : il ne vérifie pas l’équation de départ.
+:::
+:::
+
+::: {#exercice-2-17 data-sorte="exercice" data-num="2.17" data-page="46" data-phys="48" data-id="6UAA4.ex.038" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.17]{.exo-titre} [[A6]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Résous les équations suivantes (pose d’abord les conditions d’existence).
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+1. $\log(x - 2) = 4$
+2. $\log(x + 3) = \log(x) - \log(12)$
+3. $\log(4 x - 3) - \log(2 x - 4) = \log(25)$
+4. $2 \ln(3 x + 1) = 0$
+:::
+
+::: {.cellule}
+5. $\log(3 x - 2) + \log(8 x) = \log(8)$
+6. $\log(4 x) = -2$
+7. $\log(4 x - 3) + \log(4) = \log(2 x - 4)$
+8. $\log(x + 3) = \log(x) - \log(12)$
+:::
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis les exemples [2.6](#exemple-2-6) et [2.7](#exemple-2-7), et les propriétés du [produit](3-proprietes-graphiques-par-deduction.qmd#propriete-2-4) et du [quotient](4-proprietes-algebriques-a-decouvrir.qmd#propriete-2-5).
+
+## Indice 2 {.unlisted}
+
+Quelles conditions pour que chaque logarithme existe ? Peux-tu ramener l’équation à la forme $\log A = \log B$ ou $\log A = c$ ?
+
+## Indice 3 {.unlisted}
+
+$\log A = \log B \Longleftrightarrow A = B$ (injectivité) et $\log A = c \Longleftrightarrow A = 10^{c}$ ; vérifie chaque solution avec la condition d’existence.
+
+## Solution {.unlisted}
+
+1. CE : $x > 2$. $\log(x - 2) = 4 \Longleftrightarrow x - 2 = 10^{4} \Longleftrightarrow x = 10 \, 002$, qui respecte la CE. $S = \{10 \, 002\}$.
+2. CE : $x > 0$. $\log(x + 3) = \log(x / 12) \Longleftrightarrow x + 3 = x / 12 \Longleftrightarrow 12 x + 36 = x \Longleftrightarrow x = -\frac{36}{11}$, qui ne respecte pas la CE. $S = \emptyset$.
+3. CE : $x > \frac{3}{4}$ et $x > 2$, donc $x > 2$. $\log(\frac{4 x - 3}{2 x - 4}) = \log 25 \Longleftrightarrow 4 x - 3 = 25 (2 x - 4) \Longleftrightarrow 46 x = 97 \Longleftrightarrow x = \frac{97}{46} \approx 2{,}11$, qui respecte la CE. $S = \{\frac{97}{46}\}$.
+4. CE : $x > -\frac{1}{3}$. $2 \ln(3 x + 1) = 0 \Longleftrightarrow \ln(3 x + 1) = 0 \Longleftrightarrow 3 x + 1 = e^{0} = 1 \Longleftrightarrow x = 0$, qui respecte la CE. $S = \{0\}$.
+5. CE : $x > \frac{2}{3}$. $\log(8 x (3 x - 2)) = \log 8 \Longleftrightarrow 24 x^{2} - 16 x = 8 \Longleftrightarrow 3 x^{2} - 2 x - 1 = 0 \Longleftrightarrow x = 1$ ou $x = -\frac{1}{3}$. Seule $x = 1$ respecte la CE. $S = \{1\}$.
+6. CE : $x > 0$. $\log(4 x) = -2 \Longleftrightarrow 4 x = 10^{-2} \Longleftrightarrow x = 0{,}0025$. $S = \{0{,}0025\}$.
+7. CE : $x > \frac{3}{4}$ et $x > 2$, donc $x > 2$. $\log(4 (4 x - 3)) = \log(2 x - 4) \Longleftrightarrow 16 x - 12 = 2 x - 4 \Longleftrightarrow x = \frac{4}{7}$, qui ne respecte pas la CE. $S = \emptyset$.
+8. Même équation que la 2) : $S = \emptyset$.
+
+## Pièges {.unlisted}
+
+- Oublier la condition d’existence : en 2), 5) et 7), des valeurs obtenues sont à rejeter.
+- En 3), écrire $\log(4 x - 3) - \log(2 x - 4) = \log(2 x + 1)$ : une différence de logarithmes est le logarithme d’un quotient.
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 3 questions →](../autoeval.qmd#sections=sec-eq-log)
+:::

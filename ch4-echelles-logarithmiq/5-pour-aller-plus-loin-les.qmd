@@ -1,0 +1,65 @@
+---
+title: "Pour aller plus loin : les échelles logarithmiques en sciences"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Beaucoup de grandeurs physiques varient sur tant d’ordres de grandeur qu’on les mesure directement sur une **échelle logarithmique**. Trois exemples classiques.
+
+::: {#cadre-magnitude-dun-seisme-echelle-de .cadre-info}
+**Magnitude d’un séisme (échelle de Richter).** La magnitude est essentiellement le **logarithme** de l’amplitude des ondes. Gagner $1$ point de magnitude, c’est multiplier l’amplitude par $10$ (et l’énergie libérée par environ $30$). Un séisme de magnitude $7$ n’est pas « un peu » plus fort qu’un magnitude $6$ : il l’est **dix fois** en amplitude.
+:::
+
+::: {#cadre-niveau-sonore-decibels .cadre-info}
+**Niveau sonore (décibels).** Le niveau en décibels vaut $L = 10 \log(I / I_{0})$, où $I$ est l’intensité sonore et $I_{0}$ un seuil de référence. Ajouter $10$ dB multiplie l’intensité par $10$ ; ajouter $20$ dB la multiplie par $100$. C’est pourquoi $80$ dB est bien plus agressif que $60$ dB.
+:::
+
+::: {#cadre-acidite-ph .cadre-info}
+**Acidité (pH).** Le pH est défini par $\text{pH} = - \log [H^{+}]$, où $[H^{+}]$ est la concentration en ions hydrogène. Chaque unité de pH en moins correspond à une concentration **dix fois** plus grande : un liquide de pH $3$ est dix fois plus acide qu’un liquide de pH $4$.
+:::
+
+::: {#exercice-4-6 data-sorte="exercice" data-num="4.6" data-page="66" data-phys="68" data-id="6UAA4.ex.059" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 4.6]{.exo-titre} [[A8]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+a) Deux séismes diffèrent d’une magnitude ($5$ et $6$). Quel est le rapport de leurs amplitudes ? [$10$]{.rep}
+
+b) On passe d’un bruit de $50$ dB à $70$ dB. Par combien l’intensité sonore a-t-elle été multipliée ? [$100$ (deux fois $+10$ dB $= \times 10$)]{.rep}
+
+c) Un jus de citron a un pH de $2$, l’eau pure un pH de $7$. Combien de fois le citron est-il plus acide (rapport des $[H^{+}]$) ? [$10^{5} = 100 \, 000$]{.rep}
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la section [« Construire une échelle logarithmique »](1-construire-une-echelle-logarithmique.qmd#activite-4-1) : un pas de $1$ sur l’échelle correspond à une multiplication par $10$.
+
+## Indice 2 {.unlisted}
+
+Combien de « pas » sépare les deux valeurs sur chaque échelle ? Et que vaut un pas ?
+
+## Indice 3 {.unlisted}
+
+$10$ dB correspondent à une multiplication de l’intensité par $10$ ; une unité de pH à une multiplication de $[H^{+}]$ par $10$.
+
+## Solution {.unlisted}
+
+a) Une unité de magnitude correspond à une multiplication de l’amplitude par $10$ : le rapport vaut $10$.
+
+b) De $50$ dB à $70$ dB, on monte de $20$ dB, soit deux fois $10$ dB : l’intensité est multipliée par $10 \cdot 10 = 100$.
+
+c) Le pH baisse de $7 - 2 = 5$ unités : $[H^{+}]$ est multipliée par $10^{5}$. Le jus de citron est $100 \, 000$ fois plus acide que l’eau pure.
+
+## Pièges {.unlisted}
+
+- Répondre $20$ en b) (ou $5$ en c)) : sur une échelle logarithmique, une différence correspond à un rapport.
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 2 questions →](../autoeval.qmd#sections=sec-culture)
+:::

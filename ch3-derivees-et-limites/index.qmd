@@ -1,0 +1,16 @@
+---
+title: "Chapitre 3 — Dérivées et limites"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Les deux premiers chapitres ont installé les fonctions exponentielles et logarithmes, leurs graphiques et leur algèbre. Il reste à les traiter comme n’importe quelle fonction étudiée en analyse : mesurer leur **vitesse de variation** (la dérivée) et décrire leur **comportement aux bornes** (les limites). Une question restée ouverte au chapitre 1 va d’ailleurs trouver sa réponse : on y avait admis que l’exponentielle est dérivable, sans savoir calculer la pente $f'(0)$. Ce chapitre la calcule enfin.
+
+Les règles générales de dérivation — somme, produit, quotient, composée — sont supposées connues des années précédentes. On ne construit ici que les **briques nouvelles** propres à $e^{x}$, $a^{x}$, $\ln$ et $\log_{a}$, puis on les combine.
+
+## Sections
+
+1. [Dériver l’exponentielle](1-deriver-lexponentielle.qmd) []{.suivi-sec data-exos="3.1"}
+2. [Dériver le logarithme](2-deriver-le-logarithme.qmd) []{.suivi-sec data-exos="3.2 3.3 3.4"}
+3. [Limites de base](3-limites-de-base.qmd) []{.suivi-sec data-exos="3.5 3.6 3.7"}
+4. [Croissance comparée et théorème de l’Hospital](4-croissance-comparee-et-theoreme-de.qmd) []{.suivi-sec data-exos="3.8 3.9 3.10"}

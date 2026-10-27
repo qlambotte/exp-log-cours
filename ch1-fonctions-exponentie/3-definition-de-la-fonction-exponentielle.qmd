@@ -1,0 +1,158 @@
+---
+title: "Définition de la fonction exponentielle"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+::: {#definition-1-3 data-sorte="definition" data-num="1.3" data-page="10" data-phys="12" data-id="6UAA4.fonction-exponentielle-base" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.3** — fonction exponentielle de base $a$
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. La **fonction exponentielle de base $a$** est l’unique fonction $f$ qui vérifie les deux conditions suivantes :
+
+- $\forall x,x' \in \mathbb{R}, f(x+x')=f(x)f(x')$. Autrement dit $f$ **prolonge les puissances rationnelles** de base $a$ ;
+- $f$ est **strictement monotone**.
+
+Son expression analytique est notée $f(x) = a^{x}$.
+:::
+:::
+
+Pourquoi impose-t-on $a \in \mathbb{R}^{> 0} \setminus \{1\}$ ? Réfléchis à chaque cas :
+
+- si $a < 0$ (par exemple $a = -3$) : [$a^{\frac{1}{2}} = \sqrt{-3}$ n’existe pas ; on ne pourrait pas prolonger aux exposants fractionnaires.]{.rep}
+- si $a = 0$ : [$0^{x}$ n’a pas de sens pour $x \leq 0$.]{.rep}
+- si $a = 1$ : [$1^{x} = 1$ pour tout $x$ : la fonction est constante, pas strictement monotone.]{.rep}
+
+::: {#exercice-1-1 data-sorte="exercice" data-num="1.1" data-page="10" data-phys="12" data-id="6UAA4.ex.001" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.1]{.exo-titre} [[C2]{.exo-comp} ★☆☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Entoure les fonctions qui sont des fonctions exponentielles. Pour chacune que tu écartes, dis en un mot pourquoi.
+
+::: {.colonnes style="--n:2"}
+- $f(x) = 2^{x}$
+- $f(x) = (\frac{1}{2})^{x}$
+- $f(x) = (-3)^{x}$
+
+- $f(x) = 3{,}25^{x}$
+- $f(x) = x^{3}$
+- $f(x) = 1^{x}$
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition de la fonction exponentielle de base $a$](#definition-1-3) : quelles conditions la base doit-elle remplir ?
+
+## Indice 2 {.unlisted}
+
+Dans chaque expression, qu’est-ce qui varie : la base ou l’exposant ? Et la base est-elle strictement positive et différente de $1$ ?
+
+## Indice 3 {.unlisted}
+
+Pour $(-3)^{x}$, essaie de calculer $(-3)^{1/2}$. Pour $1^{x}$, calcule quelques valeurs : que remarques-tu ?
+
+## Solution {.unlisted}
+
+Une fonction exponentielle s’écrit $a^{x}$ avec $a \in \mathbb{R}^{> 0} \setminus \{1\}$ (définition 1.3).
+
+- $2^{x}$, $(\frac{1}{2})^{x}$ et $3{,}25^{x}$ sont des fonctions exponentielles (bases $2$, $\frac{1}{2}$ et $3{,}25$).
+- $(-3)^{x}$ ne convient pas : la base est négative ($(-3)^{1/2} = \sqrt{-3}$ n’existe pas).
+- $x^{3}$ ne convient pas : c’est la base qui varie et l’exposant est fixe (fonction puissance).
+- $1^{x}$ ne convient pas : la base vaut $1$, la fonction est constante.
+
+## Pièges {.unlisted}
+
+- Confondre $x^{3}$ (fonction puissance) et $3^{x}$ (fonction exponentielle).
+- Accepter $1^{x}$ : c’est une écriture de la forme $a^{x}$, mais la base $1$ est exclue.
+:::
+:::
+
+De la première condition de la définition — $f$ prolonge les puissances rationnelles — découlent les règles de calcul familières, désormais valables pour *tous* les exposants réels.
+
+::: {#propriete-1-1 data-sorte="propriete" data-num="1.1" data-page="10" data-phys="12" data-id="6UAA4.regles-calcul" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 1.1** — règles de calcul
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Alors, pour tous réels $m, p$ :
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+- $a^{0} = 1$
+
+- $a^{m + p} = a^{m} \cdot a^{p}$
+- $a^{-p} = \frac{1}{a^{p}}$
+:::
+
+::: {.cellule}
+- $(a^{m})^{p} = a^{m p}$
+
+- $\frac{a^{m}}{a^{p}} = a^{m - p}$
+:::
+:::
+:::
+:::
+
+::: {#exercice-1-2 data-sorte="exercice" data-num="1.2" data-page="11" data-phys="13" data-id="6UAA4.ex.002" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.2]{.exo-titre} [[A1]{.exo-comp} ★☆☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Écris chaque expression sous la forme d’une **seule** puissance (ou d’une fraction simple). À chaque fois, **nomme la règle** utilisée.
+
+::: {.colonnes style="--n:2"}
+1. $2^{3} \cdot 2^{5}$
+2. $\frac{7^{9}}{7^{4}}$
+3. $(5^{2})^{3}$
+
+1. $3^{-2}$
+2. $e^{x} \cdot e^{2 x}$
+3. $\frac{(a^{x})^{2}}{a^{x}}$
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété des règles de calcul](#propriete-1-1) sur les exposants.
+
+## Indice 2 {.unlisted}
+
+Les puissances ont-elles la même base ? S’agit-il d’un produit, d’un quotient ou d’une puissance de puissance ?
+
+## Indice 3 {.unlisted}
+
+Pour 6), commence par $(a^{x})^{2} = a^{2 x}$, puis divise par $a^{x}$.
+
+## Solution {.unlisted}
+
+1. $2^{3} \cdot 2^{5} = 2^{3 + 5} = 2^{8}$ (produit de puissances de même base : $a^{m} \cdot a^{p} = a^{m + p}$).
+2. $\frac{7^{9}}{7^{4}} = 7^{9 - 4} = 7^{5}$ (quotient : $a^{m} / a^{p} = a^{m - p}$).
+3. $(5^{2})^{3} = 5^{2 \cdot 3} = 5^{6}$ (puissance d’une puissance : $(a^{m})^{p} = a^{m p}$).
+4. $3^{-2} = \frac{1}{3^{2}} = \frac{1}{9}$ (exposant négatif : $a^{-p} = 1 / a^{p}$).
+5. $e^{x} \cdot e^{2 x} = e^{x + 2 x} = e^{3 x}$ (produit).
+6. $\frac{(a^{x})^{2}}{a^{x}} = \frac{a^{2 x}}{a^{x}} = a^{2 x - x} = a^{x}$ (puissance d’une puissance, puis quotient).
+
+## Pièges {.unlisted}
+
+- Multiplier les exposants dans un produit : $2^{3} \cdot 2^{5} \neq 2^{15}$.
+- Multiplier les bases : $2^{3} \cdot 2^{5} \neq 4^{8}$.
+- Écrire $3^{-2} = -9$ : un exposant négatif donne un inverse, pas un nombre négatif.
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 3 questions →](../autoeval.qmd#sections=sec-def-exp)
+:::

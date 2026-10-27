@@ -1,0 +1,709 @@
+---
+title: "L'essentiel"
+subtitle: "Définitions et propriétés du cours, pour s'y retrouver"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+::: {.callout-important title="À lire avant d'utiliser cette page"}
+Cette page rassemble les énoncés du cours, **sans** les activités qui leur donnent du sens, sans les justifications, les exemples ni les méthodes vues en classe. Connaître ces énoncés **ne suffit pas** : l'essentiel, c'est de savoir les **utiliser**, et cela s'apprend avec les exemples et les exercices.
+
+Sers-t'en pour retrouver un énoncé ou vérifier que tu peux le **redire sans regarder**, puis retourne au cours (lien « dans le cours » sous chaque encadré) et aux exercices.
+:::
+
+## Chapitre 1 — Fonctions exponentielles
+
+### Croissance exponentielle
+
+::: {#ess-definition-1-1 data-sorte="definition" data-num="1.1" data-page="6" data-phys="8" data-id="6UAA4.croissance-exponentielle-2" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.1** — croissance exponentielle
+:::
+
+::: {.theo-body}
+Une fonction $f$ a une **croissance exponentielle** lorsqu’elle vérifie:
+
+$$
+\forall x,x' \in \mathbb{R}, f(x + x') = f(x) \cdot f(x').
+$$
+
+Autrement dit : elle **transforme une somme en un produit**.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch1-fonctions-exponentie/1-croissance-exponentielle.qmd#definition-1-1)
+:::
+
+### Construire une fonction exponentielle
+
+::: {#ess-definition-1-2 data-sorte="definition" data-num="1.2" data-page="10" data-phys="12" data-id="6UAA4.fonction-strictement-monotone" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.2** — fonction strictement monotone
+:::
+
+::: {.theo-body}
+Une fonction $f$ est **strictement monotone** sur son domaine si elle est, *soit* **strictement croissante**, *soit* **strictement décroissante**.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch1-fonctions-exponentie/2-construire-une-fonction-exponentielle.qmd#definition-1-2)
+:::
+
+### Définition de la fonction exponentielle
+
+::: {#ess-definition-1-3 data-sorte="definition" data-num="1.3" data-page="10" data-phys="12" data-id="6UAA4.fonction-exponentielle-base" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.3** — fonction exponentielle de base $a$
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. La **fonction exponentielle de base $a$** est l’unique fonction $f$ qui vérifie les deux conditions suivantes :
+
+- $\forall x,x' \in \mathbb{R}, f(x+x')=f(x)f(x')$. Autrement dit $f$ **prolonge les puissances rationnelles** de base $a$ ;
+- $f$ est **strictement monotone**.
+
+Son expression analytique est notée $f(x) = a^{x}$.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch1-fonctions-exponentie/3-definition-de-la-fonction-exponentielle.qmd#definition-1-3)
+:::
+
+::: {#ess-propriete-1-1 data-sorte="propriete" data-num="1.1" data-page="10" data-phys="12" data-id="6UAA4.regles-calcul" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 1.1** — règles de calcul
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Alors, pour tous réels $m, p$ :
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+- $a^{0} = 1$
+
+- $a^{m + p} = a^{m} \cdot a^{p}$
+- $a^{-p} = \frac{1}{a^{p}}$
+:::
+
+::: {.cellule}
+- $(a^{m})^{p} = a^{m p}$
+
+- $\frac{a^{m}}{a^{p}} = a^{m - p}$
+:::
+:::
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch1-fonctions-exponentie/3-definition-de-la-fonction-exponentielle.qmd#propriete-1-1)
+:::
+
+### Propriétés et caractéristiques graphiques
+
+::: {#ess-propriete-1-2 data-sorte="propriete" data-num="1.2" data-page="12" data-phys="14" data-id="6UAA4.caracteristiques" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 1.2** — caractéristiques de $f(x) = a^{x}$
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$ et $f(x) = a^{x}$.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+- $\operatorname{dom} f =$ [$\mathbb{R}$]{.rep}
+
+- $\operatorname{im} f =$ [$\mathbb{R}^{> 0}$]{.rep}
+- racine(s) : [aucune]{.rep}
+- $G_{f} \cap \text{axe } y$ : [$(0, 1)$]{.rep}
+:::
+
+::: {.cellule}
+- $G_{f} \cap \text{axe } x$ : [aucun point]{.rep}
+
+- points sûrs : [$(0, 1)$ et $(1, a)$]{.rep}
+- concavité : [tournée vers le haut]{.rep}
+- asymptote : [horizontale $y = 0$]{.rep}
+:::
+:::
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+::: {#cadre-si-a-1 .cadre-info}
+**si $a > 1$**
+
+- $f$ est [strictement croissante]{.rep}
+- $\lim\limits_{x \to +\infty} f(x) =$ [$+\infty$]{.rep}
+- $\lim\limits_{x \to -\infty} f(x) =$ [$0$]{.rep}
+- $\text{AH}_{-\infty}$ : [$y = 0$]{.rep}
+:::
+:::
+
+::: {.cellule}
+::: {#cadre-si-0-a-1 .cadre-info}
+**si $0 < a < 1$**
+
+- $f$ est [strictement décroissante]{.rep}
+- $\lim\limits_{x \to +\infty} f(x) =$ [$0$]{.rep}
+- $\lim\limits_{x \to -\infty} f(x) =$ [$+\infty$]{.rep}
+- $\text{AH}_{+\infty} :$ [$y = 0$]{.rep}
+:::
+:::
+:::
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch1-fonctions-exponentie/4-proprietes-et-caracteristiques-graphique.qmd#propriete-1-2)
+:::
+
+::: {#ess-propriete-1-3 data-sorte="propriete" data-num="1.3" data-page="13" data-phys="15" data-id="6UAA4.symetrie-axe" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 1.3** — symétrie d’axe $y$
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Comme $(\frac{1}{a})^{x} = a^{-x}$, le graphique de $f(x) = (\frac{1}{a})^{x}$ est le **symétrique** de celui de $g(x) = a^{x}$ par rapport à l’**axe $y$**.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch1-fonctions-exponentie/4-proprietes-et-caracteristiques-graphique.qmd#propriete-1-3)
+:::
+
+### Multiples d’une fonction exponentielle
+
+::: {#ess-definition-1-4 data-sorte="definition" data-num="1.4" data-page="13" data-phys="15" data-id="6UAA4.multiple-exponentielle" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.4** — multiple d’une exponentielle
+:::
+
+::: {.theo-body}
+Un **multiple d’une fonction exponentielle** est une fonction d’expression
+
+$$
+f(x) = k \cdot a^{x}, \quad a \in \mathbb{R}^{> 0} \setminus \{1\}, \quad k \in \mathbb{R} \setminus \{0\}.
+$$
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.qmd#definition-1-4)
+:::
+
+### Des graphes tous semblables : vers un représentant privilégié
+
+::: {#ess-propriete-1-4 data-sorte="propriete" data-num="1.4" data-page="23" data-phys="25" data-id="6UAA4.changement-base" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 1.4** — changement de base
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Il existe un réel $k$ tel que, pour tout réel $x$,
+
+$$
+a^{x} = 2^{k x}.
+$$
+
+On peut d’ailleurs remplacer $2$ par n’importe quelle autre base de $\mathbb{R}^{> 0} \setminus \{1\}$.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch1-fonctions-exponentie/6-des-graphes-tous-semblables-vers.qmd#propriete-1-4)
+:::
+
+### Le nombre $e$ et l’exponentielle népérienne
+
+::: {#ess-propriete-1-5 data-sorte="propriete" data-num="1.5" data-page="23" data-phys="25" data-id="6UAA4.derivee-exponentielle" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 1.5** — dérivée d’une exponentielle
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. La fonction $f(x) = a^{x}$ est dérivable sur $\mathbb{R}$ tout entier, et
+
+$$
+f'(x) = f'(0) \cdot a^{x}.
+$$
+
+Autrement dit, la dérivée d’une exponentielle est un **multiple d’elle-même**.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch1-fonctions-exponentie/7-le-nombre-e-et-lexponentielle.qmd#propriete-1-5)
+:::
+
+::: {#ess-definition-1-5 data-sorte="definition" data-num="1.5" data-page="24" data-phys="26" data-id="6UAA4.nombre" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.5** — le nombre $e$
+:::
+
+::: {.theo-body}
+Le **nombre d’Euler**, noté $e$, est défini par
+
+$$
+e = \lim\limits_{h \to 0} (1 + h)^{1 / h} = 2{,}718 \, 281 \, 828 \ldots
+$$
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch1-fonctions-exponentie/7-le-nombre-e-et-lexponentielle.qmd#definition-1-5)
+:::
+
+::: {#ess-definition-1-6 data-sorte="definition" data-num="1.6" data-page="25" data-phys="27" data-id="6UAA4.exponentielle-neperienne" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.6** — exponentielle népérienne
+:::
+
+::: {.theo-body}
+L’**exponentielle népérienne** est la fonction exponentielle de base $e$ ; on la note $\operatorname{exp}(x) = e^{x}$.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch1-fonctions-exponentie/7-le-nombre-e-et-lexponentielle.qmd#definition-1-6)
+:::
+
+### Résoudre des équations exponentielles simples
+
+::: {#ess-propriete-1-6 data-sorte="propriete" data-num="1.6" data-page="25" data-phys="27" data-id="6UAA4.egaler-exposants" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 1.6** — égaler les exposants
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Alors pour tous réels $u, v$,
+
+$$
+a^{u} = a^{v} \quad \Longleftrightarrow \quad u = v.
+$$
+
+En particulier, pour deux fonctions $f$ et $g$, $a^{f(x)} = a^{g(x)} \Longleftrightarrow f(x) = g(x)$.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch1-fonctions-exponentie/8-resoudre-des-equations-exponentielles-si.qmd#propriete-1-6)
+:::
+
+## Chapitre 2 — Fonctions logarithmiques
+
+### Du problème $e^{x} = 3$ au logarithme
+
+::: {#ess-propriete-2-1 data-sorte="propriete" data-num="2.1" data-page="32" data-phys="34" data-id="6UAA4.deux-compositions-leur-domaine" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.1** — les deux compositions et leur domaine
+:::
+
+::: {.theo-body}
+Les identités suivantes sont vraies:
+
+- $\ln(e^{x}) = x$ pour **tout $x \in \mathbb{R}$**;
+- $e^{\ln(x)} = x$ pour **$x \in \mathbb{R}^{>0}$**.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch2-fonctions-logarithmi/1-du-probleme-e-x-3.qmd#propriete-2-1)
+:::
+
+### Définition du logarithme de base $a$
+
+::: {#ess-definition-2-1 data-sorte="definition" data-num="2.1" data-page="32" data-phys="34" data-id="6UAA4.logarithme-base" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 2.1** — logarithme de base $a$
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Le **logarithme de base $a$**, noté $\log_{a}$, est la fonction **réciproque** de l’exponentielle de base $a$ : pour tout $x \in \mathbb{R}^{>0}$ et pour tout $y \in \mathbb{R}$,
+
+$$
+\log_{a} (x) = y \quad \Longleftrightarrow \quad a^{y} = x.
+$$
+
+Son domaine est $\mathbb{R}^{> 0}$ : on ne prend le logarithme que d’un nombre strictement positif.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch2-fonctions-logarithmi/2-definition-du-logarithme-de-base.qmd#definition-2-1)
+:::
+
+::: {#ess-propriete-2-2 data-sorte="propriete" data-num="2.2" data-page="33" data-phys="35" data-id="6UAA4.reciprocite-valeurs-remarquables" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.2** — réciprocité et valeurs remarquables
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Alors :
+
+- $\log_{a} (a^{x}) = x$ pour tout $x \in \mathbb{R}$, et $a^{\log_{a} (x)} = x$ pour tout $x > 0$ ;
+- $\log_{a} (1) = 0$ (car $a^{0} = 1$) ; $\log_{a} (a) = 1$ (car $a^{1} = a$).
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch2-fonctions-logarithmi/2-definition-du-logarithme-de-base.qmd#propriete-2-2)
+:::
+
+### Propriétés graphiques, par déduction
+
+::: {#ess-propriete-2-3 data-sorte="propriete" data-num="2.3" data-page="35" data-phys="37" data-id="6UAA4.caracteristiques-2" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.3** — caractéristiques de $f(x) = \log_{a} (x)$
+:::
+
+::: {.theo-body}
+*Déduites* ci-dessus, on les rassemble. Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+- $\operatorname{dom} f = \mathbb{R}^{> 0}$, $\operatorname{im} f = \mathbb{R}$
+
+- racine : $x = 1$ ; $G_{f} \cap \text{axe } x = (1, 0)$
+- $G_{f} \cap \text{axe } y = \emptyset$
+:::
+
+::: {.cellule}
+- points sûrs : $(1, 0)$ et $(a, 1)$
+
+- asymptote **verticale** $x = 0$ ; pas d’asymptote horizontale
+- pas d’ordonnée à l’origine ($0 \notin \operatorname{dom} f$) ; pas de point d’inflexion
+:::
+:::
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+::: {#cadre-si-a-1 .cadre-info}
+**si $a > 1$** : strictement croissante, **concave** ; $\lim\limits_{x \to 0} = -\infty$, $\lim\limits_{x \to +\infty} = +\infty$.
+:::
+:::
+
+::: {.cellule}
+::: {#cadre-si-0-a-1 .cadre-info}
+**si $0 < a < 1$** : strictement décroissante, **convexe** ; $\lim\limits_{x \to 0} = +\infty$, $\lim\limits_{x \to +\infty} = -\infty$.
+:::
+:::
+:::
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.qmd#propriete-2-3)
+:::
+
+::: {#ess-propriete-2-4 data-sorte="propriete" data-num="2.4" data-page="35" data-phys="37" data-id="6UAA4.symetrie-axe-2" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.4** — symétrie d’axe $x$
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Comme $(\frac{1}{a})^{y} = x \Longleftrightarrow a^{-y} = x$, on a
+
+$$
+\log_{1/a} (x) = - \log_{a} (x).
+$$
+
+Le graphique de $\log_{1/a}$ est donc le **symétrique** de celui de $\log_{a}$ par rapport à l’**axe $x$**.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.qmd#propriete-2-4)
+:::
+
+### Propriétés algébriques, à découvrir
+
+::: {#ess-propriete-2-5 data-sorte="propriete" data-num="2.5" data-page="40" data-phys="42" data-id="6UAA4.logarithme-produit" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.5** — logarithme d’un produit
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$ et $x, y \in \mathbb{R}^{> 0}$. Alors
+
+$$
+\log_{a} (x y) = \log_{a} (x) + \log_{a} (y).
+$$
+
+*(Établie à l’activité ci-dessus.)* Le logarithme transforme un **produit en une somme** — exact miroir de l’exponentielle, qui transforme une somme en un produit.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch2-fonctions-logarithmi/4-proprietes-algebriques-a-decouvrir.qmd#propriete-2-5)
+:::
+
+::: {#ess-propriete-2-6 data-sorte="propriete" data-num="2.6" data-page="41" data-phys="43" data-id="6UAA4.logarithme-quotient" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.6** — logarithme d’un quotient
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$ et $x, y \in \mathbb{R}^{> 0}$. Alors
+
+$$
+\log_{a} (\frac{x}{y}) = \log_{a} (x) - \log_{a} (y).
+$$
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch2-fonctions-logarithmi/4-proprietes-algebriques-a-decouvrir.qmd#propriete-2-6)
+:::
+
+::: {#ess-propriete-2-7 data-sorte="propriete" data-num="2.7" data-page="42" data-phys="44" data-id="6UAA4.logarithme-puissance" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.7** — logarithme d’une puissance
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$, $x \in \mathbb{R}^{> 0}$ et $p \in \mathbb{R}$. Alors
+
+$$
+\log_{a} (x^{p}) = p \cdot \log_{a} (x).
+$$
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch2-fonctions-logarithmi/4-proprietes-algebriques-a-decouvrir.qmd#propriete-2-7)
+:::
+
+::: {#ess-propriete-2-8 data-sorte="propriete" data-num="2.8" data-page="42" data-phys="44" data-id="6UAA4.changement-base-2" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.8** — changement de base
+:::
+
+::: {.theo-body}
+Soit $a, b \in \mathbb{R}^{> 0} \setminus \{1\}$ et $x \in \mathbb{R}^{> 0}$. Alors
+
+$$
+\log_{a} (x) = \frac{\log_{b} (x)}{\log_{b} (a)}.
+$$
+
+En particulier, avec la calculatrice : $\log_{a} (x) = \frac{\ln x}{\ln a} = \frac{\log x}{\log a}$.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch2-fonctions-logarithmi/4-proprietes-algebriques-a-decouvrir.qmd#propriete-2-8)
+:::
+
+## Chapitre 3 — Dérivées et limites
+
+### Dériver l’exponentielle
+
+::: {#ess-propriete-3-1 data-sorte="propriete" data-num="3.1" data-page="50" data-phys="52" data-id="6UAA4.derivee-exponentielle-neperienne" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 3.1** — dérivée de l’exponentielle népérienne
+:::
+
+::: {.theo-body}
+La fonction $e^{x}$ est dérivable sur $\mathbb{R}$ et **égale à sa propre dérivée** : $(e^{x})' = e^{x}.$
+
+C’est la seule fonction exponentielle qui possède cette propriété.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch3-derivees-et-limites/1-deriver-lexponentielle.qmd#propriete-3-1)
+:::
+
+::: {#ess-propriete-3-2 data-sorte="propriete" data-num="3.2" data-page="50" data-phys="52" data-id="6UAA4.derivee-exponentielle-composee" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 3.2** — dérivée d’une exponentielle composée
+:::
+
+::: {.theo-body}
+Si $u$ est dérivable, alors $(e^{u(x)})' = u'(x) \cdot e^{u(x)}.$
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch3-derivees-et-limites/1-deriver-lexponentielle.qmd#propriete-3-2)
+:::
+
+::: {#ess-propriete-3-3 data-sorte="propriete" data-num="3.3" data-page="51" data-phys="53" data-id="6UAA4.derivee-exponentielle-base" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 3.3** — dérivée d’une exponentielle de base $a$
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$ et $u$ une fonction dérivable. Alors $a^{x}$ est dérivable sur $\mathbb{R}$ et
+
+$$
+(a^{x})' = a^{x} \cdot \ln a, \quad \text{et plus généralement} \quad (a^{u(x)})' = u'(x) \cdot a^{u(x)} \cdot \ln a.
+$$
+
+La constante $\ln a$ mesure exactement la pente $f'(0)$ laissée en suspens au chapitre 1.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch3-derivees-et-limites/1-deriver-lexponentielle.qmd#propriete-3-3)
+:::
+
+### Dériver le logarithme
+
+::: {#ess-propriete-3-4 data-sorte="propriete" data-num="3.4" data-page="52" data-phys="54" data-id="6UAA4.derivee-logarithme-neperien" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 3.4** — dérivée du logarithme népérien
+:::
+
+::: {.theo-body}
+La fonction $\ln$ est dérivable sur $\mathbb{R}^{> 0}$ et
+
+$$
+(\ln x)' = \frac{1}{x}.
+$$
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch3-derivees-et-limites/2-deriver-le-logarithme.qmd#propriete-3-4)
+:::
+
+::: {#ess-propriete-3-5 data-sorte="propriete" data-num="3.5" data-page="52" data-phys="54" data-id="6UAA4.logarithme-compose-base-quelconque" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 3.5** — logarithme composé, et base quelconque
+:::
+
+::: {.theo-body}
+Si $u$ est dérivable et strictement positive,
+
+$$
+(\ln(u(x)))' = \frac{u'(x)}{u(x)}.
+$$
+
+Pour une base $a \in \mathbb{R}^{> 0} \setminus \{1\}$, le changement de base $\log_{a} (x) = \frac{\ln x}{\ln a}$ donne aussitôt
+
+$$
+(\log_{a} (x))' = \frac{1}{x \ln a}.
+$$
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch3-derivees-et-limites/2-deriver-le-logarithme.qmd#propriete-3-5)
+:::
+
+### Limites de base
+
+::: {#ess-propriete-3-6 data-sorte="propriete" data-num="3.6" data-page="55" data-phys="57" data-id="6UAA4.limites-reference" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 3.6** — limites de référence
+:::
+
+::: {.theo-body}
+::: {.grille style="--n:2"}
+::: {.cellule}
+::: {#cadre-exponentielle-a-1 .cadre-info}
+**Exponentielle, $a > 1$** : $\lim\limits_{x \to +\infty} a^{x} = +\infty$, $\lim\limits_{x \to -\infty} a^{x} = 0$. **Logarithme, $a > 1$** : $\lim\limits_{x \overset{>}{\to} 0} \log_{a} x = -\infty$, $\lim\limits_{x \to +\infty} \log_{a} x = +\infty$.
+:::
+:::
+
+::: {.cellule}
+::: {#cadre-exponentielle-0-a-1 .cadre-info}
+**Exponentielle, $0 < a < 1$** : $\lim\limits_{x \to +\infty} a^{x} = 0$, $\lim\limits_{x \to -\infty} a^{x} = +\infty$. **Logarithme, $0 < a < 1$** : $\lim\limits_{x \overset{>}{\to} 0} \log_{a} x = +\infty$, $\lim\limits_{x \to +\infty} \log_{a} x = -\infty$.
+:::
+:::
+:::
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch3-derivees-et-limites/3-limites-de-base.qmd#propriete-3-6)
+:::
+
+### Croissance comparée et théorème de l’Hospital
+
+::: {#ess-propriete-3-7 data-sorte="propriete" data-num="3.7" data-page="56" data-phys="58" data-id="6UAA4.theoreme-hospital" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 3.7** — théorème de l’Hospital
+:::
+
+::: {.theo-body}
+Soit $f$ et $g$ deux fonctions dérivables et $a \in \mathbb{R} \cup \{+\infty, -\infty\}$. On suppose que $f / g$ présente en $a$ une forme indéterminée, c’est-à-dire :
+
+- soit $\lim\limits_{x \to a} f(x) = 0$ **et** $\lim\limits_{x \to a} g(x) = 0$ (forme $\frac{0}{0}$) ;
+- soit $\lim\limits_{x \to a} g(x) = \pm \infty$ (forme $\frac{\infty}{\infty}$).
+
+On suppose de plus que $g'$ ne s’annule qu’en un nombre **fini** de points au voisinage de $a$ — de sorte que le quotient $f' / g'$ ait bien un sens près de $a$. Alors, à condition que la limite de droite existe,
+
+$$
+\lim\limits_{x \to a} \frac{f(x)}{g(x)} = \lim\limits_{x \to a} \frac{f'(x)}{g'(x)}.
+$$
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.qmd#propriete-3-7)
+:::
+
+## Chapitre 4 — Échelles logarithmiques
+
+### Repère semi-logarithmique : la signature de l’exponentielle
+
+::: {#ess-propriete-4-1 data-sorte="propriete" data-num="4.1" data-page="61" data-phys="63" data-id="6UAA4.semi-log-droite-exponentielle" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 4.1** — semi-log : droite $\Longleftrightarrow$ exponentielle
+:::
+
+::: {.theo-body}
+Soit $y = C \cdot a^{x}$ avec $C > 0$ et $a > 0$. En prenant le logarithme décimal des deux membres :
+
+$$
+\log y = \log(C \cdot a^{x}) = \log C + \log(a^{x}) = \underbrace{(\log a)}_{\text{pente}} \cdot x + \underbrace{(\log C)}_{\text{ord. à l'origine}}.
+$$
+
+La quantité $\log y$ est donc une fonction **affine** de $x$. Sur un repère semi-logarithmique (où l’axe vertical porte $\log y$), le graphique de $y = C \cdot a^{x}$ est une **droite** :
+
+- sa **pente** vaut $\log a$ (on en déduit la base $a = 10^{\text{pente}}$) ;
+- son **ordonnée à l’origine** vaut $\log C$ (on en déduit $C = 10^{\text{ord.}}$).
+
+Réciproquement, si des données s’alignent sur un repère semi-log, elles suivent un modèle exponentiel.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch4-echelles-logarithmiq/2-repere-semi-logarithmique-la-signature.qmd#propriete-4-1)
+:::
+
+### Repère log-log : la signature d’une puissance
+
+::: {#ess-propriete-4-2 data-sorte="propriete" data-num="4.2" data-page="63" data-phys="65" data-id="6UAA4.log-log-droite-puissance" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 4.2** — log-log : droite $\Longleftrightarrow$ puissance
+:::
+
+::: {.theo-body}
+Soit $y = C \cdot x^{p}$ avec $C > 0$ et $x > 0$. En prenant le logarithme décimal des deux membres :
+
+$$
+\log y = \log(C \cdot x^{p}) = \log C + p \log x.
+$$
+
+En posant $Y = \log y$ et $X = \log x$ (les positions sur les deux axes), on obtient
+
+$$
+Y = \underbrace{p}_{\text{pente}} \cdot X + \underbrace{(\log C)}_{\text{ord. à l'origine}} :
+$$
+
+une relation **affine** entre $\log x$ et $\log y$. Sur un repère log-log, le graphique de $y = C \cdot x^{p}$ est donc une **droite** :
+
+- sa **pente** vaut **l’exposant $p$** lui-même ;
+- son ordonnée à l’origine (position à $x = 1$, car $\log 1 = 0$) vaut $\log C$.
+
+Réciproquement, des données alignées sur un repère log-log suivent une loi de puissance.
+:::
+:::
+
+::: {.ess-lien}
+[↗ dans le cours](ch4-echelles-logarithmiq/3-repere-log-log-la-signature.qmd#propriete-4-2)
+:::

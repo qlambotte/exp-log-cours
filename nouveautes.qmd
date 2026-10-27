@@ -1,0 +1,22 @@
+---
+title: "Quoi de neuf ?"
+subtitle: "Ce qui a changé dans le cours en ligne"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+## 27/10/2026
+
+- [Limites de base](ch3-derivees-et-limites/3-limites-de-base.qmd) — modifié : [Propriété 3.6](ch3-derivees-et-limites/3-limites-de-base.qmd#propriete-3-6)
+- [Croissance comparée et théorème de l’Hospital](ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.qmd) — modifié : [Exercice 3.9](ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.qmd#exercice-3-9)
+
+## 16/10/2026
+
+- [Dériver l’exponentielle](ch3-derivees-et-limites/1-deriver-lexponentielle.qmd) — modifié : [Activité 3.1](ch3-derivees-et-limites/1-deriver-lexponentielle.qmd#activite-3-1), [Propriété 3.1](ch3-derivees-et-limites/1-deriver-lexponentielle.qmd#propriete-3-1), [Propriété 3.2](ch3-derivees-et-limites/1-deriver-lexponentielle.qmd#propriete-3-2), [Exemple 3.1](ch3-derivees-et-limites/1-deriver-lexponentielle.qmd#exemple-3-1), [Activité 3.2](ch3-derivees-et-limites/1-deriver-lexponentielle.qmd#activite-3-2), [Propriété 3.3](ch3-derivees-et-limites/1-deriver-lexponentielle.qmd#propriete-3-3) ; retiré : Remarque 3.1
+- [Dériver le logarithme](ch3-derivees-et-limites/2-deriver-le-logarithme.qmd) — modifié : [Activité 3.3](ch3-derivees-et-limites/2-deriver-le-logarithme.qmd#activite-3-3)
+- [Croissance comparée et théorème de l’Hospital](ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.qmd) — ajouté : [Remarque 3.1](ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.qmd#remarque-3-1) ; retiré : Remarque 3.2
+
+## 30/09/2026
+
+- Première version en ligne du cours.
+

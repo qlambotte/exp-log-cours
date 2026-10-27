@@ -1,0 +1,275 @@
+---
+title: "Croissance comparée et théorème de l’Hospital"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Certaines limites résistent aux règles de calcul : elles conduisent à une **forme indéterminée**, une écriture comme $\frac{+\infty}{+\infty}$ ou $\frac{0}{0}$ où l’on ne peut pas conclure directement. Deux exemples, qu’aucun outil actuel ne permet de trancher :
+
+$$
+\lim\limits_{x \to +\infty} \frac{e^{x}}{2 x} \quad \text{(forme } \frac{\infty}{\infty} \text{)} \quad \text{et} \quad \lim\limits_{x \to 1} \frac{\ln x}{x - 1} \quad \text{(forme } \frac{0}{0} \text{). }
+$$
+
+Une première intuition vient de la comparaison des **vitesses de croissance**.
+
+::: {#activite-3-5 data-sorte="activite" data-num="3.5" data-page="56" data-phys="58" data-id="6UAA4.croit-plus-vite" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 3.5** — qui croît le plus vite : $e^{x}$ ou $x$ ?
+:::
+
+::: {.theo-body}
+Complète le tableau (valeurs arrondies), puis observe le quotient.
+
+::: {.tableau}
+| $x$ | $1$ | $5$ | $10$ | $20$ | $30$ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| $e^{x}$ | [$2{,}7$]{.rep} | [$148$]{.rep} | [$\approx 2 \cdot 10^{4}$]{.rep} | [$\approx 5 \cdot 10^{8}$]{.rep} | [$\approx 10^{13}$]{.rep} |
+| $x$ | $1$ | $5$ | $10$ | $20$ | $30$ |
+| $e^{x} / x$ | [$2{,}7$]{.rep} | [$\approx 30$]{.rep} | [$\approx 2200$]{.rep} | [$\approx 2 \cdot 10^{7}$]{.rep} | [$\approx 4 \cdot 10^{11}$]{.rep} |
+:::
+
+Le quotient $e^{x} / x$ [grandit sans limite]{.rep} : bien que $x$ augmente, $e^{x}$ le dépasse de plus en plus. On dit que l’exponentielle **l’emporte** sur toute puissance de $x$. La figure ci-dessous le montre : au-delà d’un certain point, $e^{x}$ écrase $x$ et même $x^{2}$.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": 0.0, "xmax": 4.0, "ymin": 0.0, "ymax": 20.0, "w": 558, "h": 315, "xpas": 1.0, "ypas": 4.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "Math.exp(x)"}}, {"couleur": "#1d6fb8", "pointille": true, "ep": 1.3, "f": {"js": "x"}}, {"couleur": "#0a7d4d", "pointille": true, "ep": 1.3, "f": {"js": "(x * x)"}}], "points": []}'></div>
+```
+
+[$e^{x}$ (rouge), $x$ (bleu pointillé), $x^{2}$ (vert).]{style="color:#6a737d"}
+:::
+:::
+
+Cette intuition se transforme en outil de calcul grâce au théorème suivant, qui remplace une forme indéterminée $f / g$ par le quotient des **dérivées**.
+
+::: {#propriete-3-7 data-sorte="propriete" data-num="3.7" data-page="56" data-phys="58" data-id="6UAA4.theoreme-hospital" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 3.7** — théorème de l’Hospital
+:::
+
+::: {.theo-body}
+Soit $f$ et $g$ deux fonctions dérivables et $a \in \mathbb{R} \cup \{+\infty, -\infty\}$. On suppose que $f / g$ présente en $a$ une forme indéterminée, c’est-à-dire :
+
+- soit $\lim\limits_{x \to a} f(x) = 0$ **et** $\lim\limits_{x \to a} g(x) = 0$ (forme $\frac{0}{0}$) ;
+- soit $\lim\limits_{x \to a} g(x) = \pm \infty$ (forme $\frac{\infty}{\infty}$).
+
+On suppose de plus que $g'$ ne s’annule qu’en un nombre **fini** de points au voisinage de $a$ — de sorte que le quotient $f' / g'$ ait bien un sens près de $a$. Alors, à condition que la limite de droite existe,
+
+$$
+\lim\limits_{x \to a} \frac{f(x)}{g(x)} = \lim\limits_{x \to a} \frac{f'(x)}{g'(x)}.
+$$
+:::
+:::
+
+::: {#remarque-3-1 data-sorte="remarque" data-num="3.1" data-page="57" data-phys="59" data-id="6UAA4.rem.006" data-type="remarque" data-tags="" .theo .theo-remarque}
+::: {.theo-head}
+**Remarque 3.1**
+:::
+
+::: {.theo-body}
+On admet les hypothèses techniques du théorème pour tous les exercices du cours. Deux points de vigilance : l’Hospital ne s’applique **qu’à une forme indéterminée** (jamais à un quotient qui se calcule directement), et il faut parfois **l’appliquer plusieurs fois** de suite avant de lever l’indétermination.
+:::
+:::
+
+::: {#exemple-3-6 data-sorte="exemple" data-num="3.6" data-page="57" data-phys="59" data-id="6UAA4.deux-limites-debut" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 3.6** — les deux limites du début
+:::
+
+::: {.theo-body}
+::: {.grille style="--n:2"}
+::: {.cellule}
+**a)**
+
+$$
+\lim\limits_{x \to +\infty} \frac{e^{x}}{2 x}
+$$
+
+est de la forme $\frac{\infty}{\infty}$. Par l’Hospital :
+
+$$
+\lim\limits_{x \to +\infty} \frac{e^{x}}{2 x} = \lim\limits_{x \to +\infty} \frac{(e^{x})'}{(2 x)'} = \lim\limits_{x \to +\infty} \frac{e^{x}}{2} = +\infty.
+$$
+:::
+
+::: {.cellule}
+**b)**
+
+$$
+\lim\limits_{x \to 1} \frac{\ln x}{x - 1}
+$$
+
+est de la forme $\frac{0}{0}$. Par l’Hospital :
+
+$$
+\lim\limits_{x \to 1} \frac{\ln x}{x - 1} = \lim\limits_{x \to 1} \frac{1 / x}{1} = \lim\limits_{x \to 1} \frac{1}{x} = 1.
+$$
+:::
+:::
+:::
+:::
+
+::: {#exemple-3-7 data-sorte="exemple" data-num="3.7" data-page="57" data-phys="59" data-id="6UAA4.confirmer-croissance-comparee" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 3.7** — confirmer la croissance comparée
+:::
+
+::: {.theo-body}
+$$
+\lim\limits_{x \to +\infty} \frac{3 x}{e^{x}} \quad \text{(forme } \frac{\infty}{\infty} \text{) } = \lim\limits_{x \to +\infty} \frac{3}{e^{x}} = 0.
+$$
+
+L’exponentielle au dénominateur l’emporte : le quotient tend vers $0$, ce qui confirme l’activité ci-dessus.
+:::
+:::
+
+::: {#exercice-3-8 data-sorte="exercice" data-num="3.8" data-page="57" data-phys="59" data-id="6UAA4.ex.051" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 3.8]{.exo-titre} [[A7]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Calcule les limites suivantes à l’aide du théorème de l’Hospital. Précise à chaque fois pourquoi on ne peut pas conclure directement : le numérateur et le dénominateur tendent-ils tous deux vers $0$, ou tous deux vers l’infini ?
+
+::: {.grille style="--n:3"}
+::: {.cellule}
+1. $\lim\limits_{x \to +\infty} \frac{3 x}{e^{x}}$
+2. $\lim\limits_{x \to +\infty} \frac{x}{e^{x}}$
+:::
+
+::: {.cellule}
+3. $\lim\limits_{x \to +\infty} \frac{\ln x}{x}$
+4. $\lim\limits_{x \to -\infty} \frac{e^{-3 x}}{x}$
+:::
+
+::: {.cellule}
+5. $\lim\limits_{x \to 1} \frac{\ln x}{x - 1}$
+6. $\lim\limits_{x \to +\infty} \frac{\ln x}{\sqrt{x}}$
+:::
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété 3.7 (théorème de l’Hospital)](#propriete-3-7) et les exemples [3.6](#exemple-3-6) et [3.7](#exemple-3-7).
+
+## Indice 2 {.unlisted}
+
+Vers quoi tendent le numérateur et le dénominateur ? Deviennent-ils tous deux aussi grands qu’on veut, ou tendent-ils tous deux vers $0$ ?
+
+## Indice 3 {.unlisted}
+
+Si c’est le cas, remplace le quotient par le quotient des dérivées et cherche sa limite.
+
+## Solution {.unlisted}
+
+Dans chaque cas, numérateur et dénominateur tendent tous deux vers $0$, ou deviennent tous deux aussi grands qu’on veut (en valeur absolue) : regarder chaque morceau séparément ne suffit pas, on applique le théorème de l’Hospital.
+
+1. $3 x \to +\infty$ et $e^{x} \to +\infty$. $\lim\limits_{x \to +\infty} \frac{3 x}{e^{x}} = \lim\limits_{x \to +\infty} \frac{3}{e^{x}} = 0$.
+2. $x \to +\infty$ et $e^{x} \to +\infty$. $\lim\limits_{x \to +\infty} \frac{x}{e^{x}} = \lim\limits_{x \to +\infty} \frac{1}{e^{x}} = 0$.
+3. $\ln x \to +\infty$ et $x \to +\infty$. $\lim\limits_{x \to +\infty} \frac{\ln x}{x} = \lim\limits_{x \to +\infty} \frac{1/x}{1} = 0$.
+4. $e^{-3 x} \to +\infty$ et $x \to -\infty$. $\lim\limits_{x \to -\infty} \frac{e^{-3 x}}{x} = \lim\limits_{x \to -\infty} \frac{-3 e^{-3 x}}{1} = -\infty$.
+5. $\ln x \to 0$ et $x - 1 \to 0$. $\lim\limits_{x \to 1} \frac{\ln x}{x - 1} = \lim\limits_{x \to 1} \frac{1/x}{1} = 1$.
+6. $\ln x \to +\infty$ et $\sqrt{x} \to +\infty$. $\lim\limits_{x \to +\infty} \frac{\ln x}{\sqrt{x}} = \lim\limits_{x \to +\infty} \frac{1/x}{1 / (2 \sqrt{x})} = \lim\limits_{x \to +\infty} \frac{2}{\sqrt{x}} = 0$.
+
+## Pièges {.unlisted}
+
+- Dériver le quotient avec la règle du quotient : le théorème porte sur le quotient des dérivées $f' / g'$, pas sur $(f / g)'$.
+- Appliquer le théorème sans vérifier que numérateur et dénominateur tendent tous deux vers $0$ ou vers l’infini.
+:::
+:::
+
+::: {#exercice-3-9 data-sorte="exercice" data-num="3.9" data-page="58" data-phys="60" data-id="6UAA4.ex.052" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 3.9]{.exo-titre} [[A7]{.exo-comp} ★★★]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Ces limites demandent d’**appliquer deux fois** le théorème, ou de réécrire d’abord le produit sous forme de quotient.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+1. $\lim\limits_{x \to +\infty} \frac{x^{2}}{e^{x}}$
+2. $\lim\limits_{x \overset{>}{\to} 0} x \ln x$
+:::
+:::
+
+::: {.rep-bloc}
+**(1)** $x^{2}$ et $e^{x}$ tendent vers $+\infty$ : par l’Hospital, $\lim\limits x^{2} / e^{x} = \lim\limits (2 x) / e^{x}$ ; $2 x$ et $e^{x}$ tendent encore vers $+\infty$, on l’applique une seconde fois : $\lim\limits (2 x) / e^{x} = \lim\limits 2 / e^{x} = 0$. **(2)** $x \to 0$ et $\ln x \to -\infty$ : on réécrit le produit en quotient, $x \ln x = \frac{\ln x}{1 / x}$, où $\ln x \to -\infty$ et $1 / x \to +\infty$ ; par l’Hospital, $\lim\limits \frac{1 / x}{-1 / x^{2}} = \lim\limits (- x) = 0$. Donc $\lim\limits_{x \overset{>}{\to} 0} x \ln x = 0$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété 3.7 (théorème de l’Hospital)](#propriete-3-7).
+
+## Indice 2 {.unlisted}
+
+1) Après une application, le nouveau quotient pose-t-il encore problème ? 2) Comment écrire le produit $x \ln x$ comme un quotient ?
+
+## Indice 3 {.unlisted}
+
+$x \ln x = \frac{\ln x}{1 / x}$.
+
+## Solution {.unlisted}
+
+1. $x^{2} \to +\infty$ et $e^{x} \to +\infty$ : par le théorème, $\lim\limits_{x \to +\infty} \frac{x^{2}}{e^{x}} = \lim\limits_{x \to +\infty} \frac{2 x}{e^{x}}$. Numérateur et dénominateur deviennent encore aussi grands qu’on veut : on l’applique une seconde fois, $\lim\limits_{x \to +\infty} \frac{2 x}{e^{x}} = \lim\limits_{x \to +\infty} \frac{2}{e^{x}} = 0$.
+2. Quand $x$ tend vers $0$ par la droite : $x \to 0$ et $\ln x \to -\infty$. On écrit $x \ln x = \frac{\ln x}{1/x}$ ; alors $\ln x \to -\infty$ et $1 / x \to +\infty$. Par le théorème, $\lim\limits \frac{\ln x}{1/x} = \lim\limits \frac{1/x}{-1/x^{2}} = \lim\limits (-x) = 0$. Donc $\lim\limits_{x \overset{>}{\to} 0} x \ln x = 0$.
+
+## Pièges {.unlisted}
+
+- En 2), appliquer le théorème directement au produit : il ne s’applique qu’à un quotient.
+:::
+:::
+
+Enfin, un exercice de **transfert** : les dérivées et limites servent à décrire un phénomène réel.
+
+::: {#exercice-3-10 data-sorte="exercice" data-num="3.10" data-page="58" data-phys="60" data-id="6UAA4.ex.053" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 3.10]{.exo-titre} [[T3 · A7]{.exo-comp} ★★★]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Une culture de bactéries compte $N(t) = 500 e^{0{,}2 t}$ individus ($t$ en heures). a) Calcule $N'(t)$ et interprète : que représente cette dérivée ? b) À quelle **vitesse** la population croît-elle à $t = 10$ h ? c) Que vaut $\lim\limits_{t \to +\infty} N(t)$, et pourquoi ce modèle n’est-il pas réaliste à très long terme ?
+
+::: {.rep-bloc}
+a) $N'(t) = 500 \cdot 0{,}2 \cdot e^{0{,}2 t} = 100 e^{0{,}2 t}$ : c’est la **vitesse de croissance** (bactéries par heure). b) $N'(10) = 100 e^{2} \approx 739$ bactéries/h. c) $\lim\limits_{t \to +\infty} N(t) = +\infty$ : le modèle prévoit une population infinie, ce qui est impossible (ressources limitées) — la croissance exponentielle ne vaut qu’un temps.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété 3.2](1-deriver-lexponentielle.qmd#propriete-3-2) (exponentielle composée) et la [propriété des limites de référence](3-limites-de-base.qmd#propriete-3-6).
+
+## Indice 2 {.unlisted}
+
+Que mesure la dérivée d’une fonction qui donne un nombre de bactéries en fonction du temps ?
+
+## Indice 3 {.unlisted}
+
+$(e^{0{,}2 t})' = 0{,}2 e^{0{,}2 t}$.
+
+## Solution {.unlisted}
+
+a) $N'(t) = 500 \cdot 0{,}2 \cdot e^{0{,}2 t} = 100 e^{0{,}2 t}$. $N'(t)$ est la vitesse de croissance de la population à l’instant $t$, en bactéries par heure.
+
+b) $N'(10) = 100 e^{2} \approx 739$ : à $t = 10$ h, la population croît d’environ $739$ bactéries par heure.
+
+c) Quand $t \to +\infty$, $0{,}2 t \to +\infty$ et $e^{0{,}2 t} \to +\infty$, donc $\lim\limits_{t \to +\infty} N(t) = +\infty$. Le modèle prévoit une population qui dépasse toute valeur, ce qui est impossible (espace et nourriture limités) : il ne vaut que sur une durée limitée.
+
+## Pièges {.unlisted}
+
+- Répondre en b) par $N(10)$ : on demande une vitesse, donc $N'(10)$.
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 4 questions →](../autoeval.qmd#sections=sec-hospital)
+:::

@@ -1,0 +1,47 @@
+---
+title: "Des graphes tous semblables : vers un représentant privilégié"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Voici dix fonctions exponentielles tracées dans un même repère. Observe comme elles se ressemblent : toutes passent par $(0, 1)$ et s’en écartent en éventail — les bases $> 1$ montent vers la droite, les bases $< 1$ montent vers la gauche.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -10.0, "xmax": 10.0, "ymin": 0.0, "ymax": 10.0, "w": 620, "h": 340, "sansgrad": true, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.0, "f": {"js": "Math.pow(8.0, x)"}}, {"pointille": false, "ep": 1.0, "f": {"js": "Math.pow(3.0, x)"}}, {"pointille": false, "ep": 1.0, "f": {"js": "Math.pow(2.0, x)"}}, {"pointille": false, "ep": 1.0, "f": {"js": "Math.pow(1.5, x)"}}, {"pointille": false, "ep": 1.0, "f": {"js": "Math.pow(1.2, x)"}}, {"pointille": false, "ep": 1.0, "f": {"js": "Math.pow((1.0 / 8.0), x)"}}, {"pointille": false, "ep": 1.0, "f": {"js": "Math.pow(0.5, x)"}}, {"pointille": false, "ep": 1.0, "f": {"js": "Math.pow(0.2, x)"}}, {"pointille": false, "ep": 1.0, "f": {"js": "Math.pow(0.33, x)"}}, {"pointille": false, "ep": 1.0, "f": {"js": "Math.pow(0.7, x)"}}], "points": []}'></div>
+```
+
+::: {.ia-legende}
+Dix fonctions exponentielles : des courbes toutes semblables, articulées autour de $(0, 1)$.
+:::
+
+```{=html}
+<div class="ia" data-ia="curseurs" data-cfg='{"f": {"js": "Math.pow(p_a, x)"}, "curseurs": [{"nom": "p_a", "etiquette": "a", "min": 0.1, "max": 5.0, "pas": 0.05, "val": 2.0}], "params": ["p_a"], "xmin": -4.0, "xmax": 4.0, "ymin": 0.0, "ymax": 8.0, "fixes": [{"js": "Math.pow(2.0, x)"}], "xlabel": "x", "ylabel": "y"}'></div>
+```
+
+::: {.ia-legende}
+La courbe de $a^{x}$ quand la base $a$ varie ; en tirets, celle de $2^{x}$.
+:::
+
+Cette ressemblance n’est pas un hasard : chaque courbe est une *transformée* des autres. On peut par exemple obtenir n’importe quelle exponentielle en « comprimant » horizontalement celle de base $2$.
+
+::: {#propriete-1-4 data-sorte="propriete" data-num="1.4" data-page="23" data-phys="25" data-id="6UAA4.changement-base" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 1.4** — changement de base
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Il existe un réel $k$ tel que, pour tout réel $x$,
+
+$$
+a^{x} = 2^{k x}.
+$$
+
+On peut d’ailleurs remplacer $2$ par n’importe quelle autre base de $\mathbb{R}^{> 0} \setminus \{1\}$.
+:::
+:::
+
+Puisque toutes les exponentielles se déduisent d’une seule, autant en **choisir une** comme représentante et l’étudier à fond. On pourrait garder $2^{x}$ ; mais nous allons choisir une base dont la valeur rend une propriété particulièrement simple. Cette base s’appelle $e$, du nom du mathématicien Leonhard **Euler**.
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 1 question →](../autoeval.qmd#sections=sec-semblables)
+:::

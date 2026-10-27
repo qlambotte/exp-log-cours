@@ -1,0 +1,896 @@
+---
+title: "Multiples d’une fonction exponentielle"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Dans les problèmes concrets, on rencontre rarement $a^{x}$ tout seul : on rencontre plutôt un **multiple**, comme le capital $C_{n} = 1000 \cdot 1{,}1^{n}$.
+
+::: {#definition-1-4 data-sorte="definition" data-num="1.4" data-page="13" data-phys="15" data-id="6UAA4.multiple-exponentielle" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.4** — multiple d’une exponentielle
+:::
+
+::: {.theo-body}
+Un **multiple d’une fonction exponentielle** est une fonction d’expression
+
+$$
+f(x) = k \cdot a^{x}, \quad a \in \mathbb{R}^{> 0} \setminus \{1\}, \quad k \in \mathbb{R} \setminus \{0\}.
+$$
+:::
+:::
+
+::: {#remarque-1-2 data-sorte="remarque" data-num="1.2" data-page="13" data-phys="15" data-id="6UAA4.rem.002" data-type="remarque" data-tags="" .theo .theo-remarque}
+::: {.theo-head}
+**Remarque 1.2**
+:::
+
+::: {.theo-body}
+Le coefficient $k$ se lit immédiatement sur la courbe : $f(0) = k \cdot a^{0} = k$, donc $k$ est l’**ordonnée à l’origine**. De plus $f(1) = k \cdot a$. C’est le paramètre $C$ de l’écriture officielle $f(t) = C \cdot a^{k t}$ que tu retrouveras dans les objectifs (compétences C3, A3).
+:::
+:::
+
+::: {#exemple-1-2 data-sorte="exemple" data-num="1.2" data-page="14" data-phys="16" data-id="6UAA4.lire-multiple" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 1.2** — lire un multiple
+:::
+
+::: {.theo-body}
+Soit $f(x) = 3 \cdot 2^{x}$. Alors $f(0) = 3 \cdot 2^{0} = 3$ et $f(1) = 3 \cdot 2 = 6$. Comme $k = 3 > 0$ et la base $2 > 1$, la fonction est strictement croissante, et part de l’ordonnée à l’origine $3$.
+:::
+:::
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 12.0, "w": 496, "h": 278, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "(3.0 * Math.pow(2.0, x))"}}, {"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "(2.0 * Math.pow(0.5, x))"}}], "points": [{"x": 0.0, "y": 3.0}, {"x": 0.0, "y": 2.0}], "lecture": true}'></div>
+```
+
+[$f(x) = 3 \cdot 2^{x}$ (croissante, o.à.o. $3$) et $g(x) = 2 \cdot (\frac{1}{2})^{x}$ (décroissante, o.à.o. $2$).]{style="color:#6a737d"}
+
+Entraîne-toi à lire ces trois informations — l’ordonnée à l’origine $k$, la valeur $f(1)$ et le sens de variation — directement sur les courbes.
+
+::: {#activite-1-9 data-sorte="activite" data-num="1.9" data-page="15" data-phys="17" data-id="6UAA4.lire-multiples-graphique" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 1.9** — lire des multiples sur un graphique
+:::
+
+::: {.theo-body}
+Trois multiples d’exponentielles sont représentés ci-dessous. Pour chacun, lis $f(0)$ et $f(1)$ sur la courbe, puis complète le tableau.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -2.0, "xmax": 3.0, "ymin": 0.0, "ymax": 13.0, "w": 558, "h": 315, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "(3.0 * Math.pow(2.0, x))"}}, {"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "(6.0 * Math.pow(0.5, x))"}}, {"couleur": "#0a7d4d", "pointille": false, "ep": 1.3, "f": {"js": "(1.0 * Math.pow(3.0, x))"}}], "points": [{"x": 0.0, "y": 3.0}, {"x": 1.0, "y": 6.0}, {"x": 0.0, "y": 6.0}, {"x": 1.0, "y": 3.0}, {"x": 0.0, "y": 1.0}, {"x": 1.0, "y": 3.0}]}'></div>
+```
+
+::: {.tableau}
+| Courbe | $f(0) = k$ | $f(1)$ | sens de variation |
+|:---:|:---:|:---:|:---:|
+| [■]{style="color:#1d6fb8"} $f_{1}$ | [$3$]{.rep} | [$6$]{.rep} | [croissante (base $2 > 1$)]{.rep} |
+| [■]{style="color:#c1002a"} $f_{2}$ | [$6$]{.rep} | [$3$]{.rep} | [décroissante (base $\frac{1}{2} < 1$)]{.rep} |
+| [■]{style="color:#0a7d4d"} $f_{3}$ | [$1$]{.rep} | [$3$]{.rep} | [croissante (base $3 > 1$)]{.rep} |
+:::
+
+Retrouve enfin l’expression de chacune sous la forme $k \cdot a^{x}$ (avec $a = f(1) / f(0)$) :
+
+$f_{1}(x) =$ [$3 \cdot 2^{x}$]{.rep} $f_{2}(x) =$ [$6 \cdot (\frac{1}{2})^{x}$]{.rep} $f_{3}(x) =$ [$3^{x}$]{.rep}
+:::
+:::
+
+::: {#remarque-1-3 data-sorte="remarque" data-num="1.3" data-page="15" data-phys="17" data-id="6UAA4.rem.003" data-type="remarque" data-tags="" .theo .theo-remarque}
+::: {.theo-head}
+**Remarque 1.3**
+:::
+
+::: {.theo-body}
+Que se passe-t-il si $k < 0$ ? Le facteur négatif **renverse** la courbe par rapport à l’axe $x$ : le graphe de $f(x) = -2^{x}$ est le symétrique de celui de $2^{x}$ (il passe alors par $(0, -1)$ et reste toujours négatif).
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 2.5, "ymin": -6.0, "ymax": 6.0, "w": 496, "h": 278, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "Math.pow(2.0, x)"}}, {"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "((-1.0) * Math.pow(2.0, x))"}}], "points": [{"x": 0.0, "y": 1.0}, {"x": 0.0, "y": -1.0}], "lecture": true}'></div>
+```
+:::
+:::
+
+::: {#exercice-1-4 data-sorte="exercice" data-num="1.4" data-page="16" data-phys="18" data-id="6UAA4.ex.004" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.4]{.exo-titre} [[C2]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Parmi les fonctions suivantes, lesquelles sont des fonctions exponentielles ou des multiples de fonctions exponentielles ? Justifie chaque réponse.
+
+::: {.colonnes style="--n:3"}
+- $f(x) = 1^{x}$
+- $f(x) = -(\frac{1}{3})^{x}$
+- $f(x) = (5^{-1})^{x}$
+- $f(x) = 2 \cdot x^{5 / 3}$
+- $f(x) = 4 (-\frac{1}{3})^{x}$
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition d’un multiple d’une exponentielle](#definition-1-4) : $k \cdot a^{x}$, avec quelles conditions sur $k$ et sur $a$ ?
+
+## Indice 2 {.unlisted}
+
+Peux-tu réécrire chaque expression sous la forme $k \cdot a^{x}$ ? La base obtenue est-elle strictement positive et différente de $1$ ?
+
+## Indice 3 {.unlisted}
+
+$(5^{-1})^{x} = (\frac{1}{5})^{x}$ et $-(\frac{1}{3})^{x} = (-1) \cdot (\frac{1}{3})^{x}$. Pour $4 (-\frac{1}{3})^{x}$, regarde le signe de la base.
+
+## Solution {.unlisted}
+
+- $1^{x}$ : non, la base vaut $1$ (fonction constante).
+- $-(\frac{1}{3})^{x} = (-1) \cdot (\frac{1}{3})^{x}$ : oui, multiple d’une exponentielle ($k = -1$, $a = \frac{1}{3}$).
+- $(5^{-1})^{x} = (\frac{1}{5})^{x}$ : oui, fonction exponentielle de base $\frac{1}{5}$.
+- $2 \cdot x^{5/3}$ : non, l’exposant est fixe et la base varie (fonction puissance).
+- $4 (-\frac{1}{3})^{x}$ : non, la base $-\frac{1}{3}$ est négative.
+
+## Pièges {.unlisted}
+
+- Refuser $-(\frac{1}{3})^{x}$ à cause du signe « $-$ » : il porte sur le coefficient $k$, pas sur la base.
+- Accepter $4 (-\frac{1}{3})^{x}$ : ici le signe « $-$ » est dans la base.
+:::
+:::
+
+::: {#exercice-1-5 data-sorte="exercice" data-num="1.5" data-page="16" data-phys="18" data-id="6UAA4.ex.005" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.5]{.exo-titre} [[C5]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Pour chaque tableau, précise s’il représente une croissance exponentielle. **Nomme le critère** que tu utilises (rapport constant pour des pas de $x$ égaux).
+
+::: {.grille style="--n:3"}
+::: {.cellule}
+::: {.tableau}
+| $x$ | $y$ |
+|:---:|:---:|
+| $0$ | $2$ |
+| $1$ | $6$ |
+| $2$ | $18$ |
+| $3$ | $54$ |
+:::
+:::
+
+::: {.cellule}
+::: {.tableau}
+| $x$ | $y$ |
+|:---:|:---:|
+| $0$ | $5$ |
+| $1$ | $8$ |
+| $2$ | $11$ |
+| $3$ | $14$ |
+:::
+:::
+
+::: {.cellule}
+::: {.tableau}
+| $x$ | $y$ |
+|:---:|:---:|
+| $1$ | $1$ |
+| $2$ | $4$ |
+| $3$ | $9$ |
+| $4$ | $16$ |
+:::
+:::
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition de la croissance exponentielle](1-croissance-exponentielle.qmd#definition-1-1) et l’[activité sur l’invariant](1-croissance-exponentielle.qmd#activite-1-3) : pour des pas égaux de $x$, que doit-il se passer pour $y$ ?
+
+## Indice 2 {.unlisted}
+
+Pour chaque tableau, calcule les quotients de deux valeurs consécutives de $y$. Sont-ils égaux ?
+
+## Indice 3 {.unlisted}
+
+Premier tableau : $\frac{6}{2}$, $\frac{18}{6}$, $\frac{54}{18}$. Deuxième tableau : calcule aussi les différences.
+
+## Solution {.unlisted}
+
+Critère : pour des pas de $x$ égaux, la croissance est exponentielle si le quotient de deux valeurs consécutives de $y$ est constant.
+
+- Tableau 1 : $\frac{6}{2} = \frac{18}{6} = \frac{54}{18} = 3$. Le quotient est constant : croissance exponentielle de base $3$.
+- Tableau 2 : $\frac{8}{5} \neq \frac{11}{8}$. Ce n’est pas une croissance exponentielle ; les différences sont constantes ($+3$) : croissance affine.
+- Tableau 3 : $\frac{4}{1} = 4$, $\frac{9}{4}$, $\frac{16}{9}$ : quotients différents, ce n’est pas une croissance exponentielle (ce sont les carrés $x^{2}$).
+
+## Pièges {.unlisted}
+
+- Regarder les différences au lieu des quotients : des différences constantes signalent une croissance affine.
+- Conclure après un seul quotient : il faut vérifier tous les quotients.
+:::
+:::
+
+::: {#exercice-1-6 data-sorte="exercice" data-num="1.6" data-page="17" data-phys="19" data-id="6UAA4.ex.006" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.6]{.exo-titre} [[A4]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Détermine l’expression analytique des fonctions exponentielles (ou multiples) représentées ci-dessous. Pour chacune, lis l’ordonnée à l’origine $k = f(0)$ et un second point pour trouver la base.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+a)
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 4.0, "w": 372, "h": 278, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "Math.pow(2.5, x)"}}], "points": []}'></div>
+```
+:::
+
+::: {.cellule}
+b)
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 4.0, "w": 372, "h": 278, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "Math.pow(0.4, x)"}}], "points": []}'></div>
+```
+:::
+
+::: {.cellule}
+c)
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": -8.0, "ymax": 0.0, "w": 372, "h": 278, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "((-2.0) * Math.pow(3.0, x))"}}], "points": []}'></div>
+```
+:::
+
+::: {.cellule}
+d)
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -2.0, "xmax": 4.0, "ymin": 0.0, "ymax": 4.0, "w": 372, "h": 278, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "Math.pow(1.2, x)"}}], "points": []}'></div>
+```
+:::
+
+::: {.cellule}
+e)
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 7.0, "w": 372, "h": 278, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "(3.0 * Math.pow(2.0, x))"}}], "points": []}'></div>
+```
+:::
+
+::: {.cellule}
+f)
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 7.0, "w": 372, "h": 278, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "(4.0 * Math.pow(0.5, x))"}}], "points": []}'></div>
+```
+:::
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « lire un multiple »](#exemple-1-2) : $f(x) = k \cdot a^{x}$ avec $k = f(0)$.
+
+## Indice 2 {.unlisted}
+
+Que vaut $f(1)$ par rapport à $f(0)$ ? Par quel nombre faut-il multiplier pour passer de l’un à l’autre ?
+
+## Indice 3 {.unlisted}
+
+Lis $f(0) = k$, puis $f(1)$ ; la base vaut $a = f(1) / f(0)$.
+
+## Solution {.unlisted}
+
+Pour chaque graphique, $k = f(0)$ et $a = f(1) / f(0)$.
+
+- a) $f(0) = 1$, $f(1) = 2{,}5$ : $f(x) = 2{,}5^{x}$.
+- b) $f(0) = 1$, $f(1) = 0{,}4$ : $f(x) = 0{,}4^{x}$.
+- c) $f(0) = -2$, $f(1) = -6$ : $a = -6 / (-2) = 3$, donc $f(x) = -2 \cdot 3^{x}$.
+- d) $f(0) = 1$, $f(1) = 1{,}2$ : $f(x) = 1{,}2^{x}$.
+- e) $f(0) = 3$, $f(1) = 6$ : $a = 2$, donc $f(x) = 3 \cdot 2^{x}$.
+- f) $f(0) = 4$, $f(1) = 2$ : $a = \frac{1}{2}$, donc $f(x) = 4 \cdot (\frac{1}{2})^{x}$.
+
+## Pièges {.unlisted}
+
+- Prendre $f(1)$ comme base quand $k \neq 1$ : la base est le quotient $f(1) / f(0)$.
+- En c), chercher une base négative : le signe vient de $k = -2$, la base reste positive.
+:::
+:::
+
+::: {#exercice-1-7 data-sorte="exercice" data-num="1.7" data-page="18" data-phys="20" data-id="6UAA4.ex.007" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.7]{.exo-titre} [[A2]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Soit $f(x) = 2^{x}$. Associe chaque expression à la transformation géométrique correspondante du graphe de $f$, puis donne les coordonnées du point d’intersection de chaque graphe avec l’axe des ordonnées.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+1. $g(x) = 2^{x} + 2$
+2. $h(x) = 2^{x - 2}$
+3. $k(x) = 2 \cdot 2^{x}$
+4. $l(x) = 2^{-x}$
+:::
+
+::: {.cellule}
++ translation de $2$ unités vers le haut ;
+
+1. translation de $2$ unités vers la droite ;
+2. étirement vertical de facteur $2$ ;
+3. symétrie par rapport à l’axe des ordonnées.
+:::
+:::
+
+::: {.rep-bloc}
+$g$ ⟶ (a) translation vers le haut, o.à.o. $(0, 3)$. $h$ ⟶ (b) translation vers la droite, o.à.o. $(0, 1/4)$. $k = 2^{x + 1}$ ⟶ (c) étirement vertical, o.à.o. $(0, 2)$. $l$ ⟶ (d) symétrie d’axe $y$, o.à.o. $(0, 1)$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété de symétrie d’axe $y$](4-proprietes-et-caracteristiques-graphique.qmd#propriete-1-2) et la [définition des multiples](#definition-1-4) $k \cdot a^{x}$.
+
+## Indice 2 {.unlisted}
+
+Dans chaque expression, où a-t-on modifié $2^{x}$ : on ajoute quelque chose au résultat, on change $x$, ou on multiplie le résultat ?
+
+## Indice 3 {.unlisted}
+
+Calcule $g(0)$, $h(0)$, $k(0)$ et $l(0)$ pour trouver les points sur l’axe des ordonnées.
+
+## Solution {.unlisted}
+
+- $g(x) = 2^{x} + 2$ : on ajoute $2$ à chaque image, translation de $2$ unités vers le haut (1). $g(0) = 3$ : point $(0, 3)$.
+- $h(x) = 2^{x - 2}$ : on remplace $x$ par $x - 2$, translation de $2$ unités vers la droite (2). $h(0) = 2^{-2} = \frac{1}{4}$ : point $(0, \frac{1}{4})$.
+- $k(x) = 2 \cdot 2^{x}$ : chaque image est multipliée par $2$, étirement vertical de facteur $2$ (3). $k(0) = 2$ : point $(0, 2)$.
+- $l(x) = 2^{-x}$ : on remplace $x$ par $-x$, symétrie d’axe $y$ (4). $l(0) = 1$ : point $(0, 1)$.
+
+## Pièges {.unlisted}
+
+- Croire que $2^{x - 2}$ déplace la courbe vers la gauche : on remplace $x$ par $x - 2$, la courbe se déplace vers la droite.
+- Confondre $2 \cdot 2^{x}$ et $2^{2 x}$ : $2 \cdot 2^{x} = 2^{x + 1}$.
+:::
+:::
+
+::: {#exercice-1-8 data-sorte="exercice" data-num="1.8" data-page="18" data-phys="20" data-id="6UAA4.ex.008" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.8]{.exo-titre} [[A2]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+La courbe de référence $f(x) = 2^{x}$ est tracée en pointillés. Les courbes **A**, **B**, **C** en sont des transformées simples. Pour chacune, donne son expression analytique et nomme la transformation appliquée à $f$.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": -6.0, "ymax": 8.0, "w": 558, "h": 340, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#6a737d", "pointille": true, "ep": 1.0, "f": {"js": "Math.pow(2.0, x)"}}, {"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "(Math.pow(2.0, x) + 2.0)"}}, {"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "Math.pow(2.0, (-x))"}}, {"couleur": "#0a7d4d", "pointille": false, "ep": 1.3, "f": {"js": "((-1.0) * Math.pow(2.0, x))"}}], "points": [{"x": 0.0, "y": 1.0}, {"x": 0.0, "y": 3.0}, {"x": 0.0, "y": -1.0}]}'></div>
+```
+
+[■]{style="color:#1d6fb8"} A [■]{style="color:#c1002a"} B [■]{style="color:#0a7d4d"} C [- - -]{style="color:#6a737d"} référence $2^{x}$
+
+::: {.rep-bloc}
+**A** $= 2^{x} + 2$ : translation verticale vers le haut (asymptote $y = 2$, o.à.o. $3$). **B** $= 2^{-x} = (1/2)^{x}$ : symétrie d’axe $y$ (décroissante). **C** $= -2^{x}$ : symétrie d’axe $x$ (o.à.o. $-1$).
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété de symétrie d’axe $y$](4-proprietes-et-caracteristiques-graphique.qmd#propriete-1-2) et la [définition des multiples](#definition-1-4).
+
+## Indice 2 {.unlisted}
+
+Pour chaque courbe, où coupe-t-elle l’axe des ordonnées ? Est-elle croissante ou décroissante ? Au-dessus ou en dessous de l’axe des $x$ ?
+
+## Indice 3 {.unlisted}
+
+La courbe A passe par $(0, 3)$ et a l’allure de $2^{x}$ : que faut-il ajouter à $2^{x}$ ?
+
+## Solution {.unlisted}
+
+- A : même allure que $2^{x}$, décalée de $2$ vers le haut (elle passe par $(0, 3)$ et s’approche de la droite $y = 2$). A $= 2^{x} + 2$ : translation de $2$ unités vers le haut.
+- B : passe par $(0, 1)$ et décroît. B $= 2^{-x} = (\frac{1}{2})^{x}$ : symétrie d’axe $y$.
+- C : sous l’axe des $x$, passe par $(0, -1)$. C $= -2^{x}$ : symétrie d’axe $x$.
+
+## Pièges {.unlisted}
+
+- Écrire B $= -2^{x}$ : le symétrique par rapport à l’axe $y$ reste au-dessus de l’axe des $x$.
+- Écrire A $= 3 \cdot 2^{x}$ parce qu’elle passe par $(0, 3)$ : regarde aussi vers quoi elle tend à gauche ($y = 2$, pas $0$).
+:::
+:::
+
+::: {#exercice-1-9 data-sorte="exercice" data-num="1.9" data-page="19" data-phys="21" data-id="6UAA4.ex.009" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.9]{.exo-titre} [[A3]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Associe chaque expression analytique au graphique correspondant (I à IV).
+
+::: {.grille style="--n:4"}
+::: {.cellule}
+I
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -2.5, "xmax": 2.5, "ymin": -3.0, "ymax": 6.0, "w": 320, "h": 350, "xpas": 1.0, "ypas": 3.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "(3.0 * Math.pow(2.0, x))"}}], "points": [{"x": 0.0, "y": 3.0}]}'></div>
+```
+:::
+
+::: {.cellule}
+II
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -2.5, "xmax": 2.5, "ymin": -3.0, "ymax": 6.0, "w": 320, "h": 350, "xpas": 1.0, "ypas": 3.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "Math.pow(2.0, x)"}}], "points": [{"x": 0.0, "y": 1.0}]}'></div>
+```
+:::
+
+::: {.cellule}
+III
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -2.5, "xmax": 2.5, "ymin": -3.0, "ymax": 6.0, "w": 320, "h": 350, "xpas": 1.0, "ypas": 3.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "Math.pow(0.5, x)"}}], "points": [{"x": 0.0, "y": 1.0}]}'></div>
+```
+:::
+
+::: {.cellule}
+IV
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -2.5, "xmax": 2.5, "ymin": -3.0, "ymax": 6.0, "w": 320, "h": 350, "xpas": 1.0, "ypas": 3.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "((-1.0) * Math.pow(2.0, x))"}}], "points": [{"x": 0.0, "y": -1.0}]}'></div>
+```
+:::
+:::
+
+Expressions à placer : $f(x) = 2^{x}$ $g(x) = 3 \cdot 2^{x}$ $h(x) = (\frac{1}{2})^{x}$ $k(x) = -2^{x}$
+
+::: {.rep-bloc}
+I $= g = 3 \cdot 2^{x}$ (o.à.o. $3$) ; II $= f = 2^{x}$ (o.à.o. $1$) ; III $= h = (1/2)^{x}$ (décroissante) ; IV $= k = -2^{x}$ (sous l’axe, o.à.o. $-1$).
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « lire un multiple »](#exemple-1-2) : $k = f(0)$ se lit sur l’axe des ordonnées.
+
+## Indice 2 {.unlisted}
+
+Pour chaque graphique : où la courbe coupe-t-elle l’axe des ordonnées ? Croît-elle ou décroît-elle ?
+
+## Indice 3 {.unlisted}
+
+Calcule $f(0)$, $g(0)$, $h(0)$ et $k(0)$, puis compare avec les graphiques.
+
+## Solution {.unlisted}
+
+$f(0) = 1$, $g(0) = 3$, $h(0) = 1$, $k(0) = -1$.
+
+- I passe par $(0, 3)$ : I $= g$, $g(x) = 3 \cdot 2^{x}$.
+- II passe par $(0, 1)$ et croît : II $= f$, $f(x) = 2^{x}$.
+- III passe par $(0, 1)$ et décroît (base $\frac{1}{2} < 1$) : III $= h$, $h(x) = (\frac{1}{2})^{x}$.
+- IV est sous l’axe des $x$ et passe par $(0, -1)$ : IV $= k$, $k(x) = -2^{x}$.
+
+## Pièges {.unlisted}
+
+- Confondre II et III : les deux passent par $(0, 1)$, c’est le sens de variation qui les distingue.
+:::
+:::
+
+::: {#exercice-1-10 data-sorte="exercice" data-num="1.10" data-page="19" data-phys="21" data-id="6UAA4.ex.010" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.10]{.exo-titre} [[C4]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+On considère une fonction exponentielle de la forme
+
+$f(x) = C \cdot a^{x}$
+
+et on sait que $f(0) = 400$ et $f(3) = 500$.
+
+1. Détermine la valeur de $C$.
+2. En utilisant la valeur de $f(3)$, établis une équation permettant de déterminer la base $a$.
+3. Détermine la valeur de $a$ à l’aide de la calculatrice.
+4. Donne finalement l’expression analytique de $f$.
+
+::: {.rep-bloc}
+1) $C = f(0) = 400$. 2) $400 \cdot a^{3} = 500 ⟹ a^{3} = 1{,}25$. 3) $a = \sqrt[3]{1{,}25} \approx 1{,}0772$. 4) $f(x) = 400 \cdot 1{,}0772^{x}$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition des multiples](#definition-1-4) : que vaut $f(0)$ pour $f(x) = C \cdot a^{x}$ ?
+
+## Indice 2 {.unlisted}
+
+Que vaut $a^{0}$ ? Et que devient l’égalité $f(3) = 500$ quand tu remplaces $C$ par sa valeur ?
+
+## Indice 3 {.unlisted}
+
+$400 \cdot a^{3} = 500$, donc $a^{3} = 500 / 400$. La base est la racine cubique de ce nombre.
+
+## Solution {.unlisted}
+
+1. $f(0) = C \cdot a^{0} = C$, donc $C = 400$.
+2. $f(3) = 500$ donne $400 \cdot a^{3} = 500$, soit $a^{3} = \frac{500}{400} = 1{,}25$.
+3. $a = \sqrt[3]{1{,}25} \approx 1{,}0772$ (la base est positive).
+4. $f(x) = 400 \cdot 1{,}0772^{x}$.
+
+## Pièges {.unlisted}
+
+- Diviser $500$ par $3$ au lieu de prendre une racine cubique : $a^{3} = 1{,}25$ ne donne pas $a = 1{,}25 / 3$.
+- Oublier $C$ dans l’équation : $a^{3} = 500$ est faux.
+:::
+:::
+
+::: {#exercice-1-11 data-sorte="exercice" data-num="1.11" data-page="20" data-phys="22" data-id="6UAA4.ex.011" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.11]{.exo-titre} [[A1]{.exo-comp} ★☆☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+On considère la fonction $f(x) = 250 \cdot 1{,}08^{x}$. À l’aide de la calculatrice, calcule les valeurs suivantes. Donne chaque résultat au dixième près.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+1. $f(0)$
+2. $f(2)$
+3. $f(5)$
+4. $f(10)$
+:::
+
+::: {.cellule}
+5. $f(1{,}5)$
+6. $f(7{,}25)$
+7. $f(-2)$
+8. $f(12{,}5)$
+:::
+:::
+
+Que remarques-tu concernant les valeurs obtenues lorsque l’exposant n’est pas entier ?
+
+::: {.rep-bloc}
+$f(0) = 250$ ; $f(2) \approx 291{,}6$ ; $f(5) \approx 367{,}3$ ; $f(10) \approx 539{,}7$ ; $f(1{,}5) \approx 280{,}6$ ; $f(7{,}25) \approx 436{,}8$ ; $f(-2) \approx 214{,}3$ ; $f(12{,}5) \approx 654{,}2$. L’exponentielle est définie pour **tout** réel : un exposant non entier (ou négatif) donne une valeur parfaitement définie — la courbe est **continue**.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition de la fonction exponentielle](3-definition-de-la-fonction-exponentielle.qmd#definition-1-3) : pour quels réels $x$ est-elle définie ?
+
+## Indice 2 {.unlisted}
+
+Comment saisir un exposant non entier ou négatif sur ta calculatrice (touche $x^{y}$ ou `^`) ?
+
+## Indice 3 {.unlisted}
+
+Calcule d’abord $1{,}08^{x}$, puis multiplie par $250$ ; arrondis seulement à la fin.
+
+## Solution {.unlisted}
+
+$f(0) = 250$ ; $f(2) \approx 291{,}6$ ; $f(5) \approx 367{,}3$ ; $f(10) \approx 539{,}7$ ; $f(1{,}5) \approx 280{,}6$ ; $f(7{,}25) \approx 436{,}8$ ; $f(-2) \approx 214{,}3$ ; $f(12{,}5) \approx 654{,}2$.
+
+Les exposants non entiers ou négatifs donnent des valeurs bien définies, situées entre les valeurs voisines ($f(1{,}5)$ est entre $f(1)$ et $f(2)$) : la fonction est définie pour tout réel et sa courbe est continue.
+
+## Pièges {.unlisted}
+
+- Calculer $(250 \cdot 1{,}08)^{x}$ : la priorité donne $250 \cdot (1{,}08^{x})$.
+- Arrondir $1{,}08^{x}$ avant de multiplier par $250$.
+:::
+:::
+
+## Modéliser avec une exponentielle
+
+Les multiples d’exponentielles servent surtout à **modéliser** : dès qu’une grandeur est multipliée par un même facteur à intervalles réguliers, on l’écrit $k \cdot a^{x}$ (ou $k \cdot a^{x / T}$ si la période $T$ n’est pas $1$).
+
+::: {#exercice-1-12 data-sorte="exercice" data-num="1.12" data-page="20" data-phys="22" data-id="6UAA4.ex.012" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.12]{.exo-titre} [[C3]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+La quantité d’un médicament présente dans le sang d’un patient est modélisée par la fonction
+
+$$
+C(t) = 80 \cdot 0{,}75^{2 t},
+$$
+
+où $t$ est exprimé en heures et $C(t)$ en milligrammes.
+
+1. Que représente le nombre $80$ dans ce modèle ?
+2. Que représente le nombre $0{,}75$ ?
+3. Que signifie le facteur $2$ présent dans l’exposant ?
+4. Par quel facteur la quantité est-elle multipliée lorsque $t$ augmente d’une heure ?
+5. La quantité diminue-t-elle de $25 \%$ par heure ? Justifie ta réponse.
+
+::: {.rep-bloc}
+1) La dose **initiale** ($t = 0$), soit $80$ mg. 2) Le facteur multiplicatif par **demi-heure** (quand $t$ augmente de $0{,}5$, l’exposant augmente de $1$). 3) Le phénomène se répète **deux fois par heure** : chaque heure, on multiplie deux fois par $0{,}75$. 4) Par heure : $0{,}75^{2} = 0{,}5625$. 5) **Non** : $-25 \%$ correspondrait au facteur $0{,}75$ par heure ; or le facteur horaire vaut $0{,}5625$, soit une baisse de $43{,}75 \%$ par heure (les $25 \%$ valent par demi-heure).
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « modéliser une situation »](#exemple-1-3) : dans $C \cdot a^{x}$, que représentent $C$ et $a$ ?
+
+## Indice 2 {.unlisted}
+
+Quand $t$ augmente de $0{,}5$, de combien augmente l’exposant $2 t$ ? Et quand $t$ augmente de $1$ ?
+
+## Indice 3 {.unlisted}
+
+$C(t + 1) = 80 \cdot 0{,}75^{2 t + 2} = C(t) \cdot 0{,}75^{2}$.
+
+## Solution {.unlisted}
+
+1. $C(0) = 80 \cdot 0{,}75^{0} = 80$ : $80$ mg est la quantité initiale (à $t = 0$).
+2. Quand $t$ augmente de $0{,}5$ h, l’exposant $2 t$ augmente de $1$ : $0{,}75$ est le facteur multiplicatif par demi-heure.
+3. Le facteur $2$ signifie que la multiplication par $0{,}75$ a lieu deux fois par heure.
+4. $C(t + 1) = 80 \cdot 0{,}75^{2 t + 2} = C(t) \cdot 0{,}75^{2} = C(t) \cdot 0{,}5625$ : la quantité est multipliée par $0{,}5625$ chaque heure.
+5. Non. Une diminution de $25 \%$ par heure correspondrait au facteur $0{,}75$ par heure ; le facteur horaire vaut $0{,}5625 = 1 - 0{,}4375$, soit une diminution de $43{,}75 \%$ par heure. Les $25 \%$ valent par demi-heure.
+
+## Pièges {.unlisted}
+
+- Répondre « oui, $25 \%$ par heure » en lisant seulement la base $0{,}75$ sans tenir compte du $2$ dans l’exposant.
+- Doubler le pourcentage ($50 \%$ par heure) : deux diminutions successives de $25 \%$ ne font pas $50 \%$.
+:::
+:::
+
+::: {#exercice-1-13 data-sorte="exercice" data-num="1.13" data-page="21" data-phys="23" data-id="6UAA4.ex.013" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.13]{.exo-titre} [[T1]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Pour chacune des situations suivantes, choisis le modèle qui te semble le plus approprié parmi les modèles rencontrés en classe. Justifie ton choix.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+**Situations :**
+
+1. Une entreprise augmente chaque année le salaire de ses employés de $150$ €.
+2. Une population de bactéries augmente de $30 \%$ chaque heure.
+3. La température d’un liquide augmente de $2$ °C par minute pendant les cinq premières minutes.
+4. La valeur d’une voiture diminue de $12 \%$ chaque année.
+:::
+
+::: {.cellule}
+**Modèles possibles :**
+
+- croissance affine ;
+- croissance exponentielle ;
+- décroissance affine ;
+- décroissance exponentielle.
+:::
+:::
+
+Pour chaque situation, précise le modèle choisi et explique en une phrase ce qui justifie ton choix.
+
+::: {.rep-bloc}
+1) Croissance **affine** : on **ajoute** $150$ € chaque année (montant fixe). 2) Croissance **exponentielle** : on **multiplie** par $1{,}3$ ($+30 \%$) chaque heure. 3) Croissance **affine** : on ajoute $2$ °C par minute (taux constant). 4) Décroissance **exponentielle** : on multiplie par $0{,}88$ chaque année.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition de la croissance exponentielle](1-croissance-exponentielle.qmd#definition-1-1) : on multiplie par un même nombre à chaque pas.
+
+## Indice 2 {.unlisted}
+
+Dans chaque situation, à chaque pas de temps, ajoute-t-on (ou retire-t-on) un même nombre, ou multiplie-t-on par un même nombre ?
+
+## Indice 3 {.unlisted}
+
+Un pourcentage d’augmentation ou de diminution revient à multiplier : $+30 \%$ donne $\times 1{,}3$.
+
+## Solution {.unlisted}
+
+1. Croissance affine : le salaire augmente chaque année du même montant ($+150$ €).
+2. Croissance exponentielle : la population est multipliée chaque heure par $1{,}3$ ($+30 \%$).
+3. Croissance affine : la température augmente chaque minute du même nombre de degrés ($+2$ °C).
+4. Décroissance exponentielle : la valeur est multipliée chaque année par $0{,}88$ ($-12 \%$).
+
+## Pièges {.unlisted}
+
+- Classer « $+30 \%$ par heure » en affine : un pourcentage constant donne un facteur constant, donc une croissance exponentielle.
+:::
+:::
+
+::: {#exemple-1-3 data-sorte="exemple" data-num="1.3" data-page="21" data-phys="23" data-id="6UAA4.modeliser-situation" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 1.3** — modéliser une situation
+:::
+
+::: {.theo-body}
+Une population de $500$ bactéries **triple** toutes les heures. Modélisons son effectif $N(t)$ après $t$ heures. On multiplie par $3$ chaque heure, en partant de $500$ : donc $N(t) = 500 \cdot 3^{t}$. Après $4$ heures : $N(4) = 500 \cdot 3^{4} = 500 \cdot 81 = 40 \, 500$ bactéries.
+:::
+:::
+
+::: {#exercice-1-14 data-sorte="exercice" data-num="1.14" data-page="21" data-phys="23" data-id="6UAA4.ex.014" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.14]{.exo-titre} [[T2]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+En $1850$, Bourgville comptait $100$ habitants ; sa population **double** tous les dix ans.
+
+1. Donne l’expression $P(x)$ du nombre d’habitants $x$ années après $1850$.
+2. Combien d’habitants en $1900$, en $1950$, en $2000$ ?
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « modéliser une situation »](#exemple-1-3) : quand le facteur s’applique tous les $10$ ans, quel est l’exposant ?
+
+## Indice 2 {.unlisted}
+
+Combien de fois la population a-t-elle doublé après $x$ années ?
+
+## Indice 3 {.unlisted}
+
+Après $x$ années, la population a doublé $x / 10$ fois : $P(x) = 100 \cdot 2^{x / 10}$.
+
+## Solution {.unlisted}
+
+1. La population initiale vaut $100$ et elle est multipliée par $2$ tous les $10$ ans ; après $x$ années, elle a doublé $\frac{x}{10}$ fois : $P(x) = 100 \cdot 2^{x / 10}$.
+2. - En $1900$ ($x = 50$) : $P(50) = 100 \cdot 2^{5} = 3 \, 200$ habitants.
+
+   - En $1950$ ($x = 100$) : $P(100) = 100 \cdot 2^{10} = 102 \, 400$ habitants.
+   - En $2000$ ($x = 150$) : $P(150) = 100 \cdot 2^{15} = 3 \, 276 \, 800$ habitants.
+
+## Pièges {.unlisted}
+
+- Écrire $P(x) = 100 \cdot 2^{x}$ : la population doublerait chaque année.
+- Prendre $x = 1900$ au lieu de $x = 50$ : $x$ compte les années depuis $1850$.
+:::
+:::
+
+::: {#exercice-1-15 data-sorte="exercice" data-num="1.15" data-page="21" data-phys="23" data-id="6UAA4.ex.015" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.15]{.exo-titre} [[T2]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Dans une famille de lapins, le nombre d’individus **double** tous les sept jours ; elle compte actuellement $100$ lapins.
+
+1. Donne l’expression $L(t)$ du nombre de lapins après $t$ jours.
+2. Combien de lapins dans un mois ($30$ jours) ? Dans trois mois ($90$ jours) ?
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « modéliser une situation »](#exemple-1-3) et compare avec l’exercice de Bourgville.
+
+## Indice 2 {.unlisted}
+
+Après $t$ jours, combien de périodes de $7$ jours se sont écoulées ?
+
+## Indice 3 {.unlisted}
+
+$L(t) = 100 \cdot 2^{t / 7}$ ; calcule $L(30)$ et $L(90)$ à la calculatrice.
+
+## Solution {.unlisted}
+
+1. Il y a $100$ lapins au départ et leur nombre est multiplié par $2$ tous les $7$ jours : $L(t) = 100 \cdot 2^{t / 7}$.
+2. - Dans un mois : $L(30) = 100 \cdot 2^{30 / 7} \approx 1 \, 950$ lapins.
+
+   - Dans trois mois : $L(90) = 100 \cdot 2^{90 / 7} \approx 742 \, 000$ lapins.
+
+## Pièges {.unlisted}
+
+- Calculer $2^{30} / 7$ au lieu de $2^{30 / 7}$ : mets l’exposant entre parenthèses sur la calculatrice.
+:::
+:::
+
+::: {#exercice-1-16 data-sorte="exercice" data-num="1.16" data-page="22" data-phys="24" data-id="6UAA4.ex.016" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.16]{.exo-titre} [[T3]{.exo-comp} ★★★]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Dans un pays en crise, la monnaie (le « sou ») se déprécie de $8{,}5 \%$ par an.
+
+1. Donne l’expression de la « valeur réelle » $R(t)$ d’un billet de $1000$ sous après $t$ années.
+2. Que vaudra ce billet dans $5$ ans ? Dans $10$ ans ?
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « modéliser une situation »](#exemple-1-3) : une diminution de $p \%$ revient à multiplier par $1 - \frac{p}{100}$.
+
+## Indice 2 {.unlisted}
+
+Si le billet perd $8{,}5 \%$ de sa valeur en un an, quelle part de sa valeur garde-t-il ?
+
+## Indice 3 {.unlisted}
+
+Le facteur annuel vaut $1 - 0{,}085 = 0{,}915$.
+
+## Solution {.unlisted}
+
+1. Chaque année, la valeur réelle est multipliée par $1 - 0{,}085 = 0{,}915$ ; au départ elle vaut $1000$ sous : $R(t) = 1000 \cdot 0{,}915^{t}$.
+2. - Dans $5$ ans : $R(5) = 1000 \cdot 0{,}915^{5} \approx 641$ sous.
+
+   - Dans $10$ ans : $R(10) = 1000 \cdot 0{,}915^{10} \approx 411$ sous.
+
+## Pièges {.unlisted}
+
+- Prendre $0{,}085$ comme base : c’est la part perdue, pas la part conservée.
+- Soustraire $10 \cdot 85$ sous en $10$ ans : la perte est un pourcentage de la valeur restante, elle diminue chaque année.
+:::
+:::
+
+::: {#exercice-1-17 data-sorte="exercice" data-num="1.17" data-page="22" data-phys="24" data-id="6UAA4.ex.017" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.17]{.exo-titre} [[T3]{.exo-comp} ★★★]{.exo-meta}
+:::
+
+::: {.exo-corps}
+En janvier $2017$, Jules achète une voiture à $29 \, 850$ €. Elle se **déprécie** d’environ $15 \%$ par an pendant les premières années.
+
+1. Modélise la valeur $V(x)$ de la voiture $x$ années après l’achat.
+2. Quelle est sa valeur $10$ ans plus tard ?
+3. Peut-on parler de « bon placement » ? Justifie.
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « modéliser une situation »](#exemple-1-3).
+
+## Indice 2 {.unlisted}
+
+Une dépréciation de $15 \%$ par an : par quel nombre la valeur est-elle multipliée chaque année ?
+
+## Indice 3 {.unlisted}
+
+$V(x) = 29 \, 850 \cdot 0{,}85^{x}$ ; calcule $V(10)$.
+
+## Solution {.unlisted}
+
+1. Chaque année, la valeur est multipliée par $1 - 0{,}15 = 0{,}85$ : $V(x) = 29 \, 850 \cdot 0{,}85^{x}$.
+2. $V(10) = 29 \, 850 \cdot 0{,}85^{10} \approx 5 \, 877$ € : après $10$ ans, la voiture ne vaut plus qu’environ $5 \, 877$ €.
+3. Non : la base $0{,}85$ est inférieure à $1$, la valeur décroît. Après $10$ ans, elle a perdu environ $80 \%$ de son prix d’achat ; ce n’est pas un placement.
+
+## Pièges {.unlisted}
+
+- Utiliser la base $1{,}15$ : une dépréciation fait diminuer la valeur.
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 7 questions →](../autoeval.qmd#sections=sec-multiples)
+:::

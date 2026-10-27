@@ -1,0 +1,242 @@
+---
+title: "Résoudre des équations exponentielles simples"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Une **équation exponentielle** est une équation dont l’inconnue figure dans un (ou plusieurs) exposant(s). Pour la résoudre, on ramène les deux membres à une **même base**.
+
+Le principe de résolution découle **directement** de la stricte monotonie de la définition (§ 1.2.3) : une fonction strictement monotone ne prend jamais deux fois la même valeur. On obtient donc gratuitement la règle suivante.
+
+::: {#propriete-1-6 data-sorte="propriete" data-num="1.6" data-page="25" data-phys="27" data-id="6UAA4.egaler-exposants" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 1.6** — égaler les exposants
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Alors pour tous réels $u, v$,
+
+$$
+a^{u} = a^{v} \quad \Longleftrightarrow \quad u = v.
+$$
+
+En particulier, pour deux fonctions $f$ et $g$, $a^{f(x)} = a^{g(x)} \Longleftrightarrow f(x) = g(x)$.
+:::
+:::
+
+::: {#remarque-1-5 data-sorte="remarque" data-num="1.5" data-page="26" data-phys="28" data-id="6UAA4.rem.005" data-type="remarque" data-tags="" .theo .theo-remarque}
+::: {.theo-head}
+**Remarque 1.5**
+:::
+
+::: {.theo-body}
+Sans la stricte monotonie, ce serait faux : avec la base $a = 1$, par exemple, $1^{u} = 1^{v} = 1$ pour tous $u, v$, et l’on ne pourrait pas « remonter » aux exposants. C’est bien la stricte monotonie qui rend la manœuvre légitime.
+:::
+:::
+
+**Méthode.** Pour résoudre $a^{f(x)} = a^{g(x)}$ :
+
+1. ramener les deux membres à une même base, si nécessaire ;
+2. résoudre l’équation $f(x) = g(x)$ obtenue en égalant les exposants ;
+3. écrire l’ensemble des solutions.
+
+::: {#exemple-1-4 data-sorte="exemple" data-num="1.4" data-page="26" data-phys="28" data-id="6UAA4.deux-resolutions-modeles" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 1.4** — deux résolutions modèles
+:::
+
+::: {.theo-body}
+::: {.grille style="--n:2"}
+::: {.cellule}
+**(a)** Résoudre $e^{3 x + 1} - \frac{1}{e^{2}} = 0$.
+
+1. On récrit : $e^{3 x + 1} = e^{-2}$.
+2. On égale les exposants (stricte monotonie) : $3 x + 1 = -2$, donc $x = -1$.
+3. $S = \{ -1 \}$.
+:::
+
+::: {.cellule}
+**(b)** Résoudre $(\frac{5}{3})^{2 x - 2} = \frac{3}{5}$.
+
+1. On récrit : $(\frac{5}{3})^{2 x - 2} = (\frac{5}{3})^{-1}$.
+2. On égale les exposants : $2 x - 2 = -1$, donc $x = \frac{1}{2}$.
+3. $S = \{ \frac{1}{2} \}$.
+:::
+:::
+:::
+:::
+
+Avant de t’exercer, voici un cas où la mise sous même base demande un peu de travail.
+
+::: {#exemple-1-5 data-sorte="exemple" data-num="1.5" data-page="26" data-phys="28" data-id="6UAA4.ramener-meme-base" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 1.5** — ramener à une même base
+:::
+
+::: {.theo-body}
+Résoudre $9^{x + 1} = \sqrt[3]{3}$. On exprime tout en base $3$ : $9 = 3^{2}$ et $\sqrt[3]{3} = 3^{1 / 3}$. L’équation devient
+
+$$
+(3^{2})^{x + 1} = 3^{1 / 3} \quad \Longleftrightarrow \quad 3^{2 x + 2} = 3^{1 / 3}.
+$$
+
+Comme $a^{u} = a^{v} \Longleftrightarrow u = v$, on a $2 x + 2 = \frac{1}{3}$, d’où $2 x = -\frac{5}{3}$ et $x = -\frac{5}{6}$. Donc $S = \{ -\frac{5}{6} \}$.
+:::
+:::
+
+::: {#exercice-1-19 data-sorte="exercice" data-num="1.19" data-page="26" data-phys="28" data-id="6UAA4.ex.019" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.19]{.exo-titre} [[A5]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Résous les équations suivantes. À l’étape clé, **nomme la propriété** qui autorise à égaler les exposants.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+1. $5^{x} = 1$
+2. $3^{x - 3} = 9$
+3. $10^{x + 2} = 0{,}0001$
+4. $2^{x} = \sqrt[3]{4}$
+5. $(\frac{2}{3})^{x} = \frac{3}{2}$
+:::
+
+::: {.cellule}
+6. $e^{2 x} = e$
+7. $e^{2 x^{2}} \cdot e^{-3 x} = 1$
+8. $e^{4 x^{2}} = \frac{1}{e^{3}}$
+9. $3^{2 x - 3} = \frac{1}{\sqrt{3}}$
+10. $\sqrt[5]{3} = \frac{1}{3^{2 x + 1}}$
+:::
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété « égaler les exposants »](7-le-nombre-e-et-lexponentielle.qmd#propriete-1-5) et l’[exemple « ramener à une même base »](#exemple-1-5).
+
+## Indice 2 {.unlisted}
+
+Peux-tu écrire les deux membres comme des puissances d’une même base ? Pense à $1 = a^{0}$, $\sqrt{a} = a^{1/2}$, $1 / a = a^{-1}$.
+
+## Indice 3 {.unlisted}
+
+Par exemple, $3^{x - 3} = 9 = 3^{2}$, donc $x - 3 = 2$.
+
+## Solution {.unlisted}
+
+Dans chaque cas, on écrit les deux membres comme puissances d’une même base, puis on égale les exposants : $a^{u} = a^{v} \Longleftrightarrow u = v$ car $a^{x}$ est strictement monotone (propriété 1.5).
+
+1. $5^{x} = 5^{0} \Longleftrightarrow x = 0$. $S = \{0\}$.
+2. $3^{x - 3} = 3^{2} \Longleftrightarrow x - 3 = 2 \Longleftrightarrow x = 5$. $S = \{5\}$.
+3. $10^{x + 2} = 10^{-4} \Longleftrightarrow x + 2 = -4 \Longleftrightarrow x = -6$. $S = \{-6\}$.
+4. $2^{x} = 4^{1/3} = 2^{2/3} \Longleftrightarrow x = \frac{2}{3}$. $S = \{\frac{2}{3}\}$.
+5. $(\frac{2}{3})^{x} = (\frac{2}{3})^{-1} \Longleftrightarrow x = -1$. $S = \{-1\}$.
+6. $e^{2 x} = e^{1} \Longleftrightarrow 2 x = 1 \Longleftrightarrow x = \frac{1}{2}$. $S = \{\frac{1}{2}\}$.
+7. $e^{2 x^{2} - 3 x} = e^{0} \Longleftrightarrow 2 x^{2} - 3 x = 0 \Longleftrightarrow x (2 x - 3) = 0 \Longleftrightarrow x = 0$ ou $x = \frac{3}{2}$. $S = \{0 ; \frac{3}{2}\}$.
+8. $e^{4 x^{2}} = e^{-3} \Longleftrightarrow 4 x^{2} = -3$, impossible car $4 x^{2} \geq 0$. $S = \emptyset$.
+9. $3^{2 x - 3} = 3^{-1/2} \Longleftrightarrow 2 x - 3 = -\frac{1}{2} \Longleftrightarrow x = \frac{5}{4}$. $S = \{\frac{5}{4}\}$.
+10. $3^{1/5} = 3^{-(2 x + 1)} \Longleftrightarrow \frac{1}{5} = -2 x - 1 \Longleftrightarrow x = -\frac{3}{5}$. $S = \{-\frac{3}{5}\}$.
+
+## Pièges {.unlisted}
+
+- Égaler les exposants alors que les bases sont différentes ($3^{x - 3} = 9$ ne donne pas $x - 3 = 9$).
+- En 7), additionner les exposants sans oublier le signe : $e^{2 x^{2}} \cdot e^{-3 x} = e^{2 x^{2} - 3 x}$.
+- En 8), écrire $x = \pm \frac{\sqrt{3}}{2}$ : un carré n’est jamais négatif.
+:::
+:::
+
+::: {#exercice-1-20 data-sorte="exercice" data-num="1.20" data-page="27" data-phys="29" data-id="6UAA4.ex.020" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.20]{.exo-titre} [[C7]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Voici la résolution de l’équation $4^{x + 1} = 8$. **Justifie chaque étape** en nommant la règle ou la propriété utilisée.
+
+$$
+4^{x + 1} = 8 \quad \Longleftrightarrow \quad (2^{2})^{x + 1} = 2^{3} \quad \text{étape 1 :} \text{…………}  \\ \Longleftrightarrow \quad 2^{2 x + 2} = 2^{3} \quad \text{étape 2 :} \text{…………}  \\ \Longleftrightarrow \quad 2 x + 2 = 3 \quad \text{étape 3 :} \text{…………}  \\ \Longleftrightarrow \quad x = \frac{1}{2} \quad \text{étape 4 :} \text{…………}
+$$
+
+::: {.rep-bloc}
+Étape 1 : réécriture des deux membres en base $2$ ($4 = 2^{2}$, $8 = 2^{3}$). Étape 2 : règle des exposants $(a^{m})^{p} = a^{m p}$. Étape 3 : **stricte monotonie** de l’exponentielle ($a^{u} = a^{v} \Longleftrightarrow u = v$) — on égale les exposants. Étape 4 : équation du premier degré. Donc $S = \{ \frac{1}{2} \}$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété des règles de calcul](3-definition-de-la-fonction-exponentielle.qmd#propriete-1-1) et la [propriété « égaler les exposants »](7-le-nombre-e-et-lexponentielle.qmd#propriete-1-5).
+
+## Indice 2 {.unlisted}
+
+À chaque ligne, qu’est-ce qui a changé par rapport à la ligne précédente ?
+
+## Indice 3 {.unlisted}
+
+Étape 1 : on a remplacé $4$ et $8$ par des puissances de $2$.
+
+## Solution {.unlisted}
+
+- Étape 1 : on écrit les deux membres en base $2$ : $4 = 2^{2}$ et $8 = 2^{3}$.
+- Étape 2 : règle de la puissance d’une puissance, $(a^{m})^{p} = a^{m p}$ : $(2^{2})^{x + 1} = 2^{2 x + 2}$.
+- Étape 3 : la fonction $2^{x}$ est strictement croissante, donc $2^{u} = 2^{v} \Longleftrightarrow u = v$ (propriété 1.5) : on égale les exposants.
+- Étape 4 : on résout l’équation du premier degré $2 x + 2 = 3$.
+
+Donc $S = \{\frac{1}{2}\}$.
+
+## Pièges {.unlisted}
+
+- Justifier l’étape 3 par « on enlève les bases » : c’est la stricte monotonie de l’exponentielle qui autorise ce passage.
+:::
+:::
+
+::: {#exercice-1-21 data-sorte="exercice" data-num="1.21" data-page="27" data-phys="29" data-id="6UAA4.ex.021" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.21]{.exo-titre} [[A5]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Résous l’équation $12 \cdot e^{x} + 5 = 41$. Que constates-tu ?
+
+::: {.rep-bloc}
+En isolant : $12 e^{x} = 36$, donc $e^{x} = 3$. Mais aucune de nos méthodes ne permet d’écrire $3$ comme une puissance de $e$ d’exposant connu : on est **bloqué**. Il nous manque un outil pour « descendre » l’inconnue de l’exposant — ce sera le **logarithme**, au chapitre suivant.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété « égaler les exposants »](7-le-nombre-e-et-lexponentielle.qmd#propriete-1-5) : que faut-il pouvoir faire avec le second membre ?
+
+## Indice 2 {.unlisted}
+
+Après avoir isolé $e^{x}$, peux-tu écrire le second membre comme une puissance de $e$ ?
+
+## Indice 3 {.unlisted}
+
+$12 e^{x} + 5 = 41 \Longleftrightarrow 12 e^{x} = 36 \Longleftrightarrow e^{x} = 3$.
+
+## Solution {.unlisted}
+
+$12 e^{x} + 5 = 41 \Longleftrightarrow 12 e^{x} = 36 \Longleftrightarrow e^{x} = 3$.
+
+On ne sait pas écrire $3$ sous la forme $e^{c}$ avec un exposant $c$ connu : la propriété 1.5 ne permet pas de conclure. Graphiquement, la courbe de $e^{x}$ atteint la hauteur $3$ (pour $x$ entre $1$ et $1{,}1$ environ), donc l’équation a une solution, mais il manque un outil pour l’exprimer : ce sera le logarithme (chapitre 2).
+
+## Pièges {.unlisted}
+
+- Écrire $x = 3$ : c’est $e^{x}$ qui vaut $3$, pas $x$.
+- Conclure qu’il n’y a pas de solution : la solution existe, on ne sait pas encore l’écrire.
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 4 questions →](../autoeval.qmd#sections=sec-eq-exp)
+:::

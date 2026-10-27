@@ -1,0 +1,212 @@
+---
+title: "Croissance exponentielle"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+## Une rumeur qui se propage
+
+::: {#activite-1-1 data-sorte="activite" data-num="1.1" data-page="2" data-phys="4" data-id="6UAA4.propagation-secret" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 1.1** — la propagation d’un secret
+:::
+
+::: {.theo-body}
+Une élève des Ursulines, Laura, connaît un secret le jour $0$. Le jour $1$, elle le confie à Diego. Ensuite, **chaque jour**, chaque personne déjà au courant le confie à **une nouvelle** personne : le nombre de personnes au courant **double** d’un jour à l’autre. Notons $p_{n}$ le nombre de personnes qui connaissent le secret le jour $n$.
+
+a) Complète le tableau (au jour $0$, seule Laura sait : $p_{0} = 1$) :
+
+::: {.tableau}
+| $n$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ | $7$ | $8$ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| $p_{n}$ | $1$ | $2$ | [$4$]{.rep} | [$8$]{.rep} | [$16$]{.rep} | [$32$]{.rep} | [$64$]{.rep} | [$128$]{.rep} | [$256$]{.rep} |
+:::
+
+b) Pour passer d’un jour au suivant, tu **multiplies** toujours par le même nombre. Ce nombre est [$2$]{.rep}. On dit que la suite $(p_{n})$ est **géométrique**.
+
+c) Écris une formule qui donne $p_{n}$ directement en fonction de $n$ : $p_{n} =$ [$2^{n}$]{.rep}
+
+d) Grâce à cette formule, on répond sans tout calculer : il suffit de chercher le plus petit $n$ tel que $p_{n} = 2^{n}$ dépasse la population. Complète (à la calculatrice) :
+
+::: {.tableau}
+| Population | Plus petite puissance qui dépasse | Jour |
+|:---:|:---:|:---:|
+| École ($\approx 1 \, 800$) | [$2^{11} = 2 \, 048$]{.rep} | [$11$]{.rep} |
+| Mons ($\approx 96 \, 000$) | [$2^{17} = 131 \, 072$]{.rep} | [$17$]{.rep} |
+| Hainaut ($\approx 1{,}34$ M) | [$2^{21} \approx 2{,}1$ M]{.rep} | [$21$]{.rep} |
+| Belgique ($\approx 11{,}6$ M) | [$2^{24} \approx 16{,}8$ M]{.rep} | [$24$]{.rep} |
+| Terre ($\approx 8$ milliards) | [$2^{33} \approx 8{,}6$ G]{.rep} | [$33$]{.rep} |
+:::
+:::
+:::
+
+Remplace le mot « secret » par « virus » et tu comprends pourquoi un confinement, en empêchant chaque personne d’en contaminer d’autres, freine une épidémie : il suffit d’un peu plus d’un mois pour que la Terre entière soit atteinte. Cette suite grandit de plus en plus vite : c’est le comportement typique de la *croissance exponentielle*.
+
+Représentons les premiers termes dans un repère :
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": 0, "xmax": 8.0, "ymin": 0.0, "ymax": 140.0, "w": 465, "h": 278, "xpas": 1, "ypas": 20.0, "xlabel": "n", "ylabel": "pₙ", "points": [{"x": 0.0, "y": 1.0}, {"x": 1.0, "y": 2.0}, {"x": 2.0, "y": 4.0}, {"x": 3.0, "y": 8.0}, {"x": 4.0, "y": 16.0}, {"x": 5.0, "y": 32.0}, {"x": 6.0, "y": 64.0}, {"x": 7.0, "y": 128.0}], "courbes": []}'></div>
+```
+
+::: {.ia-legende}
+La propagation : chaque terme est le double du précédent.
+:::
+
+## Faire fructifier un capital : intérêts simples et composés
+
+Tu déposes $1000$ € sur un compte d’épargne à un taux **annuel** de $10 \%$. Il existe deux façons de faire croître cet argent ; elles vont opposer deux comportements très différents.
+
+::: {#activite-1-2 data-sorte="activite" data-num="1.2" data-page="3" data-phys="5" data-id="6UAA4.interets-simples-interets-composes" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 1.2** — intérêts simples et intérêts composés
+:::
+
+::: {.theo-body}
+**Intérêts simples** — l’intérêt est calculé une seule fois, sur le montant de départ : $10 \%$ de $1000$ € $= 100$ € par an. On **ajoute** donc toujours la même somme. Complète :
+
+::: {.tableau}
+| année | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| € | $1000$ | $1100$ | [$1200$]{.rep} | [$1300$]{.rep} | [$1400$]{.rep} | [$1500$]{.rep} |
+:::
+
+Formule : $C_{n} =$ [$1000 + 100 n$]{.rep}
+
+**Intérêts composés** — l’intérêt est recalculé chaque année, sur le capital de l’année précédente. Cherchons d’abord un raccourci : augmenter une somme $C$ de $10 \%$, c’est calculer $C + \frac{10}{100} \cdot C = C \cdot (1 + \class{rep}{0{,}1}) = \class{rep}{1{,}1} \cdot C$. Autrement dit, augmenter de $10 \%$ revient à **multiplier par $1{,}1$**. Utilise ce raccourci (montants arrondis à l’euro) :
+
+::: {.tableau}
+| année | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| € | $1000$ | $1100$ | [$1210$]{.rep} | [$1331$]{.rep} | [$1464$]{.rep} | [$1611$]{.rep} |
+:::
+
+Formule : $C_{n} =$ [$1000 \cdot 1{,}1^{n}$]{.rep}
+
+a) Qu’est-ce qui distingue les deux façons de passer d’une année à la suivante ?
+
+::: {.rep-bloc}
+Aux intérêts simples, on **ajoute** toujours $+100$ (différence constante). Aux intérêts composés, on **multiplie** toujours par $1{,}1$ (rapport constant).
+:::
+:::
+:::
+
+Représentons les deux capitaux :
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": 0, "xmax": 10.0, "ymin": 800.0, "ymax": 2100.0, "w": 384, "h": 259, "xpas": 1, "ypas": 200.0, "xlabel": "n", "ylabel": "Cₙ", "points": [{"x": 0.0, "y": 1000.0}, {"x": 1.0, "y": 1100.0}, {"x": 2.0, "y": 1200.0}, {"x": 3.0, "y": 1300.0}, {"x": 4.0, "y": 1400.0}, {"x": 5.0, "y": 1500.0}, {"x": 6.0, "y": 1600.0}, {"x": 7.0, "y": 1700.0}, {"x": 8.0, "y": 1800.0}, {"x": 9.0, "y": 1900.0}, {"x": 10.0, "y": 2000.0}], "courbes": []}'></div>
+```
+
+::: {.ia-legende}
+Intérêts simples : points *alignés*.
+:::
+:::
+
+::: {.cellule}
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": 0, "xmax": 10.0, "ymin": 800.0, "ymax": 2700.0, "w": 384, "h": 259, "xpas": 1, "ypas": 400.0, "xlabel": "n", "ylabel": "Cₙ", "points": [{"x": 0.0, "y": 1000.0}, {"x": 1.0, "y": 1100.0}, {"x": 2.0, "y": 1210.0}, {"x": 3.0, "y": 1331.0}, {"x": 4.0, "y": 1464.0}, {"x": 5.0, "y": 1611.0}, {"x": 6.0, "y": 1772.0}, {"x": 7.0, "y": 1949.0}, {"x": 8.0, "y": 2144.0}, {"x": 9.0, "y": 2358.0}, {"x": 10.0, "y": 2594.0}], "courbes": []}'></div>
+```
+
+::: {.ia-legende}
+Intérêts composés : la courbe s’incurve vers le haut.
+:::
+:::
+:::
+
+Ces deux situations opposent les deux comportements fondamentaux :
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+::: {#cadre-difference-constante .cadre-info}
+**Différence constante.** On passe d’un terme au suivant en **ajoutant** toujours le même nombre ($+100$). Croissance régulière, « comme une droite » : c’est une croissance **affine**.
+:::
+:::
+
+::: {.cellule}
+::: {#cadre-rapport-constant .cadre-info}
+**Rapport constant.** On passe d’un terme au suivant en **multipliant** toujours par le même nombre ($\times 1{,}1$). Croissance qui s’emballe : c’est une croissance **exponentielle**.
+:::
+:::
+:::
+
+**Traduire un pourcentage en coefficient multiplicateur.** Ce raccourci est essentiel pour tout le chapitre. Complète :
+
+::: {.tableau}
+| Variation | Coefficient multiplicateur |
+|:---:|:---:|
+| augmentation de $20 \%$ | [$\times 1{,}20$]{.rep} |
+| augmentation de $5 \%$ | [$\times 1{,}05$]{.rep} |
+| diminution de $15 \%$ | [$\times 0{,}85$]{.rep} |
+| diminution de $3 \%$ | [$\times 0{,}97$]{.rep} |
+:::
+
+## L’invariant d’une croissance exponentielle
+
+Nos situations — le secret, les intérêts composés, bientôt la batterie — ont toutes le même moteur : d’un pas au suivant, on **multiplie** par un nombre fixe. Cherchons la propriété qui capture ce comportement, celle qu’on gardera plus tard comme définition.
+
+::: {#cadre-quest-ce-quun-invariant .cadre-info}
+**Qu’est-ce qu’un invariant ?** En mathématiques, un **invariant** est une quantité ou une relation qui reste *la même* quand une autre grandeur change.
+:::
+
+Reprenons le secret, où $p_{n} = 2^{n}$. Regardons ce qui se passe quand on avance de $m$ jours à partir du jour $n$.
+
+::: {#activite-1-3 data-sorte="activite" data-num="1.3" data-page="5" data-phys="7" data-id="6UAA4.rapport-depend-ecart" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 1.3** — le rapport ne dépend que de l’écart
+:::
+
+::: {.theo-body}
+On travaille avec $p_{n} = 2^{n}$. Complète le tableau des rapports $p_{n+m} / p_{n}$ pour différents jours de départ $n$ et différents écarts $m$ :
+
+::: {.tableau}
+|   | départ $n = 1$ | départ $n = 3$ | départ $n = 5$ | ce rapport… |
+|:---:|:---:|:---:|:---:|:---:|
+| écart $m = 1$ :   $p_{n+1} / p_{n}$ | [$2$]{.rep} | [$2$]{.rep} | [$2$]{.rep} | [$= 2^{1}$]{.rep} |
+| écart $m = 2$ :   $p_{n+2} / p_{n}$ | [$4$]{.rep} | [$4$]{.rep} | [$4$]{.rep} | [$= 2^{2}$]{.rep} |
+| écart $m = 3$ :   $p_{n+3} / p_{n}$ | [$8$]{.rep} | [$8$]{.rep} | [$8$]{.rep} | [$= 2^{3}$]{.rep} |
+:::
+
+a) Pour un écart $m$ fixé, le rapport $p_{n+m} / p_{n}$ dépend-il du jour de départ $n$ ? [Non, il ne dépend que de l’écart $m$.]{.rep}
+
+b) Quelle valeur prend ce rapport ? $p_{n+m} / p_{n} =$ [$2^{m}$]{.rep}, autrement dit $p_{n+m} = p_{n} \cdot \class{rep}{2^{m} = p_{m}}$.
+:::
+:::
+
+Voilà l’invariant : le rapport entre deux valeurs ne dépend que de l’**écart** entre les positions, jamais de l’endroit où l’on part. Pour une fonction $f$ à croissance exponentielle, on l’écrit
+
+$$
+f(x + y) = f(x) \cdot f(y).
+$$
+
+Cette relation dit qu’une telle fonction **transforme une somme en un produit** : la somme $x + y$ des positions devient le produit $f(x) \cdot f(y)$ des valeurs. Ce n’est rien d’autre que la règle des exposants $a^{x+x'} = a^{x} \cdot a^{x'}$ — que tu connais pour les entiers. Une fonction exponentielle sera une fonction qui va garder cette propriété des exposants entiers.
+
+::: {#definition-1-1 data-sorte="definition" data-num="1.1" data-page="6" data-phys="8" data-id="6UAA4.croissance-exponentielle-2" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.1** — croissance exponentielle
+:::
+
+::: {.theo-body}
+Une fonction $f$ a une **croissance exponentielle** lorsqu’elle vérifie:
+
+$$
+\forall x,x' \in \mathbb{R}, f(x + x') = f(x) \cdot f(x').
+$$
+
+Autrement dit : elle **transforme une somme en un produit**.
+:::
+:::
+
+::: {#remarque-1-1 data-sorte="remarque" data-num="1.1" data-page="6" data-phys="8" data-id="6UAA4.rem.001" data-type="remarque" data-tags="" .theo .theo-remarque}
+::: {.theo-head}
+**Remarque 1.1**
+:::
+
+::: {.theo-body}
+Autre façon de le dire : quand les positions avancent par pas égaux (suite arithmétique), les valeurs sont multipliées par un facteur constant (suite géométrique).
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 4 questions →](../autoeval.qmd#sections=sec-croissance)
+:::

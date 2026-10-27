@@ -1,0 +1,136 @@
+---
+title: "Choisir le bon repère et extraire l’information"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Face à des données, le repère où elles s’**alignent** renseigne sur le type de modèle. C’est le cœur de la compétence A8.
+
+::: {#exercice-4-3 data-sorte="exercice" data-num="4.3" data-page="65" data-phys="67" data-id="6UAA4.ex.056" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 4.3]{.exo-titre} [[A8 · T1]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Pour chacune des situations, indique dans quel repère les données formeront une **droite**, et quel type de modèle cela révèle.
+
+1. Un capital placé à intérêts composés, relevé chaque année. → [semi-log ($t$, $\log C$) : exponentiel.]{.rep}
+2. La distance de freinage d’une voiture en fonction de sa vitesse ($d = k v^{2}$). → [log-log : puissance (pente $2$).]{.rep}
+3. La taille d’un enfant en fonction de son âge, entre $2$ et $10$ ans (croissance régulière). → [linéaire : affine.]{.rep}
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis les propriétés [4.1](2-repere-semi-logarithmique-la-signature.qmd#propriete-4-1) (semi-log) et [4.2](3-repere-log-log-la-signature.qmd#propriete-4-2) (log-log).
+
+## Indice 2 {.unlisted}
+
+Quel type de modèle décrit chaque situation : affine, exponentiel ou puissance ?
+
+## Indice 3 {.unlisted}
+
+Un capital à intérêts composés est multiplié par un même nombre chaque année ; $d = k v^{2}$ est une puissance de $v$.
+
+## Solution {.unlisted}
+
+1. Capital à intérêts composés : $C(t) = C_{0} \cdot (1 + r)^{t}$, modèle exponentiel. Les données forment une droite dans un repère semi-logarithmique ($t$ linéaire, $C$ logarithmique).
+2. Distance de freinage $d = k v^{2}$ : modèle puissance. Les données forment une droite dans un repère log-log, de pente $2$.
+3. Taille d’un enfant qui croît régulièrement : modèle affine. Les données forment une droite dans un repère ordinaire (linéaire).
+
+## Pièges {.unlisted}
+
+- Choisir le semi-log pour $d = k v^{2}$ : $v^{2}$ est une puissance, pas une exponentielle.
+:::
+:::
+
+::: {#exercice-4-4 data-sorte="exercice" data-num="4.4" data-page="65" data-phys="67" data-id="6UAA4.ex.057" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 4.4]{.exo-titre} [[A8]{.exo-comp} ★★★]{.exo-meta}
+:::
+
+::: {.exo-corps}
+On trace une même série de mesures dans trois repères : linéaire, semi-logarithmique et log-log. Elle ne forme une droite que dans **un** d’entre eux : le repère **semi-logarithmique**. Que peux-tu en conclure sur le modèle, et pourquoi les deux autres tracés sont-ils *courbés* ?
+
+::: {.rep-bloc}
+Puisque les données ne s’alignent qu’en semi-log, le modèle est **exponentiel** ($y = C \cdot a^{x}$). Dans le repère linéaire, une exponentielle est une courbe qui s’envole (concave vers le haut) ; dans le repère log-log, $\log y$ est affine en $x$, pas en $\log x$, donc le tracé y est encore courbé. Seul le repère dont l’axe vertical porte $\log y$ contre un axe horizontal linéaire redresse la courbe en droite.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis les propriétés [4.1](2-repere-semi-logarithmique-la-signature.qmd#propriete-4-1) et [4.2](3-repere-log-log-la-signature.qmd#propriete-4-2).
+
+## Indice 2 {.unlisted}
+
+Dans quel repère une exponentielle devient-elle une droite ? Et une puissance ?
+
+## Indice 3 {.unlisted}
+
+Si $y = C \cdot a^{x}$, alors $\log y = \log C + x \log a$ : $\log y$ est affine en $x$.
+
+## Solution {.unlisted}
+
+Les données ne s’alignent qu’en semi-log : le modèle est exponentiel, $y = C \cdot a^{x}$.
+
+En effet, $\log y = \log C + x \log a$ est une fonction affine de $x$ : on obtient une droite quand l’axe vertical porte $\log y$ et l’axe horizontal $x$ (semi-log).
+
+- Dans le repère linéaire, on trace $y$ en fonction de $x$ : une exponentielle, courbée.
+- Dans le repère log-log, on trace $\log y$ en fonction de $\log x$ ; $\log y$ est affine en $x$, pas en $\log x$, donc le tracé reste courbé.
+
+## Pièges {.unlisted}
+
+- Conclure à une puissance : ce sont les puissances qui s’alignent en log-log.
+:::
+:::
+
+::: {#exercice-4-5 data-sorte="exercice" data-num="4.5" data-page="65" data-phys="67" data-id="6UAA4.ex.058" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 4.5]{.exo-titre} [[A8 · T3]{.exo-comp} ★★★]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Sur un repère semi-logarithmique, l’activité d’un échantillon radioactif décroît en ligne droite : elle passe de $800$ (à $t = 0$ jour) à $8$ (à $t = 6$ jours). a) Justifie que la décroissance est **exponentielle**. b) Détermine $C$ et la base $a$ du modèle $A(t) = C \cdot a^{t}$. c) Au bout de combien de jours l’activité vaut-elle $80$ ?
+
+::: {.rep-bloc}
+a) Alignement en semi-log ⟹ modèle exponentiel. b) En $t = 0$ : $C = 800$. De $t = 0$ à $t = 6$, $A$ est divisée par $100$, donc $a^{6} = 1 / 100$, soit $a = (10^{-2})^{1/6} = 10^{-1/3} \approx 0{,}46$. c) $A(t) = 80$ correspond à une division par $10$, soit une décade sur les deux perdues en $6$ jours : $t = 3$ jours. Vérification : $A(3) = 800 \cdot 10^{-3/3} = 800 \cdot 10^{-1} = 80$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété 4.1](2-repere-semi-logarithmique-la-signature.qmd#propriete-4-1) et l’[exemple 4.1](2-repere-semi-logarithmique-la-signature.qmd#exemple-4-1).
+
+## Indice 2 {.unlisted}
+
+De $800$ à $8$, combien de décades l’activité perd-elle ? En combien de jours ?
+
+## Indice 3 {.unlisted}
+
+$A$ est divisée par $100 = 10^{2}$ en $6$ jours, donc par $10$ tous les $3$ jours.
+
+## Solution {.unlisted}
+
+a) Dans un repère semi-logarithmique, les points sont alignés : la décroissance est exponentielle (propriété 4.1).
+
+b) $A(0) = C = 800$. De $t = 0$ à $t = 6$, $A$ est divisée par $100$ : $800 \cdot a^{6} = 8$, donc $a^{6} = \frac{1}{100} = 10^{-2}$ et $a = 10^{-2/6} = 10^{-1/3} \approx 0{,}464$.
+
+c) $A(t) = 800 \cdot 10^{-t/3} = 80 \Longleftrightarrow 10^{-t/3} = 10^{-1} \Longleftrightarrow t = 3$. L’activité vaut $80$ au bout de $3$ jours.
+
+## Pièges {.unlisted}
+
+- Répondre $2$ jours : $80$ correspond à une division par $10$, c’est-à-dire la moitié des deux décades perdues en $6$ jours, soit $3$ jours.
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 2 questions →](../autoeval.qmd#sections=sec-extraire)
+:::

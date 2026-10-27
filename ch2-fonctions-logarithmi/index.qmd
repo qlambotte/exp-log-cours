@@ -1,0 +1,18 @@
+---
+title: "Chapitre 2 — Fonctions logarithmiques"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+À la fin du chapitre 1, une équation est restée sans réponse : $e^{x} = 3$. Une solution existe pourtant — la courbe de $e^{x}$ atteint bien la hauteur $3$ —, mais rien, jusqu’ici, ne permet de l’écrire. Ce chapitre construit l’outil qui manque : le **logarithme**, la fonction *réciproque* de l’exponentielle.
+
+## Sections
+
+1. [Du problème $e^{x} = 3$ au logarithme](1-du-probleme-e-x-3.qmd)
+2. [Définition du logarithme de base $a$](2-definition-du-logarithme-de-base.qmd)
+3. [Propriétés graphiques, par déduction](3-proprietes-graphiques-par-deduction.qmd) []{.suivi-sec data-exos="2.1 2.2 2.3 2.4 2.5 2.6 2.7 2.8"}
+4. [Propriétés algébriques, à découvrir](4-proprietes-algebriques-a-decouvrir.qmd)
+5. [Utiliser les propriétés](5-utiliser-les-proprietes.qmd) []{.suivi-sec data-exos="2.9 2.10 2.11 2.12 2.13 2.14"}
+6. [Équations logarithmiques](6-equations-logarithmiques.qmd) []{.suivi-sec data-exos="2.15 2.16 2.17"}
+7. [Résoudre les équations exponentielles $a^{f(x)} = b$](7-resoudre-les-equations-exponentielles-a.qmd) []{.suivi-sec data-exos="2.18"}
+8. [Modéliser avec les logarithmes](8-modeliser-avec-les-logarithmes.qmd) []{.suivi-sec data-exos="2.19 2.20 2.21 2.22"}

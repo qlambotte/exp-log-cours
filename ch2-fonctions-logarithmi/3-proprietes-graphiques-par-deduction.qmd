@@ -1,0 +1,458 @@
+---
+title: "Propriétés graphiques, par déduction"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Le « portrait-robot » lu sur un graphique, comme au chapitre 1 pour l’exponentielle, ne sera *pas* refait pour le logarithme : ce serait un travail en double. Puisque $\log_{a}$ est la **réciproque** de $a^{x}$, tout se **déduit** de ce qui est déjà connu. Le seul principe utilisé : le graphique d’une réciproque est le **symétrique** par rapport à $y = x$, symétrie qui **échange abscisses et ordonnées**.
+
+::: {#activite-2-5 data-sorte="activite" data-num="2.5" data-page="34" data-phys="36" data-id="6UAA4.deduire-caracteristiques" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 2.5** — déduire les caractéristiques de $\log_{a}$
+:::
+
+::: {.theo-body}
+On note $g(x) = a^{x}$ (connue, chapitre 1) et $f(x) = \log_{a} (x)$ sa réciproque. Complète en **raisonnant** par la symétrie d’axe $y = x$ (et non en lisant un graphe).
+
+a) La symétrie échange $x$ et $y$, donc elle échange domaine et image. Comme $\operatorname{dom} g = \mathbb{R}$ et $\operatorname{im} g = \mathbb{R}^{> 0}$ : $\operatorname{dom} f = \class{rep}{\mathbb{R}^{> 0}}$ $\operatorname{im} f = \class{rep}{\mathbb{R}}$.
+
+b) Le point $(0, 1)$ de $g$ (car $a^{0} = 1$) devient, par échange des coordonnées, le point [$(1, 0)$]{.rep} de $f$. De même $(1, a)$ devient [$(a, 1)$]{.rep}.
+
+c) L’exponentielle $g$ a une **asymptote horizontale** $y = 0$. Par la symétrie, une droite horizontale devient une droite **verticale** : $f$ a donc une **asymptote [verticale]{.rep}** d’équation [$x = 0$]{.rep}.
+
+d) Si $a > 1$, $g$ est strictement croissante. La symétrie d’axe $y = x$ **conserve** le sens de variation : $f$ est donc strictement [croissante]{.rep}. (Et si $0 < a < 1$, $f$ est strictement [décroissante]{.rep}.)
+
+e) Les limites s’échangent aussi. Pour $a > 1$ : « $g(x) \to 0$ quand $x \to -\infty$ » devient « $f(x) \to \class{rep}{-\infty}$ quand $x \to 0$ ».
+
+f) L’exponentielle $g$ est **convexe** (concavité tournée vers le haut). La symétrie d’axe $y = x$ échange convexité et concavité : la courbe de $f$ a donc la concavité **opposée**. Pour $a > 1$, $f$ est ainsi [concave]{.rep} ; pour $0 < a < 1$, $f$ est [convexe]{.rep}. La concavité ne change jamais de sens : **pas de point d’inflexion**.
+:::
+:::
+
+La figure suivante *confirme* ces déductions (elle illustre la symétrie, elle ne sert pas à relire caractéristique par caractéristique).
+
+::: {.colonnes style="--n:2"}
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 6.0, "ymin": -3.0, "ymax": 6.0, "w": 341, "h": 371, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "Math.pow(2.0, x)"}}, {"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "(Math.log(x) / Math.log(2.0))"}, "de": 0.05, "a": 6.0}, {"couleur": "#6a737d", "pointille": true, "ep": 0.8, "f": {"js": "x"}}], "points": [{"x": 0.0, "y": 1.0}, {"x": 1.0, "y": 0.0}, {"x": 1.0, "y": 2.0}, {"x": 2.0, "y": 1.0}], "lecture": true}'></div>
+```
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 6.0, "ymin": -3.0, "ymax": 6.0, "w": 341, "h": 371, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "Math.pow(2.0, (-x))"}}, {"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "((-Math.log(x)) / Math.log(2.0))"}, "de": 0.005, "a": 6.0}, {"couleur": "#6a737d", "pointille": true, "ep": 0.8, "f": {"js": "x"}}], "points": [{"x": 0.0, "y": 1.0}, {"x": 1.0, "y": 0.0}, {"x": 1.0, "y": 0.5}, {"x": 0.5, "y": 1.0}], "lecture": true}'></div>
+```
+:::
+
+::: {#propriete-2-3 data-sorte="propriete" data-num="2.3" data-page="35" data-phys="37" data-id="6UAA4.caracteristiques-2" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.3** — caractéristiques de $f(x) = \log_{a} (x)$
+:::
+
+::: {.theo-body}
+*Déduites* ci-dessus, on les rassemble. Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+- $\operatorname{dom} f = \mathbb{R}^{> 0}$, $\operatorname{im} f = \mathbb{R}$
+
+- racine : $x = 1$ ; $G_{f} \cap \text{axe } x = (1, 0)$
+- $G_{f} \cap \text{axe } y = \emptyset$
+:::
+
+::: {.cellule}
+- points sûrs : $(1, 0)$ et $(a, 1)$
+
+- asymptote **verticale** $x = 0$ ; pas d’asymptote horizontale
+- pas d’ordonnée à l’origine ($0 \notin \operatorname{dom} f$) ; pas de point d’inflexion
+:::
+:::
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+::: {#cadre-si-a-1 .cadre-info}
+**si $a > 1$** : strictement croissante, **concave** ; $\lim\limits_{x \to 0} = -\infty$, $\lim\limits_{x \to +\infty} = +\infty$.
+:::
+:::
+
+::: {.cellule}
+::: {#cadre-si-0-a-1 .cadre-info}
+**si $0 < a < 1$** : strictement décroissante, **convexe** ; $\lim\limits_{x \to 0} = +\infty$, $\lim\limits_{x \to +\infty} = -\infty$.
+:::
+:::
+:::
+:::
+:::
+
+Une dernière symétrie se déduit, elle aussi, de l’exponentielle.
+
+::: {#propriete-2-4 data-sorte="propriete" data-num="2.4" data-page="35" data-phys="37" data-id="6UAA4.symetrie-axe-2" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.4** — symétrie d’axe $x$
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Comme $(\frac{1}{a})^{y} = x \Longleftrightarrow a^{-y} = x$, on a
+
+$$
+\log_{1/a} (x) = - \log_{a} (x).
+$$
+
+Le graphique de $\log_{1/a}$ est donc le **symétrique** de celui de $\log_{a}$ par rapport à l’**axe $x$**.
+:::
+:::
+
+::: {#exercice-2-1 data-sorte="exercice" data-num="2.1" data-page="35" data-phys="37" data-id="6UAA4.ex.022" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.1]{.exo-titre} [[C1]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Donne l’expression analytique des fonctions logarithmes représentées ci-dessous (lis le point $(a, 1)$ pour trouver la base).
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -1.0, "xmax": 6.0, "ymin": -3.0, "ymax": 3.0, "w": 558, "h": 290, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "(Math.log(x) / Math.log(3.0))"}, "de": 0.05, "a": 6.0}, {"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "(Math.log(x) / Math.log(0.5))"}, "de": 0.05, "a": 6.0}], "points": [{"x": 3.0, "y": 1.0}, {"x": 1.0, "y": 0.0}, {"x": 0.5, "y": 1.0}]}'></div>
+```
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition du logarithme de base $a$](2-definition-du-logarithme-de-base.qmd#definition-2-1) et la [propriété des valeurs remarquables](2-definition-du-logarithme-de-base.qmd#propriete-2-2) : que vaut $\log_{a} (a)$ ?
+
+## Indice 2 {.unlisted}
+
+En quel point chaque courbe atteint-elle la hauteur $1$ ?
+
+## Indice 3 {.unlisted}
+
+Si la courbe passe par $(a, 1)$, alors $\log_{a} (a) = 1$ : la base est l’abscisse de ce point.
+
+## Solution {.unlisted}
+
+Comme $\log_{a} (a) = 1$, la base d’un logarithme est l’abscisse du point de la courbe d’ordonnée $1$.
+
+- La courbe bleue (croissante) passe par $(3, 1)$ : c’est $\log_{3} (x)$.
+- La courbe rouge (décroissante) passe par $(\frac{1}{2}, 1)$ : c’est $\log_{1/2} (x)$.
+
+## Pièges {.unlisted}
+
+- Lire la base sur l’axe des ordonnées : toutes les courbes passent par $(1, 0)$, ce point ne donne pas la base.
+:::
+:::
+
+::: {#exercice-2-2 data-sorte="exercice" data-num="2.2" data-page="36" data-phys="38" data-id="6UAA4.ex.023" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.2]{.exo-titre} [[A2]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+On part de la courbe de référence $g(x) = \log_{2} (x)$. Associe chaque courbe transformée à son expression, puis justifie par la transformation géométrique correspondante.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+Expressions proposées :
+
+- $\log_{2} (x) + 2$ (translation verticale) [(1)]{.rep}
+- $\log_{1/2} (x) = - \log_{2} (x)$ (symétrie d’axe $x$) [(2)]{.rep}
+- $\log_{2} (x - 3)$ (translation horizontale) [(3)]{.rep}
+:::
+
+::: {.cellule}
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -1.0, "xmax": 8.0, "ymin": -4.0, "ymax": 5.0, "w": 372, "h": 340, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#6a737d", "pointille": false, "ep": 1.0, "f": {"js": "(Math.log(x) / Math.log(2.0))"}, "de": 0.06, "a": 8.0}, {"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "((Math.log(x) / Math.log(2.0)) + 2.0)"}, "de": 0.06, "a": 8.0}, {"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "((-Math.log(x)) / Math.log(2.0))"}, "de": 0.06, "a": 8.0}, {"couleur": "#0a7d4d", "pointille": false, "ep": 1.3, "f": {"js": "(Math.log((x - 3.0)) / Math.log(2.0))"}, "de": 3.06, "a": 8.0}], "points": [{"x": 1.0, "y": 0.0}]}'></div>
+```
+:::
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété de symétrie d’axe $x$](#propriete-2-3) ($\log_{1/a} = - \log_{a}$).
+
+## Indice 2 {.unlisted}
+
+Chaque courbe passe-t-elle encore par $(1, 0)$ ? Quelle courbe a une asymptote verticale ailleurs qu’en $x = 0$ ?
+
+## Indice 3 {.unlisted}
+
+$\log_{2} (x - 3)$ n’existe que pour $x > 3$ : sa courbe commence près de la droite $x = 3$.
+
+## Solution {.unlisted}
+
+- $\log_{2} (x) + 2$ : chaque image augmente de $2$, translation de $2$ unités vers le haut ; courbe bleue (elle passe par $(1, 2)$).
+- $\log_{1/2} (x) = - \log_{2} (x)$ : chaque image change de signe, symétrie d’axe $x$ ; courbe rouge (décroissante, passe par $(1, 0)$).
+- $\log_{2} (x - 3)$ : on remplace $x$ par $x - 3$, translation de $3$ unités vers la droite ; courbe verte (asymptote verticale $x = 3$, passe par $(4, 0)$).
+
+## Pièges {.unlisted}
+
+- Croire que $\log_{2} (x - 3)$ déplace la courbe vers la gauche.
+- Confondre $\log_{2} (x) + 2$ et $\log_{2} (x + 2)$ : le premier monte, le second se déplace vers la gauche.
+:::
+:::
+
+Les exercices suivants entraînent la **lecture** et la **transformation** de graphiques logarithmiques (et exponentiels associés) : on y raisonne toujours par symétrie, sans calcul.
+
+::: {#exercice-2-3 data-sorte="exercice" data-num="2.3" data-page="37" data-phys="39" data-id="6UAA4.ex.024" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.3]{.exo-titre} [[C1]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Cinq fonctions sont représentées ci-dessous. Associe chaque expression à sa courbe.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -2.0, "xmax": 8.0, "ymin": -3.0, "ymax": 6.0, "w": 620, "h": 352, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "Math.pow(4.0, x)"}}, {"couleur": "#8a5a00", "pointille": false, "ep": 1.3, "f": {"js": "Math.exp((-x))"}}, {"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "(Math.log(x) / Math.log(10.0))"}, "de": 0.05, "a": 8.0}, {"couleur": "#0a7d4d", "pointille": false, "ep": 1.3, "f": {"js": "(Math.log(x) / Math.log(5.0))"}, "de": 0.05, "a": 8.0}, {"couleur": "#6d3bbf", "pointille": false, "ep": 1.3, "f": {"js": "(Math.log(x) / Math.log(0.5))"}, "de": 0.05, "a": 8.0}], "points": []}'></div>
+```
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+- $4^{x}$ [rouge]{.rep}
+
+- $1 / e^{x}$ [brune]{.rep}
+- $\log(x)$ [bleue]{.rep}
+:::
+
+::: {.cellule}
+- $\log_{5} (x)$ [verte]{.rep}
+
+- $\log_{0{,}5} (x)$ [violette]{.rep}
+:::
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[activité « déduire les caractéristiques de $\log_{a}$ »](#activite-2-5) et la [propriété des valeurs remarquables](2-definition-du-logarithme-de-base.qmd#propriete-2-2).
+
+## Indice 2 {.unlisted}
+
+Quelles courbes passent par $(0, 1)$, lesquelles par $(1, 0)$ ? Lesquelles croissent, lesquelles décroissent ?
+
+## Indice 3 {.unlisted}
+
+Parmi les logarithmes, la base se lit au point d’ordonnée $1$ : $\log_{5}$ passe par $(5, 1)$, $\log$ par $(10, 1)$.
+
+## Solution {.unlisted}
+
+- $4^{x}$ : exponentielle croissante passant par $(0, 1)$ et $(1, 4)$ : courbe rouge.
+- $1 / e^{x} = e^{-x}$ : exponentielle décroissante passant par $(0, 1)$ : courbe brune.
+- $\log(x)$ : logarithme croissant qui atteint $1$ en $x = 10$, il monte le plus lentement : courbe bleue.
+- $\log_{5} (x)$ : logarithme croissant passant par $(5, 1)$ : courbe verte.
+- $\log_{0{,}5} (x)$ : logarithme décroissant (base $< 1$) : courbe violette.
+
+## Pièges {.unlisted}
+
+- Confondre $\log$ et $\log_{5}$ : plus la base est grande, plus la courbe monte lentement.
+:::
+:::
+
+::: {#exercice-2-4 data-sorte="exercice" data-num="2.4" data-page="37" data-phys="39" data-id="6UAA4.ex.025" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.4]{.exo-titre} [[C1]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Relie chaque paire de courbes à l’axe de symétrie qui les échange.
+
+1. $a^{x}$ et $1 / a^{x}$ → [axe $y$ (on change $x$ en $-x$)]{.rep}
+2. $a^{x}$ et $\log_{a} (x)$ → [droite $y = x$ (fonctions réciproques)]{.rep}
+3. $1 / a^{x}$ et $\log_{1/a} (x)$ → [droite $y = x$ ($\log_{1/a}$ réciproque de $(1/a)^{x} = 1 / a^{x}$)]{.rep}
+4. $\log_{a} (x)$ et $\log_{1/a} (x)$ → [axe $x$ (car $\log_{1/a} = - \log_{a}$)]{.rep}
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [symétrie d’axe $y$](../ch1-fonctions-exponentie/4-proprietes-et-caracteristiques-graphique.qmd#propriete-1-2) (chapitre 1), l’[activité 2.1](1-du-probleme-e-x-3.qmd#activite-2-1) (réciproque) et la [symétrie d’axe $x$](#propriete-2-3).
+
+## Indice 2 {.unlisted}
+
+Pour chaque paire, comment passe-t-on d’une expression à l’autre : on change $x$ en $-x$, on change le signe du résultat, ou on échange $x$ et $y$ ?
+
+## Indice 3 {.unlisted}
+
+$1 / a^{x} = a^{-x}$ et $\log_{1/a} (x) = - \log_{a} (x)$.
+
+## Solution {.unlisted}
+
+1. $a^{x}$ et $1 / a^{x} = a^{-x}$ : on change $x$ en $-x$, symétrie d’axe $y$.
+2. $a^{x}$ et $\log_{a} (x)$ : fonctions réciproques, symétrie d’axe la droite $y = x$.
+3. $1 / a^{x} = (1/a)^{x}$ et $\log_{1/a} (x)$ : fonctions réciproques (base $1/a$), symétrie d’axe $y = x$.
+4. $\log_{a} (x)$ et $\log_{1/a} (x) = - \log_{a} (x)$ : on change le signe des images, symétrie d’axe $x$.
+
+## Pièges {.unlisted}
+
+- Associer $a^{x}$ et $\log_{a} (x)$ par une symétrie d’axe $y$ : une réciproque échange les rôles de $x$ et $y$, l’axe est $y = x$.
+:::
+:::
+
+::: {#exercice-2-5 data-sorte="exercice" data-num="2.5" data-page="38" data-phys="40" data-id="6UAA4.ex.026" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.5]{.exo-titre} [[A2]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+À partir de la courbe de référence $f(x) = e^{x}$ (en pointillés gris), donne l’expression analytique des deux autres courbes et **justifie** par la symétrie utilisée.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 6.0, "ymin": -3.0, "ymax": 6.0, "w": 527, "h": 352, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#6a737d", "pointille": true, "ep": 0.9, "f": {"js": "Math.exp(x)"}}, {"couleur": "#8a5a00", "pointille": false, "ep": 1.3, "f": {"js": "Math.exp((-x))"}}, {"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "Math.log(x)"}, "de": 0.05, "a": 6.0}], "points": [{"x": 0.0, "y": 1.0}, {"x": 1.0, "y": 0.0}]}'></div>
+```
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [symétrie d’axe $y$](../ch1-fonctions-exponentie/4-proprietes-et-caracteristiques-graphique.qmd#propriete-1-2) et l’[activité 2.1](1-du-probleme-e-x-3.qmd#activite-2-1) sur la réciproque de $e^{x}$.
+
+## Indice 2 {.unlisted}
+
+Chaque courbe passe-t-elle par $(0, 1)$ ou par $(1, 0)$ ? Est-elle croissante ou décroissante ?
+
+## Indice 3 {.unlisted}
+
+La courbe qui passe par $(1, 0)$ est le symétrique de $e^{x}$ par rapport à la droite $y = x$.
+
+## Solution {.unlisted}
+
+- Courbe brune : elle passe par $(0, 1)$ et décroît. C’est le symétrique du graphe de $e^{x}$ par rapport à l’axe $y$ : $g(x) = e^{-x} = 1 / e^{x}$.
+- Courbe bleue : elle passe par $(1, 0)$ et n’existe que pour $x > 0$. C’est le symétrique du graphe de $e^{x}$ par rapport à la droite $y = x$, donc le graphe de la réciproque : $h(x) = \ln(x)$.
+
+## Pièges {.unlisted}
+
+- Écrire $-e^{x}$ pour la courbe brune : le symétrique par rapport à l’axe $x$ serait sous l’axe.
+:::
+:::
+
+::: {#exercice-2-6 data-sorte="exercice" data-num="2.6" data-page="38" data-phys="40" data-id="6UAA4.ex.027" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.6]{.exo-titre} [[A2]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+À partir de la courbe de référence $f(x) = \log_{4} (x)$ (en pointillés gris), donne l’expression analytique des deux autres courbes et justifie par la symétrie utilisée.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 6.0, "ymin": -3.0, "ymax": 6.0, "w": 527, "h": 352, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#6a737d", "pointille": true, "ep": 0.9, "f": {"js": "(Math.log(x) / Math.log(4.0))"}, "de": 0.05, "a": 6.0}, {"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "((-Math.log(x)) / Math.log(4.0))"}, "de": 0.05, "a": 6.0}, {"couleur": "#0a7d4d", "pointille": false, "ep": 1.3, "f": {"js": "Math.pow(4.0, x)"}}], "points": [{"x": 1.0, "y": 0.0}, {"x": 4.0, "y": 1.0}, {"x": 0.0, "y": 1.0}]}'></div>
+```
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [symétrie d’axe $x$](#propriete-2-3) et la [propriété des compositions](1-du-probleme-e-x-3.qmd#propriete-2-1) (réciprocité).
+
+## Indice 2 {.unlisted}
+
+Quelle courbe passe par $(0, 1)$ ? Laquelle passe par $(1, 0)$ et décroît ?
+
+## Indice 3 {.unlisted}
+
+La courbe qui passe par $(0, 1)$ et $(1, 4)$ est une exponentielle : de quelle base ?
+
+## Solution {.unlisted}
+
+- Courbe rouge : elle passe par $(1, 0)$ et $(4, -1)$ et décroît. C’est le symétrique de $\log_{4}$ par rapport à l’axe $x$ : $g(x) = - \log_{4} (x) = \log_{1/4} (x)$.
+- Courbe verte : elle passe par $(0, 1)$ et $(1, 4)$. C’est le symétrique de $\log_{4}$ par rapport à la droite $y = x$, donc sa réciproque : $h(x) = 4^{x}$.
+
+## Pièges {.unlisted}
+
+- Écrire $\log_{4} (-x)$ pour la courbe rouge : cette fonction n’existe que pour $x < 0$.
+:::
+:::
+
+::: {#exercice-2-7 data-sorte="exercice" data-num="2.7" data-page="39" data-phys="41" data-id="6UAA4.ex.028" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.7]{.exo-titre} [[A2]{.exo-comp} ★★★]{.exo-meta}
+:::
+
+::: {.exo-corps}
+On part de $f(x) = (4/5)^{x}$ (en pointillés gris). Donne d’abord l’expression de $g$ (courbe **décroissante**) comme réciproque de $f$, puis celle de $h$ (courbe **croissante**) à partir de $g$.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 6.0, "ymin": -3.0, "ymax": 6.0, "w": 527, "h": 352, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#6a737d", "pointille": true, "ep": 0.9, "f": {"js": "Math.pow(0.8, x)"}}, {"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "(Math.log(x) / Math.log(0.8))"}, "de": 0.05, "a": 6.0}, {"couleur": "#0a7d4d", "pointille": false, "ep": 1.3, "f": {"js": "((-Math.log(x)) / Math.log(0.8))"}, "de": 0.05, "a": 6.0}], "points": [{"x": 0.0, "y": 1.0}, {"x": 1.0, "y": 0.0}]}'></div>
+```
+
+- $g(x) =$ [$\log_{4/5} (x)$ (réciproque de $f$ : axe $y = x$)]{.rep}
+- $h(x) =$ [$- \log_{4/5} (x) = \log_{5/4} (x)$ (symétrique de $g$ : axe $x$)]{.rep}
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition du logarithme](2-definition-du-logarithme-de-base.qmd#definition-2-1) et la [symétrie d’axe $x$](#propriete-2-3).
+
+## Indice 2 {.unlisted}
+
+Quelle est la réciproque de $a^{x}$ ? Et que devient $\log_{a}$ par une symétrie d’axe $x$ ?
+
+## Indice 3 {.unlisted}
+
+La réciproque de $(4/5)^{x}$ est $\log_{4/5} (x)$ ; son symétrique par rapport à l’axe $x$ est $- \log_{4/5} (x)$.
+
+## Solution {.unlisted}
+
+- $g$ est la réciproque de $f$ (symétrie d’axe $y = x$) : $g(x) = \log_{4/5} (x)$. Elle est décroissante, comme $f$, car la base $\frac{4}{5}$ est inférieure à $1$.
+- $h$ est le symétrique de $g$ par rapport à l’axe $x$ : $h(x) = - \log_{4/5} (x) = \log_{5/4} (x)$, qui est croissante (base $\frac{5}{4} > 1$).
+
+## Pièges {.unlisted}
+
+- Attribuer à $g$ la courbe croissante : la réciproque d’une fonction décroissante est décroissante.
+:::
+:::
+
+::: {#exercice-2-8 data-sorte="exercice" data-num="2.8" data-page="39" data-phys="41" data-id="6UAA4.ex.029" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.8]{.exo-titre} [[C1]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Parmi les trois courbes ci-dessous, identifie celle de $f(x) = \log_{0{,}4} (x)$, puis donne l’expression des deux autres.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -1.0, "xmax": 8.0, "ymin": -3.0, "ymax": 3.0, "w": 620, "h": 315, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "(Math.log(x) / Math.log(0.4))"}, "de": 0.05, "a": 8.0}, {"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "(Math.log(x) / Math.log(2.5))"}, "de": 0.05, "a": 8.0}, {"couleur": "#0a7d4d", "pointille": false, "ep": 1.3, "f": {"js": "(Math.log(x) / Math.log(5.0))"}, "de": 0.05, "a": 8.0}], "points": [{"x": 1.0, "y": 0.0}, {"x": 0.4, "y": 1.0}, {"x": 2.5, "y": 1.0}, {"x": 5.0, "y": 1.0}]}'></div>
+```
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[activité 2.5](#activite-2-5) : le sens de variation de $\log_{a}$ dépend de la position de $a$ par rapport à $1$.
+
+## Indice 2 {.unlisted}
+
+$\log_{0{,}4}$ est-elle croissante ou décroissante ? Par quel point d’ordonnée $1$ passe chaque courbe ?
+
+## Indice 3 {.unlisted}
+
+Lis l’abscisse du point d’ordonnée $1$ sur chaque courbe : c’est la base.
+
+## Solution {.unlisted}
+
+- La base $0{,}4$ est inférieure à $1$ : $f = \log_{0{,}4}$ est la courbe décroissante (rouge), qui passe par $(0{,}4, 1)$.
+- La courbe bleue passe par $(2{,}5, 1)$ : c’est $\log_{2{,}5} (x)$, symétrique de $f$ par rapport à l’axe $x$ (car $2{,}5 = 1 / 0{,}4$).
+- La courbe verte passe par $(5, 1)$ : c’est $\log_{5} (x)$.
+
+## Pièges {.unlisted}
+
+- Chercher le point $(0{,}4, 1)$ sur une courbe croissante : $\log_{0{,}4}$ décroît.
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 4 questions →](../autoeval.qmd#sections=sec-graph-log)
+:::

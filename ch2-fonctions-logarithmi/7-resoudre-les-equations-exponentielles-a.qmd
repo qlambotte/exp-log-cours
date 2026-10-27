@@ -1,0 +1,108 @@
+---
+title: "Résoudre les équations exponentielles aᶠ⁽ˣ⁾ = b"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Le chapitre 1 peut enfin être refermé. Pour résoudre $a^{f(x)} = b$ (avec $a \in \mathbb{R}^{> 0} \setminus \{1\}$ et $b \in \mathbb{R}^{> 0}$), on applique $\log_{a}$ aux deux membres ; par réciprocité $\log_{a} (a^{f(x)}) = f(x)$, donc
+
+$$
+a^{f(x)} = b \quad \Longleftrightarrow \quad f(x) = \log_{a} (b).
+$$
+
+::: {#exemple-2-8 data-sorte="exemple" data-num="2.8" data-page="47" data-phys="49" data-id="6UAA4.enfin" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 2.8** — et enfin, $e^{x} = 3$
+:::
+
+::: {.theo-body}
+$e^{x} = 3 \Longleftrightarrow x = \ln(3) \approx 1{,}099$. L’équation restée sans réponse au chapitre 1 est résolue.
+:::
+:::
+
+::: {#exemple-2-9 data-sorte="exemple" data-num="2.9" data-page="47" data-phys="49" data-id="6UAA4.quatre-resolutions" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 2.9** — quatre résolutions
+:::
+
+::: {.theo-body}
+::: {.grille style="--n:1"}
+::: {.cellule}
+**a)** $e^{1 - 3 x} = 3 \Longleftrightarrow 1 - 3 x = \ln 3 \Longleftrightarrow x = \frac{1 - \ln 3}{3}$.
+:::
+
+::: {.cellule}
+**b)** $2 \cdot 10^{5 x} = 12 \Longleftrightarrow 10^{5 x} = 6 \Longleftrightarrow 5 x = \log 6$, d’où $x = \frac{\log 6}{5}$.
+:::
+
+::: {.cellule}
+**c)** $5 = 2^{x + 5} \Longleftrightarrow x + 5 = \log_{2} (5)$, d’où $x = \log_{2} (5) - 5$.
+:::
+
+::: {.cellule}
+**d)** $2^{x - 1} = -8$ : **impossible**, car $2^{x-1} > 0$. $S = \emptyset$.
+:::
+:::
+:::
+:::
+
+::: {#exercice-2-18 data-sorte="exercice" data-num="2.18" data-page="47" data-phys="49" data-id="6UAA4.ex.039" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.18]{.exo-titre} [[A5]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Résous les équations suivantes.
+
+::: {.grille style="--n:3"}
+::: {.cellule}
+1. $3^{2 x} = 7$
+2. $\frac{1}{3} \cdot 2^{x + 2} = 7$
+:::
+
+::: {.cellule}
+3. $e^{x / 8} = 3^{2}$
+4. $2^{x + 1} = 3$
+:::
+
+::: {.cellule}
+5. $6 e^{2 x} - 1 = 0$
+6. $5^{3 x - 9} = 8$
+:::
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis les exemples [2.8](#exemple-2-8) et [2.9](#exemple-2-9) : isoler la puissance, puis prendre le logarithme.
+
+## Indice 2 {.unlisted}
+
+As-tu isolé la puissance $a^{f(x)}$ seule dans un membre ?
+
+## Indice 3 {.unlisted}
+
+$a^{f(x)} = b \Longleftrightarrow f(x) = \log_{a} (b) = \frac{\ln b}{\ln a}$ (pour $b > 0$).
+
+## Solution {.unlisted}
+
+1. $3^{2 x} = 7 \Longleftrightarrow 2 x = \log_{3} 7 = \frac{\ln 7}{\ln 3} \Longleftrightarrow x = \frac{\ln 7}{2 \ln 3} \approx 0{,}886$.
+2. $\frac{1}{3} \cdot 2^{x + 2} = 7 \Longleftrightarrow 2^{x + 2} = 21 \Longleftrightarrow x + 2 = \frac{\ln 21}{\ln 2} \Longleftrightarrow x = \frac{\ln 21}{\ln 2} - 2 \approx 2{,}392$.
+3. $e^{x / 8} = 9 \Longleftrightarrow \frac{x}{8} = \ln 9 \Longleftrightarrow x = 8 \ln 9 \approx 17{,}578$.
+4. $2^{x + 1} = 3 \Longleftrightarrow x + 1 = \frac{\ln 3}{\ln 2} \Longleftrightarrow x = \frac{\ln 3}{\ln 2} - 1 \approx 0{,}585$.
+5. $6 e^{2 x} - 1 = 0 \Longleftrightarrow e^{2 x} = \frac{1}{6} \Longleftrightarrow 2 x = \ln(\frac{1}{6}) \Longleftrightarrow x = -\frac{\ln 6}{2} \approx -0{,}896$.
+6. $5^{3 x - 9} = 8 \Longleftrightarrow 3 x - 9 = \frac{\ln 8}{\ln 5} \Longleftrightarrow x = 3 + \frac{\ln 8}{3 \ln 5} \approx 3{,}431$.
+
+## Pièges {.unlisted}
+
+- En 2), prendre le logarithme avant d’isoler $2^{x + 2}$ : $\ln(\frac{1}{3} \cdot 2^{x + 2}) \neq \frac{1}{3} \ln 2^{x + 2}$.
+- En 6), écrire $x = \frac{\ln 8}{\ln 5} + 9$ : il faut encore diviser par $3$.
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 3 questions →](../autoeval.qmd#sections=sec-eq-exp-b)
+:::

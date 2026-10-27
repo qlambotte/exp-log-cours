@@ -1,0 +1,43 @@
+---
+title: "Construire une échelle logarithmique"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Sur un axe linéaire, une distance égale correspond à une **addition** constante ($0, 1, 2, 3, …$). Sur un axe logarithmique, une distance égale correspond à une **multiplication** constante : chaque pas fait passer d’une valeur à son décuple.
+
+::: {#activite-4-1 data-sorte="activite" data-num="4.1" data-page="60" data-phys="62" data-id="6UAA4.placer-valeurs-axe-logarithmique" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 4.1** — placer des valeurs sur un axe logarithmique
+:::
+
+::: {.theo-body}
+La **position** d’un nombre $v > 0$ sur un axe logarithmique est donnée par $\log v$ (logarithme décimal). Complète le tableau.
+
+::: {.tableau}
+| $v$ | $1$ | $2$ | $5$ | $10$ | $100$ | $1000$ | $10^{6}$ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| position $\log v$ | [$0$]{.rep} | [$\approx 0{,}30$]{.rep} | [$\approx 0{,}70$]{.rep} | [$1$]{.rep} | [$2$]{.rep} | [$3$]{.rep} | [$6$]{.rep} |
+:::
+
+a) Les puissances de $10$ ($1, 10, 100, …$) tombent sur des positions [entières : $0, 1, 2, …$]{.rep} : ce sont les **décades**, toutes à la **même distance** l’une de l’autre.
+
+b) Où se place $v = 0$ ? [nulle part : $\log 0$ n’existe pas.]{.rep} On ne porte sur une échelle logarithmique que des valeurs **strictement positives**.
+
+c) Entre $10$ et $100$, le nombre $50$ est-il au milieu ? [non : $\log 50 \approx 1{,}70$, donc plutôt vers les $70 \%$ de la décade.]{.rep}
+:::
+:::
+
+::: {#remarque-4-1 data-sorte="remarque" data-num="4.1" data-page="60" data-phys="62" data-id="6UAA4.rem.007" data-type="remarque" data-tags="" .theo .theo-remarque}
+::: {.theo-head}
+**Remarque 4.1**
+:::
+
+::: {.theo-body}
+L’intérêt : une échelle logarithmique comprime les grands nombres et dilate les petits. Des données couvrant plusieurs **ordres de grandeur** ($1$ à $10^{6}$) tiennent alors sur une figure lisible, où chaque décade occupe la même largeur.
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 3 questions →](../autoeval.qmd#sections=sec-echelle)
+:::

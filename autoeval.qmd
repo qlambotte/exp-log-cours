@@ -1,0 +1,3654 @@
+---
+title: "S'autoévaluer"
+search: false
+---
+
+
+<!-- GÉNÉRÉ par outils/typ2site.py (autoeval.py) : NE PAS ÉDITER. -->
+
+
+::: {#ae-app data-cle="exp-log"}
+::: {.ae-attente}
+Chargement…
+:::
+:::
+
+
+::: {#ae-banque .ae-cache}
+
+::: {.ae-sec data-ae-id="sec-croissance" data-chap="1" data-url="ch1-fonctions-exponentie/1-croissance-exponentielle.html" data-n="4"}
+Croissance exponentielle
+:::
+
+::: {.ae-sec data-ae-id="sec-construire" data-chap="1" data-url="ch1-fonctions-exponentie/2-construire-une-fonction-exponentielle.html" data-n="3"}
+Construire une fonction exponentielle
+:::
+
+::: {.ae-sec data-ae-id="sec-def-exp" data-chap="1" data-url="ch1-fonctions-exponentie/3-definition-de-la-fonction-exponentielle.html" data-n="3"}
+Définition de la fonction exponentielle
+:::
+
+::: {.ae-sec data-ae-id="sec-graph-exp" data-chap="1" data-url="ch1-fonctions-exponentie/4-proprietes-et-caracteristiques-graphique.html" data-n="3"}
+Propriétés et caractéristiques graphiques
+:::
+
+::: {.ae-sec data-ae-id="sec-multiples" data-chap="1" data-url="ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html" data-n="7"}
+Multiples d’une fonction exponentielle
+:::
+
+::: {.ae-sec data-ae-id="sec-semblables" data-chap="1" data-url="ch1-fonctions-exponentie/6-des-graphes-tous-semblables-vers.html" data-n="1"}
+Des graphes tous semblables : vers un représentant privilégié
+:::
+
+::: {.ae-sec data-ae-id="sec-e" data-chap="1" data-url="ch1-fonctions-exponentie/7-le-nombre-e-et-lexponentielle.html" data-n="2"}
+Le nombre $e$ et l’exponentielle népérienne
+:::
+
+::: {.ae-sec data-ae-id="sec-eq-exp" data-chap="1" data-url="ch1-fonctions-exponentie/8-resoudre-des-equations-exponentielles-si.html" data-n="4"}
+Résoudre des équations exponentielles simples
+:::
+
+::: {.ae-sec data-ae-id="sec-exos-suppl-ch1" data-chap="1" data-url="ch1-fonctions-exponentie/9-exercices-supplementaires.html" data-n="0"}
+Exercices supplémentaires
+:::
+
+::: {.ae-sec data-ae-id="sec-intro-log" data-chap="2" data-url="ch2-fonctions-logarithmi/1-du-probleme-e-x-3.html" data-n="2"}
+Du problème $e^{x} = 3$ au logarithme
+:::
+
+::: {.ae-sec data-ae-id="sec-def-log" data-chap="2" data-url="ch2-fonctions-logarithmi/2-definition-du-logarithme-de-base.html" data-n="4"}
+Définition du logarithme de base $a$
+:::
+
+::: {.ae-sec data-ae-id="sec-graph-log" data-chap="2" data-url="ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.html" data-n="4"}
+Propriétés graphiques, par déduction
+:::
+
+::: {.ae-sec data-ae-id="sec-algebre-log" data-chap="2" data-url="ch2-fonctions-logarithmi/4-proprietes-algebriques-a-decouvrir.html" data-n="3"}
+Propriétés algébriques, à découvrir
+:::
+
+::: {.ae-sec data-ae-id="sec-usage-log" data-chap="2" data-url="ch2-fonctions-logarithmi/5-utiliser-les-proprietes.html" data-n="3"}
+Utiliser les propriétés
+:::
+
+::: {.ae-sec data-ae-id="sec-eq-log" data-chap="2" data-url="ch2-fonctions-logarithmi/6-equations-logarithmiques.html" data-n="3"}
+Équations logarithmiques
+:::
+
+::: {.ae-sec data-ae-id="sec-eq-exp-b" data-chap="2" data-url="ch2-fonctions-logarithmi/7-resoudre-les-equations-exponentielles-a.html" data-n="3"}
+Résoudre les équations exponentielles $a^{f(x)} = b$
+:::
+
+::: {.ae-sec data-ae-id="sec-model-log" data-chap="2" data-url="ch2-fonctions-logarithmi/8-modeliser-avec-les-logarithmes.html" data-n="2"}
+Modéliser avec les logarithmes
+:::
+
+::: {.ae-sec data-ae-id="sec-der-exp" data-chap="3" data-url="ch3-derivees-et-limites/1-deriver-lexponentielle.html" data-n="5"}
+Dériver l’exponentielle
+:::
+
+::: {.ae-sec data-ae-id="sec-der-log" data-chap="3" data-url="ch3-derivees-et-limites/2-deriver-le-logarithme.html" data-n="5"}
+Dériver le logarithme
+:::
+
+::: {.ae-sec data-ae-id="sec-limites" data-chap="3" data-url="ch3-derivees-et-limites/3-limites-de-base.html" data-n="3"}
+Limites de base
+:::
+
+::: {.ae-sec data-ae-id="sec-hospital" data-chap="3" data-url="ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.html" data-n="4"}
+Croissance comparée et théorème de l’Hospital
+:::
+
+::: {.ae-sec data-ae-id="sec-echelle" data-chap="4" data-url="ch4-echelles-logarithmiq/1-construire-une-echelle-logarithmique.html" data-n="3"}
+Construire une échelle logarithmique
+:::
+
+::: {.ae-sec data-ae-id="sec-semilog" data-chap="4" data-url="ch4-echelles-logarithmiq/2-repere-semi-logarithmique-la-signature.html" data-n="3"}
+Repère semi-logarithmique : la signature de l’exponentielle
+:::
+
+::: {.ae-sec data-ae-id="sec-loglog" data-chap="4" data-url="ch4-echelles-logarithmiq/3-repere-log-log-la-signature.html" data-n="2"}
+Repère log-log : la signature d’une puissance
+:::
+
+::: {.ae-sec data-ae-id="sec-extraire" data-chap="4" data-url="ch4-echelles-logarithmiq/4-choisir-le-bon-repere-et.html" data-n="2"}
+Choisir le bon repère et extraire l’information
+:::
+
+::: {.ae-sec data-ae-id="sec-culture" data-chap="4" data-url="ch4-echelles-logarithmiq/5-pour-aller-plus-loin-les.html" data-n="2"}
+Pour aller plus loin : les échelles logarithmiques en sciences
+:::
+
+::: {.ae-obj data-code="C1" data-cat="Connaître"}
+Lire les caractéristiques de la fonction exponentielle / logarithme au départ de son graphique.
+:::
+
+::: {.ae-obj data-code="C2" data-cat="Connaître"}
+Reconnaître, parmi un ensemble d’expressions analytiques de fonctions données, celle d’une fonction exponentielle.
+:::
+
+::: {.ae-obj data-code="C3" data-cat="Connaître"}
+Décrire la signification des paramètres d’une fonction exponentielle du type $f(t) = C \cdot a^{k t}$.
+:::
+
+::: {.ae-obj data-code="C4" data-cat="Connaître"}
+Déterminer la base d’une fonction exponentielle à partir de son expression analytique, d’un graphique, d’un tableau de nombres ou d’une condition.
+:::
+
+::: {.ae-obj data-code="C5" data-cat="Connaître"}
+Vérifier qu’une croissance est exponentielle à partir d’un tableau de nombres.
+:::
+
+::: {.ae-obj data-code="C6" data-cat="Connaître"}
+Démontrer des propriétés des fonctions logarithmes.
+:::
+
+::: {.ae-obj data-code="C7" data-cat="Connaître"}
+Justifier les étapes de résolution d’une équation exponentielle du type $a^{f(x)} = a^{g(x)}$ ou d’une équation logarithme du type $\log_{a} (x) = C$ en utilisant la relation de réciprocité.
+:::
+
+::: {.ae-obj data-code="A1" data-cat="Appliquer"}
+Déterminer l’image d’un réel par une fonction exponentielle ou logarithme en base quelconque avec la calculatrice.
+:::
+
+::: {.ae-obj data-code="A2" data-cat="Appliquer"}
+Relier le graphique d’une transformée simple d’une fonction exponentielle ou logarithme à son expression analytique.
+:::
+
+::: {.ae-obj data-code="A3" data-cat="Appliquer"}
+Relier l’expression analytique d’une fonction exponentielle de type $f(t) = C \cdot a^{k t}$ à son graphique.
+:::
+
+::: {.ae-obj data-code="A4" data-cat="Appliquer"}
+Écrire l’expression analytique d’une fonction exponentielle à partir de son graphique.
+:::
+
+::: {.ae-obj data-code="A5" data-cat="Appliquer"}
+Résoudre une équation exponentielle du type $a^{f(x)} = a^{g(x)}$ ou s’y ramenant (en utilisant les propriétés).
+:::
+
+::: {.ae-obj data-code="A6" data-cat="Appliquer"}
+Résoudre une équation logarithme du type $\log_{a} (x) = C$ ou s’y ramenant (en utilisant les propriétés).
+:::
+
+::: {.ae-obj data-code="A7" data-cat="Appliquer"}
+Calculer des limites, des dérivées et des primitives de fonctions exponentielles et logarithmes.
+:::
+
+::: {.ae-obj data-code="A8" data-cat="Appliquer"}
+Extraire des informations d’un graphique en coordonnées logarithmique ou semi-logarithmique.
+:::
+
+::: {.ae-obj data-code="T1" data-cat="Transférer"}
+Reconnaître, parmi tous ceux déjà rencontrés, le modèle adéquat à la situation.
+:::
+
+::: {.ae-obj data-code="T2" data-cat="Transférer"}
+Modéliser une croissance exponentielle décrite dans une situation contextualisée.
+:::
+
+::: {.ae-obj data-code="T3" data-cat="Transférer"}
+Résoudre un problème à l’aide d’une fonction exponentielle dont l’expression analytique est donnée ou non.
+:::
+
+::: {.ae-qa data-ae-id="qa-exponentielles" data-spec='{"questions": null, "tirage": {"nombre": 12, "sections": ["sec-croissance", "sec-construire", "sec-def-exp", "sec-graph-exp", "sec-multiples", "sec-semblables", "sec-e", "sec-eq-exp"], "obj": [], "types": [], "niveaux": []}}'}
+::: {.ae-qa-titre}
+Chapitre 1 : Fonctions exponentielles
+:::
+
+::: {.ae-qa-desc}
+Douze questions tirées au hasard sur tout le chapitre 1 : croissance exponentielle, définition, graphiques, modèles, nombre $e$, équations.
+:::
+:::
+
+::: {.ae-qa data-ae-id="qa-logarithmes" data-spec='{"questions": null, "tirage": {"nombre": 12, "sections": ["sec-intro-log", "sec-def-log", "sec-graph-log", "sec-algebre-log", "sec-usage-log", "sec-eq-log", "sec-eq-exp-b", "sec-model-log"], "obj": [], "types": [], "niveaux": []}}'}
+::: {.ae-qa-titre}
+Chapitre 2 : Fonctions logarithmes
+:::
+
+::: {.ae-qa-desc}
+Douze questions tirées au hasard sur tout le chapitre 2 : définition, graphiques, propriétés algébriques, équations, modèles.
+:::
+:::
+
+::: {.ae-qa data-ae-id="qa-derivees-limites" data-spec='{"questions": null, "tirage": {"nombre": 10, "sections": ["sec-der-exp", "sec-der-log", "sec-limites", "sec-hospital"], "obj": [], "types": [], "niveaux": []}}'}
+::: {.ae-qa-titre}
+Chapitre 3 : Dérivées et limites
+:::
+
+::: {.ae-qa-desc}
+Dix questions tirées au hasard : dériver $e^{x}$, $a^{x}$, $\ln$, $\log_{a}$ ; limites de base ; théorème de l’Hospital.
+:::
+:::
+
+::: {.ae-qa data-ae-id="qa-echelles-log" data-spec='{"questions": null, "tirage": {"nombre": 8, "sections": ["sec-echelle", "sec-semilog", "sec-loglog", "sec-extraire", "sec-culture"], "obj": [], "types": [], "niveaux": []}}'}
+::: {.ae-qa-titre}
+Chapitre 4 : Échelles logarithmiques
+:::
+
+::: {.ae-qa-desc}
+Huit questions tirées au hasard : lire une échelle logarithmique, repères semi-log et log-log, choisir le bon repère.
+:::
+:::
+
+::: {.ae-qa data-ae-id="qa-equations" data-spec='{"questions": ["exp-equation-base", "exp-equation-impossible", "exp-justifier-etape", "exp-equation-rediger", "log-equation-simple", "log-equation-ce", "log-equation-rediger", "log-equation-exp", "log-equation-exp-isoler", "log-equation-exp-impossible"], "tirage": null}'}
+::: {.ae-qa-titre}
+Équations exponentielles et logarithmiques
+:::
+
+::: {.ae-qa-desc}
+Résoudre, justifier, rédiger : conditions d’existence, même base, logarithme pour libérer l’exposant.
+:::
+:::
+
+::: {.ae-qa data-ae-id="qa-modeliser" data-spec='{"questions": null, "tirage": {"nombre": 8, "sections": [], "obj": ["T1", "T2", "T3"], "types": [], "niveaux": []}}'}
+::: {.ae-qa-titre}
+Modéliser et résoudre des problèmes
+:::
+
+::: {.ae-qa-desc}
+Reconnaître le bon modèle, le construire à partir d’une situation et s’en servir.
+:::
+:::
+
+::: {.ae-qa data-ae-id="qa-bases" data-spec='{"questions": null, "tirage": {"nombre": 10, "sections": [], "obj": [], "types": [], "niveaux": [1]}}'}
+::: {.ae-qa-titre}
+Les bases, pour démarrer
+:::
+
+::: {.ae-qa-desc}
+Dix questions de niveau ★ sur tout le cours.
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-critere-tableau" data-type="qcm" data-section="sec-croissance" data-obj="C5" data-niveau="1" data-id="6UAA4.q.exp-critere-tableau" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Pour des valeurs de $x$ régulièrement espacées ($0$, $1$, $2$, $3$), on a relevé $y = 5$, $10$, $20$, $40$. Que peut-on dire ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+C’est une croissance exponentielle : le quotient de deux valeurs consécutives vaut toujours $2$.
+:::
+
+::: {.ae-fb}
+Oui : $\frac{10}{5} = \frac{20}{10} = \frac{40}{20} = 2$. Pour des pas de $x$ égaux, un quotient constant caractérise une croissance exponentielle ([remarque 1.1](ch1-fonctions-exponentie/1-croissance-exponentielle.qmd#remarque-1-1)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+C’est une croissance affine : on ajoute toujours le même nombre.
+:::
+
+::: {.ae-fb}
+Calcule les différences : $+5$, $+10$, $+20$. Elles ne sont pas constantes. Ce sont les quotients qui le sont.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+On ne peut rien dire sans connaître l’expression de la fonction.
+:::
+
+::: {.ae-fb}
+Le tableau suffit : avec des pas de $x$ égaux, on teste si le quotient de deux valeurs consécutives est constant.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+C’est une croissance exponentielle de base $5$.
+:::
+
+::: {.ae-fb}
+$5$ est la valeur de départ ($y$ pour $x = 0$). La base est le facteur par lequel on multiplie à chaque pas : $\frac{10}{5} = 2$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-critere-non" data-type="qcm" data-section="sec-croissance" data-obj="C5" data-niveau="2" data-id="6UAA4.q.exp-critere-non" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Pour $x = 1$, $2$, $3$, $4$, on a $y = 2$, $8$, $18$, $32$. Cette croissance est-elle exponentielle ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+Non : les quotients $4$, $\frac{9}{4}$ et $\frac{16}{9}$ ne sont pas égaux.
+:::
+
+::: {.ae-fb}
+Exact. Ce sont les valeurs de $2 x^{2}$ : une fonction du second degré, pas une exponentielle.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Oui : $y$ augmente de plus en plus vite.
+:::
+
+::: {.ae-fb}
+« De plus en plus vite » ne suffit pas : $x^{2}$ aussi. Le critère est un quotient constant pour des pas de $x$ égaux.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Oui, de base $4$ : $\frac{8}{2} = 4$.
+:::
+
+::: {.ae-fb}
+Un seul quotient ne suffit pas : $\frac{18}{8} = \frac{9}{4} \neq 4$. Il faut vérifier tous les quotients.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Non : les différences $6$, $10$ et $14$ ne sont pas égales.
+:::
+
+::: {.ae-fb}
+La conclusion est juste mais la raison ne l’est pas : des différences non constantes excluent une croissance affine, pas une croissance exponentielle. Il faut calculer les quotients.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-somme-produit" data-type="qcm" data-section="sec-croissance" data-obj="C3" data-niveau="2" data-id="6UAA4.q.exp-somme-produit" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Une fonction $f$ a une croissance exponentielle. On sait que $f(2) = 9$ et $f(3) = 27$. Que vaut $f(5)$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$243$
+:::
+
+::: {.ae-fb}
+Oui : $f(2 + 3) = f(2) \cdot f(3) = 9 \cdot 27 = 243$ ([définition 1.1](ch1-fonctions-exponentie/1-croissance-exponentielle.qmd#definition-1-1) : une croissance exponentielle transforme une somme en produit).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$36$
+:::
+
+::: {.ae-fb}
+Tu as additionné les images : $f(2) + f(3) = 36$. C’est le comportement d’une fonction linéaire. Une croissance exponentielle transforme une somme en produit.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f(7)$ ne peut pas être calculé.
+:::
+
+::: {.ae-fb}
+La définition 1.1 le permet : $f(x + x') = f(x) \cdot f(x')$, avec $x = 2$ et $x' = 3$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$729$
+:::
+
+::: {.ae-fb}
+Tu as calculé $27^{2} = f(3) \cdot f(3) = f(6)$. Utilise $5 = 2 + 3$ : $f(5) = f(2) \cdot f(3)$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-interets-composes" data-type="ouverte" data-section="sec-croissance" data-obj="T2" data-niveau="2" data-id="6UAA4.q.exp-interets-composes" data-tags="" data-forme="longue"}
+::: {.ae-enonce}
+On place $1000$ € à intérêts composés au taux annuel de $3 \%$. Exprime le capital $C_{n}$ après $n$ années, puis calcule-le après $10$ ans.
+:::
+
+::: {.ae-rep}
+Chaque année, le capital est multiplié par $1 + 0{,}03 = 1{,}03$. En partant de $1000$ € : $C_{n} = 1000 \cdot 1{,}03^{n}$.
+
+Après $10$ ans : $C_{10} = 1000 \cdot 1{,}03^{10} \approx 1343{,}92$ €.
+:::
+
+::: {.ae-crit}
+J’ai traduit « $+3 \%$ par an » par une multiplication par $1{,}03$.
+:::
+
+::: {.ae-crit}
+J’ai écrit $C_{n} = 1000 \cdot 1{,}03^{n}$ (et non $1000 + 30 n$).
+:::
+
+::: {.ae-crit}
+J’ai trouvé environ $1343{,}92$ €.
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-exposant-fractionnaire" data-type="qcm" data-section="sec-construire" data-obj="A1" data-niveau="1" data-id="6UAA4.q.exp-exposant-fractionnaire" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Que vaut $8^{2/3}$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$4$
+:::
+
+::: {.ae-fb}
+Oui : $8^{2/3} = (\sqrt[3]{8})^{2} = 2^{2} = 4$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$5{,}33$
+:::
+
+::: {.ae-fb}
+Tu as calculé $8 \cdot \frac{2}{3}$. Un exposant $\frac{2}{3}$ n’est pas un facteur : $8^{2/3} = (\sqrt[3]{8})^{2}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$16$
+:::
+
+::: {.ae-fb}
+Tu as calculé $8 \cdot 2$. Le dénominateur $3$ indique la racine cubique : $\sqrt[3]{8} = 2$, puis $2^{2} = 4$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$0{,}25$
+:::
+
+::: {.ae-fb}
+C’est $8^{-2/3} = \frac{1}{4}$. Ici l’exposant est positif.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-exposant-negatif" data-type="qcm" data-section="sec-construire" data-obj="A1" data-niveau="1" data-id="6UAA4.q.exp-exposant-negatif" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Que vaut $2^{-3}$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$\frac{1}{8}$
+:::
+
+::: {.ae-fb}
+Oui : $2^{-3} = \frac{1}{2^{3}} = \frac{1}{8}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$-8$
+:::
+
+::: {.ae-fb}
+Un exposant négatif donne un inverse, pas un nombre négatif : $2^{-3} = 1 / 2^{3}$. Une puissance de base positive est toujours positive.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$-6$
+:::
+
+::: {.ae-fb}
+Tu as calculé $2 \cdot (-3)$ : l’exposant n’est pas un facteur.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\frac{1}{6}$
+:::
+
+::: {.ae-fb}
+$2^{3} = 8$, pas $6$ : $2^{-3} = \frac{1}{2^{3}} = \frac{1}{8}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-batterie-demi" data-type="qcm" data-section="sec-construire" data-obj="C3" data-niveau="2" data-id="6UAA4.q.exp-batterie-demi" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+La charge d’une batterie est multipliée par $0{,}64$ toutes les heures. Par quel nombre est-elle multipliée toutes les demi-heures ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$0{,}8$
+:::
+
+::: {.ae-fb}
+Oui : deux demi-heures font une heure, donc le facteur $c$ par demi-heure vérifie $c^{2} = 0{,}64$, soit $c = \sqrt{0{,}64} = 0{,}8$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$0{,}32$
+:::
+
+::: {.ae-fb}
+Tu as divisé par $2$. Deux multiplications successives par $c$ font une multiplication par $c^{2}$ : il faut $c^{2} = 0{,}64$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$0{,}82$
+:::
+
+::: {.ae-fb}
+Tu as retiré la moitié de la perte ($36 \% / 2 = 18 \%$). Les pourcentages ne se partagent pas : $0{,}82^{2} \approx 0{,}67 \neq 0{,}64$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$0{,}4096$
+:::
+
+::: {.ae-fb}
+C’est $0{,}64^{2}$ : le facteur sur deux heures. Pour une demi-heure, on prend la racine carrée.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-reconnaitre" data-type="qcm" data-section="sec-def-exp" data-obj="C2" data-niveau="1" data-id="6UAA4.q.exp-reconnaitre" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Laquelle de ces fonctions est une fonction exponentielle ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$f(x) = 0{,}7^{x}$
+:::
+
+::: {.ae-fb}
+Oui : de la forme $a^{x}$ avec $a = 0{,}7 \in \mathbb{R}^{> 0} \setminus \{1\}$ ([définition 1.3](ch1-fonctions-exponentie/3-definition-de-la-fonction-exponentielle.qmd#definition-1-3)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f(x) = x^{0{,}7}$
+:::
+
+::: {.ae-fb}
+Ici c’est la base qui varie et l’exposant est fixe : c’est une fonction puissance.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f(x) = (-2)^{x}$
+:::
+
+::: {.ae-fb}
+La base doit être strictement positive : $(-2)^{1/2} = \sqrt{-2}$ n’existe pas.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f(x) = 1^{x}$
+:::
+
+::: {.ae-fb}
+La base $1$ est exclue : $1^{x} = 1$ pour tout $x$, la fonction est constante.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-regle-produit" data-type="qcm" data-section="sec-def-exp" data-obj="A1" data-niveau="1" data-id="6UAA4.q.exp-regle-produit" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Simplifie $3^{4} \cdot 3^{5}$.
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$3^{9}$
+:::
+
+::: {.ae-fb}
+Oui : $a^{m} \cdot a^{p} = a^{m + p}$ ([propriété 1.1](ch1-fonctions-exponentie/3-definition-de-la-fonction-exponentielle.qmd#propriete-1-1)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$3^{20}$
+:::
+
+::: {.ae-fb}
+Tu as multiplié les exposants. Dans un produit de puissances de même base, on additionne les exposants.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$9^{9}$
+:::
+
+::: {.ae-fb}
+La base ne change pas : on garde $3$ et on additionne les exposants.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$9^{20}$
+:::
+
+::: {.ae-fb}
+Deux erreurs : la base reste $3$ et on additionne les exposants : $3^{4 + 5} = 3^{9}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-regles-simplifier" data-type="ouverte" data-section="sec-def-exp" data-obj="A1" data-niveau="2" data-id="6UAA4.q.exp-regles-simplifier" data-tags="" data-forme="courte"}
+::: {.ae-enonce}
+Écris sous la forme d’une seule puissance de $a$ : $(a^{2 x})^{3} \cdot \frac{a^{-x}}{a^{4 x}}$.
+:::
+
+::: {.ae-rep}
+$(a^{2 x})^{3} = a^{6 x}$ ; puis $a^{6 x} \cdot a^{-x} = a^{5 x}$ ; enfin $\frac{a^{5 x}}{a^{4 x}} = a^{x}$.
+:::
+
+::: {.ae-crit}
+J’ai écrit $(a^{2 x})^{3} = a^{6 x}$ (on multiplie les exposants).
+:::
+
+::: {.ae-crit}
+J’ai additionné puis soustrait les exposants : $6 x - x - 4 x$.
+:::
+
+::: {.ae-crit}
+J’ai trouvé $a^{x}$.
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-sens-variation" data-type="qcm" data-section="sec-graph-exp" data-obj="C1" data-niveau="1" data-id="6UAA4.q.exp-sens-variation" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+La fonction $f(x) = 0{,}6^{x}$ est :
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+strictement décroissante, et passe par $(0, 1)$.
+:::
+
+::: {.ae-fb}
+Oui : la base $0{,}6$ est comprise entre $0$ et $1$, donc $f$ est décroissante ; et $f(0) = 0{,}6^{0} = 1$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+strictement croissante, car $0{,}6 > 0$.
+:::
+
+::: {.ae-fb}
+Une base positive ne suffit pas : c’est la position de la base par rapport à $1$ qui fixe le sens de variation. Ici $0{,}6 < 1$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+strictement décroissante, et passe par $(0, 0{,}6)$.
+:::
+
+::: {.ae-fb}
+$f(0) = 0{,}6^{0} = 1$ : toute exponentielle $a^{x}$ passe par $(0, 1)$. Le point $(1, 0{,}6)$ est sur la courbe.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+décroissante, puis négative pour $x$ grand.
+:::
+
+::: {.ae-fb}
+$a^{x} > 0$ pour tout $x$ : la courbe s’approche de l’axe $x$ (asymptote $y = 0$) sans jamais le traverser.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-image" data-type="qcm" data-section="sec-graph-exp" data-obj="C1" data-niveau="1" data-id="6UAA4.q.exp-image" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Quelle est l’image de la fonction $f(x) = 5^{x}$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$\mathbb{R}^{> 0}$
+:::
+
+::: {.ae-fb}
+Oui : $5^{x}$ prend toutes les valeurs strictement positives, et seulement celles-là ([exemple 1.1](ch1-fonctions-exponentie/4-proprietes-et-caracteristiques-graphique.qmd#exemple-1-1)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\mathbb{R}$
+:::
+
+::: {.ae-fb}
+C’est le domaine de $f$ ($x$ peut être n’importe quel réel). Mais $5^{x}$ n’est jamais négatif ni nul.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\mathbb{R}^{\geq 0}$
+:::
+
+::: {.ae-fb}
+$5^{x}$ ne vaut jamais $0$ : la courbe s’approche de l’axe $x$ sans le toucher.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$[1 ; +\infty[$
+:::
+
+::: {.ae-fb}
+Pour $x < 0$, $5^{x} < 1$ : par exemple $5^{-1} = 0{,}2$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-symetrie-y" data-type="qcm" data-section="sec-graph-exp" data-obj="A2" data-niveau="2" data-id="6UAA4.q.exp-symetrie-y" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Le graphique de $g(x) = (\frac{1}{3})^{x}$ s’obtient à partir de celui de $f(x) = 3^{x}$ par :
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+une symétrie d’axe $y$.
+:::
+
+::: {.ae-fb}
+Oui : $(\frac{1}{3})^{x} = 3^{-x} = f(-x)$ ([propriété 1.3](ch1-fonctions-exponentie/4-proprietes-et-caracteristiques-graphique.qmd#propriete-1-3)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+une symétrie d’axe $x$.
+:::
+
+::: {.ae-fb}
+La symétrie d’axe $x$ donnerait $-3^{x}$, sous l’axe. $(\frac{1}{3})^{x}$ reste positif.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+une symétrie par rapport à la droite $y = x$.
+:::
+
+::: {.ae-fb}
+Cette symétrie donne la réciproque, $\log_{3} x$ (chapitre 2). Ici, $(\frac{1}{3})^{x} = 3^{-x}$ : on change $x$ en $-x$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+une translation vers le bas.
+:::
+
+::: {.ae-fb}
+Les deux courbes passent par $(0, 1)$ : il n’y a pas de translation. On change $x$ en $-x$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-multiple-lecture" data-type="qcm" data-section="sec-multiples" data-obj="A4 C4" data-niveau="1" data-id="6UAA4.q.exp-multiple-lecture" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Un multiple d’une exponentielle $f(x) = k \cdot a^{x}$ passe par $(0, 3)$ et $(1, 12)$. Que vaut $f(x)$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$f(x) = 3 \cdot 4^{x}$
+:::
+
+::: {.ae-fb}
+Oui : $k = f(0) = 3$ et $a = f(1) / f(0) = \frac{12}{3} = 4$ ([remarque 1.2](ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.qmd#remarque-1-2)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f(x) = 3 \cdot 12^{x}$
+:::
+
+::: {.ae-fb}
+$12$ est $f(1) = k \cdot a$, pas la base : $a = \frac{12}{3} = 4$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f(x) = 12 \cdot 3^{x}$
+:::
+
+::: {.ae-fb}
+Tu as inversé : $k = f(0) = 3$ est l’ordonnée à l’origine.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f(x) = 3 \cdot 9^{x}$
+:::
+
+::: {.ae-fb}
+Tu as calculé la différence $12 - 3 = 9$. La base est un quotient : $\frac{12}{3} = 4$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-parametres-cakt" data-type="qcm" data-section="sec-multiples" data-obj="C3" data-niveau="2" data-id="6UAA4.q.exp-parametres-cakt" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Une quantité est modélisée par $Q(t) = 50 \cdot 1{,}2^{t / 4}$ ($t$ en années). Que signifie cette écriture ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+La quantité vaut $50$ au départ et est multipliée par $1{,}2$ tous les $4$ ans.
+:::
+
+::: {.ae-fb}
+Oui : $Q(0) = 50$, et quand $t$ augmente de $4$, l’exposant $t/4$ augmente de $1$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+La quantité est multipliée par $1{,}2$ chaque année.
+:::
+
+::: {.ae-fb}
+Quand $t$ augmente de $1$, l’exposant $t / 4$ n’augmente que de $\frac{1}{4}$ : le facteur $1{,}2$ s’applique tous les $4$ ans.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+La quantité augmente de $1{,}2 \%$ tous les $4$ ans.
+:::
+
+::: {.ae-fb}
+Multiplier par $1{,}2$, c’est augmenter de $20 \%$, pas de $1{,}2 \%$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+La quantité est multipliée par $1{,}2 / 4 = 0{,}3$ chaque année.
+:::
+
+::: {.ae-fb}
+Le $4$ est dans l’exposant : il ne divise pas la base. Le facteur annuel vaut $1{,}2^{1/4} \approx 1{,}047$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-transformation-translation" data-type="qcm" data-section="sec-multiples" data-obj="A2" data-niveau="2" data-id="6UAA4.q.exp-transformation-translation" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Le graphique de $g(x) = 2^{x + 3}$ s’obtient à partir de celui de $f(x) = 2^{x}$ par :
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+une translation de $3$ unités vers la gauche.
+:::
+
+::: {.ae-fb}
+Oui : on remplace $x$ par $x + 3$, la courbe se déplace de $3$ vers la gauche. On a aussi $g(x) = 8 \cdot 2^{x}$ : c’est un étirement vertical de facteur $8$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+une translation de $3$ unités vers la droite.
+:::
+
+::: {.ae-fb}
+Remplacer $x$ par $x + 3$ déplace vers la gauche : $g(-3) = 2^{0} = 1 = f(0)$, le point $(0, 1)$ arrive en $(-3, 1)$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+une translation de $3$ unités vers le haut.
+:::
+
+::: {.ae-fb}
+La translation vers le haut serait $2^{x} + 3$ : on ajouterait $3$ au résultat, pas à $x$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+un étirement vertical de facteur $3$.
+:::
+
+::: {.ae-fb}
+$2^{x + 3} = 2^{3} \cdot 2^{x} = 8 \cdot 2^{x}$ : le facteur vaut $8$, pas $3$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-lire-graphique" data-type="ouverte" data-section="sec-multiples" data-obj="A4 A3" data-niveau="2" data-id="6UAA4.q.exp-lire-graphique" data-tags="" data-forme="courte"}
+::: {.ae-enonce}
+Détermine l’expression analytique de la fonction représentée.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 8.0, "w": 434, "h": 340, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.3, "f": {"js": "(2.0 * Math.pow(1.5, x))"}}], "points": [{"x": 0.0, "y": 2.0}, {"x": 1.0, "y": 3.0}]}'></div>
+```
+:::
+
+::: {.ae-rep}
+La courbe passe par $(0, 2)$ et $(1, 3)$. Donc $k = f(0) = 2$ et $a = f(1) / f(0) = \frac{3}{2} = 1{,}5$. $f(x) = 2 \cdot 1{,}5^{x}$.
+:::
+
+::: {.ae-crit}
+J’ai lu $k = f(0) = 2$.
+:::
+
+::: {.ae-crit}
+J’ai calculé la base comme un quotient : $a = \frac{3}{2}$.
+:::
+
+::: {.ae-crit}
+J’ai écrit $f(x) = 2 \cdot 1{,}5^{x}$.
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-modele-choix" data-type="qcm" data-section="sec-multiples" data-obj="T1" data-niveau="1" data-id="6UAA4.q.exp-modele-choix" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Le prix d’un abonnement augmente de $5$ € chaque année. Quel modèle convient ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+Une croissance affine.
+:::
+
+::: {.ae-fb}
+Oui : on ajoute le même montant chaque année.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Une croissance exponentielle.
+:::
+
+::: {.ae-fb}
+Il faudrait multiplier par un même nombre chaque année (par exemple $+5 \%$). Ici on ajoute $5$ €.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Une décroissance exponentielle.
+:::
+
+::: {.ae-fb}
+Le prix augmente ; et on ajoute un montant fixe.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Une décroissance affine.
+:::
+
+::: {.ae-fb}
+Le prix augmente : la croissance est affine, pas une décroissance.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-modele-pourcentage" data-type="qcm" data-section="sec-multiples" data-obj="T2" data-niveau="2" data-id="6UAA4.q.exp-modele-pourcentage" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Une ville de $20 \, 000$ habitants perd $2 \%$ de sa population chaque année. Quelle expression donne sa population après $t$ années ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$P(t) = 20 \, 000 \cdot 0{,}98^{t}$
+:::
+
+::: {.ae-fb}
+Oui : perdre $2 \%$, c’est multiplier par $1 - 0{,}02 = 0{,}98$ chaque année.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$P(t) = 20 \, 000 \cdot 0{,}02^{t}$
+:::
+
+::: {.ae-fb}
+$0{,}02$ est la part perdue ; la part conservée est $0{,}98$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$P(t) = 20 \, 000 - 400 t$
+:::
+
+::: {.ae-fb}
+Ce modèle retire toujours $400$ habitants. Or les $2 \%$ portent sur la population de l’année précédente, qui diminue.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$P(t) = 20 \, 000 \cdot 1{,}02^{-t}$
+:::
+
+::: {.ae-fb}
+Proche, mais pas égal : $1 / 1{,}02 \approx 0{,}9804 \neq 0{,}98$. Une baisse de $2 \%$ correspond au facteur $0{,}98$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-probleme-doublement" data-type="ouverte" data-section="sec-multiples" data-obj="T2 T3" data-niveau="3" data-id="6UAA4.q.exp-probleme-doublement" data-tags="" data-forme="longue"}
+::: {.ae-enonce}
+Une colonie de $400$ bactéries double toutes les $3$ heures. Donne l’expression $N(t)$ du nombre de bactéries après $t$ heures, puis calcule $N(10)$.
+:::
+
+::: {.ae-rep}
+La colonie est multipliée par $2$ toutes les $3$ heures ; après $t$ heures, elle a doublé $\frac{t}{3}$ fois : $N(t) = 400 \cdot 2^{t/3}$.
+
+$N(10) = 400 \cdot 2^{10/3} \approx 4 \, 032$ bactéries.
+:::
+
+::: {.ae-crit}
+J’ai mis $t/3$ dans l’exposant (le doublement a lieu toutes les $3$ heures).
+:::
+
+::: {.ae-crit}
+J’ai écrit $N(t) = 400 \cdot 2^{t/3}$.
+:::
+
+::: {.ae-crit}
+J’ai trouvé environ $4 \, 032$ bactéries.
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-changement-base" data-type="qcm" data-section="sec-semblables" data-obj="C4" data-niveau="2" data-id="6UAA4.q.exp-changement-base" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+On sait que $a^{x} = 2^{k x}$ pour tout $x$. Si $a = 8$, que vaut $k$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$3$
+:::
+
+::: {.ae-fb}
+Oui : $8^{x} = (2^{3})^{x} = 2^{3 x}$ ([propriété 1.4](ch1-fonctions-exponentie/6-des-graphes-tous-semblables-vers.qmd#propriete-1-4)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$4$
+:::
+
+::: {.ae-fb}
+Tu as divisé $8$ par $2$. Il faut écrire $8$ comme une puissance de $2$ : $8 = 2^{3}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\frac{1}{3}$
+:::
+
+::: {.ae-fb}
+Tu as inversé : $2^{x/3} = \sqrt[3]{2}^{x}$, qui n’est pas $8^{x}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$6$
+:::
+
+::: {.ae-fb}
+$2^{6} = 64$, pas $8$. $8 = 2^{3}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-derivee-multiple" data-type="qcm" data-section="sec-e" data-obj="A7" data-niveau="2" data-id="6UAA4.q.exp-derivee-multiple" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Quelle propriété caractérise la base $e$ parmi toutes les exponentielles $a^{x}$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+La pente de la tangente à $e^{x}$ au point $(0, 1)$ vaut $1$.
+:::
+
+::: {.ae-fb}
+Oui : pour toute base, $(a^{x})' = f'(0) \cdot a^{x}$ ; la base $e$ est celle pour laquelle $f'(0) = 1$, donc $(e^{x})' = e^{x}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+C’est la seule exponentielle qui passe par $(0, 1)$.
+:::
+
+::: {.ae-fb}
+Toutes les exponentielles $a^{x}$ passent par $(0, 1)$, car $a^{0} = 1$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+C’est la seule exponentielle croissante.
+:::
+
+::: {.ae-fb}
+Toute base $a > 1$ donne une exponentielle croissante ($2^{x}$, $10^{x}$…).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$e$ est un nombre entier proche de $3$.
+:::
+
+::: {.ae-fb}
+$e \approx 2{,}718$ n’est pas entier ; il est même irrationnel ([remarque 1.4](ch1-fonctions-exponentie/7-le-nombre-e-et-lexponentielle.qmd#remarque-1-4)).
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-e-calculatrice" data-type="qcm" data-section="sec-e" data-obj="A1" data-niveau="1" data-id="6UAA4.q.exp-e-calculatrice" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+À la calculatrice, $e^{2}$ vaut environ :
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$7{,}389$
+:::
+
+::: {.ae-fb}
+Oui : touche $e^{x}$, puis $2$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$5{,}437$
+:::
+
+::: {.ae-fb}
+Tu as calculé $2 \cdot e$. $e^{2} = e \cdot e$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$0{,}693$
+:::
+
+::: {.ae-fb}
+C’est $\ln 2$ : la touche du logarithme, pas celle de l’exponentielle.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$100$
+:::
+
+::: {.ae-fb}
+C’est $10^{2}$ : la touche $10^{x}$ au lieu de $e^{x}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-equation-base" data-type="qcm" data-section="sec-eq-exp" data-obj="A5" data-niveau="1" data-id="6UAA4.q.exp-equation-base" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Résous $3^{x - 1} = 27$.
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$S = \{4\}$
+:::
+
+::: {.ae-fb}
+Oui : $27 = 3^{3}$, donc $3^{x - 1} = 3^{3} \Longleftrightarrow x - 1 = 3 \Longleftrightarrow x = 4$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{28\}$
+:::
+
+::: {.ae-fb}
+Tu as égalé l’exposant à $27$. Il faut d’abord écrire $27$ en base $3$ : $27 = 3^{3}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{10\}$
+:::
+
+::: {.ae-fb}
+Tu as divisé $27$ par $3$ puis ajouté $1$. Écris $27 = 3^{3}$ et égale les exposants.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{3\}$
+:::
+
+::: {.ae-fb}
+$x - 1 = 3$ donne $x = 4$ : il reste à isoler $x$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-equation-impossible" data-type="qcm" data-section="sec-eq-exp" data-obj="A5" data-niveau="2" data-id="6UAA4.q.exp-equation-impossible" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Résous $e^{x^{2}} = \frac{1}{e}$.
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$S = \emptyset$
+:::
+
+::: {.ae-fb}
+Oui : $1/e = e^{-1}$, donc $x^{2} = -1$, impossible : un carré n’est jamais négatif.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{-1 ; 1\}$
+:::
+
+::: {.ae-fb}
+Tu as résolu $x^{2} = 1$. Mais $1 / e = e^{-1}$ : l’équation devient $x^{2} = -1$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{-1\}$
+:::
+
+::: {.ae-fb}
+$x = -1$ donne $e^{(-1)^{2}} = e^{1} = e$, pas $1 / e$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{0\}$
+:::
+
+::: {.ae-fb}
+$e^{0} = 1$, pas $1 / e$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-justifier-etape" data-type="qcm" data-section="sec-eq-exp" data-obj="C7" data-niveau="2" data-id="6UAA4.q.exp-justifier-etape" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Dans une résolution, on passe de $5^{2 x} = 5^{x + 3}$ à $2 x = x + 3$. Quelle propriété le justifie ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+La fonction $5^{x}$ est strictement croissante, donc $5^{u} = 5^{v} \Longleftrightarrow u = v$.
+:::
+
+::: {.ae-fb}
+Oui : c’est la [propriété 1.6](ch1-fonctions-exponentie/8-resoudre-des-equations-exponentielles-si.qmd#propriete-1-6). Sans stricte monotonie, deux exposants différents pourraient donner la même valeur.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+On simplifie par $5$ de chaque côté.
+:::
+
+::: {.ae-fb}
+On ne « simplifie » pas une base comme un facteur : $5^{2 x}$ n’est pas $5 \cdot 2 x$. C’est la stricte monotonie qui permet d’égaler les exposants.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+La règle $a^{m + p} = a^{m} \cdot a^{p}$.
+:::
+
+::: {.ae-fb}
+Cette règle transforme une puissance, elle ne permet pas de passer à l’égalité des exposants.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+On prend la racine cinquième des deux membres.
+:::
+
+::: {.ae-fb}
+$\sqrt[5]{5^{2 x}} = 5^{2 x / 5}$ : on n’obtient pas $2 x = x + 3$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="exp-equation-rediger" data-type="ouverte" data-section="sec-eq-exp" data-obj="A5 C7" data-niveau="3" data-id="6UAA4.q.exp-equation-rediger" data-tags="" data-forme="longue"}
+::: {.ae-enonce}
+Résous $4^{x + 1} = \sqrt[3]{2}$ en justifiant chaque étape.
+:::
+
+::: {.ae-rep}
+On écrit les deux membres en base $2$ : $4^{x + 1} = (2^{2})^{x + 1} = 2^{2 x + 2}$ et $\sqrt[3]{2} = 2^{1/3}$.
+
+L’équation devient $2^{2 x + 2} = 2^{1/3}$. Comme $2^{x}$ est strictement croissante, $2^{u} = 2^{v} \Longleftrightarrow u = v$ : $2 x + 2 = \frac{1}{3} \Longleftrightarrow 2 x = -\frac{5}{3} \Longleftrightarrow x = -\frac{5}{6}$.
+
+$S = \{-\frac{5}{6}\}$.
+:::
+
+::: {.ae-crit}
+J’ai écrit $4 = 2^{2}$ et $\sqrt[3]{2} = 2^{1/3}$.
+:::
+
+::: {.ae-crit}
+J’ai appliqué $(a^{m})^{p} = a^{m p}$ : $2^{2 x + 2}$.
+:::
+
+::: {.ae-crit}
+J’ai cité la stricte monotonie pour égaler les exposants.
+:::
+
+::: {.ae-crit}
+J’ai trouvé $x = -\frac{5}{6}$.
+:::
+:::
+
+::: {.ae-q data-ae-id="log-reciproque-sens" data-type="qcm" data-section="sec-intro-log" data-obj="C1" data-niveau="1" data-id="6UAA4.q.log-reciproque-sens" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Le point $(2 ; 7{,}39)$ est sur le graphique de $e^{x}$. Quel point est sur le graphique de $\ln x$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$(7{,}39 ; 2)$
+:::
+
+::: {.ae-fb}
+Oui : $\ln$ est la réciproque de $e^{x}$, on échange les coordonnées (symétrie par rapport à la droite $y = x$).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$(2 ; -7{,}39)$
+:::
+
+::: {.ae-fb}
+C’est le symétrique par rapport à l’axe $x$. La réciproque échange $x$ et $y$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$(-2 ; 7{,}39)$
+:::
+
+::: {.ae-fb}
+C’est le symétrique par rapport à l’axe $y$ (graphique de $e^{-x}$). La réciproque échange $x$ et $y$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$(2 ; 1 / 7{,}39)$
+:::
+
+::: {.ae-fb}
+$\ln$ n’est pas l’inverse $1 / e^{x}$ : elle « défait » $e^{x}$, donc échange les rôles de $x$ et $y$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-composition" data-type="qcm" data-section="sec-intro-log" data-obj="C7" data-niveau="1" data-id="6UAA4.q.log-composition" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Que vaut $e^{\ln 5}$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$5$
+:::
+
+::: {.ae-fb}
+Oui : $e^{\ln x} = x$ pour $x > 0$ ([propriété 2.1](ch2-fonctions-logarithmi/1-du-probleme-e-x-3.qmd#propriete-2-1)) : $\ln$ et $e^{x}$ se défont l’une l’autre.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\ln 5$
+:::
+
+::: {.ae-fb}
+$e^{x}$ « défait » $\ln$ : il ne reste que $5$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$e^{5}$
+:::
+
+::: {.ae-fb}
+Tu as oublié le logarithme dans l’exposant : $e^{\ln 5} = 5$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$1$
+:::
+
+::: {.ae-fb}
+$e^{\ln 5} = 1$ supposerait $\ln 5 = 0$ ; or $\ln 5 \approx 1{,}61$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-calcul-mental" data-type="qcm" data-section="sec-def-log" data-obj="A1" data-niveau="1" data-id="6UAA4.q.log-calcul-mental" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Que vaut $\log_{2} (\frac{1}{8})$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$-3$
+:::
+
+::: {.ae-fb}
+Oui : $2^{-3} = \frac{1}{8}$ ; calculer un logarithme, c’est chercher un exposant ([exemple 2.1](ch2-fonctions-logarithmi/2-definition-du-logarithme-de-base.qmd#exemple-2-1)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$3$
+:::
+
+::: {.ae-fb}
+$2^{3} = 8$, pas $\frac{1}{8}$ : il faut un exposant négatif.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\frac{1}{3}$
+:::
+
+::: {.ae-fb}
+$2^{1/3} = \sqrt[3]{2} \approx 1{,}26$, pas $\frac{1}{8}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$-4$
+:::
+
+::: {.ae-fb}
+Tu as divisé $8$ par $2$. On cherche $y$ tel que $2^{y} = \frac{1}{8}$ : $y = -3$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-domaine" data-type="qcm" data-section="sec-def-log" data-obj="C1" data-niveau="1" data-id="6UAA4.q.log-domaine" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Pour quels réels $x$ le nombre $\log(x)$ existe-t-il ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+Pour $x > 0$.
+:::
+
+::: {.ae-fb}
+Oui : $\log(x) = y \Longleftrightarrow 10^{y} = x$, et $10^{y}$ est toujours strictement positif ([définition 2.1](ch2-fonctions-logarithmi/2-definition-du-logarithme-de-base.qmd#definition-2-1)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Pour tout réel $x$.
+:::
+
+::: {.ae-fb}
+C’est le domaine de $10^{x}$. Pour $\log$, il faudrait $10^{y} = -1$ pour $x = -1$ : impossible.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Pour $x \geq 0$.
+:::
+
+::: {.ae-fb}
+$\log(0)$ n’existe pas : aucun exposant $y$ ne donne $10^{y} = 0$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Pour $x > 1$.
+:::
+
+::: {.ae-fb}
+$\log(0{,}1) = -1$ existe : entre $0$ et $1$, le logarithme est négatif, mais il existe.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-valeurs-remarquables" data-type="qcm" data-section="sec-def-log" data-obj="C1" data-niveau="1" data-id="6UAA4.q.log-valeurs-remarquables" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Pour toute base $a \in \mathbb{R}^{> 0} \setminus \{1\}$, que vaut $\log_{a} (1)$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$0$
+:::
+
+::: {.ae-fb}
+Oui : $a^{0} = 1$, donc $\log_{a} (1) = 0$ ([propriété 2.2](ch2-fonctions-logarithmi/2-definition-du-logarithme-de-base.qmd#propriete-2-2)). Toutes les courbes de logarithme passent par $(1, 0)$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$1$
+:::
+
+::: {.ae-fb}
+C’est $\log_{a} (a)$ qui vaut $1$. Pour $\log_{a} (1)$, on cherche l’exposant qui donne $1$ : $0$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$a$
+:::
+
+::: {.ae-fb}
+On cherche un exposant : $a^{?} = 1$. La réponse est $0$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Cela dépend de $a$.
+:::
+
+::: {.ae-fb}
+$a^{0} = 1$ quelle que soit la base : $\log_{a} (1) = 0$ pour toute base.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-calculatrice-base" data-type="qcm" data-section="sec-def-log" data-obj="A1" data-niveau="2" data-id="6UAA4.q.log-calculatrice-base" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+À la calculatrice, $\log_{3} (20)$ vaut environ :
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$2{,}727$
+:::
+
+::: {.ae-fb}
+Oui : $\log_{3} (20) = \frac{\ln 20}{\ln 3} \approx \frac{2{,}996}{1{,}099}$ ([changement de base](ch2-fonctions-logarithmi/4-proprietes-algebriques-a-decouvrir.qmd#propriete-2-8)). Vérification : $3^{2{,}727} \approx 20$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$0{,}367$
+:::
+
+::: {.ae-fb}
+Tu as calculé $\frac{\ln 3}{\ln 20}$ : le quotient est inversé.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$1{,}301$
+:::
+
+::: {.ae-fb}
+Tu as calculé $\log 20$, le logarithme en base $10$. Pour la base $3$, il faut encore diviser : $\frac{\log 20}{\log 3}$ ou $\frac{\ln 20}{\ln 3}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$6{,}667$
+:::
+
+::: {.ae-fb}
+Tu as divisé $20$ par $3$. Un logarithme est un exposant : $3^{?} = 20$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-graph-base" data-type="qcm" data-section="sec-graph-log" data-obj="C1 C4" data-niveau="2" data-id="6UAA4.q.log-graph-base" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+La courbe d’un logarithme $\log_{a}$ passe par le point $(4, 1)$. Que vaut la base $a$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$4$
+:::
+
+::: {.ae-fb}
+Oui : $\log_{a} (a) = 1$, donc le point d’ordonnée $1$ a pour abscisse la base.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\frac{1}{4}$
+:::
+
+::: {.ae-fb}
+$\log_{1/4} (4) = -1$, pas $1$. Le point $(a, 1)$ donne directement la base.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$e$
+:::
+
+::: {.ae-fb}
+C’est la courbe de $\ln$ qui passe par $(e, 1)$. Ici $\log_{a} (4) = 1 \Longleftrightarrow a^{1} = 4$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+On ne peut pas le savoir sans le point $(1, 0)$.
+:::
+
+::: {.ae-fb}
+Toutes les courbes passent par $(1, 0)$ : ce point ne distingue pas les bases. C’est le point d’ordonnée $1$ qui donne la base.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-graph-decroissant" data-type="qcm" data-section="sec-graph-log" data-obj="C1" data-niveau="1" data-id="6UAA4.q.log-graph-decroissant" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+La fonction $f(x) = \log_{0{,}5} (x)$ est :
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+strictement décroissante sur $\mathbb{R}^{> 0}$.
+:::
+
+::: {.ae-fb}
+Oui : la base $0{,}5$ est comprise entre $0$ et $1$. Voir les [caractéristiques de $\log_{a}$](ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.qmd#propriete-2-3) ; c’est aussi la symétrique de $\log_{2}$ par rapport à l’axe $x$ ([propriété 2.4](ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.qmd#propriete-2-4)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+strictement croissante sur $\mathbb{R}^{> 0}$.
+:::
+
+::: {.ae-fb}
+C’est le cas si la base est supérieure à $1$. Ici $0{,}5 < 1$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+strictement décroissante sur $\mathbb{R}$.
+:::
+
+::: {.ae-fb}
+Le domaine d’un logarithme est $\mathbb{R}^{> 0}$, pas $\mathbb{R}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+négative pour tout $x$.
+:::
+
+::: {.ae-fb}
+$\log_{0{,}5} (0{,}25) = 2 > 0$ : elle est positive entre $0$ et $1$, négative au-delà de $1$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-transformation" data-type="qcm" data-section="sec-graph-log" data-obj="A2" data-niveau="2" data-id="6UAA4.q.log-transformation" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Le graphique de $g(x) = \ln(x - 2)$ s’obtient à partir de celui de $\ln x$ par :
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+une translation de $2$ unités vers la droite ; son asymptote verticale est $x = 2$.
+:::
+
+::: {.ae-fb}
+Oui : on remplace $x$ par $x - 2$. Le point $(1, 0)$ arrive en $(3, 0)$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+une translation de $2$ unités vers le bas.
+:::
+
+::: {.ae-fb}
+La translation vers le bas serait $\ln(x) - 2$ : on retirerait $2$ au résultat, pas à $x$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+une translation de $2$ unités vers la gauche.
+:::
+
+::: {.ae-fb}
+Remplacer $x$ par $x - 2$ déplace vers la droite : $g(3) = \ln 1 = 0$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+une translation de $2$ unités vers la droite ; son asymptote verticale reste $x = 0$.
+:::
+
+::: {.ae-fb}
+L’asymptote se déplace avec la courbe : $x - 2 > 0$ exige $x > 2$, l’asymptote est $x = 2$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-symetries" data-type="ouverte" data-section="sec-graph-log" data-obj="A2 C1" data-niveau="2" data-id="6UAA4.q.log-symetries" data-tags="" data-forme="courte"}
+::: {.ae-enonce}
+À partir du graphique de $f(x) = \log_{3} (x)$, quelle transformation donne celui de $g(x) = \log_{1/3} (x)$ ? Et celui de $h(x) = 3^{x}$ ?
+:::
+
+::: {.ae-rep}
+$\log_{1/3} (x) = - \log_{3} (x)$ : le graphique de $g$ est le symétrique de celui de $f$ par rapport à l’axe $x$.
+
+$3^{x}$ est la réciproque de $\log_{3}$ : le graphique de $h$ est le symétrique de celui de $f$ par rapport à la droite $y = x$.
+:::
+
+::: {.ae-crit}
+J’ai répondu « symétrie d’axe $x$ » pour $g$.
+:::
+
+::: {.ae-crit}
+J’ai répondu « symétrie d’axe $y = x$ » (réciproque) pour $h$.
+:::
+:::
+
+::: {.ae-q data-ae-id="log-produit-erreur" data-type="qcm" data-section="sec-algebre-log" data-obj="C6" data-niveau="1" data-id="6UAA4.q.log-produit-erreur" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Pour $x, y > 0$, laquelle de ces égalités est toujours vraie ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$\log(x y) = \log x + \log y$
+:::
+
+::: {.ae-fb}
+Oui : le logarithme transforme un produit en somme ([propriété 2.5](ch2-fonctions-logarithmi/4-proprietes-algebriques-a-decouvrir.qmd#propriete-2-5)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\log(x + y) = \log x + \log y$
+:::
+
+::: {.ae-fb}
+Faux : avec $x = y = 10$, $\log 20 \approx 1{,}30$ mais $\log 10 + \log 10 = 2$. Il n’y a pas de règle pour le logarithme d’une somme.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\log(x y) = \log x \cdot \log y$
+:::
+
+::: {.ae-fb}
+Faux : avec $x = y = 10$, $\log 100 = 2$ mais $1 \cdot 1 = 1$. Le produit devient une somme.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\log(x^{2}) = (\log x)^{2}$
+:::
+
+::: {.ae-fb}
+Faux : avec $x = 10$, $\log 100 = 2$ mais $(\log 10)^{2} = 1$. L’exposant passe devant : $\log(x^{2}) = 2 \log x$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-demontrer-quotient" data-type="ouverte" data-section="sec-algebre-log" data-obj="C6" data-niveau="3" data-id="6UAA4.q.log-demontrer-quotient" data-tags="" data-forme="longue"}
+::: {.ae-enonce}
+Démontre que, pour $a \in \mathbb{R}^{> 0} \setminus \{1\}$ et $x, y > 0$ : $\log_{a} (\frac{x}{y}) = \log_{a} (x) - \log_{a} (y)$.
+:::
+
+::: {.ae-rep}
+Posons $u = \log_{a} (\frac{x}{y})$ et $v = \log_{a} (x) - \log_{a} (y)$.
+
+Par réciprocité, $a^{u} = \frac{x}{y}$. Par les règles des exposants et la réciprocité, $a^{v} = \frac{a^{\log_{a} (x)}}{a^{\log_{a} (y)}} = \frac{x}{y}$.
+
+Donc $a^{u} = a^{v}$. Comme $a^{x}$ est strictement monotone, $u = v$ : $\log_{a} (\frac{x}{y}) = \log_{a} (x) - \log_{a} (y)$.
+:::
+
+::: {.ae-crit}
+J’ai calculé $a$ exposant chaque membre.
+:::
+
+::: {.ae-crit}
+J’ai utilisé $a^{m - p} = \frac{a^{m}}{a^{p}}$ et $a^{\log_{a} (x)} = x$.
+:::
+
+::: {.ae-crit}
+J’ai conclu par la stricte monotonie (injectivité) de $a^{x}$.
+:::
+:::
+
+::: {.ae-q data-ae-id="log-changement-base-formule" data-type="qcm" data-section="sec-algebre-log" data-obj="C6" data-niveau="2" data-id="6UAA4.q.log-changement-base-formule" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Laquelle de ces écritures est égale à $\log_{5} (7)$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$\frac{\ln 7}{\ln 5}$
+:::
+
+::: {.ae-fb}
+Oui : changement de base, $\log_{a} (x) = \frac{\ln x}{\ln a}$ ([propriété 2.8](ch2-fonctions-logarithmi/4-proprietes-algebriques-a-decouvrir.qmd#propriete-2-8)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\frac{\ln 5}{\ln 7}$
+:::
+
+::: {.ae-fb}
+Le quotient est inversé : c’est $\log_{7} (5)$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\ln(\frac{7}{5})$
+:::
+
+::: {.ae-fb}
+$\ln(7/5) = \ln 7 - \ln 5$ : une différence, pas un quotient de logarithmes.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\frac{\ln 7}{5}$
+:::
+
+::: {.ae-fb}
+On divise par $\ln 5$, pas par $5$ : $\log_{5} (7) = \frac{\ln 7}{\ln 5}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-developper" data-type="qcm" data-section="sec-usage-log" data-obj="C6" data-niveau="1" data-id="6UAA4.q.log-developper" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Développe $\ln(\frac{a^{3} b}{c})$ ($a, b, c > 0$).
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$3 \ln a + \ln b - \ln c$
+:::
+
+::: {.ae-fb}
+Oui : quotient, puis produit, puis puissance ([exemple 2.4](ch2-fonctions-logarithmi/5-utiliser-les-proprietes.qmd#exemple-2-4)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$3 \ln a \cdot \ln b - \ln c$
+:::
+
+::: {.ae-fb}
+Le produit $a^{3} b$ devient une somme : $\ln a^{3} + \ln b$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\ln 3 a + \ln b - \ln c$
+:::
+
+::: {.ae-fb}
+L’exposant $3$ passe devant le logarithme : $\ln(a^{3}) = 3 \ln a$, pas $\ln(3 a)$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\frac{3 \ln a + \ln b}{\ln c}$
+:::
+
+::: {.ae-fb}
+Un quotient devient une différence, pas un quotient de logarithmes.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-condenser" data-type="qcm" data-section="sec-usage-log" data-obj="C6" data-niveau="2" data-id="6UAA4.q.log-condenser" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Écris $2 \log x - \log y + \log 3$ sous la forme d’un seul logarithme.
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$\log(\frac{3 x^{2}}{y})$
+:::
+
+::: {.ae-fb}
+Oui : $2 \log x = \log x^{2}$, puis la somme donne un produit et la différence un quotient ([exemple 2.5](ch2-fonctions-logarithmi/5-utiliser-les-proprietes.qmd#exemple-2-5)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\log(\frac{6 x}{y})$
+:::
+
+::: {.ae-fb}
+Le $2$ devient un exposant de $x$, pas un facteur : $2 \log x = \log(x^{2})$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\log(2 x - y + 3)$
+:::
+
+::: {.ae-fb}
+Les sommes de logarithmes deviennent des produits, pas des sommes.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\log(\frac{x^{2}}{3 y})$
+:::
+
+::: {.ae-fb}
+$+ \log 3$ met $3$ au numérateur.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-simplifier" data-type="qcm" data-section="sec-usage-log" data-obj="A1" data-niveau="1" data-id="6UAA4.q.log-simplifier" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Que vaut $\log(1000) - \ln(e^{2})$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$1$
+:::
+
+::: {.ae-fb}
+Oui : $\log(10^{3}) = 3$ et $\ln(e^{2}) = 2$ ([réciprocité](ch2-fonctions-logarithmi/2-definition-du-logarithme-de-base.qmd#propriete-2-2)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$998$
+:::
+
+::: {.ae-fb}
+On ne soustrait pas les nombres à l’intérieur : on calcule chaque logarithme ($3$ et $2$).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$5$
+:::
+
+::: {.ae-fb}
+Tu as additionné $3 + 2$ : c’est une différence.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$2{,}307$
+:::
+
+::: {.ae-fb}
+Tu as calculé $3 - \ln 2$. Or $\ln(e^{2}) = 2$ : c’est l’exposant de $e$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-equation-simple" data-type="qcm" data-section="sec-eq-log" data-obj="A6" data-niveau="1" data-id="6UAA4.q.log-equation-simple" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Résous $\log(x + 1) = 2$.
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$S = \{99\}$
+:::
+
+::: {.ae-fb}
+Oui : CE $x > -1$ ; $\log(x + 1) = 2 \Longleftrightarrow x + 1 = 10^{2} = 100 \Longleftrightarrow x = 99$, qui respecte la CE.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{1\}$
+:::
+
+::: {.ae-fb}
+Tu as écrit $x + 1 = 2$ : on « enlève » le logarithme en appliquant $10^{x}$, donc $x + 1 = 10^{2}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{e^{2} - 1\}$
+:::
+
+::: {.ae-fb}
+$\log$ est le logarithme de base $10$ : on applique $10^{x}$, pas $e^{x}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{101\}$
+:::
+
+::: {.ae-fb}
+$x + 1 = 100$ donne $x = 99$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-equation-ce" data-type="qcm" data-section="sec-eq-log" data-obj="A6 C7" data-niveau="2" data-id="6UAA4.q.log-equation-ce" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+En résolvant $\ln x + \ln(x - 3) = \ln 4$, on obtient $x^{2} - 3 x - 4 = 0$, donc $x = 4$ ou $x = -1$. Quel est l’ensemble des solutions ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$S = \{4\}$
+:::
+
+::: {.ae-fb}
+Oui : les conditions d’existence imposent $x > 0$ et $x > 3$, donc $x > 3$ : $-1$ est rejeté ([exemple 2.6](ch2-fonctions-logarithmi/6-equations-logarithmiques.qmd#exemple-2-6)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{4 ; -1\}$
+:::
+
+::: {.ae-fb}
+$\ln(-1)$ n’existe pas : il faut confronter les valeurs aux conditions d’existence.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{-1\}$
+:::
+
+::: {.ae-fb}
+C’est $-1$ qu’il faut rejeter : $\ln(-1)$ et $\ln(-4)$ n’existent pas.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \emptyset$
+:::
+
+::: {.ae-fb}
+$x = 4$ respecte $x > 3$ : $\ln 4 + \ln 1 = \ln 4$. C’est une solution.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-equation-rediger" data-type="ouverte" data-section="sec-eq-log" data-obj="A6 C7" data-niveau="3" data-id="6UAA4.q.log-equation-rediger" data-tags="" data-forme="longue"}
+::: {.ae-enonce}
+Résous $\log(2 x) - \log(x - 1) = \log 3$ en justifiant chaque étape.
+:::
+
+::: {.ae-rep}
+Conditions d’existence : $2 x > 0$ et $x - 1 > 0$, donc $x > 1$.
+
+Pour $x > 1$ : $\log(2 x) - \log(x - 1) = \log(\frac{2 x}{x - 1})$ (logarithme d’un quotient).
+
+$\log(\frac{2 x}{x - 1}) = \log 3 \Longleftrightarrow \frac{2 x}{x - 1} = 3$ ($\log$ est injectif) $\Longleftrightarrow 2 x = 3 x - 3 \Longleftrightarrow x = 3$.
+
+$3 > 1$ : la valeur respecte les conditions. $S = \{3\}$.
+:::
+
+::: {.ae-crit}
+J’ai écrit les conditions d’existence : $x > 1$.
+:::
+
+::: {.ae-crit}
+J’ai regroupé en un seul logarithme par la propriété du quotient.
+:::
+
+::: {.ae-crit}
+J’ai égalé les arguments en justifiant (injectivité de $\log$).
+:::
+
+::: {.ae-crit}
+J’ai trouvé $x = 3$ et vérifié qu’il respecte les conditions.
+:::
+:::
+
+::: {.ae-q data-ae-id="log-equation-exp" data-type="qcm" data-section="sec-eq-exp-b" data-obj="A5" data-niveau="1" data-id="6UAA4.q.log-equation-exp" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Résous $e^{x} = 5$.
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$x = \ln 5 \approx 1{,}609$
+:::
+
+::: {.ae-fb}
+Oui : $\ln$ défait $e^{x}$ ([exemple 2.8](ch2-fonctions-logarithmi/7-resoudre-les-equations-exponentielles-a.qmd#exemple-2-8)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$x = 5 / e \approx 1{,}839$
+:::
+
+::: {.ae-fb}
+$e^{x}$ n’est pas $e \cdot x$ : on ne divise pas par $e$, on applique $\ln$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$x = e^{5}$
+:::
+
+::: {.ae-fb}
+$e^{e^{5}}$ est énorme. On cherche l’exposant qui donne $5$ : $\ln 5$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$x = \log 5 \approx 0{,}699$
+:::
+
+::: {.ae-fb}
+La base est $e$ : on applique $\ln$, pas le logarithme de base $10$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-equation-exp-isoler" data-type="qcm" data-section="sec-eq-exp-b" data-obj="A5" data-niveau="2" data-id="6UAA4.q.log-equation-exp-isoler" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Résous $3 \cdot 2^{x} = 24$.
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$x = 3$
+:::
+
+::: {.ae-fb}
+Oui : on isole $2^{x} = 8 = 2^{3}$, donc $x = 3$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$x = \log_{6} (24)$
+:::
+
+::: {.ae-fb}
+$3 \cdot 2^{x}$ n’est pas $6^{x}$ : la puissance porte seulement sur $2$. On isole d’abord $2^{x}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$x = \log_{2} (21)$
+:::
+
+::: {.ae-fb}
+Tu as soustrait $3$. Il faut diviser par $3$ : $2^{x} = 8$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$x = 8$
+:::
+
+::: {.ae-fb}
+$2^{x} = 8$ donne $x = 3$, car $2^{3} = 8$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-equation-exp-impossible" data-type="qcm" data-section="sec-eq-exp-b" data-obj="A5" data-niveau="2" data-id="6UAA4.q.log-equation-exp-impossible" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Résous $5^{x + 1} = -25$.
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$S = \emptyset$
+:::
+
+::: {.ae-fb}
+Oui : $5^{x + 1} > 0$ pour tout $x$, il ne peut pas valoir $-25$ ([exemple 2.9 d](ch2-fonctions-logarithmi/7-resoudre-les-equations-exponentielles-a.qmd#exemple-2-9)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{1\}$
+:::
+
+::: {.ae-fb}
+$5^{2} = 25$, pas $-25$. Une puissance de base positive est toujours positive.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{-3\}$
+:::
+
+::: {.ae-fb}
+$5^{-2} = 1/25$, qui est positif. Aucun exposant ne donne un résultat négatif.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$S = \{\log_{5} (-25) - 1\}$
+:::
+
+::: {.ae-fb}
+$\log_{5} (-25)$ n’existe pas : le domaine d’un logarithme est $\mathbb{R}^{> 0}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="log-temps-doublement" data-type="ouverte" data-section="sec-model-log" data-obj="T3 A5" data-niveau="2" data-id="6UAA4.q.log-temps-doublement" data-tags="" data-forme="longue"}
+::: {.ae-enonce}
+Un capital est placé à $2 \%$ par an (intérêts composés). Au bout de combien d’années aura-t-il doublé ?
+:::
+
+::: {.ae-rep}
+Après $t$ années, le capital vaut $C(t) = C_{0} \cdot 1{,}02^{t}$.
+
+Il a doublé quand $C_{0} \cdot 1{,}02^{t} = 2 C_{0} \Longleftrightarrow 1{,}02^{t} = 2 \Longleftrightarrow t = \frac{\ln 2}{\ln 1{,}02} \approx 35{,}0$.
+
+Il faut environ $35$ ans ($1{,}02^{35} \approx 1{,}9999$ : le capital a presque exactement doublé).
+:::
+
+::: {.ae-crit}
+J’ai écrit l’équation $1{,}02^{t} = 2$ (le capital initial se simplifie).
+:::
+
+::: {.ae-crit}
+J’ai résolu avec un logarithme : $t = \frac{\ln 2}{\ln 1{,}02}$.
+:::
+
+::: {.ae-crit}
+J’ai répondu environ $35$ ans.
+:::
+:::
+
+::: {.ae-q data-ae-id="log-inconnue-exposant" data-type="qcm" data-section="sec-model-log" data-obj="T1" data-niveau="1" data-id="6UAA4.q.log-inconnue-exposant" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Une population suit $P(t) = 2000 \cdot 1{,}05^{t}$. Pour quelle question faut-il un logarithme ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+Au bout de combien d’années la population atteindra-t-elle $5000$ ?
+:::
+
+::: {.ae-fb}
+Oui : on cherche $t$, qui est dans l’exposant.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Quelle sera la population après $10$ ans ?
+:::
+
+::: {.ae-fb}
+Il suffit de calculer $P(10)$ : on remplace $t$, sans logarithme.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Quelle est la population initiale ?
+:::
+
+::: {.ae-fb}
+$P(0) = 2000$ se lit directement.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+De combien de pourcents augmente-t-elle chaque année ?
+:::
+
+::: {.ae-fb}
+Le facteur $1{,}05$ se lit dans l’expression : $+5 \%$ par an.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="der-exp-composee" data-type="qcm" data-section="sec-der-exp" data-obj="A7" data-niveau="1" data-id="6UAA4.q.der-exp-composee" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+La dérivée de $f(x) = e^{3 x}$ est :
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$f'(x) = 3 e^{3 x}$
+:::
+
+::: {.ae-fb}
+Oui : on dérive l’exposant ($u' = 3$) et on recopie l’exponentielle ([propriété 3.2](ch3-derivees-et-limites/1-deriver-lexponentielle.qmd#propriete-3-2)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = e^{3 x}$
+:::
+
+::: {.ae-fb}
+Tu as oublié de multiplier par la dérivée de l’exposant : $(e^{u})' = u' \cdot e^{u}$, avec $u' = 3$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = 3 x \cdot e^{3 x - 1}$
+:::
+
+::: {.ae-fb}
+C’est la règle des puissances $(x^{n})' = n x^{n - 1}$, qui ne s’applique pas : ici la variable est dans l’exposant.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = 3 e^{x}$
+:::
+
+::: {.ae-fb}
+L’exposant $3 x$ doit être recopié tel quel : $(e^{3 x})' = 3 e^{3 x}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="der-exp-base-a" data-type="qcm" data-section="sec-der-exp" data-obj="A7" data-niveau="1" data-id="6UAA4.q.der-exp-base-a" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+La dérivée de $f(x) = 2^{x}$ est :
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$f'(x) = 2^{x} \ln 2$
+:::
+
+::: {.ae-fb}
+Oui : $(a^{x})' = a^{x} \ln a$ ([propriété 3.3](ch3-derivees-et-limites/1-deriver-lexponentielle.qmd#propriete-3-3)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = x \cdot 2^{x - 1}$
+:::
+
+::: {.ae-fb}
+C’est la règle des puissances $(x^{n})' = n x^{n - 1}$ : elle vaut quand l’exposant est constant, pas quand la variable est dans l’exposant.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = 2^{x}$
+:::
+
+::: {.ae-fb}
+Seule la base $e$ est sa propre dérivée. Pour la base $2$, il reste le facteur $\ln 2$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = \frac{2^{x}}{\ln 2}$
+:::
+
+::: {.ae-fb}
+On multiplie par $\ln a$, on ne divise pas. La division par $\ln a$ apparaît dans la dérivée de $\log_{a}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="der-exp-pente-origine" data-type="qcm" data-section="sec-der-exp" data-obj="A7 C3" data-niveau="2" data-id="6UAA4.q.der-exp-pente-origine" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Quelle est la pente de la tangente à la courbe de $f(x) = 3^{x}$ au point $(0, 1)$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$\ln 3 \approx 1{,}10$
+:::
+
+::: {.ae-fb}
+Oui : $f'(x) = 3^{x} \ln 3$, donc $f'(0) = 3^{0} \ln 3 = \ln 3$ ([activité 3.2](ch3-derivees-et-limites/1-deriver-lexponentielle.qmd#activite-3-2)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$1$
+:::
+
+::: {.ae-fb}
+La pente vaut $1$ seulement pour la base $e$ : c’est ce qui caractérise $e$. Pour la base $3$, elle vaut $\ln 3$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$3$
+:::
+
+::: {.ae-fb}
+$3$ est la base, pas la pente. Calcule $f'(0) = 3^{0} \ln 3$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$0$
+:::
+
+::: {.ae-fb}
+Tu as dérivé $f(0) = 1$, une constante. On dérive d’abord, puis on remplace $x$ par $0$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="der-exp-produit" data-type="ouverte" data-section="sec-der-exp" data-obj="A7" data-niveau="2" data-id="6UAA4.q.der-exp-produit" data-tags="" data-forme="longue"}
+::: {.ae-enonce}
+Dérive $f(x) = x^{2} e^{-x}$ et écris le résultat sous forme factorisée.
+:::
+
+::: {.ae-rep}
+Règle du produit, avec $(x^{2})' = 2 x$ et $(e^{-x})' = -e^{-x}$ :
+
+$$
+f'(x) = 2 x \cdot e^{-x} + x^{2} \cdot (-e^{-x}) = (2 x - x^{2}) e^{-x} = x (2 - x) e^{-x}.
+$$
+:::
+
+::: {.ae-crit}
+J’ai appliqué la règle du produit $(u v)' = u' v + u v'$.
+:::
+
+::: {.ae-crit}
+J’ai dérivé $e^{-x}$ en $-e^{-x}$ (dérivée de l’exposant : $-1$).
+:::
+
+::: {.ae-crit}
+J’ai mis $e^{-x}$ en évidence : $f'(x) = x (2 - x) e^{-x}$.
+:::
+:::
+
+::: {.ae-q data-ae-id="der-exp-vitesse" data-type="ouverte" data-section="sec-der-exp" data-obj="A7 T3" data-niveau="3" data-id="6UAA4.q.der-exp-vitesse" data-tags="" data-forme="longue"}
+::: {.ae-enonce}
+Une culture compte $N(t) = 200 e^{0{,}1 t}$ bactéries ($t$ en heures). À quelle vitesse la population croît-elle à $t = 5$ h ?
+:::
+
+::: {.ae-rep}
+La vitesse de croissance est la dérivée : $N'(t) = 200 \cdot 0{,}1 \cdot e^{0{,}1 t} = 20 e^{0{,}1 t}$.
+
+$N'(5) = 20 e^{0{,}5} \approx 33$ : la population croît d’environ $33$ bactéries par heure à $t = 5$ h.
+:::
+
+::: {.ae-crit}
+J’ai reconnu que la vitesse est la dérivée $N'(t)$.
+:::
+
+::: {.ae-crit}
+J’ai trouvé $N'(t) = 20 e^{0{,}1 t}$.
+:::
+
+::: {.ae-crit}
+J’ai répondu environ $33$ bactéries par heure, avec l’unité.
+:::
+:::
+
+::: {.ae-q data-ae-id="der-ln-composee" data-type="qcm" data-section="sec-der-log" data-obj="A7" data-niveau="1" data-id="6UAA4.q.der-ln-composee" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+La dérivée de $f(x) = \ln(x^{2} + 1)$ est :
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$f'(x) = \frac{2 x}{x^{2} + 1}$
+:::
+
+::: {.ae-fb}
+Oui : $(\ln u)' = \frac{u'}{u}$, avec $u = x^{2} + 1$ et $u' = 2 x$ ([propriété 3.5](ch3-derivees-et-limites/2-deriver-le-logarithme.qmd#propriete-3-5)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = \frac{1}{x^{2} + 1}$
+:::
+
+::: {.ae-fb}
+Tu as oublié la dérivée de l’argument : $(\ln u)' = \frac{u'}{u}$, pas $\frac{1}{u}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = \frac{1}{2 x}$
+:::
+
+::: {.ae-fb}
+C’est $\frac{1}{u'}$. La bonne formule est $\frac{u'}{u}$ : la dérivée de l’argument divisée par l’argument.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = 2 x \cdot \ln(x^{2} + 1)$
+:::
+
+::: {.ae-fb}
+Le logarithme ne se « recopie » pas comme l’exponentielle : $(\ln u)' = \frac{u'}{u}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="der-ln-constante" data-type="qcm" data-section="sec-der-log" data-obj="A7" data-niveau="2" data-id="6UAA4.q.der-ln-constante" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+La dérivée de $f(x) = \ln(3 x)$ est :
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$f'(x) = \frac{1}{x}$
+:::
+
+::: {.ae-fb}
+Oui : $(\ln(3 x))' = \frac{3}{3 x} = \frac{1}{x}$. Autre voie : $\ln(3 x) = \ln 3 + \ln x$, et $\ln 3$ est une constante ([exemple 3.3](ch3-derivees-et-limites/2-deriver-le-logarithme.qmd#exemple-3-3)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = \frac{1}{3 x}$
+:::
+
+::: {.ae-fb}
+Tu as oublié la dérivée de l’argument : $(\ln u)' = \frac{u'}{u} = \frac{3}{3 x}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = \frac{3}{x}$
+:::
+
+::: {.ae-fb}
+$\frac{u'}{u} = \frac{3}{3 x}$ : le $3$ du numérateur se simplifie avec celui du dénominateur.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = \frac{1}{3} + \frac{1}{x}$
+:::
+
+::: {.ae-fb}
+$\ln(3 x) = \ln 3 + \ln x$, et $\ln 3$ est une constante : sa dérivée est $0$, pas $\frac{1}{3}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="der-log-base-a" data-type="qcm" data-section="sec-der-log" data-obj="A7" data-niveau="2" data-id="6UAA4.q.der-log-base-a" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+La dérivée de $f(x) = \log_{2} (x)$ est :
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$f'(x) = \frac{1}{x \ln 2}$
+:::
+
+::: {.ae-fb}
+Oui : $\log_{2} (x) = \frac{\ln x}{\ln 2}$, et $\ln 2$ est une constante ([propriété 3.5](ch3-derivees-et-limites/2-deriver-le-logarithme.qmd#propriete-3-5)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = \frac{1}{x}$
+:::
+
+::: {.ae-fb}
+$\frac{1}{x}$ est la dérivée de $\ln x$ seulement. Pour la base $2$, on divise encore par $\ln 2$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = \frac{\ln 2}{x}$
+:::
+
+::: {.ae-fb}
+On divise par $\ln 2$, on ne multiplie pas : $\log_{2} (x) = \frac{\ln x}{\ln 2}$. La multiplication par $\ln a$ apparaît dans la dérivée de $a^{x}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = \frac{1}{2 x}$
+:::
+
+::: {.ae-fb}
+Le changement de base fait apparaître $\ln 2$, pas $2$ : $\log_{2} (x) = \frac{\ln x}{\ln 2}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="der-ln-produit" data-type="qcm" data-section="sec-der-log" data-obj="A7" data-niveau="2" data-id="6UAA4.q.der-ln-produit" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+La dérivée de $f(x) = x \ln x$ est :
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$f'(x) = \ln x + 1$
+:::
+
+::: {.ae-fb}
+Oui : $(u v)' = u' v + u v' = 1 \cdot \ln x + x \cdot \frac{1}{x}$ ([exemple 3.3](ch3-derivees-et-limites/2-deriver-le-logarithme.qmd#exemple-3-3)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = \frac{1}{x}$
+:::
+
+::: {.ae-fb}
+Tu as multiplié les dérivées : $(u v)' \neq u' \cdot v'$. Utilise $u' v + u v'$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = \ln x$
+:::
+
+::: {.ae-fb}
+Il manque le terme $u v' = x \cdot \frac{1}{x} = 1$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$f'(x) = 1$
+:::
+
+::: {.ae-fb}
+Il manque le terme $u' v = 1 \cdot \ln x$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="der-ln-domaine" data-type="ouverte" data-section="sec-der-log" data-obj="A7 A2" data-niveau="2" data-id="6UAA4.q.der-ln-domaine" data-tags="" data-forme="longue"}
+::: {.ae-enonce}
+Soit $g(x) = \ln(4 - x^{2})$. Détermine le domaine de $g$, puis sa dérivée.
+:::
+
+::: {.ae-rep}
+Domaine : il faut $4 - x^{2} > 0 \Longleftrightarrow x^{2} < 4 \Longleftrightarrow -2 < x < 2$. Donc $\operatorname{dom} g = ] -2, 2 [$.
+
+Sur ce domaine, avec $u = 4 - x^{2}$ et $u' = -2 x$ :
+
+$$
+g'(x) = \frac{-2 x}{4 - x^{2}}.
+$$
+:::
+
+::: {.ae-crit}
+J’ai imposé que l’argument soit strictement positif : $4 - x^{2} > 0$.
+:::
+
+::: {.ae-crit}
+J’ai trouvé $\operatorname{dom} g = ] -2, 2 [$.
+:::
+
+::: {.ae-crit}
+J’ai trouvé $g'(x) = \frac{-2 x}{4 - x^{2}}$ (avec le signe $-$).
+:::
+:::
+
+::: {.ae-q data-ae-id="lim-exp-base-petite" data-type="qcm" data-section="sec-limites" data-obj="A7" data-niveau="1" data-id="6UAA4.q.lim-exp-base-petite" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Que vaut $\lim\limits_{x \to -\infty} 0{,}5^{x}$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$+\infty$
+:::
+
+::: {.ae-fb}
+Oui : la base est entre $0$ et $1$, la courbe descend de gauche à droite ; vers la gauche, elle monte sans limite ([propriété 3.6](ch3-derivees-et-limites/3-limites-de-base.qmd#propriete-3-6)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$0$
+:::
+
+::: {.ae-fb}
+C’est la limite en $-\infty$ d’une base plus grande que $1$, comme $2^{x}$. Esquisse $0{,}5^{x}$ : elle est décroissante.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$-\infty$
+:::
+
+::: {.ae-fb}
+Une exponentielle est toujours strictement positive : elle ne peut pas tendre vers $-\infty$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$1$
+:::
+
+::: {.ae-fb}
+$1$ est la valeur en $x = 0$. Quand $x \to -\infty$, par exemple $0{,}5^{-10} = 2^{10} = 1024$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="lim-ln-zero" data-type="qcm" data-section="sec-limites" data-obj="A7" data-niveau="1" data-id="6UAA4.q.lim-ln-zero" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Que vaut $\lim\limits_{x \overset{>}{\to} 0} \ln x$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$-\infty$
+:::
+
+::: {.ae-fb}
+Oui : l’axe $y$ est asymptote verticale de la courbe de $\ln$, qui plonge vers le bas près de $0$ ([propriété 3.6](ch3-derivees-et-limites/3-limites-de-base.qmd#propriete-3-6)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$0$
+:::
+
+::: {.ae-fb}
+$\ln 1 = 0$ : c’est la valeur en $x = 1$, pas près de $0$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$1$
+:::
+
+::: {.ae-fb}
+Tu confonds avec $e^{0} = 1$. Pour $x$ proche de $0$, $\ln x$ est très négatif : $\ln(0{,}001) \approx -6{,}9$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$+\infty$
+:::
+
+::: {.ae-fb}
+$\ln$ est croissante et $\ln 1 = 0$ : pour $0 < x < 1$, $\ln x < 0$. La courbe descend près de $0$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="lim-regles-somme" data-type="qcm" data-section="sec-limites" data-obj="A7" data-niveau="2" data-id="6UAA4.q.lim-regles-somme" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Que vaut $\lim\limits_{x \to +\infty} (5 - 2 e^{-x})$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$5$
+:::
+
+::: {.ae-fb}
+Oui : $e^{-x} = (\frac{1}{e})^{x} \to 0$ quand $x \to +\infty$, donc $5 - 2 \cdot 0 = 5$ ([exemple 3.5](ch3-derivees-et-limites/3-limites-de-base.qmd#exemple-3-5)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$3$
+:::
+
+::: {.ae-fb}
+Tu as pris $e^{-x} \to 1$. Or $e^{-x} = \frac{1}{e^{x}}$ tend vers $0$ quand $x \to +\infty$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$-\infty$
+:::
+
+::: {.ae-fb}
+$e^{-x}$ ne tend pas vers $+\infty$ : c’est $\frac{1}{e^{x}}$, qui tend vers $0$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$+\infty$
+:::
+
+::: {.ae-fb}
+Aucun terme ne devient infini : $5$ est constant et $2 e^{-x} \to 0$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="hospital-quand" data-type="qcm" data-section="sec-hospital" data-obj="A7" data-niveau="1" data-id="6UAA4.q.hospital-quand" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Pour laquelle de ces limites le théorème de l’Hospital est-il utile ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$\lim\limits_{x \to +\infty} \frac{x}{e^{x}}$
+:::
+
+::: {.ae-fb}
+Oui : le numérateur et le dénominateur tendent tous deux vers $+\infty$, on ne peut pas conclure directement ([propriété 3.7](ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.qmd#propriete-3-7)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\lim\limits_{x \to 0} \frac{e^{x}}{x + 1}$
+:::
+
+::: {.ae-fb}
+Le dénominateur tend vers $1$ : on remplace directement, la limite vaut $\frac{1}{1} = 1$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\lim\limits_{x \to 2} \frac{x}{3^{x}}$
+:::
+
+::: {.ae-fb}
+On remplace directement : $\frac{2}{9}$. L’Hospital ne sert que si numérateur et dénominateur tendent tous deux vers $0$, ou tous deux vers l’infini.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$\lim\limits_{x \to +\infty} x \cdot e^{x}$
+:::
+
+::: {.ae-fb}
+Les deux facteurs tendent vers $+\infty$ : le produit tend vers $+\infty$, par les règles de calcul.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="hospital-a-tort" data-type="qcm" data-section="sec-hospital" data-obj="A7" data-niveau="2" data-id="6UAA4.q.hospital-a-tort" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Que vaut $\lim\limits_{x \to 0} \frac{e^{x} + 1}{x + 1}$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$2$
+:::
+
+::: {.ae-fb}
+Oui : on remplace directement, $\frac{e^{0} + 1}{0 + 1} = \frac{2}{1} = 2$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$1$
+:::
+
+::: {.ae-fb}
+Tu as appliqué l’Hospital ($\frac{e^{x}}{1}$) alors que le numérateur tend vers $2$ et le dénominateur vers $1$ : le théorème ne s’applique pas ici ([remarque](ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.qmd#remarque-3-1)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+On ne peut pas conclure.
+:::
+
+::: {.ae-fb}
+Le dénominateur tend vers $1$, pas vers $0$ : on remplace directement.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$+\infty$
+:::
+
+::: {.ae-fb}
+Aucun terme ne devient infini : le numérateur tend vers $2$ et le dénominateur vers $1$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="hospital-ln-sur-x" data-type="ouverte" data-section="sec-hospital" data-obj="A7" data-niveau="2" data-id="6UAA4.q.hospital-ln-sur-x" data-tags="" data-forme="longue"}
+::: {.ae-enonce}
+Calcule $\lim\limits_{x \to +\infty} \frac{\ln x}{x}$.
+:::
+
+::: {.ae-rep}
+$\ln x \to +\infty$ et $x \to +\infty$ : on ne peut pas conclure directement. Par l’Hospital :
+
+$$
+\lim\limits_{x \to +\infty} \frac{\ln x}{x} = \lim\limits_{x \to +\infty} \frac{1 / x}{1} = \lim\limits_{x \to +\infty} \frac{1}{x} = 0.
+$$
+:::
+
+::: {.ae-crit}
+J’ai justifié l’usage de l’Hospital : numérateur et dénominateur tendent tous deux vers $+\infty$.
+:::
+
+::: {.ae-crit}
+J’ai dérivé séparément le numérateur et le dénominateur : $\frac{1 / x}{1}$.
+:::
+
+::: {.ae-crit}
+J’ai conclu que la limite vaut $0$.
+:::
+:::
+
+::: {.ae-q data-ae-id="hospital-deux-fois" data-type="qcm" data-section="sec-hospital" data-obj="A7" data-niveau="3" data-id="6UAA4.q.hospital-deux-fois" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Que vaut $\lim\limits_{x \to +\infty} \frac{x^{2}}{e^{x}}$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$0$
+:::
+
+::: {.ae-fb}
+Oui : l’Hospital deux fois, $\lim\limits \frac{x^{2}}{e^{x}} = \lim\limits \frac{2 x}{e^{x}} = \lim\limits \frac{2}{e^{x}} = 0$. L’exponentielle l’emporte sur toute puissance de $x$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$+\infty$
+:::
+
+::: {.ae-fb}
+$x^{2}$ grandit, mais $e^{x}$ grandit beaucoup plus vite ([croissance comparée](ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.qmd#activite-3-5)) : le quotient tend vers $0$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$1$
+:::
+
+::: {.ae-fb}
+« $\frac{\infty}{\infty} = 1$ » est faux : quand les deux tendent vers l’infini, on ne peut pas conclure sans calcul.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$2$
+:::
+
+::: {.ae-fb}
+Après deux applications, il reste $\frac{2}{e^{x}}$ : le dénominateur tend vers $+\infty$, donc le quotient tend vers $0$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="echelle-distance" data-type="qcm" data-section="sec-echelle" data-obj="A8" data-niveau="1" data-id="6UAA4.q.echelle-distance" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Sur un axe logarithmique, la distance entre $1$ et $10$ vaut $2$ cm. Quelle est la distance entre $10$ et $1000$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$4$ cm
+:::
+
+::: {.ae-fb}
+Oui : de $10$ à $1000$, on multiplie par $100 = 10^{2}$, soit deux décades de $2$ cm ([activité 4.1](ch4-echelles-logarithmiq/1-construire-une-echelle-logarithmique.qmd#activite-4-1)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$2$ cm
+:::
+
+::: {.ae-fb}
+Une décade correspond à une multiplication par $10$. De $10$ à $1000$, il y en a deux : $10 \to 100 \to 1000$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$6$ cm
+:::
+
+::: {.ae-fb}
+$6$ cm est la position de $1000$ comptée depuis $1$ (trois décades). La question part de $10$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$220$ cm
+:::
+
+::: {.ae-fb}
+Tu as raisonné comme sur un axe linéaire ($990$ unités au lieu de $9$). Sur un axe logarithmique, des distances égales correspondent à des multiplications égales.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="echelle-zero" data-type="qcm" data-section="sec-echelle" data-obj="A8" data-niveau="1" data-id="6UAA4.q.echelle-zero" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Pourquoi ne peut-on pas placer la valeur $0$ sur un axe logarithmique ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+Parce que $\log 0$ n’existe pas.
+:::
+
+::: {.ae-fb}
+Oui : la position d’un nombre $v$ est $\log v$, défini seulement pour $v > 0$ ([activité 4.1 b](ch4-echelles-logarithmiq/1-construire-une-echelle-logarithmique.qmd#activite-4-1)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+On peut : $0$ est à l’origine de l’axe.
+:::
+
+::: {.ae-fb}
+Sur un axe logarithmique, l’origine (position $0$) porte la valeur $1$, car $\log 1 = 0$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+On peut : $0$ est à la position $-1$.
+:::
+
+::: {.ae-fb}
+La position $-1$ porte la valeur $10^{-1} = 0{,}1$. Aucune position ne porte $0$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Parce que $0$ est trop petit pour être lu.
+:::
+
+::: {.ae-fb}
+Ce n’est pas une question de lisibilité : $0$ n’a aucune position, puisque $\log 0$ n’existe pas.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="echelle-milieu" data-type="qcm" data-section="sec-echelle" data-obj="A8" data-niveau="2" data-id="6UAA4.q.echelle-milieu" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Sur un axe logarithmique, quel nombre est placé exactement au milieu entre $10$ et $100$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$10^{1{,}5} \approx 31{,}6$
+:::
+
+::: {.ae-fb}
+Oui : les positions sont $\log 10 = 1$ et $\log 100 = 2$ ; le milieu est la position $1{,}5$, qui porte la valeur $10^{1{,}5}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$55$
+:::
+
+::: {.ae-fb}
+$55$ est le milieu sur un axe linéaire. Sur un axe logarithmique, on prend le milieu des positions $\log v$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$50$
+:::
+
+::: {.ae-fb}
+$\log 50 \approx 1{,}70$ : $50$ est placé vers $70 \%$ de la décade, pas au milieu.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$1{,}5$
+:::
+
+::: {.ae-fb}
+$1{,}5$ est la position du milieu, pas la valeur qui y est placée : cette valeur est $10^{1{,}5}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="semilog-modele" data-type="qcm" data-section="sec-semilog" data-obj="A8 T1" data-niveau="1" data-id="6UAA4.q.semilog-modele" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Des mesures forment une droite dans un repère semi-logarithmique ($x$ linéaire, $y$ logarithmique). Quel est le modèle ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+exponentiel : $y = C \cdot a^{x}$
+:::
+
+::: {.ae-fb}
+Oui : $\log y = \log C + x \log a$ est affine en $x$ ([propriété 4.1](ch4-echelles-logarithmiq/2-repere-semi-logarithmique-la-signature.qmd#propriete-4-1)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+affine : $y = m x + p$
+:::
+
+::: {.ae-fb}
+Une fonction affine forme une droite dans un repère linéaire. En semi-log, c’est $\log y$ qui est affine en $x$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+puissance : $y = C \cdot x^{p}$
+:::
+
+::: {.ae-fb}
+Une puissance forme une droite dans un repère log-log, où les deux axes sont logarithmiques.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+logarithmique : $y = \log x$
+:::
+
+::: {.ae-fb}
+$y = \log x$ forme une droite si l’axe horizontal est logarithmique et l’axe vertical linéaire : c’est l’inverse.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="semilog-pente" data-type="qcm" data-section="sec-semilog" data-obj="A8" data-niveau="2" data-id="6UAA4.q.semilog-pente" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Dans un repère semi-logarithmique, la droite représentant $y = C \cdot a^{x}$ monte de $0{,}3$ décade quand $x$ augmente de $1$ (pente $0{,}3$). Que vaut $a$ ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$a = 10^{0{,}3} \approx 2$
+:::
+
+::: {.ae-fb}
+Oui : la pente vaut $\log a$, donc $a = 10^{\text{pente}}$ ([propriété 4.1](ch4-echelles-logarithmiq/2-repere-semi-logarithmique-la-signature.qmd#propriete-4-1)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$a = 0{,}3$
+:::
+
+::: {.ae-fb}
+La pente n’est pas la base : elle vaut $\log a$. On retrouve $a = 10^{0{,}3}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$a = 1{,}3$
+:::
+
+::: {.ae-fb}
+La pente n’est pas un taux de croissance à ajouter à $1$ : elle vaut $\log a$, donc $a = 10^{0{,}3}$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$a = 3$
+:::
+
+::: {.ae-fb}
+Tu as multiplié la pente par $10$. Il faut prendre $10$ *exposant* la pente : $a = 10^{0{,}3}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="semilog-lire-modele" data-type="ouverte" data-section="sec-semilog" data-obj="A8" data-niveau="2" data-id="6UAA4.q.semilog-lire-modele" data-tags="" data-forme="longue"}
+::: {.ae-enonce}
+Des mesures s’alignent dans le repère semi-logarithmique ci-dessous. On y lit deux points sûrs : $(0, 1000)$ et $(3, 1)$. Détermine le modèle $y = C \cdot a^{x}$.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": 0.0, "xmax": 4.0, "ymin": 0.1, "ymax": 10000.0, "w": 434, "h": 340, "ylog": true, "echelles": true, "xpas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "(1000.0 * Math.pow(0.1, x))"}}], "points": [{"x": 0.0, "y": 1000.0}, {"x": 3.0, "y": 1.0}]}'></div>
+```
+:::
+
+::: {.ae-rep}
+En $x = 0$ : $y = C \cdot a^{0} = C$, donc $C = 1000$.
+
+De $x = 0$ à $x = 3$, $y$ est divisé par $1000$ : $1000 \cdot a^{3} = 1 \Longleftrightarrow a^{3} = \frac{1}{1000} = 10^{-3} \Longleftrightarrow a = 10^{-1} = 0{,}1$.
+
+Modèle : $y = 1000 \cdot 0{,}1^{x}$.
+:::
+
+::: {.ae-crit}
+J’ai lu $C = 1000$ en $x = 0$.
+:::
+
+::: {.ae-crit}
+J’ai écrit $a^{3} = \frac{1}{1000}$ (trois pas, trois décades perdues).
+:::
+
+::: {.ae-crit}
+J’ai trouvé $a = 0{,}1$ et écrit $y = 1000 \cdot 0{,}1^{x}$.
+:::
+:::
+
+::: {.ae-q data-ae-id="loglog-exposant" data-type="qcm" data-section="sec-loglog" data-obj="A8" data-niveau="2" data-id="6UAA4.q.loglog-exposant" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Des données s’alignent dans un repère log-log. Quand $x$ est multiplié par $10$, $y$ est multiplié par $1000$. Quel est le modèle ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+$y = C \cdot x^{3}$
+:::
+
+::: {.ae-fb}
+Oui : $y$ gagne trois décades pour une décade de $x$ ; la pente, donc l’exposant, vaut $3$ ([exemple 4.2](ch4-echelles-logarithmiq/3-repere-log-log-la-signature.qmd#exemple-4-2)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$y = C \cdot x^{1000}$
+:::
+
+::: {.ae-fb}
+L’exposant est le nombre de décades gagnées par $y$ ($1000 = 10^{3}$ : trois décades), pas le facteur $1000$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$y = C \cdot 1000^{x}$
+:::
+
+::: {.ae-fb}
+Un alignement en log-log révèle une puissance de $x$, pas une exponentielle ([propriété 4.2](ch4-echelles-logarithmiq/3-repere-log-log-la-signature.qmd#propriete-4-2)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+$y = C \cdot x^{1/3}$
+:::
+
+::: {.ae-fb}
+Tu as inversé le rapport : c’est $y$ qui gagne trois décades quand $x$ en gagne une, donc $p = \frac{3}{1}$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="loglog-lire-modele" data-type="ouverte" data-section="sec-loglog" data-obj="A8" data-niveau="3" data-id="6UAA4.q.loglog-lire-modele" data-tags="" data-forme="longue"}
+::: {.ae-enonce}
+Des données s’alignent dans le repère log-log ci-dessous. On y lit deux points sûrs : $(1, 2)$ et $(100, 20)$. Détermine le modèle $y = C \cdot x^{p}$.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": 1.0, "xmax": 100.0, "ymin": 1.0, "ymax": 100.0, "w": 341, "h": 371, "ylog": true, "xlog": true, "echelles": true, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "(2.0 * Math.sqrt(x))"}}], "points": [{"x": 1.0, "y": 2.0}, {"x": 100.0, "y": 20.0}]}'></div>
+```
+:::
+
+::: {.ae-rep}
+En $x = 1$ : $y = C \cdot 1^{p} = C$, donc $C = 2$.
+
+De $x = 1$ à $x = 100$ ($2$ décades), $y$ passe de $2$ à $20$ ($1$ décade) : la pente vaut $p = \frac{1}{2}$. Vérification : $2 \cdot 100^{1/2} = 2 \cdot 10 = 20$.
+
+Modèle : $y = 2 x^{1/2} = 2 \sqrt{x}$.
+:::
+
+::: {.ae-crit}
+J’ai lu $C = 2$ en $x = 1$.
+:::
+
+::: {.ae-crit}
+J’ai calculé la pente en décades : $1$ décade de $y$ pour $2$ décades de $x$, donc $p = \frac{1}{2}$.
+:::
+
+::: {.ae-crit}
+J’ai écrit $y = 2 x^{1/2}$ (ou $2 \sqrt{x}$).
+:::
+:::
+
+::: {.ae-q data-ae-id="extraire-repere-bacteries" data-type="qcm" data-section="sec-extraire" data-obj="A8 T1" data-niveau="2" data-id="6UAA4.q.extraire-repere-bacteries" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Le nombre de bactéries d’une culture double toutes les $20$ minutes. Dans quel repère les mesures forment-elles une droite ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+un repère semi-logarithmique
+:::
+
+::: {.ae-fb}
+Oui : doubler à intervalles réguliers, c’est une croissance exponentielle, qui devient une droite en semi-log ([propriété 4.1](ch4-echelles-logarithmiq/2-repere-semi-logarithmique-la-signature.qmd#propriete-4-1)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+un repère linéaire
+:::
+
+::: {.ae-fb}
+Dans un repère linéaire, une croissance exponentielle est une courbe qui s’envole.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+un repère log-log
+:::
+
+::: {.ae-fb}
+Le log-log redresse les puissances $C \cdot x^{p}$. Ici, le temps est dans l’exposant : c’est une exponentielle.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+dans aucun repère
+:::
+
+::: {.ae-fb}
+Une exponentielle forme une droite dans un repère semi-logarithmique (temps linéaire, effectif logarithmique).
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="extraire-repere-carre" data-type="qcm" data-section="sec-extraire" data-obj="A8 T1" data-niveau="2" data-id="6UAA4.q.extraire-repere-carre" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+On mesure l’aire $A$ de carrés en fonction de leur côté $c$. Dans quel repère les points forment-ils une droite, et de quelle pente ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+log-log, pente $2$
+:::
+
+::: {.ae-fb}
+Oui : $A = c^{2}$ est une puissance d’exposant $2$ ([propriété 4.2](ch4-echelles-logarithmiq/3-repere-log-log-la-signature.qmd#propriete-4-2)).
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+semi-log, pente $2$
+:::
+
+::: {.ae-fb}
+Le semi-log redresse les exponentielles. $c^{2}$ est une puissance : la variable n’est pas dans l’exposant.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+linéaire, pente $2$
+:::
+
+::: {.ae-fb}
+$A = c^{2}$ n’est pas affine : dans un repère linéaire, c’est une parabole.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+log-log, pente $1$
+:::
+
+::: {.ae-fb}
+En log-log, la pente est l’exposant : quand $c$ est multiplié par $10$, $A$ est multipliée par $100$ (deux décades).
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="culture-decibels" data-type="qcm" data-section="sec-culture" data-obj="A8" data-niveau="1" data-id="6UAA4.q.culture-decibels" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Le niveau sonore passe de $60$ dB à $90$ dB. Par combien l’intensité sonore est-elle multipliée ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+par $1000$
+:::
+
+::: {.ae-fb}
+Oui : chaque tranche de $10$ dB multiplie l’intensité par $10$ ; trois tranches : $10^{3} = 1000$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+par $30$
+:::
+
+::: {.ae-fb}
+Sur une échelle logarithmique, une différence correspond à un rapport : $+30$ dB, c’est trois fois $\times 10$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+par $3$
+:::
+
+::: {.ae-fb}
+$+30$ dB, ce sont trois multiplications par $10$, pas une multiplication par $3$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+par $1{,}5$
+:::
+
+::: {.ae-fb}
+$\frac{90}{60} = 1{,}5$ compare les niveaux en décibels, pas les intensités. $+10$ dB multiplie l’intensité par $10$.
+:::
+:::
+:::
+
+::: {.ae-q data-ae-id="culture-ph" data-type="qcm" data-section="sec-culture" data-obj="A8" data-niveau="2" data-id="6UAA4.q.culture-ph" data-tags="" data-ordre="melange"}
+::: {.ae-enonce}
+Un vinaigre a un pH de $3$, une eau gazeuse un pH de $5$. Que peut-on dire ?
+:::
+
+::: {.ae-prop .ae-bonne}
+::: {.ae-r}
+Le vinaigre est $100$ fois plus acide.
+:::
+
+::: {.ae-fb}
+Oui : $\text{pH} = -\log [H^{+}]$ ; deux unités de pH en moins, c’est une concentration $10^{2} = 100$ fois plus grande.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Le vinaigre est $2$ fois plus acide.
+:::
+
+::: {.ae-fb}
+La différence de pH ($2$) correspond à un rapport de concentrations $10^{2}$, pas $2$.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+L’eau gazeuse est $100$ fois plus acide.
+:::
+
+::: {.ae-fb}
+À cause du signe $-$ dans $\text{pH} = -\log [H^{+}]$, un pH plus *petit* signifie une solution plus acide.
+:::
+:::
+
+::: {.ae-prop}
+::: {.ae-r}
+Le vinaigre est $1{,}7$ fois plus acide.
+:::
+
+::: {.ae-fb}
+$\frac{5}{3} \approx 1{,}7$ compare les pH, pas les concentrations. On compare par la différence : $5 - 3 = 2$ unités, soit un facteur $10^{2}$.
+:::
+:::
+:::
+
+:::
+
+
+```{=html}
+<script type="application/json" id="ae-exos">[{"num": "1.1", "url": "ch1-fonctions-exponentie/3-definition-de-la-fonction-exponentielle.html#exercice-1-1", "obj": ["C2"], "page": "10", "niveau": 1, "section": "Définition de la fonction exponentielle"}, {"num": "1.2", "url": "ch1-fonctions-exponentie/3-definition-de-la-fonction-exponentielle.html#exercice-1-2", "obj": ["A1"], "page": "11", "niveau": 1, "section": "Définition de la fonction exponentielle"}, {"num": "1.3", "url": "ch1-fonctions-exponentie/4-proprietes-et-caracteristiques-graphique.html#exercice-1-3", "obj": ["C1"], "page": "13", "niveau": 2, "section": "Propriétés et caractéristiques graphiques"}, {"num": "1.4", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-4", "obj": ["C2"], "page": "16", "niveau": 2, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.5", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-5", "obj": ["C5"], "page": "16", "niveau": 2, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.6", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-6", "obj": ["A4"], "page": "17", "niveau": 2, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.7", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-7", "obj": ["A2"], "page": "18", "niveau": 2, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.8", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-8", "obj": ["A2"], "page": "18", "niveau": 2, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.9", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-9", "obj": ["A3"], "page": "19", "niveau": 2, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.10", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-10", "obj": ["C4"], "page": "19", "niveau": 2, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.11", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-11", "obj": ["A1"], "page": "20", "niveau": 1, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.12", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-12", "obj": ["C3"], "page": "20", "niveau": 2, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.13", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-13", "obj": ["T1"], "page": "21", "niveau": 2, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.14", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-14", "obj": ["T2"], "page": "21", "niveau": 2, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.15", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-15", "obj": ["T2"], "page": "21", "niveau": 2, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.16", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-16", "obj": ["T3"], "page": "22", "niveau": 3, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.17", "url": "ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.html#exercice-1-17", "obj": ["T3"], "page": "22", "niveau": 3, "section": "Multiples d’une fonction exponentielle"}, {"num": "1.18", "url": "ch1-fonctions-exponentie/7-le-nombre-e-et-lexponentielle.html#exercice-1-18", "obj": ["A2"], "page": "25", "niveau": 1, "section": "Le nombre $e$ et l’exponentielle népérienne"}, {"num": "1.19", "url": "ch1-fonctions-exponentie/8-resoudre-des-equations-exponentielles-si.html#exercice-1-19", "obj": ["A5"], "page": "26", "niveau": 2, "section": "Résoudre des équations exponentielles simples"}, {"num": "1.20", "url": "ch1-fonctions-exponentie/8-resoudre-des-equations-exponentielles-si.html#exercice-1-20", "obj": ["C7"], "page": "27", "niveau": 2, "section": "Résoudre des équations exponentielles simples"}, {"num": "1.21", "url": "ch1-fonctions-exponentie/8-resoudre-des-equations-exponentielles-si.html#exercice-1-21", "obj": ["A5"], "page": "27", "niveau": 2, "section": "Résoudre des équations exponentielles simples"}, {"num": "S1.1", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-1", "obj": ["C2"], "page": null, "niveau": 1, "section": "Exercices supplémentaires"}, {"num": "S1.2", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-2", "obj": ["C2"], "page": null, "niveau": 2, "section": "Exercices supplémentaires"}, {"num": "S1.3", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-3", "obj": ["A1"], "page": null, "niveau": 1, "section": "Exercices supplémentaires"}, {"num": "S1.4", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-4", "obj": ["A1"], "page": null, "niveau": 1, "section": "Exercices supplémentaires"}, {"num": "S1.5", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-5", "obj": ["C5"], "page": null, "niveau": 2, "section": "Exercices supplémentaires"}, {"num": "S1.6", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-6", "obj": ["T2"], "page": null, "niveau": 2, "section": "Exercices supplémentaires"}, {"num": "S1.7", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-7", "obj": ["C4"], "page": null, "niveau": 2, "section": "Exercices supplémentaires"}, {"num": "S1.8", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-8", "obj": ["A4"], "page": null, "niveau": 2, "section": "Exercices supplémentaires"}, {"num": "S1.9", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-9", "obj": ["A2"], "page": null, "niveau": 2, "section": "Exercices supplémentaires"}, {"num": "S1.10", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-10", "obj": ["A3"], "page": null, "niveau": 2, "section": "Exercices supplémentaires"}, {"num": "S1.11", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-11", "obj": ["C3"], "page": null, "niveau": 2, "section": "Exercices supplémentaires"}, {"num": "S1.12", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-12", "obj": ["T1"], "page": null, "niveau": 2, "section": "Exercices supplémentaires"}, {"num": "S1.13", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-13", "obj": ["T2"], "page": null, "niveau": 2, "section": "Exercices supplémentaires"}, {"num": "S1.14", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-14", "obj": ["T3"], "page": null, "niveau": 3, "section": "Exercices supplémentaires"}, {"num": "S1.15", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-15", "obj": ["A5"], "page": null, "niveau": 2, "section": "Exercices supplémentaires"}, {"num": "S1.16", "url": "ch1-fonctions-exponentie/9-exercices-supplementaires.html#exercice-S1-16", "obj": ["C7"], "page": null, "niveau": 2, "section": "Exercices supplémentaires"}, {"num": "2.1", "url": "ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.html#exercice-2-1", "obj": ["C1"], "page": "35", "niveau": 2, "section": "Propriétés graphiques, par déduction"}, {"num": "2.2", "url": "ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.html#exercice-2-2", "obj": ["A2"], "page": "36", "niveau": 2, "section": "Propriétés graphiques, par déduction"}, {"num": "2.3", "url": "ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.html#exercice-2-3", "obj": ["C1"], "page": "37", "niveau": 2, "section": "Propriétés graphiques, par déduction"}, {"num": "2.4", "url": "ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.html#exercice-2-4", "obj": ["C1"], "page": "37", "niveau": 2, "section": "Propriétés graphiques, par déduction"}, {"num": "2.5", "url": "ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.html#exercice-2-5", "obj": ["A2"], "page": "38", "niveau": 2, "section": "Propriétés graphiques, par déduction"}, {"num": "2.6", "url": "ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.html#exercice-2-6", "obj": ["A2"], "page": "38", "niveau": 2, "section": "Propriétés graphiques, par déduction"}, {"num": "2.7", "url": "ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.html#exercice-2-7", "obj": ["A2"], "page": "39", "niveau": 3, "section": "Propriétés graphiques, par déduction"}, {"num": "2.8", "url": "ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.html#exercice-2-8", "obj": ["C1"], "page": "39", "niveau": 2, "section": "Propriétés graphiques, par déduction"}, {"num": "2.9", "url": "ch2-fonctions-logarithmi/5-utiliser-les-proprietes.html#exercice-2-9", "obj": [], "page": "43", "niveau": 2, "section": "Utiliser les propriétés"}, {"num": "2.10", "url": "ch2-fonctions-logarithmi/5-utiliser-les-proprietes.html#exercice-2-10", "obj": [], "page": "43", "niveau": 2, "section": "Utiliser les propriétés"}, {"num": "2.11", "url": "ch2-fonctions-logarithmi/5-utiliser-les-proprietes.html#exercice-2-11", "obj": [], "page": "43", "niveau": 1, "section": "Utiliser les propriétés"}, {"num": "2.12", "url": "ch2-fonctions-logarithmi/5-utiliser-les-proprietes.html#exercice-2-12", "obj": ["C6"], "page": "44", "niveau": 2, "section": "Utiliser les propriétés"}, {"num": "2.13", "url": "ch2-fonctions-logarithmi/5-utiliser-les-proprietes.html#exercice-2-13", "obj": ["C6"], "page": "44", "niveau": 2, "section": "Utiliser les propriétés"}, {"num": "2.14", "url": "ch2-fonctions-logarithmi/5-utiliser-les-proprietes.html#exercice-2-14", "obj": ["A1"], "page": "44", "niveau": 2, "section": "Utiliser les propriétés"}, {"num": "2.15", "url": "ch2-fonctions-logarithmi/6-equations-logarithmiques.html#exercice-2-15", "obj": ["C7", "A6"], "page": "46", "niveau": 2, "section": "Équations logarithmiques"}, {"num": "2.16", "url": "ch2-fonctions-logarithmi/6-equations-logarithmiques.html#exercice-2-16", "obj": ["A6", "C7"], "page": "46", "niveau": 3, "section": "Équations logarithmiques"}, {"num": "2.17", "url": "ch2-fonctions-logarithmi/6-equations-logarithmiques.html#exercice-2-17", "obj": ["A6"], "page": "46", "niveau": 2, "section": "Équations logarithmiques"}, {"num": "2.18", "url": "ch2-fonctions-logarithmi/7-resoudre-les-equations-exponentielles-a.html#exercice-2-18", "obj": ["A5"], "page": "47", "niveau": 2, "section": "Résoudre les équations exponentielles $a^{f(x)} = b$"}, {"num": "2.19", "url": "ch2-fonctions-logarithmi/8-modeliser-avec-les-logarithmes.html#exercice-2-19", "obj": ["T1"], "page": "48", "niveau": 2, "section": "Modéliser avec les logarithmes"}, {"num": "2.20", "url": "ch2-fonctions-logarithmi/8-modeliser-avec-les-logarithmes.html#exercice-2-20", "obj": ["T3"], "page": "48", "niveau": 3, "section": "Modéliser avec les logarithmes"}, {"num": "2.21", "url": "ch2-fonctions-logarithmi/8-modeliser-avec-les-logarithmes.html#exercice-2-21", "obj": ["T3"], "page": "48", "niveau": 2, "section": "Modéliser avec les logarithmes"}, {"num": "2.22", "url": "ch2-fonctions-logarithmi/8-modeliser-avec-les-logarithmes.html#exercice-2-22", "obj": ["T3"], "page": "48", "niveau": 3, "section": "Modéliser avec les logarithmes"}, {"num": "3.1", "url": "ch3-derivees-et-limites/1-deriver-lexponentielle.html#exercice-3-1", "obj": ["A7"], "page": "51", "niveau": 1, "section": "Dériver l’exponentielle"}, {"num": "3.2", "url": "ch3-derivees-et-limites/2-deriver-le-logarithme.html#exercice-3-2", "obj": ["A7"], "page": "53", "niveau": 1, "section": "Dériver le logarithme"}, {"num": "3.3", "url": "ch3-derivees-et-limites/2-deriver-le-logarithme.html#exercice-3-3", "obj": ["A7"], "page": "53", "niveau": 2, "section": "Dériver le logarithme"}, {"num": "3.4", "url": "ch3-derivees-et-limites/2-deriver-le-logarithme.html#exercice-3-4", "obj": ["A7"], "page": "54", "niveau": 2, "section": "Dériver le logarithme"}, {"num": "3.5", "url": "ch3-derivees-et-limites/3-limites-de-base.html#exercice-3-5", "obj": ["A7"], "page": "55", "niveau": 1, "section": "Limites de base"}, {"num": "3.6", "url": "ch3-derivees-et-limites/3-limites-de-base.html#exercice-3-6", "obj": ["A7"], "page": "55", "niveau": 2, "section": "Limites de base"}, {"num": "3.7", "url": "ch3-derivees-et-limites/3-limites-de-base.html#exercice-3-7", "obj": ["A7"], "page": "55", "niveau": 2, "section": "Limites de base"}, {"num": "3.8", "url": "ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.html#exercice-3-8", "obj": ["A7"], "page": "57", "niveau": 2, "section": "Croissance comparée et théorème de l’Hospital"}, {"num": "3.9", "url": "ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.html#exercice-3-9", "obj": ["A7"], "page": "58", "niveau": 3, "section": "Croissance comparée et théorème de l’Hospital"}, {"num": "3.10", "url": "ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.html#exercice-3-10", "obj": ["T3", "A7"], "page": "58", "niveau": 3, "section": "Croissance comparée et théorème de l’Hospital"}, {"num": "4.1", "url": "ch4-echelles-logarithmiq/2-repere-semi-logarithmique-la-signature.html#exercice-4-1", "obj": ["A8"], "page": "62", "niveau": 2, "section": "Repère semi-logarithmique : la signature de l’exponentielle"}, {"num": "4.2", "url": "ch4-echelles-logarithmiq/3-repere-log-log-la-signature.html#exercice-4-2", "obj": ["A8"], "page": "64", "niveau": 2, "section": "Repère log-log : la signature d’une puissance"}, {"num": "4.3", "url": "ch4-echelles-logarithmiq/4-choisir-le-bon-repere-et.html#exercice-4-3", "obj": ["A8", "T1"], "page": "65", "niveau": 2, "section": "Choisir le bon repère et extraire l’information"}, {"num": "4.4", "url": "ch4-echelles-logarithmiq/4-choisir-le-bon-repere-et.html#exercice-4-4", "obj": ["A8"], "page": "65", "niveau": 3, "section": "Choisir le bon repère et extraire l’information"}, {"num": "4.5", "url": "ch4-echelles-logarithmiq/4-choisir-le-bon-repere-et.html#exercice-4-5", "obj": ["A8", "T3"], "page": "65", "niveau": 3, "section": "Choisir le bon repère et extraire l’information"}, {"num": "4.6", "url": "ch4-echelles-logarithmiq/5-pour-aller-plus-loin-les.html#exercice-4-6", "obj": ["A8"], "page": "66", "niveau": 2, "section": "Pour aller plus loin : les échelles logarithmiques en sciences"}]</script>
+```

@@ -1,0 +1,6 @@
+Vérification — Exponentielles et logarithmes
+75 exercices, 170 encadrés, 18 objectifs — 2 points à voir
+
+! exercices sans objectif (3) : 2.9, 2.10, 2.11
+! encadrés sans numéro de page du PDF (22) : preuve 1.1, exercice S1.1, exercice S1.2, exercice S1.3, exercice S1.4, exercice S1.5, exercice S1.6, exercice S1.7, exercice S1.8, exercice S1.9, exercice S1.10, exercice S1.11, exercice S1.12, exercice S1.13, exercice S1.14, exercice S1.15, exercice S1.16, preuve 2.1, preuve 2.2, preuve 2.3, preuve 2.4, preuve 3.1
+    → recompiler le PDF (typweb pdf)

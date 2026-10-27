@@ -1,0 +1,201 @@
+---
+title: "Propriétés et caractéristiques graphiques"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Pour connaître l’allure des fonctions exponentielles, le mieux est d’en tracer quelques-unes.
+
+::: {#activite-1-8 data-sorte="activite" data-num="1.8" data-page="11" data-phys="13" data-id="6UAA4.quatre-exponentielles" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 1.8** — quatre exponentielles
+:::
+
+::: {.theo-body}
+Complète le tableau de valeurs, puis place les points dans le repère et relie-les.
+
+::: {.tableau}
+| $x$ | $f_{1}(x) = 2^{x}$ | $f_{2}(x) = 3^{x}$ | $f_{3}(x) = (\frac{1}{2})^{x}$ | $f_{4}(x) = (\frac{1}{3})^{x}$ |
+|:---:|:---:|:---:|:---:|:---:|
+| $-2$ | [$\frac{1}{4}$]{.rep} | [$\frac{1}{9}$]{.rep} | [$4$]{.rep} | [$9$]{.rep} |
+| $-1$ | [$\frac{1}{2}$]{.rep} | [$\frac{1}{3}$]{.rep} | [$2$]{.rep} | [$3$]{.rep} |
+| $0$ | [$1$]{.rep} | [$1$]{.rep} | [$1$]{.rep} | [$1$]{.rep} |
+| $1$ | [$2$]{.rep} | [$3$]{.rep} | [$\frac{1}{2}$]{.rep} | [$\frac{1}{3}$]{.rep} |
+| $2$ | [$4$]{.rep} | [$9$]{.rep} | [$\frac{1}{4}$]{.rep} | [$\frac{1}{9}$]{.rep} |
+:::
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 9.0, "w": 620, "h": 371, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "rep": true, "f": {"js": "Math.pow(2.0, x)"}}, {"couleur": "#c1002a", "pointille": false, "ep": 1.3, "rep": true, "f": {"js": "Math.pow(3.0, x)"}}, {"couleur": "#0a7d4d", "pointille": false, "ep": 1.3, "rep": true, "f": {"js": "Math.pow(0.5, x)"}}, {"couleur": "#8a5a00", "pointille": false, "ep": 1.3, "rep": true, "f": {"js": "Math.pow((1.0 / 3.0), x)"}}], "points": []}'></div>
+```
+
+a) Que vaut $a^{0}$ pour toutes ces fonctions ? [$1$]{.rep} — quel point commun en déduis-tu ? [toutes passent par $(0, 1)$]{.rep}
+
+b) Que vaut $a^{1}$ ? [$a$]{.rep} — donc chaque courbe passe aussi par le point [$(1, a)$]{.rep}.
+:::
+:::
+
+Avant d’énoncer la fiche d’identité, voyons sur un exemple comment lire un tel graphique.
+
+::: {#exemple-1-1 data-sorte="exemple" data-num="1.1" data-page="12" data-phys="14" data-id="6UAA4.lire-exponentielle" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 1.1** — lire une exponentielle
+:::
+
+::: {.theo-body}
+Soit $f(x) = 3^{x}$. Sans calculatrice :
+
+- **Domaine et image** : $f$ est définie pour tout réel, donc $\operatorname{dom} f = \mathbb{R}$ ; ses valeurs sont toujours strictement positives, donc $\operatorname{im} f = \mathbb{R}^{> 0}$.
+- **Points sûrs** : $f(0) = 3^{0} = 1$ (point $(0, 1)$) et $f(1) = 3^{1} = 3$ (point $(1, 3)$).
+- **Sens de variation** : la base $3 > 1$, donc $f$ est strictement *croissante*.
+- **Comportement aux bords** : quand $x \to -\infty$, $3^{x} \to 0$ (la courbe s’approche de l’axe $x$ sans le toucher : **asymptote horizontale** $y = 0$) ; quand $x \to +\infty$, $3^{x} \to +\infty$.
+:::
+:::
+
+Voici les deux allures possibles, selon que la base est plus grande ou plus petite que $1$ :
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 8.0, "w": 372, "h": 265, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "Math.pow(2.5, x)"}}], "points": [{"x": 0.0, "y": 1.0}, {"x": 1.0, "y": 2.5}], "lecture": true}'></div>
+```
+:::
+
+::: {.cellule}
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 8.0, "w": 372, "h": 265, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "Math.pow(0.4, x)"}}], "points": [{"x": 0.0, "y": 1.0}, {"x": -1.0, "y": 2.5}], "lecture": true}'></div>
+```
+:::
+:::
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+[base $a > 1$ : strictement croissante]{style="color:#6a737d"}
+:::
+
+::: {.cellule}
+[base $0 < a < 1$ : strictement décroissante]{style="color:#6a737d"}
+:::
+:::
+
+::: {#propriete-1-2 data-sorte="propriete" data-num="1.2" data-page="12" data-phys="14" data-id="6UAA4.caracteristiques" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 1.2** — caractéristiques de $f(x) = a^{x}$
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$ et $f(x) = a^{x}$.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+- $\operatorname{dom} f =$ [$\mathbb{R}$]{.rep}
+
+- $\operatorname{im} f =$ [$\mathbb{R}^{> 0}$]{.rep}
+- racine(s) : [aucune]{.rep}
+- $G_{f} \cap \text{axe } y$ : [$(0, 1)$]{.rep}
+:::
+
+::: {.cellule}
+- $G_{f} \cap \text{axe } x$ : [aucun point]{.rep}
+
+- points sûrs : [$(0, 1)$ et $(1, a)$]{.rep}
+- concavité : [tournée vers le haut]{.rep}
+- asymptote : [horizontale $y = 0$]{.rep}
+:::
+:::
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+::: {#cadre-si-a-1 .cadre-info}
+**si $a > 1$**
+
+- $f$ est [strictement croissante]{.rep}
+- $\lim\limits_{x \to +\infty} f(x) =$ [$+\infty$]{.rep}
+- $\lim\limits_{x \to -\infty} f(x) =$ [$0$]{.rep}
+- $\text{AH}_{-\infty}$ : [$y = 0$]{.rep}
+:::
+:::
+
+::: {.cellule}
+::: {#cadre-si-0-a-1 .cadre-info}
+**si $0 < a < 1$**
+
+- $f$ est [strictement décroissante]{.rep}
+- $\lim\limits_{x \to +\infty} f(x) =$ [$0$]{.rep}
+- $\lim\limits_{x \to -\infty} f(x) =$ [$+\infty$]{.rep}
+- $\text{AH}_{+\infty} :$ [$y = 0$]{.rep}
+:::
+:::
+:::
+:::
+:::
+
+Les graphiques précédents laissent deviner une symétrie. Rappelle-toi une transformation vue en 4^e^ : pour *n’importe quelle* fonction $f$, le graphe de $f(-x)$ s’obtient à partir de celui de $f(x)$ par une **symétrie d’axe $y$** (l’axe des ordonnées). Or, passer de la base $a$ à la base $\frac{1}{a}$ revient justement à remplacer $x$ par $-x$ :
+
+$$
+\frac{1}{a^{x}} = a^{-x} = (\frac{1}{a})^{x}.
+$$
+
+::: {#propriete-1-3 data-sorte="propriete" data-num="1.3" data-page="13" data-phys="15" data-id="6UAA4.symetrie-axe" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 1.3** — symétrie d’axe $y$
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Comme $(\frac{1}{a})^{x} = a^{-x}$, le graphique de $f(x) = (\frac{1}{a})^{x}$ est le **symétrique** de celui de $g(x) = a^{x}$ par rapport à l’**axe $y$**.
+:::
+:::
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 8.0, "w": 496, "h": 278, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "Math.pow(2.0, x)"}}, {"couleur": "#0a7d4d", "pointille": false, "ep": 1.3, "f": {"js": "Math.pow(0.5, x)"}}], "points": [{"x": 0.0, "y": 1.0}], "lecture": true}'></div>
+```
+
+[$2^{x}$ et $(\frac{1}{2})^{x} = 2^{-x}$ : deux courbes symétriques par rapport à l’axe $y$.]{style="color:#6a737d"}
+
+::: {#exercice-1-3 data-sorte="exercice" data-num="1.3" data-page="13" data-phys="15" data-id="6UAA4.ex.003" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.3]{.exo-titre} [[C1]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Compare graphiquement les fonctions $f(x) = 2^{x}$ et $g(x) = x^{2}$. En combien de points leurs graphes se coupent-ils ? Laquelle finit par « écraser » l’autre quand $x \to +\infty$ ? Cite la propriété de croissance qui le justifie.
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[activité « quatre exponentielles »](#activite-1-8) et la [définition de la croissance exponentielle](1-croissance-exponentielle.qmd#definition-1-1) : on multiplie au lieu d’ajouter.
+
+## Indice 2 {.unlisted}
+
+Pour quelles valeurs entières de $x$ a-t-on $2^{x} = x^{2}$ ? Et que se passe-t-il pour $x$ négatif ?
+
+## Indice 3 {.unlisted}
+
+Dresse un tableau de valeurs de $x = -2$ à $x = 6$ pour les deux fonctions, puis trace les deux courbes (calculatrice graphique).
+
+## Solution {.unlisted}
+
+Tableau de valeurs :
+
+::: {.tableau}
+| $x$ | $-2$ | $-1$ | $0$ | $2$ | $3$ | $4$ | $5$ | $6$ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| $2^{x}$ | $\frac{1}{4}$ | $\frac{1}{2}$ | $1$ | $4$ | $8$ | $16$ | $32$ | $64$ |
+| $x^{2}$ | $4$ | $1$ | $0$ | $4$ | $9$ | $16$ | $25$ | $36$ |
+:::
+
+- Les graphes se coupent en $x = 2$ et $x = 4$ ($2^{2} = 2^{2}$ et $2^{4} = 4^{2} = 16$), et une troisième fois entre $-1$ et $0$ ($2^{x} - x^{2}$ passe de $-1/2$ à $1$), vers $x \approx -0{,}77$. Il y a donc trois points d’intersection.
+- Au-delà de $x = 4$, $2^{x} > x^{2}$ et l’écart grandit : c’est $2^{x}$ qui « écrase » $x^{2}$. En effet, quand $x$ augmente de $1$, $2^{x}$ est multiplié par $2$ (croissance exponentielle), alors que $x^{2}$ est multiplié par $(\frac{x + 1}{x})^{2}$, qui se rapproche de $1$.
+
+## Pièges {.unlisted}
+
+- Oublier le point d’intersection pour $x$ négatif : le tableau ne le montre pas si on ne prend que des $x$ positifs.
+- Conclure trop tôt : entre $2$ et $4$, c’est $x^{2}$ qui est au-dessus.
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 3 questions →](../autoeval.qmd#sections=sec-graph-exp)
+:::

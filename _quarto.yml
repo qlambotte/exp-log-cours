@@ -1,0 +1,100 @@
+# GÉNÉRÉ par typweb à partir de typweb.toml : NE PAS ÉDITER (modifier typweb.toml).
+project:
+  type: book
+  output-dir: _book
+  # le contenu est régénéré depuis les notes Typst à chaque rendu / aperçu
+  pre-render: python3 ../../../typweb/typweb.py contenu
+  resources:
+    - js/*.js
+    - js/*.css
+    - js/*.json
+    - index.json
+    - sw.js
+    - exp-log.pdf
+    - exp-log-corrige.pdf
+    - exercices-supp-ch1.pdf
+    - exercices-supp-ch1-corrige.pdf
+
+book:
+  title: "Exponentielles et logarithmes"
+  subtitle: "Cours & exercices — 6e, 4 périodes (6UAA4)"
+  author: "Quentin Lambotte"
+  date: today
+  date-format: "YYYY"
+  reader-mode: false
+  search: true
+  site-url: "https://qlambotte.github.io/exp-log-cours/"
+  sidebar:
+    style: docked
+    collapse-level: 1
+    pinned: true
+  chapters:
+    - index.qmd
+    - objectifs.qmd
+    - part: ch1-fonctions-exponentie/index.qmd
+      chapters:
+        - ch1-fonctions-exponentie/1-croissance-exponentielle.qmd
+        - ch1-fonctions-exponentie/2-construire-une-fonction-exponentielle.qmd
+        - ch1-fonctions-exponentie/3-definition-de-la-fonction-exponentielle.qmd
+        - ch1-fonctions-exponentie/4-proprietes-et-caracteristiques-graphique.qmd
+        - ch1-fonctions-exponentie/5-multiples-dune-fonction-exponentielle.qmd
+        - ch1-fonctions-exponentie/6-des-graphes-tous-semblables-vers.qmd
+        - ch1-fonctions-exponentie/7-le-nombre-e-et-lexponentielle.qmd
+        - ch1-fonctions-exponentie/8-resoudre-des-equations-exponentielles-si.qmd
+        - ch1-fonctions-exponentie/9-exercices-supplementaires.qmd
+    - part: ch2-fonctions-logarithmi/index.qmd
+      chapters:
+        - ch2-fonctions-logarithmi/1-du-probleme-e-x-3.qmd
+        - ch2-fonctions-logarithmi/2-definition-du-logarithme-de-base.qmd
+        - ch2-fonctions-logarithmi/3-proprietes-graphiques-par-deduction.qmd
+        - ch2-fonctions-logarithmi/4-proprietes-algebriques-a-decouvrir.qmd
+        - ch2-fonctions-logarithmi/5-utiliser-les-proprietes.qmd
+        - ch2-fonctions-logarithmi/6-equations-logarithmiques.qmd
+        - ch2-fonctions-logarithmi/7-resoudre-les-equations-exponentielles-a.qmd
+        - ch2-fonctions-logarithmi/8-modeliser-avec-les-logarithmes.qmd
+    - part: ch3-derivees-et-limites/index.qmd
+      chapters:
+        - ch3-derivees-et-limites/1-deriver-lexponentielle.qmd
+        - ch3-derivees-et-limites/2-deriver-le-logarithme.qmd
+        - ch3-derivees-et-limites/3-limites-de-base.qmd
+        - ch3-derivees-et-limites/4-croissance-comparee-et-theoreme-de.qmd
+    - part: ch4-echelles-logarithmiq/index.qmd
+      chapters:
+        - ch4-echelles-logarithmiq/1-construire-une-echelle-logarithmique.qmd
+        - ch4-echelles-logarithmiq/2-repere-semi-logarithmique-la-signature.qmd
+        - ch4-echelles-logarithmiq/3-repere-log-log-la-signature.qmd
+        - ch4-echelles-logarithmiq/4-choisir-le-bon-repere-et.qmd
+        - ch4-echelles-logarithmiq/5-pour-aller-plus-loin-les.qmd
+    - essentiel.qmd
+    - autoeval.qmd
+    - nouveautes.qmd
+    - mode-emploi.qmd
+  page-footer:
+    left: "Exponentielles et logarithmes — cours & exercices"
+    right: "© {{< meta book.author >}}"
+
+lang: fr
+
+format:
+  html:
+    theme:
+      - cosmo
+      - polices.scss
+      - theme.scss
+      - styles-essai.scss
+    include-in-header:
+      - _includes/theme-init.html
+    include-after-body:
+      - _includes/aides.html
+      - _includes/tools.html
+      - _includes/scripts.html
+      - _includes/styles-essai.html
+    toc: true
+    toc-title: "Sur cette page"
+    toc-depth: 3
+    number-sections: false
+    html-math-method: mathjax
+    grid:
+      sidebar-width: 300px
+      body-width: 880px
+      margin-width: 200px

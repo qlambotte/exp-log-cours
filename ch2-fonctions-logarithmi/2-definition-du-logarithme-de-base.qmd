@@ -1,0 +1,114 @@
+---
+title: "Définition du logarithme de base a"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Ce que $\ln$ fait pour la base $e$, on le définit pour n’importe quelle base.
+
+::: {#definition-2-1 data-sorte="definition" data-num="2.1" data-page="32" data-phys="34" data-id="6UAA4.logarithme-base" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 2.1** — logarithme de base $a$
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Le **logarithme de base $a$**, noté $\log_{a}$, est la fonction **réciproque** de l’exponentielle de base $a$ : pour tout $x \in \mathbb{R}^{>0}$ et pour tout $y \in \mathbb{R}$,
+
+$$
+\log_{a} (x) = y \quad \Longleftrightarrow \quad a^{y} = x.
+$$
+
+Son domaine est $\mathbb{R}^{> 0}$ : on ne prend le logarithme que d’un nombre strictement positif.
+:::
+:::
+
+Autrement dit, $\log_{a} (x)$ répond à la question : *« à quel exposant faut-il élever $a$ pour obtenir $x$ ? »*
+
+::: {#exemple-2-1 data-sorte="exemple" data-num="2.1" data-page="32" data-phys="34" data-id="6UAA4.calculer-logarithme-c-est-chercher" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 2.1** — calculer un logarithme, c’est chercher un exposant
+:::
+
+::: {.theo-body}
+$\log_{2} (8) = 3$ car $2^{3} = 8$. $\log_{5} (\frac{1}{25}) = -2$ car $5^{-2} = \frac{1}{25}$.
+:::
+:::
+
+::: {#activite-2-3 data-sorte="activite" data-num="2.3" data-page="33" data-phys="35" data-id="6UAA4.calcul-mental-logarithmes" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 2.3** — calcul mental de logarithmes
+:::
+
+::: {.theo-body}
+Complète en te ramenant à la question « quel exposant ? ».
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+- $\log_{2} (16) =$ [$4$]{.rep} car $2^{4} = 16$
+
+- $\log_{2} (\sqrt{2}) =$ [$\frac{1}{2}$]{.rep}
+- $\log_{3} (1) =$ [$0$]{.rep}
+- $\log_{5} (5) =$ [$1$]{.rep}
+:::
+
+::: {.cellule}
+- $\log_{10} (1000) =$ [$3$]{.rep}
+
+- $\log_{2} (\frac{1}{8}) =$ [$-3$]{.rep}
+- $\log_{5} (-5) =$ [impossible]{.rep}
+- $\log_{3} (0) =$ [impossible]{.rep}
+:::
+:::
+:::
+:::
+
+Un logarithme n’est pas toujours « rond ». Même sans en connaître la valeur exacte, on peut le **situer** entre deux entiers — puisque c’est un exposant.
+
+::: {#activite-2-4 data-sorte="activite" data-num="2.4" data-page="33" data-phys="35" data-id="6UAA4.situer-logarithme-sans-calculer" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 2.4** — situer un logarithme sans le calculer
+:::
+
+::: {.theo-body}
+a) $\log_{2} (10)$ est-il plus grand ou plus petit que $3$ ? Compare $10$ à $2^{3}$ : comme $2^{3} = 8 < 10$, on a $\log_{2} (10) \class{rep}{>} 3$.
+
+b) Entre quels deux entiers consécutifs se situe $\log_{2} (100)$ ? Encadre $100$ par deux puissances de $2$ : $2^{6} = 64 \leq 100 \leq 128 = 2^{7}$, donc $\class{rep}{6} < \log_{2} (100) < \class{rep}{7}$.
+
+c) Encadre de même : $\class{rep}{2} < \log(500) < \class{rep}{3}$ (car $10^{2} \leq 500 \leq 10^{3}$) ; $\class{rep}{3} < \log_{3} (50) < \class{rep}{4}$ (car $3^{3} = 27 \leq 50 \leq 81 = 3^{4}$).
+
+d) Range dans l’ordre croissant, sans calculatrice : $\log_{2} (5)$, $2$, $\log_{2} (3)$. [$\log_{2} (3) < 2 < \log_{2} (5)$ (car $\log_{2} (4) = 2$)]{.rep}
+:::
+:::
+
+De la définition (réciprocité) découlent immédiatement les identités de base.
+
+::: {#propriete-2-2 data-sorte="propriete" data-num="2.2" data-page="33" data-phys="35" data-id="6UAA4.reciprocite-valeurs-remarquables" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 2.2** — réciprocité et valeurs remarquables
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Alors :
+
+- $\log_{a} (a^{x}) = x$ pour tout $x \in \mathbb{R}$, et $a^{\log_{a} (x)} = x$ pour tout $x > 0$ ;
+- $\log_{a} (1) = 0$ (car $a^{0} = 1$) ; $\log_{a} (a) = 1$ (car $a^{1} = a$).
+:::
+:::
+
+## Deux logarithmes usuels : $\ln$ et $\log$
+
+La calculatrice possède deux touches : `ln` (logarithme de base $e$, le logarithme **népérien**, $\ln = \log_{e}$) et `log` (logarithme de base $10$, le logarithme **décimal**, $\log = \log_{10}$). Ces deux logarithmes sont les plus utilisés. De plus, on verra plus loin que la calculatrice n’a pas besoin d’autres logarithmes.
+
+::: {#exemple-2-2 data-sorte="exemple" data-num="2.2" data-page="33" data-phys="35" data-id="6UAA4.calculatrice" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 2.2** — à la calculatrice
+:::
+
+::: {.theo-body}
+$\ln(e^{4}) = 4$, $\log(10^{-2}) = -2$, $e^{\ln(7)} = 7$, $\log(1) = 0$.
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 4 questions →](../autoeval.qmd#sections=sec-def-log)
+:::

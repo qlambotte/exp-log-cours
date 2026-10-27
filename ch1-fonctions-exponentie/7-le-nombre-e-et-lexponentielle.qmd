@@ -1,0 +1,185 @@
+---
+title: "Le nombre e et l’exponentielle népérienne"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+## Les exponentielles sont dérivables partout
+
+Rappelle-toi ce que tu as observé sur la courbe de $2^{x}$ (§ 1.2.2) : elle a une tangente en 0, et tu as même *estimé* la pente de cette tangente en $0$ (environ $0{,}7$). Cela signifie que $2^{x}$ est dérivable en 0. Formulons cela proprement. Être dérivable en $0$ signifie que le nombre
+
+$$
+f'(0) = \lim\limits_{h \to 0} \frac{f(0 + h) - f(0)}{h} = \lim\limits_{h \to 0} \frac{a^{h} - 1}{h}
+$$
+
+existe ; c’est précisément la **pente de la tangente** au point $(0, 1)$.
+
+::: {#cadre-resultat-admis .cadre-info}
+**Résultat admis.** Pour toute base $a \in \mathbb{R}^{> 0} \setminus \{1\}$, le nombre $f'(0)$ existe : la fonction exponentielle est dérivable en $0$ (c’est la tangente que tu as vue pour $2^{x}$). La démonstration de ce résultat dépasse les outils dont nous disposons à ce stade ; nous l’**admettons**.
+:::
+
+Ce résultat admis a une conséquence remarquable, que l’on peut **démontrer** entièrement.
+
+::: {#propriete-1-5 data-sorte="propriete" data-num="1.5" data-page="23" data-phys="25" data-id="6UAA4.derivee-exponentielle" data-type="propriete" data-tags="" .theo .theo-propriete}
+::: {.theo-head}
+**Propriété 1.5** — dérivée d’une exponentielle
+:::
+
+::: {.theo-body}
+Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. La fonction $f(x) = a^{x}$ est dérivable sur $\mathbb{R}$ tout entier, et
+
+$$
+f'(x) = f'(0) \cdot a^{x}.
+$$
+
+Autrement dit, la dérivée d’une exponentielle est un **multiple d’elle-même**.
+:::
+:::
+
+::: {#preuve-1-1 data-sorte="preuve" data-num="1.1" .theo .theo-preuve}
+::: {.theo-head}
+**Démonstration 1.1**
+:::
+
+::: {.theo-body}
+Fixons $a \in \mathbb{R}^{> 0} \setminus \{1\}$ et $f(x) = a^{x}$. Pour tous $x, h$, on utilise la propriété $a^{x + h} = a^{x} \cdot a^{h}$ :
+
+$$
+\frac{f(x + h) - f(x)}{h} = \frac{a^{x + h} - a^{x}}{h} = \frac{a^{x} \cdot a^{h} - a^{x}}{h} = a^{x} \cdot \frac{a^{h} - 1}{h}.
+$$
+
+Dès lors:
+
+$$
+f'(x) = \lim\limits_{h \to 0} a^{x} \cdot \frac{a^{h} - 1}{h} = a^{x} \cdot \lim\limits_{h \to 0} \frac{a^{h} - 1}{h} = a^{x} \cdot f'(0),
+$$
+
+car $\lim\limits_{h \to 0} (a^{h} - 1) / h = f'(0)$ existe (résultat admis ci-dessus). La fonction $f$ est donc dérivable partout, et $f'(x) = f'(0) \cdot a^{x}$.
+:::
+:::
+
+Cette propriété est remarquable : la dérivabilité en *un seul* point (ici $0$), combinée à la relation $f(x+h) = f(x) f(h)$, entraîne la dérivabilité *partout*.
+
+## Le nombre $e$
+
+Nous cherchons une base $a$ telle que $f(x) = a^{x}$ vérifie $f'(0) = 1$, c’est-à-dire
+
+$$
+f'(0) = \lim\limits_{h \to 0} \frac{a^{h} - 1}{h} = 1.
+$$
+
+Cela signifie que $(a^{h} - 1) / h$ est proche de $1$ quand $h$ est proche de $0$. Transformons cette condition :
+
+$$
+\frac{a^{h} - 1}{h} \approx 1 \quad \Longleftrightarrow \quad a^{h} - 1 \approx h \quad \Longleftrightarrow \quad a^{h} \approx 1 + h \quad \Longleftrightarrow \quad a \approx (1 + h)^{1 / h}.
+$$
+
+On estime donc la base cherchée en prenant des valeurs de $h$ de plus en plus petites.
+
+::: {#activite-1-10 data-sorte="activite" data-num="1.10" data-page="24" data-phys="26" data-id="6UAA4.estimer-base-ideale" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 1.10** — estimer la base idéale
+:::
+
+::: {.theo-body}
+Complète à la calculatrice (arrondis à $10^{-4}$) :
+
+::: {.tableau}
+| $h$ | $(1 + h)^{1 / h}$ |
+|:---:|:---:|
+| $0{,}1$ | [$2{,}5937$]{.rep} |
+| $0{,}01$ | [$2{,}7048$]{.rep} |
+| $0{,}001$ | [$2{,}7169$]{.rep} |
+| $0{,}0001$ | [$2{,}7181$]{.rep} |
+| $0{,}00001$ | [$2{,}7183$]{.rep} |
+:::
+
+La suite des valeurs se stabilise autour de [$2{,}718 \ldots$]{.rep}.
+:::
+:::
+
+::: {#definition-1-5 data-sorte="definition" data-num="1.5" data-page="24" data-phys="26" data-id="6UAA4.nombre" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.5** — le nombre $e$
+:::
+
+::: {.theo-body}
+Le **nombre d’Euler**, noté $e$, est défini par
+
+$$
+e = \lim\limits_{h \to 0} (1 + h)^{1 / h} = 2{,}718 \, 281 \, 828 \ldots
+$$
+:::
+:::
+
+::: {#remarque-1-4 data-sorte="remarque" data-num="1.4" data-page="24" data-phys="26" data-id="6UAA4.rem.004" data-type="remarque" data-tags="" .theo .theo-remarque}
+::: {.theo-head}
+**Remarque 1.4**
+:::
+
+::: {.theo-body}
+C’est une constante fondamentale des mathématiques. Comme $\pi$, elle est **irrationnelle** (son écriture décimale est infinie et non périodique) ; elle est même **transcendante**.
+:::
+:::
+
+## L’exponentielle népérienne
+
+::: {#definition-1-6 data-sorte="definition" data-num="1.6" data-page="25" data-phys="27" data-id="6UAA4.exponentielle-neperienne" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.6** — exponentielle népérienne
+:::
+
+::: {.theo-body}
+L’**exponentielle népérienne** est la fonction exponentielle de base $e$ ; on la note $\operatorname{exp}(x) = e^{x}$.
+:::
+:::
+
+C’est la représentante choisie de toutes les exponentielles. Par construction de $e$, sa pente en $0$ vaut $1$, donc $f'(0) = 1$, et la **Propriété 1.5** (dérivée d’une exponentielle) donne une identité spectaculaire : cette fonction est **égale à sa propre dérivée**,
+
+$$
+(e^{x})' = e^{x}.
+$$
+
+::: {#exercice-1-18 data-sorte="exercice" data-num="1.18" data-page="25" data-phys="27" data-id="6UAA4.ex.018" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 1.18]{.exo-titre} [[A2]{.exo-comp} ★☆☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+À partir du graphique de l’exponentielle népérienne $f(x) = e^{x}$ (déjà tracée), construis celui de $g(x) = \frac{1}{e^{x}} = e^{-x}$ en utilisant la symétrie d’axe $y$.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 8.0, "w": 558, "h": 309, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "y", "courbes": [{"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "Math.exp(x)"}}], "points": [{"x": 0.0, "y": 1.0}, {"x": 1.0, "y": 2.718281}]}'></div>
+```
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété de symétrie d’axe $y$](4-proprietes-et-caracteristiques-graphique.qmd#propriete-1-2).
+
+## Indice 2 {.unlisted}
+
+Si le point $(x, y)$ est sur le graphe de $e^{x}$, quel point est sur le graphe de $e^{-x}$ ?
+
+## Indice 3 {.unlisted}
+
+Le point $(1, e)$ devient $(-1, e)$ ; le point $(0, 1)$ reste en place.
+
+## Solution {.unlisted}
+
+Comme $g(x) = e^{-x} = f(-x)$, le point $(x, y)$ appartient au graphe de $f$ si et seulement si $(-x, y)$ appartient au graphe de $g$ : le graphe de $g$ est le symétrique de celui de $f$ par rapport à l’axe $y$ (propriété 1.2).
+
+Il passe par $(0, 1)$ et par $(-1, e) \approx (-1 ; 2{,}72)$ ; il est strictement décroissant et se rapproche de l’axe des $x$ quand $x$ devient grand.
+
+## Pièges {.unlisted}
+
+- Tracer le symétrique par rapport à l’axe des $x$ (on obtiendrait $-e^{x}$, sous l’axe).
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 2 questions →](../autoeval.qmd#sections=sec-e)
+:::

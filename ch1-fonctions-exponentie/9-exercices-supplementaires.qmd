@@ -1,0 +1,946 @@
+---
+title: "Exercices supplémentaires"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+# Reconnaître et calculer
+
+::: {#exercice-S1-1 data-sorte="exercice" data-num="S1.1" data-id="6UAA4.ex.060" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.1]{.exo-titre} [[C2]{.exo-comp} ★☆☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Entoure les fonctions exponentielles parmi $5^{x}$, $(\frac{2}{5})^{x}$, $(-7)^{x}$, $4{,}1^{x}$, $x^{5}$, $0^{x}$. Pour chacune que tu écartes, dis en un mot pourquoi.
+
+::: {.rep-bloc}
+$5^{x}$ : **oui** ($a=5$). $(\frac{2}{5})^{x}$ : **oui** ($a=\frac{2}{5}$). $(-7)^{x}$ : **non** — base négative. $4{,}1^{x}$ : **oui** ($a=4{,}1$). $x^{5}$ : **non** — c’est la base qui varie (fonction puissance). $0^{x}$ : **non** — base nulle, non définie pour $x \leq 0$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition de la fonction exponentielle de base $a$](3-definition-de-la-fonction-exponentielle.qmd#definition-1-3).
+
+## Indice 2 {.unlisted}
+
+Pour chaque expression : la variable est-elle dans l’exposant ? La base est-elle strictement positive et différente de $1$ ?
+
+## Indice 3 {.unlisted}
+
+Essaie de calculer $0^{-1}$ et $(-7)^{1/2}$.
+
+## Solution {.unlisted}
+
+Une fonction exponentielle s’écrit $a^{x}$ avec $a \in \mathbb{R}^{> 0} \setminus \{1\}$.
+
+- $5^{x}$, $(\frac{2}{5})^{x}$ et $4{,}1^{x}$ sont des fonctions exponentielles (bases $5$, $\frac{2}{5}$ et $4{,}1$).
+- $(-7)^{x}$ ne convient pas : la base est négative.
+- $x^{5}$ ne convient pas : c’est la base qui varie (fonction puissance).
+- $0^{x}$ ne convient pas : la base est nulle ($0^{x}$ n’est pas défini pour $x \leq 0$).
+
+## Pièges {.unlisted}
+
+- Confondre $x^{5}$ et $5^{x}$.
+:::
+:::
+
+::: {#exercice-S1-2 data-sorte="exercice" data-num="S1.2" data-id="6UAA4.ex.061" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.2]{.exo-titre} [[C2]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Parmi les fonctions suivantes, lesquelles sont des fonctions exponentielles ou des multiples de fonctions exponentielles ? Justifie chaque réponse.
+
+::: {.colonnes style="--n:3"}
+- $f(x) = 1^{x}$
+- $f(x) = -(\frac{1}{4})^{x}$
+- $f(x) = (3^{-1})^{x}$
+- $f(x) = 5 x^{7 / 2}$
+- $f(x) = -2 (\frac{2}{5})^{x}$
+:::
+
+::: {.rep-bloc}
+$1^{x}$ : **non** (base $1$, constante). $-(\frac{1}{4})^{x}$ : **oui**, multiple ($k=-1$, base $\frac{1}{4}$). $(3^{-1})^{x} = (\frac{1}{3})^{x}$ : **oui**, exponentielle de base $\frac{1}{3}$. $5x^{7 / 2}$ : **non** — exposant fixe, base variable (fonction puissance). $-2(\frac{2}{5})^{x}$ : **oui**, multiple ($k=-2$, base $\frac{2}{5}$).
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition d’un multiple d’une exponentielle](5-multiples-dune-fonction-exponentielle.qmd#definition-1-4).
+
+## Indice 2 {.unlisted}
+
+Peux-tu écrire chaque expression sous la forme $k \cdot a^{x}$, avec $a > 0$ et $a \neq 1$ ?
+
+## Indice 3 {.unlisted}
+
+$(3^{-1})^{x} = (\frac{1}{3})^{x}$ et $-(\frac{1}{4})^{x} = (-1) \cdot (\frac{1}{4})^{x}$.
+
+## Solution {.unlisted}
+
+- $1^{x}$ : non, base $1$ (fonction constante).
+- $-(\frac{1}{4})^{x} = (-1) \cdot (\frac{1}{4})^{x}$ : oui, multiple d’une exponentielle ($k = -1$, $a = \frac{1}{4}$).
+- $(3^{-1})^{x} = (\frac{1}{3})^{x}$ : oui, exponentielle de base $\frac{1}{3}$.
+- $5 x^{7/2}$ : non, l’exposant est fixe et la base varie (fonction puissance).
+- $-2 (\frac{2}{5})^{x}$ : oui, multiple d’une exponentielle ($k = -2$, $a = \frac{2}{5}$).
+
+## Pièges {.unlisted}
+
+- Refuser $-2 (\frac{2}{5})^{x}$ à cause du signe : il porte sur $k$, la base $\frac{2}{5}$ est positive.
+:::
+:::
+
+::: {#exercice-S1-3 data-sorte="exercice" data-num="S1.3" data-id="6UAA4.ex.062" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.3]{.exo-titre} [[A1]{.exo-comp} ★☆☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Écris chaque expression sous la forme d’une **seule** puissance (ou d’une fraction simple). À chaque fois, **nomme la règle** utilisée.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+1. $3^{4} \cdot 3^{6}$
+2. $\frac{8^{11}}{8^{5}}$
+3. $(2^{3})^{4}$
+:::
+
+::: {.cellule}
+4. $5^{-3}$
+5. $e^{2x} \cdot e^{4x}$
+6. $\frac{(a^{3x})^{2}}{a^{2x}}$
+:::
+:::
+
+::: {.rep-bloc}
+1) $3^{4} \cdot 3^{6} = 3^{4+6} = 3^{10}$ ([$a^{m+p}=a^{m} a^{p}$]{style="color:#c1002a"}). 2) $\frac{8^{11}}{8^{5}} = 8^{11-5} = 8^{6}$ ([$\frac{a^{m}}{a^{p}}=a^{m-p}$]{style="color:#c1002a"}). 3) $(2^{3})^{4} = 2^{3 \cdot 4} = 2^{12}$ ([$(a^{m})^{p}=a^{m p}$]{style="color:#c1002a"}). 4) $5^{-3} = \frac{1}{5^{3}} = \frac{1}{125}$ ([$a^{-p}=\frac{1}{a^{p}}$]{style="color:#c1002a"}). 5) $e^{2x} \cdot e^{4x} = e^{6x}$. 6) $\frac{(a^{3x})^{2}}{a^{2x}} = \frac{a^{6x}}{a^{2x}} = a^{4x}$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété des règles de calcul](3-definition-de-la-fonction-exponentielle.qmd#propriete-1-1).
+
+## Indice 2 {.unlisted}
+
+Produit, quotient ou puissance de puissance ? Les bases sont-elles égales ?
+
+## Indice 3 {.unlisted}
+
+Pour 6), commence par $(a^{3 x})^{2} = a^{6 x}$.
+
+## Solution {.unlisted}
+
+1. $3^{4} \cdot 3^{6} = 3^{4 + 6} = 3^{10}$ (produit : $a^{m} \cdot a^{p} = a^{m + p}$).
+2. $\frac{8^{11}}{8^{5}} = 8^{11 - 5} = 8^{6}$ (quotient : $a^{m} / a^{p} = a^{m - p}$).
+3. $(2^{3})^{4} = 2^{3 \cdot 4} = 2^{12}$ (puissance d’une puissance : $(a^{m})^{p} = a^{m p}$).
+4. $5^{-3} = \frac{1}{5^{3}} = \frac{1}{125}$ (exposant négatif : $a^{-p} = 1 / a^{p}$).
+5. $e^{2 x} \cdot e^{4 x} = e^{2 x + 4 x} = e^{6 x}$ (produit).
+6. $\frac{(a^{3 x})^{2}}{a^{2 x}} = \frac{a^{6 x}}{a^{2 x}} = a^{6 x - 2 x} = a^{4 x}$ (puissance d’une puissance, puis quotient).
+
+## Pièges {.unlisted}
+
+- Diviser les exposants dans un quotient : $8^{11} / 8^{5} \neq 8^{11/5}$.
+:::
+:::
+
+::: {#exercice-S1-4 data-sorte="exercice" data-num="S1.4" data-id="6UAA4.ex.063" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.4]{.exo-titre} [[A1]{.exo-comp} ★☆☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+On considère la fonction $f(x) = 180 \cdot 1{,}06^{x}$. À l’aide de la calculatrice, calcule les valeurs suivantes. Donne chaque résultat au dixième près.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+1. $f(0)$
+2. $f(4)$
+3. $f(9)$
+:::
+
+::: {.cellule}
+4. $f(-3)$
+5. $f(2{,}5)$
+6. $f(6{,}75)$
+:::
+:::
+
+::: {.rep-bloc}
+$f(0) = 180$ ; $f(4) \approx 227{,}2$ ; $f(9) \approx 304{,}1$ ; $f(-3) \approx 151{,}1$ ; $f(2{,}5) \approx 208{,}2$ ; $f(6{,}75) \approx 266{,}7$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition de la fonction exponentielle](3-definition-de-la-fonction-exponentielle.qmd#definition-1-3) : elle est définie pour tout réel.
+
+## Indice 2 {.unlisted}
+
+Comment saisir un exposant négatif ou décimal sur ta calculatrice ?
+
+## Indice 3 {.unlisted}
+
+Calcule $1{,}06^{x}$, multiplie par $180$, puis arrondis au dixième.
+
+## Solution {.unlisted}
+
+$f(0) = 180$ ; $f(4) \approx 227{,}2$ ; $f(9) \approx 304{,}1$ ; $f(-3) \approx 151{,}1$ ; $f(2{,}5) \approx 208{,}2$ ; $f(6{,}75) \approx 266{,}7$.
+
+## Pièges {.unlisted}
+
+- Calculer $(180 \cdot 1{,}06)^{x}$ : la puissance porte seulement sur $1{,}06$.
+- Pour $f(-3)$, saisir $-3$ sans parenthèses dans l’exposant.
+:::
+:::
+
+# Croissance exponentielle : tableaux et graphiques
+
+::: {#exercice-S1-5 data-sorte="exercice" data-num="S1.5" data-id="6UAA4.ex.064" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.5]{.exo-titre} [[C5]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Pour chaque tableau (pas de $x$ égaux), précise s’il y a croissance exponentielle. **Nomme le critère** que tu utilises (rapport constant pour des pas de $x$ égaux).
+
+::: {.grille style="--n:3"}
+::: {.cellule}
+::: {.tableau}
+| $x$ | $y$ |
+|:---:|:---:|
+| $0$ | $4$ |
+| $1$ | $12$ |
+| $2$ | $36$ |
+| $3$ | $108$ |
+:::
+:::
+
+::: {.cellule}
+::: {.tableau}
+| $x$ | $y$ |
+|:---:|:---:|
+| $0$ | $7$ |
+| $1$ | $10$ |
+| $2$ | $13$ |
+| $3$ | $16$ |
+:::
+:::
+
+::: {.cellule}
+::: {.tableau}
+| $x$ | $y$ |
+|:---:|:---:|
+| $1$ | $1$ |
+| $2$ | $8$ |
+| $3$ | $27$ |
+| $4$ | $64$ |
+:::
+:::
+:::
+
+::: {.rep-bloc}
+Tableau A : $4 \to 12 \to 36 \to 108$, rapport constant $\times 3$ : **oui** (base $3$). Tableau B : $7 \to 10 \to 13 \to 16$, on *ajoute* $+3$ (affine) : **non**. Tableau C : $1 \to 8 \to 27 \to 64$ (cubes), rapports $8$, $\frac{27}{8}$, $\frac{64}{27}$ non constants : **non**.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition de la croissance exponentielle](1-croissance-exponentielle.qmd#definition-1-1).
+
+## Indice 2 {.unlisted}
+
+Calcule les quotients de deux valeurs consécutives de $y$ : sont-ils égaux ?
+
+## Indice 3 {.unlisted}
+
+Premier tableau : $\frac{12}{4}$, $\frac{36}{12}$, $\frac{108}{36}$.
+
+## Solution {.unlisted}
+
+Critère : pour des pas de $x$ égaux, la croissance est exponentielle si le quotient de deux valeurs consécutives de $y$ est constant.
+
+- Tableau A : $\frac{12}{4} = \frac{36}{12} = \frac{108}{36} = 3$ : croissance exponentielle de base $3$.
+- Tableau B : $\frac{10}{7} \neq \frac{13}{10}$ : pas exponentielle ; les différences sont constantes ($+3$), c’est une croissance affine.
+- Tableau C : $\frac{8}{1} = 8$, $\frac{27}{8}$, $\frac{64}{27}$ : quotients différents, pas exponentielle (ce sont les cubes $x^{3}$).
+
+## Pièges {.unlisted}
+
+- Regarder les différences : elles signalent une croissance affine, pas exponentielle.
+:::
+:::
+
+::: {#exercice-S1-6 data-sorte="exercice" data-num="S1.6" data-id="6UAA4.ex.065" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.6]{.exo-titre} [[T2]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Une culture de bactéries compte $50$ individus à l’instant $0$. Chaque heure, la population **triple**. Notons $b_{n}$ le nombre de bactéries après $n$ heures.
+
+1. Calcule $b_{0}$, $b_{1}$, $b_{2}$, $b_{3}$.
+2. Justifie que $(b_{n})$ vérifie le **critère de croissance exponentielle** (rapport constant), puis donne l’expression de $b_{n}$ en fonction de $n$.
+3. À l’aide de la calculatrice, détermine le plus petit $n$ tel que $b_{n}$ dépasse un million d’individus.
+
+::: {.rep-bloc}
+1) $b_{0}=50$, $b_{1}=150$, $b_{2}=450$, $b_{3}=1 \, 350$. 2) Rapport constant $\times 3$ à chaque étape : croissance exponentielle de base $3$, donc $b_{n} = 50 \cdot 3^{n}$. 3) $b_{9} = 50 \cdot 3^{9} = 984 \, 150 < 1$ million et $b_{10} = 50 \cdot 3^{10} \approx 2 \, 952 \, 450 > 1$ million : le plus petit $n$ qui convient est $n = 10$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition de la croissance exponentielle](1-croissance-exponentielle.qmd#definition-1-1) et l’[activité du secret](1-croissance-exponentielle.qmd#activite-1-1).
+
+## Indice 2 {.unlisted}
+
+Par quel nombre multiplie-t-on pour passer de $b_{n}$ à $b_{n + 1}$ ?
+
+## Indice 3 {.unlisted}
+
+$b_{n} = 50 \cdot 3^{n}$ ; calcule $b_{9}$ et $b_{10}$.
+
+## Solution {.unlisted}
+
+1. $b_{0} = 50$, $b_{1} = 150$, $b_{2} = 450$, $b_{3} = 1 \, 350$.
+2. $b_{n + 1} / b_{n} = 3$ à chaque étape : le quotient est constant, c’est une croissance exponentielle de base $3$. Donc $b_{n} = 50 \cdot 3^{n}$.
+3. $b_{9} = 50 \cdot 3^{9} = 984 \, 150 < 1 \, 000 \, 000$ et $b_{10} = 50 \cdot 3^{10} = 2 \, 952 \, 450 > 1 \, 000 \, 000$. Le plus petit $n$ qui convient est $n = 10$.
+
+## Pièges {.unlisted}
+
+- Écrire $b_{n} = 50 + 3 n$ : la population triple, elle ne gagne pas $3$ individus par heure.
+- Écrire $b_{n} = 3^{n}$ en oubliant la population initiale.
+:::
+:::
+
+::: {#exercice-S1-7 data-sorte="exercice" data-num="S1.7" data-id="6UAA4.ex.066" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.7]{.exo-titre} [[C4]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Un filtre à eau retient une partie des impuretés : à chaque passage, il ne laisse passer que $60 \%$ des impuretés présentes. On note $I(n)$ la quantité (en mg) d’impuretés restantes après $n$ passages, avec $I(0) = 1000$ mg.
+
+1. Calcule $I(1)$, $I(2)$, $I(3)$.
+2. Quel est le coefficient multiplicateur d’un passage au suivant ? Donne l’expression de $I(n)$ en fonction de $n$.
+3. À l’aide de la calculatrice, détermine le plus petit $n$ tel que $I(n) < 10$ mg (soit moins de $1 \%$ de la quantité initiale).
+
+::: {.rep-bloc}
+1) $I(1) = 600$, $I(2) = 360$, $I(3) = 216$ (mg). 2) Coefficient $\times 0{,}6$ à chaque passage ($60 \%$ laissés passer) : $I(n) = 1000 \cdot 0{,}6^{n}$. 3) $I(9) \approx 10{,}08$ mg (encore $> 10$), $I(10) \approx 6{,}05$ mg $< 10$ mg : il faut $n = 10$ passages.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[activité de la batterie](2-construire-une-fonction-exponentielle.qmd#activite-1-4) : une décroissance exponentielle multiplie par un nombre inférieur à $1$.
+
+## Indice 2 {.unlisted}
+
+Si le filtre laisse passer $60 \%$, quelle part des impuretés reste après un passage ?
+
+## Indice 3 {.unlisted}
+
+Le coefficient vaut $0{,}6$ ; $I(n) = 1000 \cdot 0{,}6^{n}$.
+
+## Solution {.unlisted}
+
+1. $I(1) = 1000 \cdot 0{,}6 = 600$ mg, $I(2) = 360$ mg, $I(3) = 216$ mg.
+2. À chaque passage, la quantité est multipliée par $0{,}6$ : $I(n) = 1000 \cdot 0{,}6^{n}$.
+3. $I(9) = 1000 \cdot 0{,}6^{9} \approx 10{,}08$ mg $> 10$ mg et $I(10) \approx 6{,}05$ mg $< 10$ mg. Il faut $10$ passages.
+
+## Pièges {.unlisted}
+
+- Utiliser $0{,}4$ : le filtre laisse passer $60 \%$, c’est cette part qui reste dans l’eau.
+:::
+:::
+
+::: {#exercice-S1-8 data-sorte="exercice" data-num="S1.8" data-id="6UAA4.ex.067" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.8]{.exo-titre} [[A4]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Détermine l’expression analytique des fonctions exponentielles (ou multiples) représentées ci-dessous. Pour chacune, lis l’ordonnée à l’origine $k = f(0)$ et un second point pour trouver la base.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+a)
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 4.0, "w": 372, "h": 278, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "Math.pow(1.5, x)"}}], "points": []}'></div>
+```
+:::
+
+::: {.cellule}
+b)
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 5.0, "w": 372, "h": 278, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "Math.pow(0.6, x)"}}], "points": []}'></div>
+```
+:::
+
+::: {.cellule}
+c)
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": -8.0, "ymax": 0.0, "w": 372, "h": 278, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "((-2.0) * Math.pow(2.0, x))"}}], "points": []}'></div>
+```
+:::
+
+::: {.cellule}
+d)
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -2.0, "xmax": 5.0, "ymin": 0.0, "ymax": 4.0, "w": 372, "h": 278, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "Math.pow(1.15, x)"}}], "points": []}'></div>
+```
+:::
+
+::: {.cellule}
+e)
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 1.0, "ymin": 0.0, "ymax": 7.0, "w": 372, "h": 278, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "(2.0 * Math.pow(3.0, x))"}}], "points": []}'></div>
+```
+:::
+
+::: {.cellule}
+f)
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -1.0, "xmax": 3.0, "ymin": 0.0, "ymax": 7.0, "w": 372, "h": 278, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "y", "courbes": [{"pointille": false, "ep": 1.4, "f": {"js": "(4.0 * Math.pow((1.0 / 3.0), x))"}}], "points": []}'></div>
+```
+:::
+:::
+
+::: {.rep-bloc}
+a) $f(x) = 1{,}5^{x}$. b) $f(x) = 0{,}6^{x}$. c) $f(x) = -2 \cdot 2^{x}$ ($k=-2$, $a=2$). d) $f(x) = 1{,}15^{x}$. e) $f(x) = 2 \cdot 3^{x}$ ($k=2$, $a=3$). f) $f(x) = 4 \cdot (\frac{1}{3})^{x}$ ($k=4$, $a=\frac{1}{3}$).
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « lire un multiple »](5-multiples-dune-fonction-exponentielle.qmd#exemple-1-2).
+
+## Indice 2 {.unlisted}
+
+Que vaut $f(0)$ ? Et $f(1)$ ? Par quel nombre passe-t-on de l’un à l’autre ?
+
+## Indice 3 {.unlisted}
+
+$k = f(0)$ et $a = f(1) / f(0)$.
+
+## Solution {.unlisted}
+
+- a) $f(0) = 1$, $f(1) = 1{,}5$ : $f(x) = 1{,}5^{x}$.
+- b) $f(0) = 1$, $f(1) = 0{,}6$ : $f(x) = 0{,}6^{x}$.
+- c) $f(0) = -2$, $f(1) = -4$ : $a = 2$, $f(x) = -2 \cdot 2^{x}$.
+- d) $f(0) = 1$, $f(1) = 1{,}15$ : $f(x) = 1{,}15^{x}$ (lecture plus précise en $x = 5$ : $f(5) \approx 2$).
+- e) $f(0) = 2$, $f(1) = 6$ : $a = 3$, $f(x) = 2 \cdot 3^{x}$.
+- f) $f(0) = 4$, $f(1) = \frac{4}{3}$ : $a = \frac{1}{3}$, $f(x) = 4 \cdot (\frac{1}{3})^{x}$.
+
+## Pièges {.unlisted}
+
+- En c), chercher une base négative : le signe vient de $k$.
+:::
+:::
+
+# Transformations et lecture graphique
+
+::: {#exercice-S1-9 data-sorte="exercice" data-num="S1.9" data-id="6UAA4.ex.068" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.9]{.exo-titre} [[A2]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Soit $f(x) = 3^{x}$. Associe chaque expression à la transformation géométrique correspondante du graphe de $f$, puis donne les coordonnées du point d’intersection de chaque graphe avec l’axe des ordonnées.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+1. $g(x) = 3^{x} - 1$
+2. $h(x) = 3^{x + 2}$
+3. $k(x) = 4 \cdot 3^{x}$
+4. $l(x) = 3^{-x}$
+:::
+
+::: {.cellule}
++ translation de $1$ unité vers le bas ;
+
+1. translation de $2$ unités vers la gauche ;
+2. étirement vertical de facteur $4$ ;
+3. symétrie par rapport à l’axe des ordonnées.
+:::
+:::
+
+::: {.rep-bloc}
+$g$ ⟶ translation vers le bas, o.à.o. $(0, 0)$. $h$ ⟶ translation vers la gauche, o.à.o. $(0, 9)$. $k$ ⟶ étirement vertical, o.à.o. $(0, 4)$. $l$ ⟶ symétrie d’axe $y$, o.à.o. $(0, 1)$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété de symétrie d’axe $y$](4-proprietes-et-caracteristiques-graphique.qmd#propriete-1-2) et la [définition des multiples](5-multiples-dune-fonction-exponentielle.qmd#definition-1-4).
+
+## Indice 2 {.unlisted}
+
+On modifie le résultat ($+ \ldots$, $\times \ldots$) ou la variable ($x + 2$, $-x$) ?
+
+## Indice 3 {.unlisted}
+
+Calcule $g(0)$, $h(0)$, $k(0)$ et $l(0)$.
+
+## Solution {.unlisted}
+
+- $g(x) = 3^{x} - 1$ : translation de $1$ unité vers le bas (1). $g(0) = 0$ : point $(0, 0)$.
+- $h(x) = 3^{x + 2}$ : translation de $2$ unités vers la gauche (2). $h(0) = 9$ : point $(0, 9)$.
+- $k(x) = 4 \cdot 3^{x}$ : étirement vertical de facteur $4$ (3). $k(0) = 4$ : point $(0, 4)$.
+- $l(x) = 3^{-x}$ : symétrie d’axe $y$ (4). $l(0) = 1$ : point $(0, 1)$.
+
+## Pièges {.unlisted}
+
+- Pour $h$, croire que $x + 2$ déplace la courbe vers la droite.
+:::
+:::
+
+::: {#exercice-S1-10 data-sorte="exercice" data-num="S1.10" data-id="6UAA4.ex.069" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.10]{.exo-titre} [[A3]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Quatre tableaux de valeurs sont donnés ci-dessous. Associe chacun à l’une des expressions suivantes, en justifiant.
+
+$p(x) = 4 \cdot 2^{x}$ $q(x) = 2^{x}$ $r(x) = (\frac{1}{2})^{x}$ $s(x) = -2^{x}$
+
+::: {.grille style="--n:4"}
+::: {.cellule}
+Tableau I
+
+::: {.tableau}
+| $x$ | $y$ |
+|:---:|:---:|
+| $-1$ | $2$ |
+| $0$ | $4$ |
+| $1$ | $8$ |
+:::
+:::
+
+::: {.cellule}
+Tableau II
+
+::: {.tableau}
+| $x$ | $y$ |
+|:---:|:---:|
+| $-1$ | $\frac{1}{2}$ |
+| $0$ | $1$ |
+| $1$ | $2$ |
+:::
+:::
+
+::: {.cellule}
+Tableau III
+
+::: {.tableau}
+| $x$ | $y$ |
+|:---:|:---:|
+| $-1$ | $2$ |
+| $0$ | $1$ |
+| $1$ | $\frac{1}{2}$ |
+:::
+:::
+
+::: {.cellule}
+Tableau IV
+
+::: {.tableau}
+| $x$ | $y$ |
+|:---:|:---:|
+| $-1$ | $-\frac{1}{2}$ |
+| $0$ | $-1$ |
+| $1$ | $-2$ |
+:::
+:::
+:::
+
+::: {.rep-bloc}
+Tableau I $= p$ ($k=4$, $a=2$). Tableau II $= q$ ($k=1$, $a=2$). Tableau III $= r$ ($k=1$, $a=\frac{1}{2}$). Tableau IV $= s$ ($k=-1$, $a=2$).
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « lire un multiple »](5-multiples-dune-fonction-exponentielle.qmd#exemple-1-2) : $k = f(0)$ et $a = f(1) / f(0)$.
+
+## Indice 2 {.unlisted}
+
+Dans chaque tableau, que vaut $y$ pour $x = 0$ ? Et le quotient $y(1) / y(0)$ ?
+
+## Indice 3 {.unlisted}
+
+Calcule $p(0)$, $q(0)$, $r(0)$ et $s(0)$ et compare.
+
+## Solution {.unlisted}
+
+- Tableau I : $y(0) = 4$ et $y(1) / y(0) = 2$ : $k = 4$, $a = 2$, c’est $p(x) = 4 \cdot 2^{x}$.
+- Tableau II : $y(0) = 1$ et $y(1) / y(0) = 2$ : c’est $q(x) = 2^{x}$.
+- Tableau III : $y(0) = 1$ et $y(1) / y(0) = \frac{1}{2}$ : c’est $r(x) = (\frac{1}{2})^{x}$.
+- Tableau IV : $y(0) = -1$ et $y(1) / y(0) = 2$ : $k = -1$, $a = 2$, c’est $s(x) = -2^{x}$.
+
+## Pièges {.unlisted}
+
+- Confondre II et III : même valeur en $0$, mais l’une croît et l’autre décroît.
+:::
+:::
+
+# Modélisation
+
+::: {#exercice-S1-11 data-sorte="exercice" data-num="S1.11" data-id="6UAA4.ex.070" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.11]{.exo-titre} [[C3]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+La quantité d’un polluant présente dans un lac est modélisée par la fonction
+
+$$
+D(t) = 120 \cdot 0{,}9^{3 t},
+$$
+
+où $t$ est exprimé en années et $D(t)$ en tonnes.
+
+1. Que représente le nombre $120$ dans ce modèle ?
+2. Que représente le nombre $0{,}9$ ?
+3. Que signifie le facteur $3$ présent dans l’exposant ?
+4. Par quel facteur la quantité est-elle multipliée lorsque $t$ augmente d’une année ?
+5. La quantité diminue-t-elle de $10 \%$ par an ? Justifie ta réponse.
+
+::: {.rep-bloc}
+1) La quantité **initiale** ($t=0$), soit $120$ tonnes. 2) Le facteur multiplicatif par **tiers d’année** (quand $t$ augmente de $\frac{1}{3}$, l’exposant augmente de $1$). 3) Le phénomène se répète **trois fois par an** : chaque année, on multiplie trois fois par $0{,}9$. 4) Par an : $0{,}9^{3} = 0{,}729$. 5) **Non** : $-10 \%$ correspondrait au facteur $0{,}9$ par **tiers d’année** ; le facteur **annuel** vaut $0{,}729$, soit une baisse de $27{,}1 \%$ par an.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « modéliser une situation »](5-multiples-dune-fonction-exponentielle.qmd#exemple-1-3) et l’exercice 1.12 du cours.
+
+## Indice 2 {.unlisted}
+
+Quand $t$ augmente de $\frac{1}{3}$, de combien augmente l’exposant $3 t$ ?
+
+## Indice 3 {.unlisted}
+
+$D(t + 1) = 120 \cdot 0{,}9^{3 t + 3} = D(t) \cdot 0{,}9^{3}$.
+
+## Solution {.unlisted}
+
+1. $D(0) = 120$ : $120$ tonnes est la quantité initiale.
+2. Quand $t$ augmente de $\frac{1}{3}$, l’exposant $3 t$ augmente de $1$ : $0{,}9$ est le facteur multiplicatif par tiers d’année.
+3. Le facteur $3$ signifie que la multiplication par $0{,}9$ a lieu trois fois par an.
+4. $D(t + 1) = D(t) \cdot 0{,}9^{3} = D(t) \cdot 0{,}729$ : la quantité est multipliée par $0{,}729$ chaque année.
+5. Non. Le facteur annuel vaut $0{,}729 = 1 - 0{,}271$ : la quantité diminue de $27{,}1 \%$ par an. La diminution de $10 \%$ vaut par tiers d’année.
+
+## Pièges {.unlisted}
+
+- Tripler le pourcentage ($30 \%$ par an) : trois diminutions successives de $10 \%$ font $1 - 0{,}9^{3} = 27{,}1 \%$.
+:::
+:::
+
+::: {#exercice-S1-12 data-sorte="exercice" data-num="S1.12" data-id="6UAA4.ex.071" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.12]{.exo-titre} [[T1]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Pour chacune des situations suivantes, choisis le modèle le plus approprié parmi ceux rencontrés en classe, et justifie en une phrase.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+**Situations :**
+
+1. Une association caritative récolte $200$ € de dons supplémentaires chaque mois.
+2. Le nombre d’utilisateurs d’une application augmente de $8 \%$ chaque mois.
+3. Un glacier perd $5$ mètres d’épaisseur chaque année.
+4. La valeur de revente d’un smartphone diminue de $20 \%$ chaque année.
+:::
+
+::: {.cellule}
+**Modèles possibles :**
+
+- croissance affine ;
+- croissance exponentielle ;
+- décroissance affine ;
+- décroissance exponentielle.
+:::
+:::
+
+::: {.rep-bloc}
+1) Croissance **affine** : on **ajoute** $200$ € chaque mois (montant fixe). 2) Croissance **exponentielle** : on **multiplie** par $1{,}08$ ($+8 \%$) chaque mois. 3) Décroissance **affine** : on **retranche** $5$ m chaque année (montant fixe). 4) Décroissance **exponentielle** : on multiplie par $0{,}8$ chaque année.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [définition de la croissance exponentielle](1-croissance-exponentielle.qmd#definition-1-1).
+
+## Indice 2 {.unlisted}
+
+À chaque pas de temps, ajoute-t-on (retire-t-on) un même nombre, ou multiplie-t-on par un même nombre ?
+
+## Indice 3 {.unlisted}
+
+Un pourcentage constant revient à multiplier : $+8 \%$ donne $\times 1{,}08$.
+
+## Solution {.unlisted}
+
+1. Croissance affine : on ajoute chaque mois le même montant ($+200$ €).
+2. Croissance exponentielle : on multiplie chaque mois par $1{,}08$ ($+8 \%$).
+3. Décroissance affine : on retire chaque année la même épaisseur ($-5$ m).
+4. Décroissance exponentielle : on multiplie chaque année par $0{,}8$ ($-20 \%$).
+
+## Pièges {.unlisted}
+
+- Classer le glacier en décroissance exponentielle : il perd une épaisseur fixe, pas un pourcentage.
+:::
+:::
+
+::: {#exercice-S1-13 data-sorte="exercice" data-num="S1.13" data-id="6UAA4.ex.072" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.13]{.exo-titre} [[T2]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Une petite ville comptait $8 \, 000$ habitants en $2010$ ; sa population augmente de $4 \%$ chaque année.
+
+1. Donne l’expression $P(x)$ du nombre d’habitants $x$ années après $2010$.
+2. Combien d’habitants en $2020$ ? En $2025$ ?
+
+::: {.rep-bloc}
+$P(x) = 8 \, 000 \cdot 1{,}04^{x}$. En $2020$ ($x=10$) : $P(10) \approx 11 \, 842$ habitants. En $2025$ ($x=15$) : $P(15) \approx 14 \, 408$ habitants.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « modéliser une situation »](5-multiples-dune-fonction-exponentielle.qmd#exemple-1-3).
+
+## Indice 2 {.unlisted}
+
+Une augmentation de $4 \%$ par an : par quel nombre la population est-elle multipliée chaque année ?
+
+## Indice 3 {.unlisted}
+
+$P(x) = 8 \, 000 \cdot 1{,}04^{x}$ ; $2020$ correspond à $x = 10$.
+
+## Solution {.unlisted}
+
+1. Chaque année, la population est multipliée par $1 + 0{,}04 = 1{,}04$ : $P(x) = 8 \, 000 \cdot 1{,}04^{x}$.
+2. - En $2020$ ($x = 10$) : $P(10) = 8 \, 000 \cdot 1{,}04^{10} \approx 11 \, 842$ habitants.
+
+   - En $2025$ ($x = 15$) : $P(15) = 8 \, 000 \cdot 1{,}04^{15} \approx 14 \, 408$ habitants.
+
+## Pièges {.unlisted}
+
+- Ajouter $4 \%$ de $8 \, 000$ chaque année ($+320$) : c’est un modèle affine, les $4 \%$ portent sur la population de l’année précédente.
+:::
+:::
+
+::: {#exercice-S1-14 data-sorte="exercice" data-num="S1.14" data-id="6UAA4.ex.073" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.14]{.exo-titre} [[T3]{.exo-comp} ★★★]{.exo-meta}
+:::
+
+::: {.exo-corps}
+En raison de l’inflation, le pouvoir d’achat réel d’un capital de $15 \, 000$ € diminue d’environ $6 \%$ par an s’il n’est pas placé.
+
+1. Modélise la valeur réelle $V(x)$ du capital $x$ années plus tard.
+2. Quelle est sa valeur réelle après $8$ ans ?
+3. Que peut-on en conclure sur l’intérêt de placer son argent ?
+
+::: {.rep-bloc}
+$V(x) = 15 \, 000 \cdot 0{,}94^{x}$. Après $8$ ans : $V(8) \approx 9 \, 144$ €. Sans placement, le capital perd donc plus du **quart** de sa valeur réelle en $8$ ans : il est important de placer son argent à un taux qui compense au moins l’inflation.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « modéliser une situation »](5-multiples-dune-fonction-exponentielle.qmd#exemple-1-3).
+
+## Indice 2 {.unlisted}
+
+Une perte de $6 \%$ par an : quelle part de sa valeur réelle le capital garde-t-il chaque année ?
+
+## Indice 3 {.unlisted}
+
+$V(x) = 15 \, 000 \cdot 0{,}94^{x}$.
+
+## Solution {.unlisted}
+
+1. Chaque année, la valeur réelle est multipliée par $1 - 0{,}06 = 0{,}94$ : $V(x) = 15 \, 000 \cdot 0{,}94^{x}$.
+2. $V(8) = 15 \, 000 \cdot 0{,}94^{8} \approx 9 \, 144$ €.
+3. En $8$ ans, le capital non placé perd environ $5 \, 856$ €, soit près de $40 \%$ de sa valeur réelle : il faut le placer à un taux au moins égal à l’inflation pour conserver son pouvoir d’achat.
+
+## Pièges {.unlisted}
+
+- Calculer $15 \, 000 - 8 \cdot 6 \%$ de $15 \, 000$ : la perte porte chaque année sur la valeur restante.
+:::
+:::
+
+# Équations exponentielles
+
+::: {#exercice-S1-15 data-sorte="exercice" data-num="S1.15" data-id="6UAA4.ex.074" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.15]{.exo-titre} [[A5]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Résous les équations suivantes. À l’étape clé, **nomme la propriété** qui autorise à égaler les exposants.
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+1. $7^{x} = 1$
+2. $2^{x+4} = 8$
+3. $10^{x-1} = 0{,}001$
+4. $3^{x} = \sqrt{3}$
+5. $(\frac{3}{4})^{x} = \frac{4}{3}$
+:::
+
+::: {.cellule}
+6. $e^{3x} = e^{2}$
+7. $e^{x^{2}} \cdot e^{-4x} = 1$
+8. $e^{2x^{2}} = \frac{1}{e^{2}}$
+9. $5^{3x-1} = \frac{1}{\sqrt{5}}$
+10. $\sqrt[3]{2} = \frac{1}{2^{3x+1}}$
+:::
+:::
+
+::: {.rep-bloc}
+1) $S=\{0\}$. 2) $x+4=3 \Longrightarrow x=-1$, $S=\{-1\}$. 3) $x-1=-3 \Longrightarrow x=-2$, $S=\{-2\}$. 4) $x=\frac{1}{2}$, $S=\{\frac{1}{2}\}$. 5) $x=-1$, $S=\{-1\}$. 6) $x=\frac{2}{3}$, $S=\{\frac{2}{3}\}$. 7) $x^{2}-4x=0 \Longrightarrow x=0$ ou $x=4$, $S=\{0{,}4\}$. 8) $2x^{2}=-2$ : impossible, $S=\emptyset$. 9) $x=\frac{1}{6}$, $S=\{\frac{1}{6}\}$. 10) $x=-\frac{4}{9}$, $S=\{-\frac{4}{9}\}$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété « égaler les exposants »](7-le-nombre-e-et-lexponentielle.qmd#propriete-1-5) et l’[exemple « ramener à une même base »](8-resoudre-des-equations-exponentielles-si.qmd#exemple-1-5).
+
+## Indice 2 {.unlisted}
+
+Peux-tu écrire chaque membre comme une puissance de la même base ? Pense à $1 = a^{0}$, $\sqrt{a} = a^{1/2}$, $1 / a = a^{-1}$.
+
+## Indice 3 {.unlisted}
+
+Par exemple, $2^{x + 4} = 8 = 2^{3}$, donc $x + 4 = 3$.
+
+## Solution {.unlisted}
+
+On écrit les deux membres comme puissances d’une même base, puis on égale les exposants : $a^{u} = a^{v} \Longleftrightarrow u = v$, car $a^{x}$ est strictement monotone (propriété 1.5).
+
+1. $7^{x} = 7^{0} \Longleftrightarrow x = 0$. $S = \{0\}$.
+2. $2^{x + 4} = 2^{3} \Longleftrightarrow x + 4 = 3 \Longleftrightarrow x = -1$. $S = \{-1\}$.
+3. $10^{x - 1} = 10^{-3} \Longleftrightarrow x - 1 = -3 \Longleftrightarrow x = -2$. $S = \{-2\}$.
+4. $3^{x} = 3^{1/2} \Longleftrightarrow x = \frac{1}{2}$. $S = \{\frac{1}{2}\}$.
+5. $(\frac{3}{4})^{x} = (\frac{3}{4})^{-1} \Longleftrightarrow x = -1$. $S = \{-1\}$.
+6. $e^{3 x} = e^{2} \Longleftrightarrow 3 x = 2 \Longleftrightarrow x = \frac{2}{3}$. $S = \{\frac{2}{3}\}$.
+7. $e^{x^{2} - 4 x} = e^{0} \Longleftrightarrow x^{2} - 4 x = 0 \Longleftrightarrow x (x - 4) = 0 \Longleftrightarrow x = 0$ ou $x = 4$. $S = \{0 ; 4\}$.
+8. $e^{2 x^{2}} = e^{-2} \Longleftrightarrow 2 x^{2} = -2$, impossible car $2 x^{2} \geq 0$. $S = \emptyset$.
+9. $5^{3 x - 1} = 5^{-1/2} \Longleftrightarrow 3 x - 1 = -\frac{1}{2} \Longleftrightarrow x = \frac{1}{6}$. $S = \{\frac{1}{6}\}$.
+10. $2^{1/3} = 2^{-(3 x + 1)} \Longleftrightarrow \frac{1}{3} = -3 x - 1 \Longleftrightarrow x = -\frac{4}{9}$. $S = \{-\frac{4}{9}\}$.
+
+## Pièges {.unlisted}
+
+- Égaler les exposants avec des bases différentes ($2^{x + 4} = 8$ ne donne pas $x + 4 = 8$).
+- En 10), oublier le signe « $-$ » de $1 / 2^{3 x + 1} = 2^{-(3 x + 1)}$.
+:::
+:::
+
+::: {#exercice-S1-16 data-sorte="exercice" data-num="S1.16" data-id="6UAA4.ex.075" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice S1.16]{.exo-titre} [[C7]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Voici la résolution de l’équation $9^{x-1} = 27$. **Justifie chaque étape** en nommant la règle ou la propriété utilisée.
+
+$$
+9^{x-1} = 27 \quad \Longleftrightarrow \quad (3^{2})^{x-1} = 3^{3} \quad \text{étape 1 :} \text{…………}  \\ \Longleftrightarrow \quad 3^{2x-2} = 3^{3} \quad \text{étape 2 :} \text{…………}  \\ \Longleftrightarrow \quad 2x-2 = 3 \quad \text{étape 3 :} \text{…………}  \\ \Longleftrightarrow \quad x = \frac{5}{2} \quad \text{étape 4 :} \text{…………}
+$$
+
+::: {.rep-bloc}
+Étape 1 : réécriture des deux membres en base $3$ ($9=3^{2}$, $27=3^{3}$). Étape 2 : règle des exposants $(a^{m})^{p} = a^{m p}$. Étape 3 : **stricte monotonie** de l’exponentielle ($a^{u}=a^{v} \Longleftrightarrow u=v$) — on égale les exposants. Étape 4 : on isole $x$. Donc $S = \{\frac{5}{2}\}$.
+:::
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la [propriété des règles de calcul](3-definition-de-la-fonction-exponentielle.qmd#propriete-1-1) et la [propriété « égaler les exposants »](7-le-nombre-e-et-lexponentielle.qmd#propriete-1-5).
+
+## Indice 2 {.unlisted}
+
+À chaque ligne, qu’est-ce qui a changé ?
+
+## Indice 3 {.unlisted}
+
+Étape 1 : $9 = 3^{2}$ et $27 = 3^{3}$.
+
+## Solution {.unlisted}
+
+- Étape 1 : on écrit les deux membres en base $3$ : $9 = 3^{2}$ et $27 = 3^{3}$.
+- Étape 2 : règle de la puissance d’une puissance, $(a^{m})^{p} = a^{m p}$ : $(3^{2})^{x - 1} = 3^{2 x - 2}$.
+- Étape 3 : la fonction $3^{x}$ est strictement croissante, donc $3^{u} = 3^{v} \Longleftrightarrow u = v$ (propriété 1.5).
+- Étape 4 : on résout l’équation du premier degré $2 x - 2 = 3$.
+
+Donc $S = \{\frac{5}{2}\}$.
+
+## Pièges {.unlisted}
+
+- Justifier l’étape 3 par « on simplifie les bases » : c’est la stricte monotonie qui autorise ce passage.
+:::
+:::

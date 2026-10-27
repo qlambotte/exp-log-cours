@@ -1,0 +1,15 @@
+---
+title: "Chapitre 4 — Échelles logarithmiques"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Comment tracer sur une même figure une population qui passe de $1$ à $1$ million ? Sur un axe ordinaire (dit **linéaire**), les petites valeurs s’écrasent contre l’axe et deviennent illisibles. La solution consiste à changer d’**échelle** : graduer l’axe non pas de $1$ en $1$, mais par **multiplications successives** — $1$, $10$, $100$, $1000$… C’est l’**échelle logarithmique**. Ce chapitre montre comment la lire, et surtout ce qu’elle révèle : sur le bon papier, une exponentielle et une puissance deviennent de simples **droites**, dont la pente livre directement les paramètres du modèle.
+
+## Sections
+
+1. [Construire une échelle logarithmique](1-construire-une-echelle-logarithmique.qmd)
+2. [Repère semi-logarithmique : la signature de l’exponentielle](2-repere-semi-logarithmique-la-signature.qmd) []{.suivi-sec data-exos="4.1"}
+3. [Repère log-log : la signature d’une puissance](3-repere-log-log-la-signature.qmd) []{.suivi-sec data-exos="4.2"}
+4. [Choisir le bon repère et extraire l’information](4-choisir-le-bon-repere-et.qmd) []{.suivi-sec data-exos="4.3 4.4 4.5"}
+5. [Pour aller plus loin : les échelles logarithmiques en sciences](5-pour-aller-plus-loin-les.qmd) []{.suivi-sec data-exos="4.6"}

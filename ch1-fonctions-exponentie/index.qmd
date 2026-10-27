@@ -1,0 +1,19 @@
+---
+title: "Chapitre 1 — Fonctions exponentielles"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Beaucoup de phénomènes — une rumeur qui se répand, un capital qui fructifie, une batterie qui se vide, une population qui grandit — partagent une même propriété : d’un pas de temps au suivant, la quantité étudiée est toujours **multipliée** par un même nombre. Ce comportement, où l’on multiplie au lieu d’ajouter, s’appelle la **croissance exponentielle**. Ce chapitre étudie ces phénomènes à partir des fonctions qui les décrivent : les fonctions **exponentielles**.
+
+## Sections
+
+1. [Croissance exponentielle](1-croissance-exponentielle.qmd)
+2. [Construire une fonction exponentielle](2-construire-une-fonction-exponentielle.qmd)
+3. [Définition de la fonction exponentielle](3-definition-de-la-fonction-exponentielle.qmd) []{.suivi-sec data-exos="1.1 1.2"}
+4. [Propriétés et caractéristiques graphiques](4-proprietes-et-caracteristiques-graphique.qmd) []{.suivi-sec data-exos="1.3"}
+5. [Multiples d’une fonction exponentielle](5-multiples-dune-fonction-exponentielle.qmd) []{.suivi-sec data-exos="1.4 1.5 1.6 1.7 1.8 1.9 1.10 1.11 1.12 1.13 1.14 1.15 1.16 1.17"}
+6. [Des graphes tous semblables : vers un représentant privilégié](6-des-graphes-tous-semblables-vers.qmd)
+7. [Le nombre $e$ et l’exponentielle népérienne](7-le-nombre-e-et-lexponentielle.qmd) []{.suivi-sec data-exos="1.18"}
+8. [Résoudre des équations exponentielles simples](8-resoudre-des-equations-exponentielles-si.qmd) []{.suivi-sec data-exos="1.19 1.20 1.21"}
+9. [Exercices supplémentaires](9-exercices-supplementaires.qmd) []{.suivi-sec data-exos="S1.1 S1.2 S1.3 S1.4 S1.5 S1.6 S1.7 S1.8 S1.9 S1.10 S1.11 S1.12 S1.13 S1.14 S1.15 S1.16"}

@@ -1,0 +1,177 @@
+---
+title: "Modéliser avec les logarithmes"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Le logarithme sert dès qu’on cherche un **temps** ou un **exposant** inconnu dans un modèle exponentiel.
+
+::: {#exemple-2-10 data-sorte="exemple" data-num="2.10" data-page="47" data-phys="49" data-id="6UAA4.temps-doublement" data-type="exemple" data-tags="" .theo .theo-exemple}
+::: {.theo-head}
+**Exemple 2.10** — temps de doublement
+:::
+
+::: {.theo-body}
+Un capital croît de $4 \%$ par an : $C(t) = C_{0} \cdot 1{,}04^{t}$. Quand aura-t-il doublé ? On résout $1{,}04^{t} = 2$, soit $t = \log_{1{,}04} (2) = \frac{\ln 2}{\ln 1{,}04} \approx 17{,}7$ ans.
+:::
+:::
+
+::: {#exercice-2-19 data-sorte="exercice" data-num="2.19" data-page="48" data-phys="50" data-id="6UAA4.ex.040" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.19]{.exo-titre} [[T1]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+Pour chaque situation, dis si l’inconnue cherchée est un **exposant** (donc un logarithme) ou une **valeur** (donc une simple image).
+
+1. Une population de $C(t) = 6{,}5 \cdot 1{,}012^{t}$ milliards : en quelle **année** atteint-elle $9$ milliards ? [résoudre $1{,}012^{t} = 9 / 6{,}5$ : inconnue = exposant → logarithme.]{.rep}
+2. Le même modèle : quelle est la population **après $20$ ans** ? [calculer $C(20)$ : inconnue = valeur → simple image, pas de logarithme.]{.rep}
+3. Une dose $d(t) = 250 \cdot 10^{-0{,}075 t}$ : au bout de **combien d’heures** reste-t-il $100$ mg ? [résoudre $250 \cdot 10^{-0{,}075 t} = 100$ : inconnue = exposant → logarithme.]{.rep}
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis la section [« Modéliser avec les logarithmes »](#exemple-2-10).
+
+## Indice 2 {.unlisted}
+
+Ce qu’on cherche, est-ce le temps (dans l’exposant) ou la quantité (le résultat) ?
+
+## Indice 3 {.unlisted}
+
+Si l’inconnue est dans l’exposant, il faut résoudre une équation exponentielle, donc utiliser un logarithme.
+
+## Solution {.unlisted}
+
+1. On cherche $t$ tel que $6{,}5 \cdot 1{,}012^{t} = 9$ : l’inconnue est l’exposant, on utilise un logarithme.
+2. On calcule $C(20) = 6{,}5 \cdot 1{,}012^{20}$ : l’inconnue est une valeur, c’est une simple image.
+3. On cherche $t$ tel que $250 \cdot 10^{-0{,}075 t} = 100$ : l’inconnue est l’exposant, on utilise un logarithme.
+
+## Pièges {.unlisted}
+
+- Prendre un logarithme pour calculer $C(20)$ : il suffit de remplacer $t$ par $20$.
+:::
+:::
+
+::: {#exercice-2-20 data-sorte="exercice" data-num="2.20" data-page="48" data-phys="50" data-id="6UAA4.ex.041" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.20]{.exo-titre} [[T3]{.exo-comp} ★★★]{.exo-meta}
+:::
+
+::: {.exo-corps}
+**(Population mondiale)** En $2005$, la population mondiale était de $6{,}5$ milliards d’habitants, en progression de $1{,}2 \%$ par an. En quelle année aura-t-elle doublé, à ce rythme ?
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « temps de doublement »](#exemple-2-10).
+
+## Indice 2 {.unlisted}
+
+Quel modèle décrit la population $t$ années après $2005$ ? Quelle valeur doit-elle atteindre ?
+
+## Indice 3 {.unlisted}
+
+$6{,}5 \cdot 1{,}012^{t} = 13 \Longleftrightarrow 1{,}012^{t} = 2$.
+
+## Solution {.unlisted}
+
+La population $t$ années après $2005$ vaut $P(t) = 6{,}5 \cdot 1{,}012^{t}$ (en milliards).
+
+Elle a doublé quand $P(t) = 13$ : $6{,}5 \cdot 1{,}012^{t} = 13 \Longleftrightarrow 1{,}012^{t} = 2 \Longleftrightarrow t = \frac{\ln 2}{\ln 1{,}012} \approx 58{,}1$.
+
+La population aura doublé au cours de l’année $2005 + 58 = 2063$.
+
+## Pièges {.unlisted}
+
+- Diviser $100 \%$ par $1{,}2 \%$ ($\approx 83$ ans) : la croissance n’est pas affine.
+:::
+:::
+
+::: {#exercice-2-21 data-sorte="exercice" data-num="2.21" data-page="48" data-phys="50" data-id="6UAA4.ex.042" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.21]{.exo-titre} [[T3]{.exo-comp} ★★☆]{.exo-meta}
+:::
+
+::: {.exo-corps}
+**(Placement)** On place $4000$ € à intérêts composés au taux annuel de $5 \%$. Au bout de combien d’années le capital atteint-il $8000$ € ?
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis l’[exemple « temps de doublement »](#exemple-2-10).
+
+## Indice 2 {.unlisted}
+
+Par quel nombre le capital est-il multiplié chaque année ? Quelle équation faut-il résoudre ?
+
+## Indice 3 {.unlisted}
+
+$4000 \cdot 1{,}05^{n} = 8000 \Longleftrightarrow 1{,}05^{n} = 2$.
+
+## Solution {.unlisted}
+
+Après $n$ années, le capital vaut $C(n) = 4000 \cdot 1{,}05^{n}$.
+
+$C(n) = 8000 \Longleftrightarrow 1{,}05^{n} = 2 \Longleftrightarrow n = \frac{\ln 2}{\ln 1{,}05} \approx 14{,}2$.
+
+Les intérêts sont versés en fin d’année : $C(14) \approx 7 \, 920$ € et $C(15) \approx 8 \, 316$ €. Le capital atteint $8000$ € au bout de $15$ ans.
+
+## Pièges {.unlisted}
+
+- Répondre $14$ ans : après $14$ versements, le capital n’a pas encore atteint $8000$ €.
+- Calculer avec des intérêts simples ($20$ ans).
+:::
+:::
+
+::: {#exercice-2-22 data-sorte="exercice" data-num="2.22" data-page="48" data-phys="50" data-id="6UAA4.ex.043" data-type="exercice" data-tags="" .exo}
+::: {.exo-tete}
+[✎ Exercice 2.22]{.exo-titre} [[T3]{.exo-comp} ★★★]{.exo-meta}
+:::
+
+::: {.exo-corps}
+**(Médicament)** On injecte $250$ mg d’un médicament ; la dose présente dans le sang est $d(t) = d_{0} \cdot 10^{-0{,}075 t}$ ($t$ en heures). Le médicament n’a plus d’effet en dessous de $100$ mg. Après combien de temps faut-il réinjecter une dose ?
+:::
+:::
+
+::: {.aides}
+::: {.panel-tabset}
+## Indice 1 {.unlisted}
+
+Relis les exemples [2.8](7-resoudre-les-equations-exponentielles-a.qmd#exemple-2-8) et [2.9](7-resoudre-les-equations-exponentielles-a.qmd#exemple-2-9).
+
+## Indice 2 {.unlisted}
+
+Que vaut $d_{0}$ ? Quelle équation traduit « il reste $100$ mg » ?
+
+## Indice 3 {.unlisted}
+
+$250 \cdot 10^{-0{,}075 t} = 100 \Longleftrightarrow 10^{-0{,}075 t} = 0{,}4$.
+
+## Solution {.unlisted}
+
+$d_{0} = 250$ mg, donc $d(t) = 250 \cdot 10^{-0{,}075 t}$.
+
+$d(t) = 100 \Longleftrightarrow 10^{-0{,}075 t} = 0{,}4 \Longleftrightarrow -0{,}075 t = \log 0{,}4 \Longleftrightarrow t = -\frac{\log 0{,}4}{0{,}075} \approx 5{,}31$.
+
+La dose descend sous $100$ mg après environ $5{,}3$ h, soit $5$ h $18$ min : il faut réinjecter une dose au bout d’environ $5$ h $18$ min.
+
+## Pièges {.unlisted}
+
+- Oublier le signe : $\log 0{,}4 < 0$, et $t$ doit être positif.
+- Convertir $5{,}31$ h en $5$ h $31$ min : $0{,}31$ h $\approx 18$ min.
+:::
+:::
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 2 questions →](../autoeval.qmd#sections=sec-model-log)
+:::

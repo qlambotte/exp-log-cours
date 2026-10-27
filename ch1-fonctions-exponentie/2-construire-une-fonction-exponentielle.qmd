@@ -1,0 +1,223 @@
+---
+title: "Construire une fonction exponentielle"
+---
+
+<!-- GÉNÉRÉ par typweb à partir des notes Typst : NE PAS ÉDITER (les modifications seraient écrasées). -->
+
+Nous savons calculer $2^{n}$ quand $n$ est un entier. Tu as appris de plus que $2^{\frac{1}{2}}=\sqrt{2}$. Mais que vaudrait $2^{x}$ pour un $x$ *réel* quelconque, par exemple $2^{\sqrt{2}}$ ? Construisons le sens de $a^{x}$ pas à pas, à partir d’une situation qui décroît.
+
+## Une situation de décroissance exponentielle : la batterie
+
+::: {#activite-1-4 data-sorte="activite" data-num="1.4" data-page="6" data-phys="8" data-id="6UAA4.batterie-se-decharge" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 1.4** — la batterie qui se décharge
+:::
+
+::: {.theo-body}
+Une batterie conserve $80 \%$ de sa charge chaque heure. Notons $Q(t)$ la **fraction de charge** restante après $t$ heures. Au départ, la batterie est pleine : $Q(0) = 1$ (c’est-à-dire $100 \%$). Pour passer d’une heure à la suivante, on multiplie par $0{,}8$ :
+
+$$
+Q(t + 1) = \class{rep}{0{,}8 \cdot Q(t)}.
+$$
+
+a) Complète (charge en fraction, avec $1 = 100 \%$) :
+
+::: {.tableau}
+| $t$ (h) | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| $Q(t)$ | $1$ | $0{,}8$ | [$0{,}64$]{.rep} | [$0{,}512$]{.rep} | [$0{,}4096$]{.rep} | [$0{,}32768$]{.rep} |
+:::
+
+b) Écris une formule donnant $Q(t)$ directement, pour $t$ entier : $Q(t) =$ [$0{,}8^{t}$]{.rep}
+:::
+:::
+
+La formule $Q(t) = 0{,}8^{t}$ vérifie la relation de croissance exponentielle:
+
+$$
+Q(t + s) = Q(t) \cdot Q(s).
+$$
+
+Vérifie-le sur le tableau : $Q(2) = 0{,}64 = 0{,}8 \cdot 0{,}8 = Q(1) \cdot Q(1)$.
+
+La formule $Q(t) = 0{,}8^{t}$ a un sens clair pour $t$ entier. Mais une batterie ne se décharge pas par sauts : après une demi-heure, il y a bien une charge ! Quel sens donner à $Q(\frac{1}{2}) = 0{,}8^{\frac{1}{2}}$, c’est-à-dire à un exposant **fractionnaire** ? Avant de répondre, remettons en mémoire ce que nous savons déjà des exposants.
+
+::: {#activite-1-5 data-sorte="activite" data-num="1.5" data-page="7" data-phys="9" data-id="6UAA4.reactiver-regles-exposants" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 1.5** — réactiver les règles des exposants
+:::
+
+::: {.theo-body}
+Les règles des exposants **entiers**, vues les années précédentes, seront notre seul point d’appui. Complète, avec $a > 0$ :
+
+::: {.grille style="--n:2"}
+::: {.cellule}
+- $a^{0} =$ [$1$]{.rep}
+
+- $a^{1} =$ [$a$]{.rep}
+- $a^{-n} =$ [$\frac{1}{a^{n}}$]{.rep}
+:::
+
+::: {.cellule}
+- $a^{m + p} =$ [$a^{m} \cdot a^{p}$]{.rep}
+
+- $(a^{m})^{p} =$ [$a^{m p}$]{.rep}
+:::
+:::
+
+Tu connais aussi *deux notations* d’exposants fractionnaires : la racine carrée $a^{\frac{1}{2}} = \sqrt{a}$ (car $(\sqrt{a})^{2} = a$) et la racine cubique $a^{\frac{1}{3}} = \sqrt[3]{a}$.
+:::
+:::
+
+**Des exposants entiers vers les exposants fractionnaires.** On dispose de deux choses : la relation $Q(t + s) = Q(t) \cdot Q(s)$ et la valeur $Q(1) = 0{,}8$. Elles suffisent à fabriquer les exposants fractionnaires.
+
+::: {#activite-1-6 data-sorte="activite" data-num="1.6" data-page="7" data-phys="9" data-id="6UAA4.construire-exposants-fractionnaires" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 1.6** — construire les exposants fractionnaires
+:::
+
+::: {.theo-body}
+a) Applique la relation $Q(t + s) = Q(t) \cdot Q(s)$ avec $t = s = \frac{1}{2}$ :
+
+$$
+Q(1) = Q(\frac{1}{2} + \frac{1}{2}) = Q(\frac{1}{2}) \cdot Q(\frac{1}{2}) = \class{rep}{Q(\frac{1}{2})^{2}}.
+$$
+
+Donc $Q(\frac{1}{2})^{2} = Q(1) = 0{,}8$, d’où $Q(\frac{1}{2}) = \class{rep}{\sqrt{0{,}8}}$.
+
+::: {#cadre-doit .cadre-info}
+Il n’y a pas de choix : $0{,}8^{\frac{1}{2}}$ **doit** valoir $\sqrt{0{,}8}$, sinon la relation $Q(t+s) = Q(t) \cdot Q(s)$ serait fausse. La notation « exposant $\frac{1}{2}$ » ne tombe pas du ciel — c’est la *seule* notation cohérente.
+:::
+
+b) De même, $Q(1) = Q(\frac{1}{3} + \frac{1}{3} + \frac{1}{3}) = Q(\frac{1}{3})^{3}$, d’où
+
+$$
+Q(\frac{1}{3}) = \class{rep}{\sqrt[3]{0{,}8}}, \quad \text{et en général} \quad Q(\frac{1}{n}) = \class{rep}{\sqrt[n]{0{,}8}}.
+$$
+
+c) Enfin, pour un exposant $\frac{m}{n}$ quelconque, $Q(\frac{m}{n}) = (Q(\frac{1}{n}))^{m} = \class{rep}{\sqrt[n]{0{,}8^{m}}}$.
+:::
+:::
+
+De proche en proche, la relation $Q(t+s) = Q(t) \cdot Q(s)$ nous a permis de donner un sens à $0{,}8^{t}$ pour **tout exposant rationnel**.
+
+Ainsi, on arrive à combler les trous de la suite $0{,}8^{n}$, en calculant ce qui se passe aux demi-heures, aux quarts d’heure, aux minutes…. On fabrique ainsi une fonction qui est définie pour tout $t \geq 0$: $Q(t)=0{,}8^{t}$.
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": 0.0, "xmax": 8.0, "ymin": 0.0, "ymax": 1.1, "w": 558, "h": 290, "xpas": 1.0, "ypas": 0.2, "xlabel": "t", "ylabel": "Q(t)", "courbes": [{"couleur": "#c1002a", "pointille": false, "ep": 1.3, "f": {"js": "Math.pow(0.8, x)"}}], "points": [{"x": 0.0, "y": 1.0}, {"x": 1.0, "y": 0.8}, {"x": 2.0, "y": 0.64}, {"x": 3.0, "y": 0.512}, {"x": 4.0, "y": 0.4096}], "lecture": true}'></div>
+```
+
+[La charge $Q(t) = 0{,}8^{t}$ : une courbe qui décroît, sans jamais atteindre $0$.]{style="color:#6a737d"}
+
+Remarque au passage : cette courbe est **strictement décroissante**, comme la suite $0{,}8^{0}, 0{,}8^{1}, 0{,}8^{2}, \ldots$ dont elle est issue.
+
+## De $\mathbb{R}^{> 0}$ à $\mathbb{R}$ : la courbe qui se dessine
+
+La fonction représentant la décharge de la batterie n’existe que pour $t \geq 0$, dans notre construction. Nous allons voir, sur un autre exemple, comment prolonger aux exposants négatifs. Reprenons la même construction sur une situation qui *croît*, et poussons-la jusqu’à donner un sens à $2^{x}$ pour **tout** réel $x$ — les négatifs compris. Place $1$ € à un taux annuel de $100 \%$ : le capital double chaque année, donc après $n$ ans on a $C_{n} = 2^{n}$. Nous allons partir de cette suite pour la compléter.
+
+Comme pour la batterie, on peut envisager l’évolution par demi-années (pas $\frac{1}{2}$, ce qui ajoute les points $2^{\frac{n}{2}}$), puis par quarts ($2^{\frac{n}{4}}$), huitièmes, etc. À chaque raffinement, de nouveaux points d’exposants fractionnaires viennent se glisser entre les précédents. Observe comme les trous se referment :
+
+::: {.grille style="--n:3"}
+::: {.cellule}
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": 0.0, "xmax": 3.0, "ymin": 0.0, "ymax": 9.0, "w": 320, "h": 225, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "", "points": [{"x": 0.0, "y": 1.0}, {"x": 1.0, "y": 2.0}, {"x": 2.0, "y": 4.0}, {"x": 3.0, "y": 8.0}], "courbes": []}'></div>
+```
+
+[pas $= 1$]{style="color:#6a737d"}
+:::
+
+::: {.cellule}
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": 0.0, "xmax": 3.0, "ymin": 0.0, "ymax": 9.0, "w": 320, "h": 225, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "", "points": [{"x": 0.0, "y": 1.0}, {"x": 0.5, "y": 1.4142135623730951}, {"x": 1.0, "y": 2.0}, {"x": 1.5, "y": 2.8284271247461903}, {"x": 2.0, "y": 4.0}, {"x": 2.5, "y": 5.656854249492381}, {"x": 3.0, "y": 8.0}], "courbes": []}'></div>
+```
+
+[pas $= 1/2$]{style="color:#6a737d"}
+:::
+
+::: {.cellule}
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": 0.0, "xmax": 3.0, "ymin": 0.0, "ymax": 9.0, "w": 320, "h": 225, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "", "points": [{"x": 0.0, "y": 1.0}, {"x": 0.25, "y": 1.189207115002721}, {"x": 0.5, "y": 1.4142135623730951}, {"x": 0.75, "y": 1.681792830507429}, {"x": 1.0, "y": 2.0}, {"x": 1.25, "y": 2.378414230005442}, {"x": 1.5, "y": 2.8284271247461903}, {"x": 1.75, "y": 3.363585661014858}, {"x": 2.0, "y": 4.0}, {"x": 2.25, "y": 4.756828460010884}, {"x": 2.5, "y": 5.656854249492381}, {"x": 2.75, "y": 6.727171322029716}, {"x": 3.0, "y": 8.0}], "courbes": []}'></div>
+```
+
+[pas $= 1/4$]{style="color:#6a737d"}
+:::
+
+::: {.cellule}
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": 0.0, "xmax": 3.0, "ymin": 0.0, "ymax": 9.0, "w": 320, "h": 225, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "", "points": [{"x": 0.0, "y": 1.0}, {"x": 0.125, "y": 1.0905077326652577}, {"x": 0.25, "y": 1.189207115002721}, {"x": 0.375, "y": 1.2968395546510096}, {"x": 0.5, "y": 1.4142135623730951}, {"x": 0.625, "y": 1.5422108254079407}, {"x": 0.75, "y": 1.681792830507429}, {"x": 0.875, "y": 1.8340080864093424}, {"x": 1.0, "y": 2.0}, {"x": 1.125, "y": 2.1810154653305154}, {"x": 1.25, "y": 2.378414230005442}, {"x": 1.375, "y": 2.5936791093020193}, {"x": 1.5, "y": 2.8284271247461903}, {"x": 1.625, "y": 3.0844216508158815}, {"x": 1.75, "y": 3.363585661014858}, {"x": 1.875, "y": 3.668016172818685}, {"x": 2.0, "y": 4.0}, {"x": 2.125, "y": 4.362030930661031}, {"x": 2.25, "y": 4.756828460010884}, {"x": 2.375, "y": 5.187358218604039}, {"x": 2.5, "y": 5.656854249492381}, {"x": 2.625, "y": 6.168843301631763}, {"x": 2.75, "y": 6.727171322029716}, {"x": 2.875, "y": 7.33603234563737}, {"x": 3.0, "y": 8.0}], "courbes": []}'></div>
+```
+
+[pas $= 1/8$]{style="color:#6a737d"}
+:::
+
+::: {.cellule}
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": 0.0, "xmax": 3.0, "ymin": 0.0, "ymax": 9.0, "w": 320, "h": 225, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "", "points": [{"x": 0.0, "y": 1.0}, {"x": 0.0625, "y": 1.0442737824274138}, {"x": 0.125, "y": 1.0905077326652577}, {"x": 0.1875, "y": 1.1387886347566916}, {"x": 0.25, "y": 1.189207115002721}, {"x": 0.3125, "y": 1.241857812073484}, {"x": 0.375, "y": 1.2968395546510096}, {"x": 0.4375, "y": 1.3542555469368927}, {"x": 0.5, "y": 1.4142135623730951}, {"x": 0.5625, "y": 1.4768261459394993}, {"x": 0.625, "y": 1.5422108254079407}, {"x": 0.6875, "y": 1.6104903319492543}, {"x": 0.75, "y": 1.681792830507429}, {"x": 0.8125, "y": 1.7562521603732995}, {"x": 0.875, "y": 1.8340080864093424}, {"x": 0.9375, "y": 1.9152065613971474}, {"x": 1.0, "y": 2.0}, {"x": 1.0625, "y": 2.0885475648548275}, {"x": 1.125, "y": 2.1810154653305154}, {"x": 1.1875, "y": 2.277577269513383}, {"x": 1.25, "y": 2.378414230005442}, {"x": 1.3125, "y": 2.483715624146968}, {"x": 1.375, "y": 2.5936791093020193}, {"x": 1.4375, "y": 2.7085110938737853}, {"x": 1.5, "y": 2.8284271247461903}, {"x": 1.5625, "y": 2.9536522918789987}, {"x": 1.625, "y": 3.0844216508158815}, {"x": 1.6875, "y": 3.2209806638985086}, {"x": 1.75, "y": 3.363585661014858}, {"x": 1.8125, "y": 3.512504320746599}, {"x": 1.875, "y": 3.668016172818685}, {"x": 1.9375, "y": 3.830413122794295}, {"x": 2.0, "y": 4.0}, {"x": 2.0625, "y": 4.177095129709655}, {"x": 2.125, "y": 4.362030930661031}, {"x": 2.1875, "y": 4.555154539026766}, {"x": 2.25, "y": 4.756828460010884}, {"x": 2.3125, "y": 4.967431248293936}, {"x": 2.375, "y": 5.187358218604039}, {"x": 2.4375, "y": 5.417022187747571}, {"x": 2.5, "y": 5.656854249492381}, {"x": 2.5625, "y": 5.907304583757997}, {"x": 2.625, "y": 6.168843301631763}, {"x": 2.6875, "y": 6.441961327797017}, {"x": 2.75, "y": 6.727171322029716}, {"x": 2.8125, "y": 7.025008641493198}, {"x": 2.875, "y": 7.33603234563737}, {"x": 2.9375, "y": 7.66082624558859}, {"x": 3.0, "y": 8.0}], "courbes": []}'></div>
+```
+
+[pas $= 1/16$]{style="color:#6a737d"}
+:::
+
+::: {.cellule}
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": 0.0, "xmax": 3.0, "ymin": 0.0, "ymax": 9.0, "w": 320, "h": 225, "xpas": 1.0, "ypas": 2.0, "xlabel": "x", "ylabel": "", "points": [{"x": 0.0, "y": 1.0}, {"x": 0.03125, "y": 1.0218971486541166}, {"x": 0.0625, "y": 1.0442737824274138}, {"x": 0.09375, "y": 1.0671404006768237}, {"x": 0.125, "y": 1.0905077326652577}, {"x": 0.15625, "y": 1.1143867425958924}, {"x": 0.1875, "y": 1.1387886347566916}, {"x": 0.21875, "y": 1.1637248587775775}, {"x": 0.25, "y": 1.189207115002721}, {"x": 0.28125, "y": 1.215247359980469}, {"x": 0.3125, "y": 1.241857812073484}, {"x": 0.34375, "y": 1.2690509571917332}, {"x": 0.375, "y": 1.2968395546510096}, {"x": 0.40625, "y": 1.3252366431597413}, {"x": 0.4375, "y": 1.3542555469368927}, {"x": 0.46875, "y": 1.383909881963832}, {"x": 0.5, "y": 1.4142135623730951}, {"x": 0.53125, "y": 1.4451808069770467}, {"x": 0.5625, "y": 1.4768261459394993}, {"x": 0.59375, "y": 1.5091644275934228}, {"x": 0.625, "y": 1.5422108254079407}, {"x": 0.65625, "y": 1.5759808451078865}, {"x": 0.6875, "y": 1.6104903319492543}, {"x": 0.71875, "y": 1.645755478153965}, {"x": 0.75, "y": 1.681792830507429}, {"x": 0.78125, "y": 1.718619298122478}, {"x": 0.8125, "y": 1.7562521603732995}, {"x": 0.84375, "y": 1.7947090750031072}, {"x": 0.875, "y": 1.8340080864093424}, {"x": 0.90625, "y": 1.8741676341103}, {"x": 0.9375, "y": 1.9152065613971474}, {"x": 0.96875, "y": 1.9571441241754002}, {"x": 1.0, "y": 2.0}, {"x": 1.03125, "y": 2.0437942973082333}, {"x": 1.0625, "y": 2.0885475648548275}, {"x": 1.09375, "y": 2.1342808013536474}, {"x": 1.125, "y": 2.1810154653305154}, {"x": 1.15625, "y": 2.228773485191785}, {"x": 1.1875, "y": 2.277577269513383}, {"x": 1.21875, "y": 2.327449717555155}, {"x": 1.25, "y": 2.378414230005442}, {"x": 1.28125, "y": 2.430494719960938}, {"x": 1.3125, "y": 2.483715624146968}, {"x": 1.34375, "y": 2.5381019143834664}, {"x": 1.375, "y": 2.5936791093020193}, {"x": 1.40625, "y": 2.6504732863194826}, {"x": 1.4375, "y": 2.7085110938737853}, {"x": 1.46875, "y": 2.767819763927664}, {"x": 1.5, "y": 2.8284271247461903}, {"x": 1.53125, "y": 2.8903616139540933}, {"x": 1.5625, "y": 2.9536522918789987}, {"x": 1.59375, "y": 3.0183288551868457}, {"x": 1.625, "y": 3.0844216508158815}, {"x": 1.65625, "y": 3.151961690215773}, {"x": 1.6875, "y": 3.2209806638985086}, {"x": 1.71875, "y": 3.29151095630793}, {"x": 1.75, "y": 3.363585661014858}, {"x": 1.78125, "y": 3.437238596244956}, {"x": 1.8125, "y": 3.512504320746599}, {"x": 1.84375, "y": 3.5894181500062143}, {"x": 1.875, "y": 3.668016172818685}, {"x": 1.90625, "y": 3.7483352682206}, {"x": 1.9375, "y": 3.830413122794295}, {"x": 1.96875, "y": 3.9142882483508004}, {"x": 2.0, "y": 4.0}, {"x": 2.03125, "y": 4.0875885946164665}, {"x": 2.0625, "y": 4.177095129709655}, {"x": 2.09375, "y": 4.268561602707295}, {"x": 2.125, "y": 4.362030930661031}, {"x": 2.15625, "y": 4.45754697038357}, {"x": 2.1875, "y": 4.555154539026766}, {"x": 2.21875, "y": 4.65489943511031}, {"x": 2.25, "y": 4.756828460010884}, {"x": 2.28125, "y": 4.860989439921876}, {"x": 2.3125, "y": 4.967431248293936}, {"x": 2.34375, "y": 5.076203828766933}, {"x": 2.375, "y": 5.187358218604039}, {"x": 2.40625, "y": 5.300946572638965}, {"x": 2.4375, "y": 5.417022187747571}, {"x": 2.46875, "y": 5.535639527855328}, {"x": 2.5, "y": 5.656854249492381}, {"x": 2.53125, "y": 5.780723227908187}, {"x": 2.5625, "y": 5.907304583757997}, {"x": 2.59375, "y": 6.036657710373691}, {"x": 2.625, "y": 6.168843301631763}, {"x": 2.65625, "y": 6.303923380431546}, {"x": 2.6875, "y": 6.441961327797017}, {"x": 2.71875, "y": 6.58302191261586}, {"x": 2.75, "y": 6.727171322029716}, {"x": 2.78125, "y": 6.874477192489912}, {"x": 2.8125, "y": 7.025008641493198}, {"x": 2.84375, "y": 7.178836300012429}, {"x": 2.875, "y": 7.33603234563737}, {"x": 2.90625, "y": 7.4966705364412}, {"x": 2.9375, "y": 7.66082624558859}, {"x": 2.96875, "y": 7.828576496701601}, {"x": 3.0, "y": 8.0}], "courbes": []}'></div>
+```
+
+[pas $= 1/32$]{style="color:#6a737d"}
+:::
+:::
+
+```{=html}
+<div class="ia" data-ia="curseurs" data-cfg='{"f": {"js": "Math.pow(2.0, x)"}, "curseurs": [{"nom": "p_p", "etiquette": "p", "min": 0.03125, "max": 1.0, "pas": 0.03125, "val": 1.0}], "params": ["p_p"], "xmin": 0.0, "xmax": 3.0, "ymin": 0.0, "ymax": 9.0, "fixes": [], "xlabel": "x", "ylabel": "y", "points": "p_p"}'></div>
+```
+
+::: {.ia-legende}
+Les points $(x, 2^{x})$ pour $x = 0, p, 2p, 3p, \ldots$ : fais diminuer le pas $p$.
+:::
+
+Au pas $\frac{1}{32}$, on ne distingue presque plus d’espace entre les points : c’est une **courbe** qui apparaît. On retrouve ainsi $f(x) = 2^{x}$, construite uniquement à partir d’exposants fractionnaires — des opérations que tu connais déjà.
+
+**Et avant l’année $0$ ?** Rien n’empêche de reculer dans le temps : $2^{-1} = \frac{1}{2}$, $2^{-2} = \frac{1}{4}$, … En effet: calculer $2^{-1}$ permet de répondre à la question: quel capital aurais-je dû mettre un an à l’avance pour avoir 1 euro? La formule $2^{x}$ a donc un sens pour les $x$ **négatifs** aussi. Voici sa courbe complète :
+
+```{=html}
+<div class="ia" data-ia="graphe" data-cfg='{"xmin": -3.0, "xmax": 3.0, "ymin": 0.0, "ymax": 8.0, "w": 558, "h": 315, "xpas": 1.0, "ypas": 1.0, "xlabel": "x", "ylabel": "2ˣ", "courbes": [{"couleur": "#1d6fb8", "pointille": false, "ep": 1.3, "f": {"js": "Math.pow(2.0, x)"}}, {"couleur": "#6a737d", "pointille": true, "ep": 0.9, "f": {"js": "(1.0 + 0.6931471805599453 * (x - 0.0))"}}], "points": [{"x": 0.0, "y": 1.0}], "lecture": true}'></div>
+```
+
+::: {#activite-1-7 data-sorte="activite" data-num="1.7" data-page="9" data-phys="11" data-id="6UAA4.estimer-pente-tangente" data-type="activite" data-tags="" .theo .theo-activite}
+::: {.theo-head}
+**Activité 1.7** — estimer la pente de la tangente en $0$
+:::
+
+::: {.theo-body}
+Maintenant que la courbe s’étend *de part et d’autre* de $0$, on peut l’aborder avec nos outils de 5^e^. On peut par exemple constater qu’il est possible de tracer des tangentes. Autrement dit, la fonction $2^{x}$ sera dérivable. Considérons la tangente au point d’abscisse $0$ (la droite en pointillés). Estime sa **pente** en lisant le quadrillage : la tangente part de $(0, 1)$ et, une unité vers la droite (en $x = 1$), atteint environ $y \approx \class{rep}{1{,}7}$. Sa pente vaut donc à peu près
+
+$$
+\text{pente} = \frac{\Delta y}{\Delta x} \approx \frac{\class{rep}{1{,}7} - 1}{1} \approx \class{rep}{0{,}7}.
+$$
+:::
+:::
+
+Retiens ce fait : **la courbe de $2^{x}$ possède une tangente en $0$**, de pente voisine de $0{,}7$.
+
+## Bilan des activités
+
+Nous avons rencontré plusieurs phénomènes de croissance exponentielle — le secret, les intérêts composés, la batterie — et cherché à prolonger $a^{x}$ des exposants entiers aux exposants réels. De tout cela, **deux propriétés** se dégagent, et ce sont exactement celles que nous voulons conserver.
+
+1. **La relation $f(x + y) = f(x) \cdot f(y)$** (§ 1.1.3) : c’est la caractéristique même de la croissance exponentielle. On y tient parce qu’elle **prolonge les règles de calcul** des exposants entiers ($a^{x + y} = a^{x} \cdot a^{y}$) — sans elle, l’écriture $a^{x}$ perdrait son sens.
+2. **La stricte monotonie** : tous nos phénomènes étaient soit strictement croissants (le secret, les intérêts), soit strictement décroissants (la batterie). On dira que ce sont des fonctions **strictement monotones**.
+
+::: {#definition-1-2 data-sorte="definition" data-num="1.2" data-page="10" data-phys="12" data-id="6UAA4.fonction-strictement-monotone" data-type="definition" data-tags="" .theo .theo-definition}
+::: {.theo-head}
+**Définition 1.2** — fonction strictement monotone
+:::
+
+::: {.theo-body}
+Une fonction $f$ est **strictement monotone** sur son domaine si elle est, *soit* **strictement croissante**, *soit* **strictement décroissante**.
+:::
+:::
+
+Ces deux propriétés suffisent pour définir une fonction exponentielle.
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur cette section : test de 3 questions →](../autoeval.qmd#sections=sec-construire)
+:::

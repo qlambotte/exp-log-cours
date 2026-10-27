@@ -1,0 +1,186 @@
+---
+title: "Objectifs"
+subtitle: "Compétences à développer dans ce chapitre"
+---
+
+
+<!-- GÉNÉRÉ par typweb (grille de objectifs.typ) : NE PAS ÉDITER. -->
+
+
+::: {.obj-intro}
+Je suis capable de…
+:::
+
+
+::: {#obj-suivi data-cle="exp-log" data-autoeval="autoeval.html"}
+:::
+
+
+## Connaître {.obj-cat}
+
+::: {.obj-liste}
+
+::: {.obj data-code="C1"}
+[C1]{.obj-code}
+
+::: {.obj-texte}
+Lire les caractéristiques de la fonction exponentielle / logarithme au départ de son graphique.
+:::
+:::
+
+::: {.obj data-code="C2"}
+[C2]{.obj-code}
+
+::: {.obj-texte}
+Reconnaître, parmi un ensemble d’expressions analytiques de fonctions données, celle d’une fonction exponentielle.
+:::
+:::
+
+::: {.obj data-code="C3"}
+[C3]{.obj-code}
+
+::: {.obj-texte}
+Décrire la signification des paramètres d’une fonction exponentielle du type $f(t) = C \cdot a^{k t}$.
+:::
+:::
+
+::: {.obj data-code="C4"}
+[C4]{.obj-code}
+
+::: {.obj-texte}
+Déterminer la base d’une fonction exponentielle à partir de son expression analytique, d’un graphique, d’un tableau de nombres ou d’une condition.
+:::
+:::
+
+::: {.obj data-code="C5"}
+[C5]{.obj-code}
+
+::: {.obj-texte}
+Vérifier qu’une croissance est exponentielle à partir d’un tableau de nombres.
+:::
+:::
+
+::: {.obj data-code="C6"}
+[C6]{.obj-code}
+
+::: {.obj-texte}
+Démontrer des propriétés des fonctions logarithmes.
+:::
+:::
+
+::: {.obj data-code="C7"}
+[C7]{.obj-code}
+
+::: {.obj-texte}
+Justifier les étapes de résolution d’une équation exponentielle du type $a^{f(x)} = a^{g(x)}$ ou d’une équation logarithme du type $\log_{a} (x) = C$ en utilisant la relation de réciprocité.
+:::
+:::
+
+:::
+
+
+## Appliquer {.obj-cat}
+
+::: {.obj-liste}
+
+::: {.obj data-code="A1"}
+[A1]{.obj-code}
+
+::: {.obj-texte}
+Déterminer l’image d’un réel par une fonction exponentielle ou logarithme en base quelconque avec la calculatrice.
+:::
+:::
+
+::: {.obj data-code="A2"}
+[A2]{.obj-code}
+
+::: {.obj-texte}
+Relier le graphique d’une transformée simple d’une fonction exponentielle ou logarithme à son expression analytique.
+:::
+:::
+
+::: {.obj data-code="A3"}
+[A3]{.obj-code}
+
+::: {.obj-texte}
+Relier l’expression analytique d’une fonction exponentielle de type $f(t) = C \cdot a^{k t}$ à son graphique.
+:::
+:::
+
+::: {.obj data-code="A4"}
+[A4]{.obj-code}
+
+::: {.obj-texte}
+Écrire l’expression analytique d’une fonction exponentielle à partir de son graphique.
+:::
+:::
+
+::: {.obj data-code="A5"}
+[A5]{.obj-code}
+
+::: {.obj-texte}
+Résoudre une équation exponentielle du type $a^{f(x)} = a^{g(x)}$ ou s’y ramenant (en utilisant les propriétés).
+:::
+:::
+
+::: {.obj data-code="A6"}
+[A6]{.obj-code}
+
+::: {.obj-texte}
+Résoudre une équation logarithme du type $\log_{a} (x) = C$ ou s’y ramenant (en utilisant les propriétés).
+:::
+:::
+
+::: {.obj data-code="A7"}
+[A7]{.obj-code}
+
+::: {.obj-texte}
+Calculer des limites, des dérivées et des primitives de fonctions exponentielles et logarithmes.
+:::
+:::
+
+::: {.obj data-code="A8"}
+[A8]{.obj-code}
+
+::: {.obj-texte}
+Extraire des informations d’un graphique en coordonnées logarithmique ou semi-logarithmique.
+:::
+:::
+
+:::
+
+
+## Transférer {.obj-cat}
+
+::: {.obj-liste}
+
+::: {.obj data-code="T1"}
+[T1]{.obj-code}
+
+::: {.obj-texte}
+Reconnaître, parmi tous ceux déjà rencontrés, le modèle adéquat à la situation.
+:::
+:::
+
+::: {.obj data-code="T2"}
+[T2]{.obj-code}
+
+::: {.obj-texte}
+Modéliser une croissance exponentielle décrite dans une situation contextualisée.
+:::
+:::
+
+::: {.obj data-code="T3"}
+[T3]{.obj-code}
+
+::: {.obj-texte}
+Résoudre un problème à l’aide d’une fonction exponentielle dont l’expression analytique est donnée ou non.
+:::
+:::
+
+:::
+
+
+::: {.ae-lien}
+[✔ S'autoévaluer sur ces objectifs →](autoeval.qmd)
+:::
