@@ -744,7 +744,7 @@
     "href": "nouveautes.html",
     "title": "Quoi de neuf ?",
     "section": "",
-    "text": "27/10/2026",
+    "text": "05/11/2026",
     "crumbs": [
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>Quoi de neuf ?</span>"
     ]
@@ -754,7 +754,7 @@
     "href": "nouveautes.html#section",
     "title": "Quoi de neuf ?",
     "section": "",
-    "text": "Limites de base — modifié : Propriété 3.6\nCroissance comparée et théorème de l’Hospital — modifié : Exercice 3.9",
+    "text": "Définition de la fonction exponentielle — modifié : Exercice 1.1, Exercice 1.2\nPropriétés et caractéristiques graphiques — modifié : Exercice 1.3\nMultiples d’une fonction exponentielle — 14 encadrés modifiés\nLe nombre e et l’exponentielle népérienne — modifié : Exercice 1.18\nRésoudre des équations exponentielles simples — modifié : Exercice 1.19, Exercice 1.20, Exercice 1.21\nExercices supplémentaires — 16 encadrés modifiés\nPropriétés graphiques, par déduction — modifié : Exercice 2.1, Exercice 2.2, Exercice 2.3, Exercice 2.4, Exercice 2.5, Exercice 2.6, Exercice 2.7, Exercice 2.8\nUtiliser les propriétés — modifié : Exercice 2.12, Exercice 2.13, Exercice 2.14\nÉquations logarithmiques — modifié : Exercice 2.15, Exercice 2.16, Exercice 2.17\nRésoudre les équations exponentielles aᶠ⁽ˣ⁾ = b — modifié : Exercice 2.18\nModéliser avec les logarithmes — modifié : Exercice 2.19, Exercice 2.20, Exercice 2.21, Exercice 2.22\nDériver l’exponentielle — modifié : Exercice 3.1\nDériver le logarithme — modifié : Exercice 3.2, Exercice 3.3, Exercice 3.4\nLimites de base — modifié : Exercice 3.5, Exercice 3.6, Exercice 3.7\nCroissance comparée et théorème de l’Hospital — modifié : Exercice 3.8, Exercice 3.9, Exercice 3.10\nRepère semi-logarithmique : la signature de l’exponentielle — modifié : Exercice 4.1\nRepère log-log : la signature d’une puissance — modifié : Exercice 4.2\nChoisir le bon repère et extraire l’information — modifié : Exercice 4.3, Exercice 4.4, Exercice 4.5\nPour aller plus loin : les échelles logarithmiques en sciences — modifié : Exercice 4.6",
     "crumbs": [
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>Quoi de neuf ?</span>"
     ]
@@ -763,8 +763,8 @@
     "objectID": "nouveautes.html#section-1",
     "href": "nouveautes.html#section-1",
     "title": "Quoi de neuf ?",
-    "section": "16/10/2026",
-    "text": "16/10/2026\n\nDériver l’exponentielle — modifié : Activité 3.1, Propriété 3.1, Propriété 3.2, Exemple 3.1, Activité 3.2, Propriété 3.3 ; retiré : Remarque 3.1\nDériver le logarithme — modifié : Activité 3.3\nCroissance comparée et théorème de l’Hospital — ajouté : Remarque 3.1 ; retiré : Remarque 3.2",
+    "section": "27/10/2026",
+    "text": "27/10/2026\n\nLimites de base — modifié : Propriété 3.6\nCroissance comparée et théorème de l’Hospital — modifié : Exercice 3.9",
     "crumbs": [
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>Quoi de neuf ?</span>"
     ]
@@ -772,6 +772,16 @@
   {
     "objectID": "nouveautes.html#section-2",
     "href": "nouveautes.html#section-2",
+    "title": "Quoi de neuf ?",
+    "section": "16/10/2026",
+    "text": "16/10/2026\n\nDériver l’exponentielle — modifié : Activité 3.1, Propriété 3.1, Propriété 3.2, Exemple 3.1, Activité 3.2, Propriété 3.3 ; retiré : Remarque 3.1\nDériver le logarithme — modifié : Activité 3.3\nCroissance comparée et théorème de l’Hospital — ajouté : Remarque 3.1 ; retiré : Remarque 3.2",
+    "crumbs": [
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Quoi de neuf ?</span>"
+    ]
+  },
+  {
+    "objectID": "nouveautes.html#section-3",
+    "href": "nouveautes.html#section-3",
     "title": "Quoi de neuf ?",
     "section": "30/09/2026",
     "text": "30/09/2026\n\nPremière version en ligne du cours.",
