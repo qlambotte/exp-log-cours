@@ -90,7 +90,7 @@ Que se passe-t-il si $k < 0$ ? Le facteur négatif **renverse** la courbe par ra
 
 ::: {#exercice-1-4 data-sorte="exercice" data-num="1.4" data-page="16" data-phys="18" data-id="6UAA4.ex.004" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.4]{.exo-titre} [[C2]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.4]{.exo-titre} [[C2]{.exo-comp data-tip="C2 : Reconnaître, parmi un ensemble d’expressions analytiques de fonctions données, celle d’une fonction exponentielle." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -137,7 +137,7 @@ $(5^{-1})^{x} = (\frac{1}{5})^{x}$ et $-(\frac{1}{3})^{x} = (-1) \cdot (\frac{1}
 
 ::: {#exercice-1-5 data-sorte="exercice" data-num="1.5" data-page="16" data-phys="18" data-id="6UAA4.ex.005" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.5]{.exo-titre} [[C5]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.5]{.exo-titre} [[C5]{.exo-comp data-tip="C5 : Vérifier qu’une croissance est exponentielle à partir d’un tableau de nombres." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -211,7 +211,7 @@ Critère : pour des pas de $x$ égaux, la croissance est exponentielle si le quo
 
 ::: {#exercice-1-6 data-sorte="exercice" data-num="1.6" data-page="17" data-phys="19" data-id="6UAA4.ex.006" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.6]{.exo-titre} [[A4]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.6]{.exo-titre} [[A4]{.exo-comp data-tip="A4 : Écrire l’expression analytique d’une fonction exponentielle à partir de son graphique." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -303,7 +303,7 @@ Pour chaque graphique, $k = f(0)$ et $a = f(1) / f(0)$.
 
 ::: {#exercice-1-7 data-sorte="exercice" data-num="1.7" data-page="18" data-phys="20" data-id="6UAA4.ex.007" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.7]{.exo-titre} [[A2]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.7]{.exo-titre} [[A2]{.exo-comp data-tip="A2 : Relier le graphique d’une transformée simple d’une fonction exponentielle ou logarithme à son expression analytique." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -362,7 +362,7 @@ Calcule $g(0)$, $h(0)$, $k(0)$ et $l(0)$ pour trouver les points sur l’axe des
 
 ::: {#exercice-1-8 data-sorte="exercice" data-num="1.8" data-page="18" data-phys="20" data-id="6UAA4.ex.008" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.8]{.exo-titre} [[A2]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.8]{.exo-titre} [[A2]{.exo-comp data-tip="A2 : Relier le graphique d’une transformée simple d’une fonction exponentielle ou logarithme à son expression analytique." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -409,7 +409,7 @@ La courbe A passe par $(0, 3)$ et a l’allure de $2^{x}$ : que faut-il ajouter 
 
 ::: {#exercice-1-9 data-sorte="exercice" data-num="1.9" data-page="19" data-phys="21" data-id="6UAA4.ex.009" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.9]{.exo-titre} [[A3]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.9]{.exo-titre} [[A3]{.exo-comp data-tip="A3 : Relier l’expression analytique d’une fonction exponentielle de type f(t) = C · a^(k t) à son graphique." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -488,7 +488,7 @@ $f(0) = 1$, $g(0) = 3$, $h(0) = 1$, $k(0) = -1$.
 
 ::: {#exercice-1-10 data-sorte="exercice" data-num="1.10" data-page="19" data-phys="21" data-id="6UAA4.ex.010" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.10]{.exo-titre} [[C4]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.10]{.exo-titre} [[C4]{.exo-comp data-tip="C4 : Déterminer la base d’une fonction exponentielle à partir de son expression analytique, d’un graphique, d’un tableau de nombres ou d’une condition." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -539,7 +539,7 @@ $400 \cdot a^{3} = 500$, donc $a^{3} = 500 / 400$. La base est la racine cubique
 
 ::: {#exercice-1-11 data-sorte="exercice" data-num="1.11" data-page="20" data-phys="22" data-id="6UAA4.ex.011" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.11]{.exo-titre} [[A1]{.exo-comp} ★☆☆]{.exo-meta}
+[✎ Exercice 1.11]{.exo-titre} [[A1]{.exo-comp data-tip="A1 : Déterminer l’image d’un réel par une fonction exponentielle ou logarithme en base quelconque avec la calculatrice." tabindex="0"} ★☆☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -602,7 +602,7 @@ Les multiples d’exponentielles servent surtout à **modéliser** : dès qu’u
 
 ::: {#exercice-1-12 data-sorte="exercice" data-num="1.12" data-page="20" data-phys="22" data-id="6UAA4.ex.012" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.12]{.exo-titre} [[C3]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.12]{.exo-titre} [[C3]{.exo-comp data-tip="C3 : Décrire la signification des paramètres d’une fonction exponentielle du type f(t) = C · a^(k t)." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -657,7 +657,7 @@ $C(t + 1) = 80 \cdot 0{,}75^{2 t + 2} = C(t) \cdot 0{,}75^{2}$.
 
 ::: {#exercice-1-13 data-sorte="exercice" data-num="1.13" data-page="21" data-phys="23" data-id="6UAA4.ex.013" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.13]{.exo-titre} [[T1]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.13]{.exo-titre} [[T1]{.exo-comp data-tip="T1 : Reconnaître, parmi tous ceux déjà rencontrés, le modèle adéquat à la situation." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -730,7 +730,7 @@ Une population de $500$ bactéries **triple** toutes les heures. Modélisons son
 
 ::: {#exercice-1-14 data-sorte="exercice" data-num="1.14" data-page="21" data-phys="23" data-id="6UAA4.ex.014" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.14]{.exo-titre} [[T2]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.14]{.exo-titre} [[T2]{.exo-comp data-tip="T2 : Modéliser une croissance exponentielle décrite dans une situation contextualisée." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -772,7 +772,7 @@ Après $x$ années, la population a doublé $x / 10$ fois : $P(x) = 100 \cdot 2^
 
 ::: {#exercice-1-15 data-sorte="exercice" data-num="1.15" data-page="21" data-phys="23" data-id="6UAA4.ex.015" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.15]{.exo-titre} [[T2]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.15]{.exo-titre} [[T2]{.exo-comp data-tip="T2 : Modéliser une croissance exponentielle décrite dans une situation contextualisée." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -812,7 +812,7 @@ $L(t) = 100 \cdot 2^{t / 7}$ ; calcule $L(30)$ et $L(90)$ à la calculatrice.
 
 ::: {#exercice-1-16 data-sorte="exercice" data-num="1.16" data-page="22" data-phys="24" data-id="6UAA4.ex.016" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.16]{.exo-titre} [[T3]{.exo-comp} ★★★]{.exo-meta}
+[✎ Exercice 1.16]{.exo-titre} [[T3]{.exo-comp data-tip="T3 : Résoudre un problème à l’aide d’une fonction exponentielle dont l’expression analytique est donnée ou non." tabindex="0"} ★★★]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -853,7 +853,7 @@ Le facteur annuel vaut $1 - 0{,}085 = 0{,}915$.
 
 ::: {#exercice-1-17 data-sorte="exercice" data-num="1.17" data-page="22" data-phys="24" data-id="6UAA4.ex.017" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.17]{.exo-titre} [[T3]{.exo-comp} ★★★]{.exo-meta}
+[✎ Exercice 1.17]{.exo-titre} [[T3]{.exo-comp data-tip="T3 : Résoudre un problème à l’aide d’une fonction exponentielle dont l’expression analytique est donnée ou non." tabindex="0"} ★★★]{.exo-meta}
 :::
 
 ::: {.exo-corps}

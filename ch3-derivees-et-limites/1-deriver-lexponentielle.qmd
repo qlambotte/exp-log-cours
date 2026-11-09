@@ -158,7 +158,7 @@ $$
 
 ::: {#exercice-3-1 data-sorte="exercice" data-num="3.1" data-page="51" data-phys="53" data-id="6UAA4.ex.044" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.1]{.exo-titre} [[A7]{.exo-comp} ★☆☆]{.exo-meta}
+[✎ Exercice 3.1]{.exo-titre} [[A7]{.exo-comp data-tip="A7 : Calculer des limites, des dérivées et des primitives de fonctions exponentielles et logarithmes." tabindex="0"} ★☆☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}

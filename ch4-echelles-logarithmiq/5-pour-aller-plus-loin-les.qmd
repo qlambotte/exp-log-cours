@@ -20,7 +20,7 @@ Beaucoup de grandeurs physiques varient sur tant d’ordres de grandeur qu’on 
 
 ::: {#exercice-4-6 data-sorte="exercice" data-num="4.6" data-page="66" data-phys="68" data-id="6UAA4.ex.059" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 4.6]{.exo-titre} [[A8]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 4.6]{.exo-titre} [[A8]{.exo-comp data-tip="A8 : Extraire des informations d’un graphique en coordonnées logarithmique ou semi-logarithmique." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}

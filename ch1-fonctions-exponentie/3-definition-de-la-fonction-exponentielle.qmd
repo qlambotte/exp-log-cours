@@ -27,7 +27,7 @@ Pourquoi impose-t-on $a \in \mathbb{R}^{> 0} \setminus \{1\}$ ? Réfléchis à c
 
 ::: {#exercice-1-1 data-sorte="exercice" data-num="1.1" data-page="10" data-phys="12" data-id="6UAA4.ex.001" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.1]{.exo-titre} [[C2]{.exo-comp} ★☆☆]{.exo-meta}
+[✎ Exercice 1.1]{.exo-titre} [[C2]{.exo-comp data-tip="C2 : Reconnaître, parmi un ensemble d’expressions analytiques de fonctions données, celle d’une fonction exponentielle." tabindex="0"} ★☆☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -104,7 +104,7 @@ Soit $a \in \mathbb{R}^{> 0} \setminus \{1\}$. Alors, pour tous réels $m, p$ :
 
 ::: {#exercice-1-2 data-sorte="exercice" data-num="1.2" data-page="11" data-phys="13" data-id="6UAA4.ex.002" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.2]{.exo-titre} [[A1]{.exo-comp} ★☆☆]{.exo-meta}
+[✎ Exercice 1.2]{.exo-titre} [[A1]{.exo-comp data-tip="A1 : Déterminer l’image d’un réel par une fonction exponentielle ou logarithme en base quelconque avec la calculatrice." tabindex="0"} ★☆☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}

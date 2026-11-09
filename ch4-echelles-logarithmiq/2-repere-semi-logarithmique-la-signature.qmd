@@ -65,7 +65,7 @@ Sur la droite de l’activité, la valeur en $t = 0$ vaut $3$, donc $\log C = \l
 
 ::: {#exercice-4-1 data-sorte="exercice" data-num="4.1" data-page="62" data-phys="64" data-id="6UAA4.ex.054" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 4.1]{.exo-titre} [[A8]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 4.1]{.exo-titre} [[A8]{.exo-comp data-tip="A8 : Extraire des informations d’un graphique en coordonnées logarithmique ou semi-logarithmique." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}

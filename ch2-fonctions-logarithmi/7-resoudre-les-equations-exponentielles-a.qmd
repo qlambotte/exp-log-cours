@@ -48,7 +48,7 @@ $e^{x} = 3 \Longleftrightarrow x = \ln(3) \approx 1{,}099$. L’équation resté
 
 ::: {#exercice-2-18 data-sorte="exercice" data-num="2.18" data-page="47" data-phys="49" data-id="6UAA4.ex.039" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.18]{.exo-titre} [[A5]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.18]{.exo-titre} [[A5]{.exo-comp data-tip="A5 : Résoudre une équation exponentielle du type aᶠ⁽ˣ⁾ = aᵍ⁽ˣ⁾ ou s’y ramenant (en utilisant les propriétés)." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}

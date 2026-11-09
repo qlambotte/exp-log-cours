@@ -8,7 +8,7 @@ Face à des données, le repère où elles s’**alignent** renseigne sur le typ
 
 ::: {#exercice-4-3 data-sorte="exercice" data-num="4.3" data-page="65" data-phys="67" data-id="6UAA4.ex.056" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 4.3]{.exo-titre} [[A8 · T1]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 4.3]{.exo-titre} [[A8 · T1]{.exo-comp data-tip="A8 : Extraire des informations d’un graphique en coordonnées logarithmique ou semi-logarithmique. — T1 : Reconnaître, parmi tous ceux déjà rencontrés, le modèle adéquat à la situation." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -48,7 +48,7 @@ Un capital à intérêts composés est multiplié par un même nombre chaque ann
 
 ::: {#exercice-4-4 data-sorte="exercice" data-num="4.4" data-page="65" data-phys="67" data-id="6UAA4.ex.057" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 4.4]{.exo-titre} [[A8]{.exo-comp} ★★★]{.exo-meta}
+[✎ Exercice 4.4]{.exo-titre} [[A8]{.exo-comp data-tip="A8 : Extraire des informations d’un graphique en coordonnées logarithmique ou semi-logarithmique." tabindex="0"} ★★★]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -91,7 +91,7 @@ En effet, $\log y = \log C + x \log a$ est une fonction affine de $x$ : on obtie
 
 ::: {#exercice-4-5 data-sorte="exercice" data-num="4.5" data-page="65" data-phys="67" data-id="6UAA4.ex.058" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 4.5]{.exo-titre} [[A8 · T3]{.exo-comp} ★★★]{.exo-meta}
+[✎ Exercice 4.5]{.exo-titre} [[A8 · T3]{.exo-comp data-tip="A8 : Extraire des informations d’un graphique en coordonnées logarithmique ou semi-logarithmique. — T3 : Résoudre un problème à l’aide d’une fonction exponentielle dont l’expression analytique est donnée ou non." tabindex="0"} ★★★]{.exo-meta}
 :::
 
 ::: {.exo-corps}

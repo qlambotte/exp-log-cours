@@ -190,7 +190,7 @@ Les propriétés vraies (produit, quotient, puissance) en *suggèrent* de fausse
 
 ::: {#exercice-2-12 data-sorte="exercice" data-num="2.12" data-page="44" data-phys="46" data-id="6UAA4.ex.033" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.12]{.exo-titre} [[C6]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.12]{.exo-titre} [[C6]{.exo-comp data-tip="C6 : Démontrer des propriétés des fonctions logarithmes." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -233,7 +233,7 @@ Avec $x = 10$ et $y = 10$ : $\log(x + y) = \log 20 \approx 1{,}30$ et $\log x + 
 
 ::: {#exercice-2-13 data-sorte="exercice" data-num="2.13" data-page="44" data-phys="46" data-id="6UAA4.ex.034" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.13]{.exo-titre} [[C6]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.13]{.exo-titre} [[C6]{.exo-comp data-tip="C6 : Démontrer des propriétés des fonctions logarithmes." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -276,7 +276,7 @@ $a^{- \log_{a} (x)} = \frac{1}{a^{\log_{a} (x)}} = \frac{1}{x}$.
 
 ::: {#exercice-2-14 data-sorte="exercice" data-num="2.14" data-page="44" data-phys="46" data-id="6UAA4.ex.035" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.14]{.exo-titre} [[A1]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.14]{.exo-titre} [[A1]{.exo-comp data-tip="A1 : Déterminer l’image d’un réel par une fonction exponentielle ou logarithme en base quelconque avec la calculatrice." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}

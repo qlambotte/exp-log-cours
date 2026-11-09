@@ -123,7 +123,7 @@ L’exponentielle au dénominateur l’emporte : le quotient tend vers $0$, ce q
 
 ::: {#exercice-3-8 data-sorte="exercice" data-num="3.8" data-page="57" data-phys="59" data-id="6UAA4.ex.051" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.8]{.exo-titre} [[A7]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 3.8]{.exo-titre} [[A7]{.exo-comp data-tip="A7 : Calculer des limites, des dérivées et des primitives de fonctions exponentielles et logarithmes." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -182,7 +182,7 @@ Dans chaque cas, numérateur et dénominateur tendent tous deux vers $0$, ou dev
 
 ::: {#exercice-3-9 data-sorte="exercice" data-num="3.9" data-page="58" data-phys="60" data-id="6UAA4.ex.052" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.9]{.exo-titre} [[A7]{.exo-comp} ★★★]{.exo-meta}
+[✎ Exercice 3.9]{.exo-titre} [[A7]{.exo-comp data-tip="A7 : Calculer des limites, des dérivées et des primitives de fonctions exponentielles et logarithmes." tabindex="0"} ★★★]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -230,7 +230,7 @@ Enfin, un exercice de **transfert** : les dérivées et limites servent à décr
 
 ::: {#exercice-3-10 data-sorte="exercice" data-num="3.10" data-page="58" data-phys="60" data-id="6UAA4.ex.053" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.10]{.exo-titre} [[T3 · A7]{.exo-comp} ★★★]{.exo-meta}
+[✎ Exercice 3.10]{.exo-titre} [[T3 · A7]{.exo-comp data-tip="T3 : Résoudre un problème à l’aide d’une fonction exponentielle dont l’expression analytique est donnée ou non. — A7 : Calculer des limites, des dérivées et des primitives de fonctions exponentielles et logarithmes." tabindex="0"} ★★★]{.exo-meta}
 :::
 
 ::: {.exo-corps}

@@ -128,7 +128,7 @@ $$
 
 ::: {#exercice-3-2 data-sorte="exercice" data-num="3.2" data-page="53" data-phys="55" data-id="6UAA4.ex.045" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.2]{.exo-titre} [[A7]{.exo-comp} ★☆☆]{.exo-meta}
+[✎ Exercice 3.2]{.exo-titre} [[A7]{.exo-comp data-tip="A7 : Calculer des limites, des dérivées et des primitives de fonctions exponentielles et logarithmes." tabindex="0"} ★☆☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -197,7 +197,7 @@ $(\ln u(x))' = \frac{u'(x)}{u(x)}$ et $(\log_{a} x)' = \frac{1}{x \ln a}$.
 
 ::: {#exercice-3-3 data-sorte="exercice" data-num="3.3" data-page="53" data-phys="55" data-id="6UAA4.ex.046" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.3]{.exo-titre} [[A7]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 3.3]{.exo-titre} [[A7]{.exo-comp data-tip="A7 : Calculer des limites, des dérivées et des primitives de fonctions exponentielles et logarithmes." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -247,7 +247,7 @@ Pour $g$, résous $x^{2} - 5 x + 6 > 0$ : factorise $(x - 2)(x - 3)$ et dresse u
 
 ::: {#exercice-3-4 data-sorte="exercice" data-num="3.4" data-page="54" data-phys="56" data-id="6UAA4.ex.047" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.4]{.exo-titre} [[A7]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 3.4]{.exo-titre} [[A7]{.exo-comp data-tip="A7 : Calculer des limites, des dérivées et des primitives de fonctions exponentielles et logarithmes." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}

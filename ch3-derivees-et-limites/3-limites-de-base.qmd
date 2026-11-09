@@ -60,7 +60,7 @@ Base $a = 0{,}4 < 1$ (bleu) :
 
 ::: {#exercice-3-5 data-sorte="exercice" data-num="3.5" data-page="55" data-phys="57" data-id="6UAA4.ex.048" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.5]{.exo-titre} [[A7]{.exo-comp} ★☆☆]{.exo-meta}
+[✎ Exercice 3.5]{.exo-titre} [[A7]{.exo-comp data-tip="A7 : Calculer des limites, des dérivées et des primitives de fonctions exponentielles et logarithmes." tabindex="0"} ★☆☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -136,7 +136,7 @@ $\lim\limits_{x \to -\infty} \frac{2^{x} - 1}{2^{x} + 1}$ : comme $2^{x} \to 0$,
 
 ::: {#exercice-3-6 data-sorte="exercice" data-num="3.6" data-page="55" data-phys="57" data-id="6UAA4.ex.049" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.6]{.exo-titre} [[A7]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 3.6]{.exo-titre} [[A7]{.exo-comp data-tip="A7 : Calculer des limites, des dérivées et des primitives de fonctions exponentielles et logarithmes." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -185,7 +185,7 @@ En 2) et 4), la fonction est définie en $2$ : il suffit de remplacer $x$ par $2
 
 ::: {#exercice-3-7 data-sorte="exercice" data-num="3.7" data-page="55" data-phys="57" data-id="6UAA4.ex.050" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 3.7]{.exo-titre} [[A7]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 3.7]{.exo-titre} [[A7]{.exo-comp data-tip="A7 : Calculer des limites, des dérivées et des primitives de fonctions exponentielles et logarithmes." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}

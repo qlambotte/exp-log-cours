@@ -18,7 +18,7 @@ Un capital croît de $4 \%$ par an : $C(t) = C_{0} \cdot 1{,}04^{t}$. Quand aura
 
 ::: {#exercice-2-19 data-sorte="exercice" data-num="2.19" data-page="48" data-phys="50" data-id="6UAA4.ex.040" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.19]{.exo-titre} [[T1]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.19]{.exo-titre} [[T1]{.exo-comp data-tip="T1 : Reconnaître, parmi tous ceux déjà rencontrés, le modèle adéquat à la situation." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -58,7 +58,7 @@ Si l’inconnue est dans l’exposant, il faut résoudre une équation exponenti
 
 ::: {#exercice-2-20 data-sorte="exercice" data-num="2.20" data-page="48" data-phys="50" data-id="6UAA4.ex.041" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.20]{.exo-titre} [[T3]{.exo-comp} ★★★]{.exo-meta}
+[✎ Exercice 2.20]{.exo-titre} [[T3]{.exo-comp data-tip="T3 : Résoudre un problème à l’aide d’une fonction exponentielle dont l’expression analytique est donnée ou non." tabindex="0"} ★★★]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -96,7 +96,7 @@ La population aura doublé au cours de l’année $2005 + 58 = 2063$.
 
 ::: {#exercice-2-21 data-sorte="exercice" data-num="2.21" data-page="48" data-phys="50" data-id="6UAA4.ex.042" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.21]{.exo-titre} [[T3]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.21]{.exo-titre} [[T3]{.exo-comp data-tip="T3 : Résoudre un problème à l’aide d’une fonction exponentielle dont l’expression analytique est donnée ou non." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -135,7 +135,7 @@ Les intérêts sont versés en fin d’année : $C(14) \approx 7 \, 920$ € et 
 
 ::: {#exercice-2-22 data-sorte="exercice" data-num="2.22" data-page="48" data-phys="50" data-id="6UAA4.ex.043" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.22]{.exo-titre} [[T3]{.exo-comp} ★★★]{.exo-meta}
+[✎ Exercice 2.22]{.exo-titre} [[T3]{.exo-comp data-tip="T3 : Résoudre un problème à l’aide d’une fonction exponentielle dont l’expression analytique est donnée ou non." tabindex="0"} ★★★]{.exo-meta}
 :::
 
 ::: {.exo-corps}

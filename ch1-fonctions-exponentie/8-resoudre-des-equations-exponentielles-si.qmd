@@ -86,7 +86,7 @@ Comme $a^{u} = a^{v} \Longleftrightarrow u = v$, on a $2 x + 2 = \frac{1}{3}$, d
 
 ::: {#exercice-1-19 data-sorte="exercice" data-num="1.19" data-page="26" data-phys="28" data-id="6UAA4.ex.019" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.19]{.exo-titre} [[A5]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.19]{.exo-titre} [[A5]{.exo-comp data-tip="A5 : Résoudre une équation exponentielle du type aᶠ⁽ˣ⁾ = aᵍ⁽ˣ⁾ ou s’y ramenant (en utilisant les propriétés)." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -151,7 +151,7 @@ Dans chaque cas, on écrit les deux membres comme puissances d’une même base,
 
 ::: {#exercice-1-20 data-sorte="exercice" data-num="1.20" data-page="27" data-phys="29" data-id="6UAA4.ex.020" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.20]{.exo-titre} [[C7]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.20]{.exo-titre} [[C7]{.exo-comp data-tip="C7 : Justifier les étapes de résolution d’une équation exponentielle du type aᶠ⁽ˣ⁾ = aᵍ⁽ˣ⁾ ou d’une équation logarithme du type logₐ (x) = C en utilisant la relation de réciprocité." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -198,7 +198,7 @@ Donc $S = \{\frac{1}{2}\}$.
 
 ::: {#exercice-1-21 data-sorte="exercice" data-num="1.21" data-page="27" data-phys="29" data-id="6UAA4.ex.021" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.21]{.exo-titre} [[A5]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 1.21]{.exo-titre} [[A5]{.exo-comp data-tip="A5 : Résoudre une équation exponentielle du type aᶠ⁽ˣ⁾ = aᵍ⁽ˣ⁾ ou s’y ramenant (en utilisant les propriétés)." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}

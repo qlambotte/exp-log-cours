@@ -41,7 +41,7 @@ $S = \{ 0{,}0025 \}$.
 
 ::: {#exercice-2-15 data-sorte="exercice" data-num="2.15" data-page="46" data-phys="48" data-id="6UAA4.ex.036" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.15]{.exo-titre} [[C7 · A6]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.15]{.exo-titre} [[C7 · A6]{.exo-comp data-tip="C7 : Justifier les étapes de résolution d’une équation exponentielle du type aᶠ⁽ˣ⁾ = aᵍ⁽ˣ⁾ ou d’une équation logarithme du type logₐ (x) = C en utilisant la relation de réciprocité. — A6 : Résoudre une équation logarithme du type logₐ (x) = C ou s’y ramenant (en utilisant les propriétés)." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -86,7 +86,7 @@ $S = \{500{,}5\}$.
 
 ::: {#exercice-2-16 data-sorte="exercice" data-num="2.16" data-page="46" data-phys="48" data-id="6UAA4.ex.037" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.16]{.exo-titre} [[A6 · C7]{.exo-comp} ★★★]{.exo-meta}
+[✎ Exercice 2.16]{.exo-titre} [[A6 · C7]{.exo-comp data-tip="A6 : Résoudre une équation logarithme du type logₐ (x) = C ou s’y ramenant (en utilisant les propriétés). — C7 : Justifier les étapes de résolution d’une équation exponentielle du type aᶠ⁽ˣ⁾ = aᵍ⁽ˣ⁾ ou d’une équation logarithme du type logₐ (x) = C en utilisant la relation de réciprocité." tabindex="0"} ★★★]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -130,7 +130,7 @@ $S = \{2\}$.
 
 ::: {#exercice-2-17 data-sorte="exercice" data-num="2.17" data-page="46" data-phys="48" data-id="6UAA4.ex.038" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.17]{.exo-titre} [[A6]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.17]{.exo-titre} [[A6]{.exo-comp data-tip="A6 : Résoudre une équation logarithme du type logₐ (x) = C ou s’y ramenant (en utilisant les propriétés)." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}

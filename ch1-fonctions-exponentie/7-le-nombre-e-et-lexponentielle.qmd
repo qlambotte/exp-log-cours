@@ -142,7 +142,7 @@ $$
 
 ::: {#exercice-1-18 data-sorte="exercice" data-num="1.18" data-page="25" data-phys="27" data-id="6UAA4.ex.018" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 1.18]{.exo-titre} [[A2]{.exo-comp} ★☆☆]{.exo-meta}
+[✎ Exercice 1.18]{.exo-titre} [[A2]{.exo-comp data-tip="A2 : Relier le graphique d’une transformée simple d’une fonction exponentielle ou logarithme à son expression analytique." tabindex="0"} ★☆☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}

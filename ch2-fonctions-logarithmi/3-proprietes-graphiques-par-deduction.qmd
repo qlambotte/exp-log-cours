@@ -100,7 +100,7 @@ Le graphique de $\log_{1/a}$ est donc le **symétrique** de celui de $\log_{a}$ 
 
 ::: {#exercice-2-1 data-sorte="exercice" data-num="2.1" data-page="35" data-phys="37" data-id="6UAA4.ex.022" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.1]{.exo-titre} [[C1]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.1]{.exo-titre} [[C1]{.exo-comp data-tip="C1 : Lire les caractéristiques de la fonction exponentielle / logarithme au départ de son graphique." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -141,7 +141,7 @@ Comme $\log_{a} (a) = 1$, la base d’un logarithme est l’abscisse du point de
 
 ::: {#exercice-2-2 data-sorte="exercice" data-num="2.2" data-page="36" data-phys="38" data-id="6UAA4.ex.023" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.2]{.exo-titre} [[A2]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.2]{.exo-titre} [[A2]{.exo-comp data-tip="A2 : Relier le graphique d’une transformée simple d’une fonction exponentielle ou logarithme à son expression analytique." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -196,7 +196,7 @@ Les exercices suivants entraînent la **lecture** et la **transformation** de gr
 
 ::: {#exercice-2-3 data-sorte="exercice" data-num="2.3" data-page="37" data-phys="39" data-id="6UAA4.ex.024" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.3]{.exo-titre} [[C1]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.3]{.exo-titre} [[C1]{.exo-comp data-tip="C1 : Lire les caractéristiques de la fonction exponentielle / logarithme au départ de son graphique." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -253,7 +253,7 @@ Parmi les logarithmes, la base se lit au point d’ordonnée $1$ : $\log_{5}$ pa
 
 ::: {#exercice-2-4 data-sorte="exercice" data-num="2.4" data-page="37" data-phys="39" data-id="6UAA4.ex.025" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.4]{.exo-titre} [[C1]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.4]{.exo-titre} [[C1]{.exo-comp data-tip="C1 : Lire les caractéristiques de la fonction exponentielle / logarithme au départ de son graphique." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -295,7 +295,7 @@ $1 / a^{x} = a^{-x}$ et $\log_{1/a} (x) = - \log_{a} (x)$.
 
 ::: {#exercice-2-5 data-sorte="exercice" data-num="2.5" data-page="38" data-phys="40" data-id="6UAA4.ex.026" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.5]{.exo-titre} [[A2]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.5]{.exo-titre} [[A2]{.exo-comp data-tip="A2 : Relier le graphique d’une transformée simple d’une fonction exponentielle ou logarithme à son expression analytique." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -334,7 +334,7 @@ La courbe qui passe par $(1, 0)$ est le symétrique de $e^{x}$ par rapport à la
 
 ::: {#exercice-2-6 data-sorte="exercice" data-num="2.6" data-page="38" data-phys="40" data-id="6UAA4.ex.027" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.6]{.exo-titre} [[A2]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.6]{.exo-titre} [[A2]{.exo-comp data-tip="A2 : Relier le graphique d’une transformée simple d’une fonction exponentielle ou logarithme à son expression analytique." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -373,7 +373,7 @@ La courbe qui passe par $(0, 1)$ et $(1, 4)$ est une exponentielle : de quelle b
 
 ::: {#exercice-2-7 data-sorte="exercice" data-num="2.7" data-page="39" data-phys="41" data-id="6UAA4.ex.028" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.7]{.exo-titre} [[A2]{.exo-comp} ★★★]{.exo-meta}
+[✎ Exercice 2.7]{.exo-titre} [[A2]{.exo-comp data-tip="A2 : Relier le graphique d’une transformée simple d’une fonction exponentielle ou logarithme à son expression analytique." tabindex="0"} ★★★]{.exo-meta}
 :::
 
 ::: {.exo-corps}
@@ -415,7 +415,7 @@ La réciproque de $(4/5)^{x}$ est $\log_{4/5} (x)$ ; son symétrique par rapport
 
 ::: {#exercice-2-8 data-sorte="exercice" data-num="2.8" data-page="39" data-phys="41" data-id="6UAA4.ex.029" data-type="exercice" data-tags="" .exo}
 ::: {.exo-tete}
-[✎ Exercice 2.8]{.exo-titre} [[C1]{.exo-comp} ★★☆]{.exo-meta}
+[✎ Exercice 2.8]{.exo-titre} [[C1]{.exo-comp data-tip="C1 : Lire les caractéristiques de la fonction exponentielle / logarithme au départ de son graphique." tabindex="0"} ★★☆]{.exo-meta}
 :::
 
 ::: {.exo-corps}
